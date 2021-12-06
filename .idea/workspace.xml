@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="744342c0-46f8-4bdf-9e47-35602649a472" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/puzzleinput/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/puzzleinput/PuzzleInput.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="83" column="89" selection-start-line="83" selection-start-column="89" selection-end-line="83" selection-end-column="89" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/puzzleinput/PuzzleInputTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#303#304#0" expanded="true" />
+                <element signature="e#381#382#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/it/ruggero/adventofcode2021/puzzleinput/PuzzleInput.java" />
+        <option value="$PROJECT_DIR$/src/it/ruggero/adventofcode2021/puzzleinput/depths.txt" />
+        <option value="$PROJECT_DIR$/src/main/resources/depths.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/puzzleinput/PuzzleInput.java" />
+        <option value="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/puzzleinput/PuzzleInputTest.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="1908" />
+    <option name="y" value="-12" />
+    <option name="width" value="3866" />
+    <option name="height" value="2106" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="adventOfCode2021" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adventOfCode2021" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="adventOfCode2021" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adventOfCode2021" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="adventOfCode2021" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adventOfCode2021" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="adventOfCode2021" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adventOfCode2021" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+              <item name="adventOfCode2021" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="adventOfCode2021" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/puzzleinput" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Projects\Old\Ruggero\adventOfCode2021\src\main\java\it\ruggero\adventofcode2021\puzzleinput" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.PuzzleInputTest.testProcessWindow">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="adventOfCode2021" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PuzzleInput" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.puzzleinput.PuzzleInput" />
+      <module name="adventOfCode2021" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="it.ruggero.adventofcode2021.puzzleinput.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PuzzleInputTest.testProcessWindow" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="adventOfCode2021" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="it.ruggero.adventofcode2021.puzzleinput.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.puzzleinput" />
+      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.puzzleinput.PuzzleInputTest" />
+      <option name="METHOD_NAME" value="testProcessWindow" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PuzzleInputTest.testReadFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="adventOfCode2021" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="it.ruggero.adventofcode2021.puzzleinput.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.puzzleinput" />
+      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.puzzleinput.PuzzleInputTest" />
+      <option name="METHOD_NAME" value="testReadFile" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.PuzzleInput" />
+      <item itemvalue="JUnit.PuzzleInputTest.testReadFile" />
+      <item itemvalue="JUnit.PuzzleInputTest.testProcessWindow" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.PuzzleInputTest.testProcessWindow" />
+        <item itemvalue="JUnit.PuzzleInputTest.testReadFile" />
+        <item itemvalue="Application.PuzzleInput" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="744342c0-46f8-4bdf-9e47-35602649a472" name="Default Changelist" comment="" />
+      <created>1638772182606</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1638772182606</updated>
+      <workItem from="1638772185767" duration="3536000" />
+      <workItem from="1638775752905" duration="2983000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="PuzzleInputTest_testReadFile - 2021.12.06 at 09h 48m 18s.xml">
+      <configuration name="PuzzleInputTest.testReadFile" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PuzzleInputTest_testProcessWindow - 2021.12.06 at 09h 59m 32s.xml">
+      <configuration name="PuzzleInputTest.testProcessWindow" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PuzzleInputTest_testProcessWindow - 2021.12.06 at 10h 01m 02s.xml">
+      <configuration name="PuzzleInputTest.testProcessWindow" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PuzzleInputTest_testProcessWindow - 2021.12.06 at 10h 03m 07s.xml">
+      <configuration name="PuzzleInputTest.testProcessWindow" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PuzzleInputTest_testProcessWindow - 2021.12.06 at 10h 04m 49s.xml">
+      <configuration name="PuzzleInputTest.testProcessWindow" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PuzzleInputTest_testProcessWindow - 2021.12.06 at 10h 05m 28s.xml">
+      <configuration name="PuzzleInputTest.testProcessWindow" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PuzzleInputTest_testProcessWindow - 2021.12.06 at 10h 09m 08s.xml">
+      <configuration name="PuzzleInputTest.testProcessWindow" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="6519000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1914" y="-6" width="1933" height="1053" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21973333" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="simpleUML" order="7" weight="0.3296" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.42470205" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Package References" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="CheckStyle" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="bottom" id="Stack trace to UML" order="15" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="UML Generator" order="6" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/it/ruggero/adventofcode2021/puzzleinput/depths.txt" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/depths.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="1999" column="4" selection-start-line="1999" selection-start-column="4" selection-end-line="1999" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/puzzleinput/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/puzzleinput/PuzzleInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="83" column="89" selection-start-line="83" selection-start-column="89" selection-end-line="83" selection-end-column="89" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/puzzleinput/PuzzleInputTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#303#304#0" expanded="true" />
+            <element signature="e#381#382#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="simpleUML.UMLToolWindowPlugin">
+    <General>
+      <option name="birdViewUpdateDelay" value="2000" />
+      <option name="defaultFileLocation" value="file://$PROJECT_DIR$/.." />
+    </General>
+    <Classdiagram>
+      <option name="diagramTitleFont" value="SansSerif,1,12" />
+      <option name="diagramFont" value="SansSerif,0,10" />
+      <option name="defaultFieldsExpanded" value="false" />
+      <option name="defaultContructorsExpanded" value="false" />
+      <option name="defaultMethodsExpanded" value="false" />
+      <option name="showParameters" value="true" />
+      <option name="showTooltip" value="true" />
+      <option name="showReturnValues" value="true" />
+      <option name="longModifier" value="true" />
+      <option name="implementsBehaviour" value="1" />
+      <option name="extendsBehaviour" value="1" />
+      <option name="compartmentBehaviour" value="1" />
+      <option name="interfaceBackgroundColor" value="-6494306" />
+      <option name="abstractClassBackgroundColor" value="-1580132" />
+      <option name="classBackgroundColor" value="-6508057" />
+      <option name="diagramBackgroundColor" value="-1" />
+      <option name="useAntialiasedConnectors" value="true" />
+      <option name="quickSourceLinkColor" value="-16776961" />
+      <option name="quickDiagramLinkColor" value="-8454144" />
+      <option name="drawDecorations" value="false" />
+      <option name="hideFieldList" value="" />
+      <option name="showFieldList" value="" />
+      <option name="hideConstructorList" value="" />
+      <option name="showConstructorList" value="" />
+      <option name="hideMethodList" value="" />
+      <option name="showMethodList" value="" />
+      <option name="minimumFigureSize" value="0,0" />
+    </Classdiagram>
+    <Dependencydiagram>
+      <option name="diagramTitleFont" value="SansSerif,1,12" />
+      <option name="diagramFont" value="SansSerif,0,10" />
+      <option name="diagramBackgroundColor" value="-1" />
+      <option name="useAntialiasedConnectors" value="true" />
+      <option name="packageNameCompressionLevel" value="0" />
+    </Dependencydiagram>
+    <Packagediagram>
+      <option name="diagramTitleFont" value="SansSerif,0,12" />
+      <option name="diagramFont" value="SansSerif,0,10" />
+      <option name="packageBackgroundColor" value="-4144960" />
+      <option name="diagramBackgroundColor" value="-1" />
+      <option name="useAntialiasedConnectors" value="true" />
+      <option name="packageNameCompressionLevel" value="2" />
+    </Packagediagram>
+  </component>
+</project>
