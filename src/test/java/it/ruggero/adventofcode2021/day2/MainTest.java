@@ -19,7 +19,7 @@ public class MainTest {
 
     @Test
     public void testProcessFileWithAim( ) {
-        System.out.println(" result is " + Main.processFileWithAim());
-        //Assertions.assertEquals(2036120, Main.processFile());
+        //System.out.println(" result is " + Main.processFileWithAim());
+        Assertions.assertEquals(2015547716, Main.processFileWithAim());
     }
 }

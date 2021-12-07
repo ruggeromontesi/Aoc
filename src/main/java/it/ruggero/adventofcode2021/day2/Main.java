@@ -5,7 +5,10 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class Main {
+    //private final static int SIZE = 6;
+    //private final static String filePath =  ".\\src\\main\\resources\\day2\\test.txt";
     private final static int SIZE = 1000;
+    private final static String filePath =  ".\\src\\main\\resources\\day2\\directions.txt";
     private static String[] directions = new String[SIZE];
     private static int[] distance = new int[SIZE];
 
@@ -13,7 +16,8 @@ public class Main {
         Scanner scanner;
         int i = 0;
 
-        final String filePath =  "C:\\Projects\\adventOfCode2021\\src\\main\\resources\\day2\\directions.txt";
+
+
         try {
             scanner = new Scanner(new File(filePath));
             System.out.println("scanning the file");
@@ -71,55 +75,37 @@ public class Main {
     public static int processFileWithAim( ) {
         int x = 0;
         int y = 0;
-        int aim[] = new int[SIZE];
-        aim[0] = 0;
+        int aim = 0;
 
         for (int i = 0; i< SIZE; i++ ) {
             int deltaX = 0;
             int deltaY = 0;
             int deltaAim  = 0;
-            System.out.print( i + "\t\t\t"+ x + "\t\t\t" + y + "\t\t" + aim[i] + "\t\t\t"   + directions[i].substring(0,2) + "\t\t\t" + distance[i] );
+            System.out.print( i + "\t\t\t"+ x + "\t\t\t" + y + "\t\t\t" + aim + "\t\t\t"   + directions[i].substring(0,2) + "\t\t\t" + distance[i] );
             if ( directions[i].equals("up")) {
-                //y -= distance[i];
-                deltaY = -distance[i];
-                if(i != 0) {
-                    //aim[i] = aim[i-1] - distance[i];
-                    deltaAim = - distance[i];
-                }
 
+                //deltaY = -distance[i];
+                deltaAim = - distance[i];
 
             }
 
             if ( directions[i].equals("down")) {
-                //y += distance[i];
-                deltaY = distance[i];
-                if(i != 0) {
-                    //aim[i] = aim[i-1] + distance[i];
-                    deltaAim =  distance[i];
-                }
-
-
+                //deltaY = distance[i];
+                deltaAim =  distance[i];
             }
-
-            if(i != 0) {
-                aim[i] = aim[i-1] +deltaAim;
-            }
-
 
             if ( directions[i].equals("forward")) {
-                //x += distance[i];
                 deltaX = distance[i];
-                int oldY = y;
-                if(i != 0) {
-                    aim[i] = aim[i-1] ;
-                    deltaY = distance[i]*aim[i];
-                }
+                deltaY = distance[i]*aim;
+                deltaAim = 0;
+
             }
 
             x = x + deltaX;
             y = y + deltaY;
+            aim =  aim + deltaAim;
 
-            System.out.print("\t\t\t"+ deltaX + "\t\t\t"+ deltaY + "\t\t\t" + deltaAim +  "\t\t\t"   + x + "\t\t\t" + y   + "\t\t\t" + aim[i]  +"\n");
+            System.out.print("\t\t\t"+ deltaX + "\t\t\t"+ deltaY + "\t\t\t" + deltaAim +  "\t\t\t"   + x + "\t\t\t" + y   + "\t\t\t" + aim  +"\n");
 
         }
 
