@@ -16,4 +16,10 @@ public class MainTest {
     public void testProcessFile( ) {
         Assertions.assertEquals(2036120, Main.processFile());
     }
+
+    @Test
+    public void testProcessFileWithAim( ) {
+        System.out.println(" result is " + Main.processFileWithAim());
+        //Assertions.assertEquals(2036120, Main.processFile());
+    }
 }
