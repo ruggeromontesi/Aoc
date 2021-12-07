@@ -1,15 +1,21 @@
 /*
  * Copyright (c) Dematic GmbH 2021. All rights reserved. Confidential.
  */
-package it.ruggero.adventofcode2021.puzzleinput;
+package it.ruggero.adventofcode2021.day1;
 
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 /**
  * @author montesr
  */
 public class PuzzleInputTest {
+   @BeforeAll
+   public static void setup() {
+      PuzzleInput.readFile();
+   }
+
 
    @Test
    public void testReadFile() {

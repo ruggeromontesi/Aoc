@@ -1,7 +1,7 @@
 /*
  * Copyright (c) Dematic GmbH 2021. All rights reserved. Confidential.
  */
-package it.ruggero.adventofcode2021.puzzleinput;
+package it.ruggero.adventofcode2021.day1;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -26,11 +26,11 @@ public class PuzzleInput {
    }
 
 
-   private static void readFile()  {
+   public static void readFile()  {
       Scanner scanner;
       int i = 0;
       int numberOfIncreasesIn = 0;
-      final String filePath =  "C:\\Projects\\Old\\Ruggero\\adventOfCode2021\\src\\main\\resources\\depths.txt";
+      final String filePath =  "C:\\Projects\\adventOfCode2021\\src\\main\\resources\\day1\\depths.txt";
       try {
          scanner = new Scanner(new File(filePath));
          System.out.println("scanning the file");
