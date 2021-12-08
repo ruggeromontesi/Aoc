@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="744342c0-46f8-4bdf-9e47-35602649a472" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day3/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/day3/report.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/day3/test.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day3/MainTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day3/PartTwo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day3/PartTwoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/depths.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/day3/report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/day3/report.txt" afterDir="false" />
     </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +19,36 @@
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day3/PartTwoTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="297">
+              <caret line="49" column="32" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day3/PartTwo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="104" column="74" selection-start-line="104" selection-start-column="74" selection-end-line="104" selection-end-column="74" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#766#767#0" expanded="true" />
+                <element signature="e#809#810#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -42,6 +72,9 @@
         <option value="$PROJECT_DIR$/src/main/resources/day2/test.TXT" />
         <option value="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day2/Main.java" />
         <option value="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day2/MainTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/day3/report.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day3/PartTwo.java" />
+        <option value="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day3/PartTwoTest.java" />
       </list>
     </option>
   </component>
@@ -156,6 +189,15 @@
               <item name="adventOfCode2021" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="adventofcode2021" type="462c0819:PsiDirectoryNode" />
+              <item name="day3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="adventOfCode2021" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adventOfCode2021" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -170,6 +212,14 @@
               <item name="adventOfCode2021" type="b2602c69:ProjectViewProjectNode" />
               <item name="adventOfCode2021" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="day3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="adventOfCode2021" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adventOfCode2021" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -195,6 +245,15 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="adventofcode2021" type="462c0819:PsiDirectoryNode" />
               <item name="day2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="adventOfCode2021" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adventOfCode2021" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="adventofcode2021" type="462c0819:PsiDirectoryNode" />
+              <item name="day3" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="adventOfCode2021" type="b2602c69:ProjectViewProjectNode" />
@@ -230,8 +289,20 @@
       <recent name="C:\Projects\Old\Ruggero\adventOfCode2021\src\main\java\it\ruggero\adventofcode2021\puzzleinput" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MainTest.testGammaRate">
-    <configuration name="MainTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.PartTwoTest.testCalculateLifeSupportRating">
+    <configuration name="PartTwoTest.processListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="adventOfCode2021" />
       <extension name="coverage">
         <pattern>
@@ -240,29 +311,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day3" />
-      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day3.MainTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainTest.testBinaryStringToDecimal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="adventOfCode2021" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="it.ruggero.adventofcode2021.day3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day3" />
-      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day3.MainTest" />
-      <option name="METHOD_NAME" value="testBinaryStringToDecimal" />
+      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day3.PartTwoTest" />
+      <option name="METHOD_NAME" value="processListTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainTest.testGammaRate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PartTwoTest.readFileTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="adventOfCode2021" />
       <extension name="coverage">
         <pattern>
@@ -271,14 +327,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day3" />
-      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day3.MainTest" />
-      <option name="METHOD_NAME" value="testGammaRate" />
+      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day3.PartTwoTest" />
+      <option name="METHOD_NAME" value="readFileTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainTest.testProcessFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PartTwoTest.testCalculateCO2ScrubberRating" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="adventOfCode2021" />
       <extension name="coverage">
         <pattern>
@@ -287,14 +343,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day3" />
-      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day3.MainTest" />
-      <option name="METHOD_NAME" value="testProcessFile" />
+      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day3.PartTwoTest" />
+      <option name="METHOD_NAME" value="testCalculateCO2ScrubberRating" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainTest.testReadFile (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PartTwoTest.testCalculateLifeSupportRating" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="adventOfCode2021" />
       <extension name="coverage">
         <pattern>
@@ -303,31 +359,47 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day3" />
-      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day3.MainTest" />
-      <option name="METHOD_NAME" value="testReadFile" />
+      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day3.PartTwoTest" />
+      <option name="METHOD_NAME" value="testCalculateLifeSupportRating" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PartTwoTest.testCalculateOxygenGeneratorRating" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="adventOfCode2021" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="it.ruggero.adventofcode2021.day3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day3" />
+      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day3.PartTwoTest" />
+      <option name="METHOD_NAME" value="testCalculateOxygenGeneratorRating" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.MainTest.testReadFile (1)" />
-      <item itemvalue="JUnit.MainTest (1)" />
-      <item itemvalue="JUnit.MainTest.testProcessFile" />
-      <item itemvalue="JUnit.MainTest.testBinaryStringToDecimal" />
-      <item itemvalue="JUnit.MainTest.testGammaRate" />
+      <item itemvalue="JUnit.PartTwoTest.processListTest" />
+      <item itemvalue="JUnit.PartTwoTest.readFileTest" />
+      <item itemvalue="JUnit.PartTwoTest.testCalculateOxygenGeneratorRating" />
+      <item itemvalue="JUnit.PartTwoTest.testCalculateLifeSupportRating" />
+      <item itemvalue="JUnit.PartTwoTest.testCalculateCO2ScrubberRating" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MainTest.testGammaRate" />
-        <item itemvalue="JUnit.MainTest (1)" />
-        <item itemvalue="JUnit.MainTest.testBinaryStringToDecimal" />
-        <item itemvalue="JUnit.MainTest.testProcessFile" />
-        <item itemvalue="JUnit.MainTest.testReadFile (1)" />
+        <item itemvalue="JUnit.PartTwoTest.testCalculateLifeSupportRating" />
+        <item itemvalue="JUnit.PartTwoTest.testCalculateCO2ScrubberRating" />
+        <item itemvalue="JUnit.PartTwoTest.testCalculateOxygenGeneratorRating" />
+        <item itemvalue="JUnit.PartTwoTest.processListTest" />
+        <item itemvalue="JUnit.PartTwoTest.readFileTest" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -341,49 +413,50 @@
       <workItem from="1638772185767" duration="3536000" />
       <workItem from="1638775752905" duration="2983000" />
       <workItem from="1638876127901" duration="2491000" />
+      <workItem from="1638965868242" duration="5058000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MainTest - 2021.12.07 at 13h 28m 24s.xml">
-      <configuration name="MainTest" configurationId="JUnit" />
+    <history-entry file="PartTwoTest_testCalculateLifeSupportRating - 2021.12.08 at 15h 34m 34s.xml">
+      <configuration name="PartTwoTest.testCalculateLifeSupportRating" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MainTest - 2021.12.07 at 13h 28m 42s.xml">
-      <configuration name="MainTest" configurationId="JUnit" />
+    <history-entry file="PartTwoTest_testCalculateLifeSupportRating - 2021.12.08 at 15h 38m 13s.xml">
+      <configuration name="PartTwoTest.testCalculateLifeSupportRating" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MainTest - 2021.12.07 at 13h 29m 18s.xml">
-      <configuration name="MainTest" configurationId="JUnit" />
+    <history-entry file="PartTwoTest_testCalculateCO2ScrubberRating - 2021.12.08 at 15h 38m 28s.xml">
+      <configuration name="PartTwoTest.testCalculateCO2ScrubberRating" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MainTest - 2021.12.07 at 13h 30m 31s.xml">
-      <configuration name="MainTest" configurationId="JUnit" />
+    <history-entry file="PartTwoTest_testCalculateCO2ScrubberRating - 2021.12.08 at 15h 38m 59s.xml">
+      <configuration name="PartTwoTest.testCalculateCO2ScrubberRating" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MainTest - 2021.12.07 at 13h 38m 14s.xml">
-      <configuration name="MainTest" configurationId="JUnit" />
+    <history-entry file="PartTwoTest_testCalculateCO2ScrubberRating - 2021.12.08 at 15h 39m 12s.xml">
+      <configuration name="PartTwoTest.testCalculateCO2ScrubberRating" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MainTest - 2021.12.07 at 13h 42m 20s.xml">
-      <configuration name="MainTest" configurationId="JUnit" />
+    <history-entry file="PartTwoTest_testCalculateCO2ScrubberRating - 2021.12.08 at 15h 39m 55s.xml">
+      <configuration name="PartTwoTest.testCalculateCO2ScrubberRating" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MainTest - 2021.12.07 at 13h 57m 43s.xml">
-      <configuration name="MainTest" configurationId="JUnit" />
+    <history-entry file="PartTwoTest_testCalculateCO2ScrubberRating - 2021.12.08 at 15h 40m 20s.xml">
+      <configuration name="PartTwoTest.testCalculateCO2ScrubberRating" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MainTest - 2021.12.07 at 13h 59m 41s.xml">
-      <configuration name="MainTest" configurationId="JUnit" />
+    <history-entry file="PartTwoTest_testCalculateCO2ScrubberRating - 2021.12.08 at 15h 41m 25s.xml">
+      <configuration name="PartTwoTest.testCalculateCO2ScrubberRating" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MainTest - 2021.12.07 at 14h 01m 56s.xml">
-      <configuration name="MainTest" configurationId="JUnit" />
+    <history-entry file="PartTwoTest_testCalculateCO2ScrubberRating - 2021.12.08 at 15h 41m 37s.xml">
+      <configuration name="PartTwoTest.testCalculateCO2ScrubberRating" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MainTest - 2021.12.07 at 14h 02m 57s.xml">
-      <configuration name="MainTest" configurationId="JUnit" />
+    <history-entry file="PartTwoTest_testCalculateLifeSupportRating - 2021.12.08 at 15h 41m 48s.xml">
+      <configuration name="PartTwoTest.testCalculateLifeSupportRating" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9010000" />
+    <option name="totallyTimeSpent" value="14068000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1914" y="-6" width="1933" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17706667" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17866667" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -394,7 +467,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.43878657" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.49945828" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -431,35 +504,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/puzzleinput/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/puzzleinput/PuzzleInput.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="83" column="89" selection-start-line="83" selection-start-column="89" selection-end-line="83" selection-end-column="89" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/puzzleinput/PuzzleInputTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#303#304#0" expanded="true" />
-            <element signature="e#381#382#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/puzzleinput/Main.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/puzzleinput/PuzzleInput.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/puzzleinput/PuzzleInputTest.java" />
     <entry file="file://$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day2/Main.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -488,6 +535,42 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/day3/report.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="999" column="12" selection-start-line="999" selection-start-column="12" selection-end-line="999" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day3/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1207">
+          <caret line="127" selection-start-line="127" selection-end-line="144" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day3/PartTwo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="104" column="74" selection-start-line="104" selection-start-column="74" selection-end-line="104" selection-end-column="74" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#766#767#0" expanded="true" />
+            <element signature="e#809#810#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day3/PartTwoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="49" column="32" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
