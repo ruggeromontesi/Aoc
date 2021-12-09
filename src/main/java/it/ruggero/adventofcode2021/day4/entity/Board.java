@@ -1,23 +1,29 @@
-/*
- * Copyright (c) Dematic GmbH 2021. All rights reserved. Confidential.
- */
 package it.ruggero.adventofcode2021.day4.entity;
 
-/**
- * @author montesr
- */
 public class Board {
     private int numbers[][] = new int[5][5];
+    private int score = 0;
+
+    public Board(int[][] numbers) {
+        this.numbers = numbers;
+    }
+
+    public Board() {
+    }
 
     public int[][] getNumbers() {
         return numbers;
     }
 
+    public int getScore() {
+        return score;
+    }
+
     public void checkNumber(int number) {
-        for(int[] row : numbers ) {
-            for(int a: row) {
-                if ( a == number ) {
-                    a = -1;
+        for(int i=0; i< numbers.length; i++){
+            for(int j =0; j < numbers[i].length; j++) {
+                if ( numbers[i][j] == number ) {
+                    numbers[i][j] = -1;
                 }
             }
         }
@@ -52,6 +58,48 @@ public class Board {
         }
        return false;
     }
+
+
+    public void calculateScore(int lastPoppeedUpNumber ){
+        for(int[] row : numbers ) {
+            for(int number : row) {
+                score = (number == -1)?(score):(score+number);
+            }
+        }
+        score *= lastPoppeedUpNumber;
+    }
+
+    public void print( ){
+        System.out.println();
+        for(int[] row : numbers){
+            System.out.print("\n[");
+            for(int number: row) {
+                System.out.print( " "+ number);
+            }
+            System.out.print("]");
+
+        }
+        System.out.println();
+    }
+
+    public String toString( ){
+        String output = "\n";
+        for(int[] row : numbers){
+            output += "\n[";
+
+            for(int number: row) {
+                output +=  " "+ number;
+
+            }
+            output += "]";
+
+
+        }
+        output += "\n";
+        return output;
+    }
+
+
 
 
 }

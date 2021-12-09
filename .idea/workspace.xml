@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="744342c0-46f8-4bdf-9e47-35602649a472" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day4/PartOne.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day4/entity/Board.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/day4/bingo.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/day4/testBingo.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day4/PartOneTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day4/PartOne.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day4/entity/Board.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day4/entity/Board.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/adventOfCode2021/it/ruggero/adventofcode2021/day4/PartOneTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day4/PartOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day4/BingoSession.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day4/entity/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day4/entity/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/day4/testBingo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/day4/testBingo.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day4/PartOneTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day4/BingoSessionTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,12 +26,12 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day3/PartTwoTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day4/entity/BoardTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="850">
-              <caret line="53" column="93" selection-start-line="53" selection-start-column="93" selection-end-line="53" selection-end-column="93" />
+            <state relative-caret-position="7">
+              <caret line="46" selection-start-line="46" selection-end-line="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -37,10 +40,36 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day3/PartTwo.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/day4/testBingo.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1088">
-              <caret line="38" selection-start-line="38" selection-end-line="38" />
+            <state relative-caret-position="306">
+              <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day4/entity/Board.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="87" column="28" selection-start-line="87" selection-start-column="28" selection-end-line="87" selection-end-column="28" />
+              <folding>
+                <element signature="e#256#257#0" expanded="true" />
+                <element signature="e#294#295#0" expanded="true" />
+                <element signature="e#254#255#0" expanded="true" />
+                <element signature="e#284#285#0" expanded="true" />
+                <element signature="e#443#444#0" expanded="true" />
+                <element signature="e#471#472#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day4/BingoSessionTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="382">
+              <caret line="60" column="56" selection-start-line="60" selection-start-column="56" selection-end-line="60" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -58,48 +87,24 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day4/PartOne.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day4/BingoSession.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="84" column="78" selection-start-line="84" selection-start-column="78" selection-end-line="84" selection-end-column="78" />
+            <state relative-caret-position="460">
+              <caret line="164" column="19" selection-start-line="164" selection-start-column="19" selection-end-line="164" selection-end-column="19" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#495#496#0" expanded="true" />
-                <element signature="e#531#532#0" expanded="true" />
-                <element signature="e#595#596#0" expanded="true" />
-                <element signature="e#648#649#0" expanded="true" />
+                <element signature="e#698#699#0" expanded="true" />
+                <element signature="e#730#731#0" expanded="true" />
+                <element signature="e#861#862#0" expanded="true" />
+                <element signature="e#900#901#0" expanded="true" />
+                <element signature="e#769#770#0" expanded="true" />
+                <element signature="e#802#803#0" expanded="true" />
+                <element signature="e#845#846#0" expanded="true" />
+                <element signature="e#871#872#0" expanded="true" />
+                <element signature="method#readFile#0;class#PartOne#0" />
+                <element signature="e#2056#3072#1" />
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day4/entity/Board.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
-              <folding>
-                <element signature="e#254#255#0" expanded="true" />
-                <element signature="e#284#285#0" expanded="true" />
-                <element signature="method#checkBingo#0;class#Board#0" />
-                <element signature="e#615#764#1" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day4/PartOneTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/day4/testBingo.txt">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -130,9 +135,14 @@
         <option value="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day3/PartTwoTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day3/PartTwo.java" />
         <option value="$PROJECT_DIR$/src/main/resources/day4/bingo.txt" />
+        <option value="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day3/entity/BoardTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day4/service/BingoSession.java" />
         <option value="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day4/PartOneTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day4/PartOne.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/day4/testBingo.txt" />
         <option value="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day4/entity/Board.java" />
+        <option value="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day4/BingoSession.java" />
+        <option value="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day4/BingoSessionTest.java" />
       </list>
     </option>
   </component>
@@ -152,8 +162,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -164,62 +174,6 @@
             <path>
               <item name="adventOfCode2021" type="b2602c69:ProjectViewProjectNode" />
               <item name="adventOfCode2021" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="adventOfCode2021" type="b2602c69:ProjectViewProjectNode" />
-              <item name="adventOfCode2021" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="adventOfCode2021" type="b2602c69:ProjectViewProjectNode" />
-              <item name="adventOfCode2021" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
-              <item name="adventOfCode2021" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="adventOfCode2021" type="b2602c69:ProjectViewProjectNode" />
-              <item name="adventOfCode2021" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
-              <item name="adventOfCode2021" type="462c0819:PsiDirectoryNode" />
-              <item name="it" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="adventOfCode2021" type="b2602c69:ProjectViewProjectNode" />
-              <item name="adventOfCode2021" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
-              <item name="adventOfCode2021" type="462c0819:PsiDirectoryNode" />
-              <item name="it" type="462c0819:PsiDirectoryNode" />
-              <item name="ruggero" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="adventOfCode2021" type="b2602c69:ProjectViewProjectNode" />
-              <item name="adventOfCode2021" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
-              <item name="adventOfCode2021" type="462c0819:PsiDirectoryNode" />
-              <item name="it" type="462c0819:PsiDirectoryNode" />
-              <item name="ruggero" type="462c0819:PsiDirectoryNode" />
-              <item name="adventofcode2021" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="adventOfCode2021" type="b2602c69:ProjectViewProjectNode" />
-              <item name="adventOfCode2021" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
-              <item name="adventOfCode2021" type="462c0819:PsiDirectoryNode" />
-              <item name="it" type="462c0819:PsiDirectoryNode" />
-              <item name="ruggero" type="462c0819:PsiDirectoryNode" />
-              <item name="adventofcode2021" type="462c0819:PsiDirectoryNode" />
-              <item name="day2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="adventOfCode2021" type="b2602c69:ProjectViewProjectNode" />
-              <item name="adventOfCode2021" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -330,6 +284,15 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="adventofcode2021" type="462c0819:PsiDirectoryNode" />
               <item name="day3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="adventOfCode2021" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adventOfCode2021" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="adventofcode2021" type="462c0819:PsiDirectoryNode" />
+              <item name="day4" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="adventOfCode2021" type="b2602c69:ProjectViewProjectNode" />
@@ -357,12 +320,15 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Projects\Old\Ruggero\adventOfCode2021\src\main\resources\day4" />
-      <recent name="C:\Projects\Old\Ruggero\adventOfCode2021\src\main\java\it\ruggero\adventofcode2021\puzzleinput" />
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="it.ruggero.adventofcode2021.day4.entity" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Projects\adventOfCode2021\src\main\resources\day1" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Projects\Old\Ruggero\adventOfCode2021\src\main\resources\day4" />
+      <recent name="C:\Projects\Old\Ruggero\adventOfCode2021\src\main\java\it\ruggero\adventofcode2021\puzzleinput" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -377,8 +343,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PartOneTest.testReadFile">
-    <configuration name="PartOneTest.testReadFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.BingoSessionTest.testPlayToLooseSampleConfiguration">
+    <configuration name="BingoSessionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="adventOfCode2021" />
       <extension name="coverage">
         <pattern>
@@ -387,91 +353,90 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day4" />
-      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day4.PartOneTest" />
-      <option name="METHOD_NAME" value="testReadFile" />
+      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day4.BingoSessionTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BingoSessionTest.testPlay" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="adventOfCode2021" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="it.ruggero.adventofcode2021.day4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day4" />
+      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day4.BingoSessionTest" />
+      <option name="METHOD_NAME" value="testPlay" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PartTwoTest.processListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BingoSessionTest.testPlaySampleConfiguration" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="adventOfCode2021" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="it.ruggero.adventofcode2021.day3.*" />
+          <option name="PATTERN" value="it.ruggero.adventofcode2021.day4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day3" />
-      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day3.PartTwoTest" />
-      <option name="METHOD_NAME" value="processListTest" />
+      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day4" />
+      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day4.BingoSessionTest" />
+      <option name="METHOD_NAME" value="testPlaySampleConfiguration" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PartTwoTest.testCalculateCO2ScrubberRating" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BingoSessionTest.testPlayToLoose" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="adventOfCode2021" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="it.ruggero.adventofcode2021.day3.*" />
+          <option name="PATTERN" value="it.ruggero.adventofcode2021.day4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day3" />
-      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day3.PartTwoTest" />
-      <option name="METHOD_NAME" value="testCalculateCO2ScrubberRating" />
+      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day4" />
+      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day4.BingoSessionTest" />
+      <option name="METHOD_NAME" value="testPlayToLoose" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PartTwoTest.testCalculateLifeSupportRating" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BingoSessionTest.testPlayToLooseSampleConfiguration" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="adventOfCode2021" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="it.ruggero.adventofcode2021.day3.*" />
+          <option name="PATTERN" value="it.ruggero.adventofcode2021.day4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day3" />
-      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day3.PartTwoTest" />
-      <option name="METHOD_NAME" value="testCalculateLifeSupportRating" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PartTwoTest.testCalculateOxygenGeneratorRating" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="adventOfCode2021" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="it.ruggero.adventofcode2021.day3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day3" />
-      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day3.PartTwoTest" />
-      <option name="METHOD_NAME" value="testCalculateOxygenGeneratorRating" />
+      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day4" />
+      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day4.BingoSessionTest" />
+      <option name="METHOD_NAME" value="testPlayToLooseSampleConfiguration" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.PartTwoTest.processListTest" />
-      <item itemvalue="JUnit.PartTwoTest.testCalculateOxygenGeneratorRating" />
-      <item itemvalue="JUnit.PartTwoTest.testCalculateLifeSupportRating" />
-      <item itemvalue="JUnit.PartTwoTest.testCalculateCO2ScrubberRating" />
-      <item itemvalue="JUnit.PartOneTest.testReadFile" />
+      <item itemvalue="JUnit.BingoSessionTest.testPlay" />
+      <item itemvalue="JUnit.BingoSessionTest.testPlaySampleConfiguration" />
+      <item itemvalue="JUnit.BingoSessionTest.testPlayToLooseSampleConfiguration" />
+      <item itemvalue="JUnit.BingoSessionTest" />
+      <item itemvalue="JUnit.BingoSessionTest.testPlayToLoose" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PartOneTest.testReadFile" />
-        <item itemvalue="JUnit.PartTwoTest.testCalculateLifeSupportRating" />
-        <item itemvalue="JUnit.PartTwoTest.testCalculateCO2ScrubberRating" />
-        <item itemvalue="JUnit.PartTwoTest.testCalculateOxygenGeneratorRating" />
-        <item itemvalue="JUnit.PartTwoTest.processListTest" />
+        <item itemvalue="JUnit.BingoSessionTest.testPlayToLooseSampleConfiguration" />
+        <item itemvalue="JUnit.BingoSessionTest.testPlayToLoose" />
+        <item itemvalue="JUnit.BingoSessionTest" />
+        <item itemvalue="JUnit.BingoSessionTest.testPlay" />
+        <item itemvalue="JUnit.BingoSessionTest.testPlaySampleConfiguration" />
       </list>
     </recent_temporary>
   </component>
@@ -490,50 +455,51 @@
       <workItem from="1638775752905" duration="2983000" />
       <workItem from="1638876127901" duration="2491000" />
       <workItem from="1638965868242" duration="5705000" />
-      <workItem from="1639051754767" duration="5357000" />
+      <workItem from="1639051754767" duration="5432000" />
+      <workItem from="1639070616263" duration="12698000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PartOneTest_testReadFile - 2021.12.09 at 15h 05m 00s.xml">
-      <configuration name="PartOneTest.testReadFile" configurationId="JUnit" />
+    <history-entry file="BingoSessionTest_testPlayToLooseSampleConfiguration - 2021.12.09 at 22h 58m 01s.xml">
+      <configuration name="BingoSessionTest.testPlayToLooseSampleConfiguration" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PartOneTest_testReadFile - 2021.12.09 at 15h 05m 27s.xml">
-      <configuration name="PartOneTest.testReadFile" configurationId="JUnit" />
+    <history-entry file="BingoSessionTest_testPlayToLooseSampleConfiguration - 2021.12.09 at 23h 05m 01s.xml">
+      <configuration name="BingoSessionTest.testPlayToLooseSampleConfiguration" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PartOneTest_testReadFile - 2021.12.09 at 15h 06m 15s.xml">
-      <configuration name="PartOneTest.testReadFile" configurationId="JUnit" />
+    <history-entry file="BingoSessionTest_testPlayToLooseSampleConfiguration - 2021.12.09 at 23h 05m 30s.xml">
+      <configuration name="BingoSessionTest.testPlayToLooseSampleConfiguration" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PartOneTest_testReadFile - 2021.12.09 at 15h 07m 43s.xml">
-      <configuration name="PartOneTest.testReadFile" configurationId="JUnit" />
+    <history-entry file="BingoSessionTest_testPlayToLooseSampleConfiguration - 2021.12.09 at 23h 06m 12s.xml">
+      <configuration name="BingoSessionTest.testPlayToLooseSampleConfiguration" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PartOneTest_testReadFile - 2021.12.09 at 15h 10m 11s.xml">
-      <configuration name="PartOneTest.testReadFile" configurationId="JUnit" />
+    <history-entry file="BingoSessionTest_testPlayToLooseSampleConfiguration - 2021.12.09 at 23h 07m 16s.xml">
+      <configuration name="BingoSessionTest.testPlayToLooseSampleConfiguration" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PartOneTest_testReadFile - 2021.12.09 at 15h 10m 28s.xml">
-      <configuration name="PartOneTest.testReadFile" configurationId="JUnit" />
+    <history-entry file="BingoSessionTest_testPlayToLooseSampleConfiguration - 2021.12.09 at 23h 08m 13s.xml">
+      <configuration name="BingoSessionTest.testPlayToLooseSampleConfiguration" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PartOneTest_testReadFile - 2021.12.09 at 15h 17m 16s.xml">
-      <configuration name="PartOneTest.testReadFile" configurationId="JUnit" />
+    <history-entry file="BingoSessionTest_testPlayToLooseSampleConfiguration - 2021.12.09 at 23h 09m 06s.xml">
+      <configuration name="BingoSessionTest.testPlayToLooseSampleConfiguration" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PartOneTest_testReadFile - 2021.12.09 at 15h 22m 00s.xml">
-      <configuration name="PartOneTest.testReadFile" configurationId="JUnit" />
+    <history-entry file="BingoSessionTest_testPlayToLooseSampleConfiguration - 2021.12.09 at 23h 09m 56s.xml">
+      <configuration name="BingoSessionTest.testPlayToLooseSampleConfiguration" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PartOneTest_testReadFile - 2021.12.09 at 15h 23m 25s.xml">
-      <configuration name="PartOneTest.testReadFile" configurationId="JUnit" />
+    <history-entry file="BingoSessionTest_testPlayToLooseSampleConfiguration - 2021.12.09 at 23h 10m 39s.xml">
+      <configuration name="BingoSessionTest.testPlayToLooseSampleConfiguration" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PartOneTest_testReadFile - 2021.12.09 at 15h 23m 50s.xml">
-      <configuration name="PartOneTest.testReadFile" configurationId="JUnit" />
+    <history-entry file="BingoSessionTest_testPlayToLooseSampleConfiguration - 2021.12.09 at 23h 12m 07s.xml">
+      <configuration name="BingoSessionTest.testPlayToLooseSampleConfiguration" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20072000" />
+    <option name="totallyTimeSpent" value="32845000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1914" y="-6" width="1933" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18026666" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18186666" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -555,7 +521,7 @@
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32827735" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.32936078" />
       <window_info anchor="bottom" id="Stack trace to UML" order="15" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -571,6 +537,68 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day4/BingoSession.java</url>
+          <line>143</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day4/BingoSession.java</url>
+          <line>146</line>
+          <properties />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day4/BingoSession.java</url>
+          <line>148</line>
+          <properties />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day4/BingoSession.java</url>
+          <line>165</line>
+          <properties />
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day4/BingoSession.java</url>
+          <line>141</line>
+          <properties />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/it/ruggero/adventofcode2021/puzzleinput/depths.txt" />
@@ -619,16 +647,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day3/PartTwoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="53" column="93" selection-start-line="53" selection-start-column="93" selection-end-line="53" selection-end-column="93" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day3/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -636,9 +654,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day3/PartTwoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="53" column="93" selection-start-line="53" selection-start-column="93" selection-end-line="53" selection-end-column="93" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day3/PartTwo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1088">
+        <state relative-caret-position="493">
           <caret line="38" selection-start-line="38" selection-end-line="38" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -646,15 +674,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day4/PartOneTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day4/service/BingoSession.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day4/BingoSession.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+          <caret line="17" column="79" selection-start-line="17" selection-start-column="79" selection-end-line="17" selection-end-column="79" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#612#613#0" expanded="true" />
+            <element signature="e#648#649#0" expanded="true" />
+            <element signature="e#891#892#0" expanded="true" />
+            <element signature="e#924#925#0" expanded="true" />
+            <element signature="method#readFile#0;class#PartOne#0" />
+            <element signature="method#readFile#1;class#PartOne#0" />
+            <element signature="e#1710#1891#1" />
+            <element signature="e#1728#1830#0" />
+            <element signature="e#1944#3101#1" />
+            <element signature="e#1995#3090#1" />
+            <element signature="e#2056#3072#1" />
+            <element signature="e#2360#2512#1" />
+            <element signature="e#2409#2490#1" />
+            <element signature="e#2655#2768#1" />
+            <element signature="e#2813#2932#1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day4/entity/BoardTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/day4/testBingo.txt">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/day4/bingo.txt">
       <provider selected="true" editor-type-id="text-editor">
@@ -663,29 +733,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day4/PartOne.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day4/entity/Board.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="84" column="78" selection-start-line="84" selection-start-column="78" selection-end-line="84" selection-end-column="78" />
+        <state relative-caret-position="105">
+          <caret line="87" column="28" selection-start-line="87" selection-start-column="28" selection-end-line="87" selection-end-column="28" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#495#496#0" expanded="true" />
-            <element signature="e#531#532#0" expanded="true" />
-            <element signature="e#595#596#0" expanded="true" />
-            <element signature="e#648#649#0" expanded="true" />
+            <element signature="e#256#257#0" expanded="true" />
+            <element signature="e#294#295#0" expanded="true" />
+            <element signature="e#254#255#0" expanded="true" />
+            <element signature="e#284#285#0" expanded="true" />
+            <element signature="e#443#444#0" expanded="true" />
+            <element signature="e#471#472#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day4/entity/Board.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day4/BingoSession.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+        <state relative-caret-position="460">
+          <caret line="164" column="19" selection-start-line="164" selection-start-column="19" selection-end-line="164" selection-end-column="19" />
           <folding>
-            <element signature="e#254#255#0" expanded="true" />
-            <element signature="e#284#285#0" expanded="true" />
-            <element signature="method#checkBingo#0;class#Board#0" />
-            <element signature="e#615#764#1" />
+            <element signature="e#698#699#0" expanded="true" />
+            <element signature="e#730#731#0" expanded="true" />
+            <element signature="e#861#862#0" expanded="true" />
+            <element signature="e#900#901#0" expanded="true" />
+            <element signature="e#769#770#0" expanded="true" />
+            <element signature="e#802#803#0" expanded="true" />
+            <element signature="e#845#846#0" expanded="true" />
+            <element signature="e#871#872#0" expanded="true" />
+            <element signature="method#readFile#0;class#PartOne#0" />
+            <element signature="e#2056#3072#1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day4/BingoSessionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="60" column="56" selection-start-line="60" selection-start-column="56" selection-end-line="60" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
