@@ -112,8 +112,8 @@ public class DayFive {
             for (int j = 0; j < N; j++) {
                 int counter = 0;
                 for(Line line : lineList) {
-                    //if (line.containsThisCoordinate(new Coordinate(j,i))) {
-                        if (    line.getCoordinateList().contains(new Coordinate(i, j))) {
+                    if (line.containsThisCoordinate(new Coordinate(j,i))) {
+                    //if (    line.getCoordinateList().contains(new Coordinate(i, j))) {
                         counter++;
                     }
                     if(counter != 0) {

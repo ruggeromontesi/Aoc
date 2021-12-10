@@ -128,7 +128,10 @@ public class Line {
     public boolean containsThisCoordinate(Coordinate coordinate) {
         if (isHorizontal) {
             if (coordinate.getY() == startingPoint.getY()) {
-                if(coordinate.getX() < startingPoint.getX() || coordinate.getX()> startingPoint.getX()) {
+                if(coordinate.getX() < startingPoint.getX() || coordinate.getX()> endingPoint.getX()) {
+                    if( coordinateList.contains(coordinate)){
+                        throw new RuntimeException("male!" + "target coordinate"+coordinate +"line " + toString() );
+                    }
                     return false;
                 } else {
                     return true;
@@ -174,4 +177,16 @@ public class Line {
 
     }
 
+    @Override
+    public String toString() {
+        return "Line{" +
+                "startingPoint=" + startingPoint +
+                ", endingPoint=" + endingPoint +
+                ", slope=" + slope +
+                ", integerSlope=" + integerSlope +
+                ", isVertical=" + isVertical +
+                ", isHorizontal=" + isHorizontal +
+                ", hasOnlyIntegerCoordinates=" + hasOnlyIntegerCoordinates +
+                '}';
+    }
 }

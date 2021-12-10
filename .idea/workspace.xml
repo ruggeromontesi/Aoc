@@ -4,8 +4,6 @@
     <list default="true" id="744342c0-46f8-4bdf-9e47-35602649a472" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/DayFive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/DayFive.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day5/Day5Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day5/Day5Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day5/entity/LineTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day5/entity/LineTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,10 +20,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/DayFive.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
+            <state relative-caret-position="126">
               <caret line="106" column="19" selection-start-line="106" selection-start-column="19" selection-end-line="106" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -45,7 +43,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day5/Day5Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
+            <state relative-caret-position="161">
               <caret line="35" column="10" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -63,11 +61,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+            <state relative-caret-position="249">
+              <caret line="132" column="93" selection-start-line="132" selection-start-column="93" selection-end-line="132" selection-end-column="93" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1287#1288#0" expanded="true" />
@@ -142,9 +140,9 @@
         <option value="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Coordinate.java" />
         <option value="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/support/Help.java" />
         <option value="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day5/entity/LineTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java" />
         <option value="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day5/Day5Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/DayFive.java" />
+        <option value="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java" />
       </list>
     </option>
   </component>
@@ -434,32 +432,11 @@
       <workItem from="1639128082263" duration="3553000" />
       <workItem from="1639131687651" duration="1471000" />
       <workItem from="1639140375544" duration="14053000" />
-      <workItem from="1639162623465" duration="14839000" />
+      <workItem from="1639162623465" duration="16198000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Day5Test_testProcessAll - 2021.12.11 at 01h 11m 48s.xml">
-      <configuration name="Day5Test.testProcessAll" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Day5Test_testProcessAll - 2021.12.11 at 01h 12m 11s.xml">
-      <configuration name="Day5Test.testProcessAll" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Day5Test_testProcessAll - 2021.12.11 at 01h 14m 30s.xml">
-      <configuration name="Day5Test.testProcessAll" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Day5Test_testProcess - 2021.12.11 at 01h 15m 56s.xml">
-      <configuration name="Day5Test.testProcess" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Day5Test_testProcess - 2021.12.11 at 01h 17m 47s.xml">
-      <configuration name="Day5Test.testProcess" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Day5Test_testProcessAll - 2021.12.11 at 01h 18m 55s.xml">
-      <configuration name="Day5Test.testProcessAll" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Day5Test_testProcessAll - 2021.12.11 at 01h 19m 12s.xml">
-      <configuration name="Day5Test.testProcessAll" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Day5Test_testProcessAll - 2021.12.11 at 01h 19m 28s.xml">
       <configuration name="Day5Test.testProcessAll" configurationId="JUnit" />
     </history-entry>
@@ -469,12 +446,34 @@
     <history-entry file="Day5Test_testProcessAll - 2021.12.11 at 01h 23m 15s.xml">
       <configuration name="Day5Test.testProcessAll" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="Day5Test_testProcessAll - 2021.12.11 at 01h 27m 17s.xml">
+      <configuration name="Day5Test.testProcessAll" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Day5Test_testProcessAll - 2021.12.11 at 01h 28m 00s.xml">
+      <configuration name="Day5Test.testProcessAll" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Day5Test_testProcessAll - 2021.12.11 at 01h 28m 35s.xml">
+      <configuration name="Day5Test.testProcessAll" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Day5Test_testProcessAll - 2021.12.11 at 01h 32m 48s.xml">
+      <configuration name="Day5Test.testProcessAll" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Day5Test_testProcessAll - 2021.12.11 at 01h 38m 26s.xml">
+      <configuration name="Day5Test.testProcessAll" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Day5Test_testProcessAll - 2021.12.11 at 01h 39m 01s.xml">
+      <configuration name="Day5Test.testProcessAll" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Day5Test_testProcessAll - 2021.12.11 at 01h 40m 00s.xml">
+      <configuration name="Day5Test.testProcessAll" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68041000" />
+    <option name="totallyTimeSpent" value="69400000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1914" y="-6" width="1933" height="1053" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18826666" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -596,18 +595,6 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/DayFive.java</url>
-          <line>118</line>
-          <properties />
-          <option name="timeStamp" value="87" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/DayFive.java</url>
-          <line>119</line>
-          <properties />
-          <option name="timeStamp" value="88" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/DayFive.java</url>
           <line>120</line>
           <properties />
           <option name="timeStamp" value="89" />
@@ -619,250 +606,70 @@
           <option name="timeStamp" value="90" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/DayFive.java</url>
-          <line>112</line>
-          <properties />
-          <option name="timeStamp" value="91" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/DayFive.java</url>
-          <line>121</line>
-          <properties />
-          <option name="timeStamp" value="92" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java</url>
-          <line>136</line>
-          <properties />
-          <option name="timeStamp" value="96" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java</url>
-          <line>148</line>
+          <line>151</line>
           <properties />
           <option name="timeStamp" value="108" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java</url>
-          <line>167</line>
+          <line>170</line>
           <properties />
           <option name="timeStamp" value="109" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java</url>
-          <line>164</line>
+          <line>167</line>
           <properties />
           <option name="timeStamp" value="111" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java</url>
-          <line>169</line>
+          <line>172</line>
           <properties />
           <option name="timeStamp" value="117" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java</url>
-          <line>171</line>
+          <line>174</line>
           <properties />
           <option name="timeStamp" value="119" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/DayFive.java</url>
-          <line>114</line>
-          <properties />
-          <option name="timeStamp" value="120" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java</url>
-          <line>134</line>
-          <properties />
-          <option name="timeStamp" value="126" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java</url>
-          <line>145</line>
+          <line>148</line>
           <properties />
           <option name="timeStamp" value="128" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java</url>
-          <line>156</line>
+          <line>159</line>
           <properties />
           <option name="timeStamp" value="130" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java</url>
-          <line>159</line>
+          <line>162</line>
           <properties />
           <option name="timeStamp" value="131" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java</url>
-          <line>162</line>
+          <line>165</line>
           <properties />
           <option name="timeStamp" value="134" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java</url>
-          <line>129</line>
-          <properties />
-          <option name="timeStamp" value="136" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java</url>
-          <line>130</line>
-          <properties />
-          <option name="timeStamp" value="137" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java</url>
-          <line>131</line>
-          <properties />
-          <option name="timeStamp" value="139" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java</url>
-          <line>132</line>
-          <properties />
-          <option name="timeStamp" value="140" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java</url>
-          <line>133</line>
-          <properties />
-          <option name="timeStamp" value="141" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java</url>
-          <line>137</line>
-          <properties />
-          <option name="timeStamp" value="142" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java</url>
-          <line>143</line>
-          <properties />
-          <option name="timeStamp" value="143" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java</url>
-          <line>141</line>
-          <properties />
-          <option name="timeStamp" value="144" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java</url>
-          <line>142</line>
-          <properties />
-          <option name="timeStamp" value="145" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java</url>
-          <line>144</line>
-          <properties />
-          <option name="timeStamp" value="146" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java</url>
-          <line>146</line>
-          <properties />
-          <option name="timeStamp" value="147" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java</url>
-          <line>149</line>
+          <line>152</line>
           <properties />
           <option name="timeStamp" value="148" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java</url>
-          <line>150</line>
-          <properties />
-          <option name="timeStamp" value="149" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java</url>
-          <line>155</line>
-          <properties />
-          <option name="timeStamp" value="150" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java</url>
-          <line>154</line>
-          <properties />
-          <option name="timeStamp" value="151" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java</url>
-          <line>158</line>
-          <properties />
-          <option name="timeStamp" value="152" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java</url>
-          <line>160</line>
-          <properties />
-          <option name="timeStamp" value="153" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java</url>
-          <line>161</line>
-          <properties />
-          <option name="timeStamp" value="154" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java</url>
-          <line>163</line>
-          <properties />
-          <option name="timeStamp" value="155" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java</url>
-          <line>165</line>
-          <properties />
-          <option name="timeStamp" value="156" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java</url>
-          <line>166</line>
-          <properties />
-          <option name="timeStamp" value="157" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java</url>
           <line>168</line>
           <properties />
-          <option name="timeStamp" value="158" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java</url>
-          <line>170</line>
-          <properties />
-          <option name="timeStamp" value="159" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/DayFive.java</url>
-          <line>34</line>
-          <properties />
-          <option name="timeStamp" value="160" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/DayFive.java</url>
-          <line>35</line>
-          <properties />
-          <option name="timeStamp" value="161" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/DayFive.java</url>
-          <line>36</line>
-          <properties />
-          <option name="timeStamp" value="162" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/DayFive.java</url>
-          <line>38</line>
-          <properties />
-          <option name="timeStamp" value="163" />
+          <option name="timeStamp" value="156" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/DayFive.java</url>
@@ -1052,31 +859,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/support/Help.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Coordinate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-264">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1287#1288#0" expanded="true" />
-            <element signature="e#1363#1364#0" expanded="true" />
-            <element signature="e#1423#1424#0" expanded="true" />
-            <element signature="e#1511#1512#0" expanded="true" />
-            <element signature="e#1611#1612#0" expanded="true" />
-            <element signature="e#1680#1681#0" expanded="true" />
-            <element signature="e#1752#1753#0" expanded="true" />
-            <element signature="e#4165#4166#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day5/entity/LineTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
@@ -1087,19 +869,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day5/Day5Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="35" column="10" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/DayFive.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
+        <state relative-caret-position="126">
           <caret line="106" column="19" selection-start-line="106" selection-start-column="19" selection-end-line="106" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1111,6 +883,41 @@
             <element signature="e#1676#1677#0" expanded="true" />
             <element signature="e#4504#4505#0" expanded="true" />
             <element signature="e#4565#4566#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Coordinate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-264">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day5/Day5Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="35" column="10" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="132" column="93" selection-start-line="132" selection-start-column="93" selection-end-line="132" selection-end-column="93" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1287#1288#0" expanded="true" />
+            <element signature="e#1363#1364#0" expanded="true" />
+            <element signature="e#1423#1424#0" expanded="true" />
+            <element signature="e#1511#1512#0" expanded="true" />
+            <element signature="e#1611#1612#0" expanded="true" />
+            <element signature="e#1680#1681#0" expanded="true" />
+            <element signature="e#1752#1753#0" expanded="true" />
+            <element signature="e#4165#4166#0" expanded="true" />
           </folding>
         </state>
       </provider>
