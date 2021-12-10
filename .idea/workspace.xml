@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="744342c0-46f8-4bdf-9e47-35602649a472" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/DayFive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/DayFive.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java" afterDir="false" />
-    </list>
+    <list default="true" id="744342c0-46f8-4bdf-9e47-35602649a472" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,7 +20,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/DayFive.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
+            <state relative-caret-position="279">
               <caret line="106" column="19" selection-start-line="106" selection-start-column="19" selection-end-line="106" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -40,10 +37,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day5/Day5Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
+            <state relative-caret-position="314">
               <caret line="35" column="10" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -61,11 +58,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="132" column="93" selection-start-line="132" selection-start-column="93" selection-end-line="132" selection-end-column="93" />
+            <state relative-caret-position="538">
+              <caret line="131" selection-start-line="131" selection-end-line="133" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1287#1288#0" expanded="true" />
@@ -314,7 +311,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Day5Test.testProcessAll">
+  <component name="RunManager" selected="JUnit.Day5Test.testProcess">
     <configuration name="Day5Test.testProcess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="adventOfCode2021" />
       <extension name="coverage">
@@ -404,8 +401,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Day5Test.testProcessAll" />
         <item itemvalue="JUnit.Day5Test.testProcess" />
+        <item itemvalue="JUnit.Day5Test.testProcessAll" />
         <item itemvalue="JUnit.LineTest.testVerticalLine" />
         <item itemvalue="JUnit.LineTest.testContainsThisCoordinate" />
         <item itemvalue="JUnit.LineTest.testIsHorizontal" />
@@ -432,17 +429,11 @@
       <workItem from="1639128082263" duration="3553000" />
       <workItem from="1639131687651" duration="1471000" />
       <workItem from="1639140375544" duration="14053000" />
-      <workItem from="1639162623465" duration="16198000" />
+      <workItem from="1639162623465" duration="16441000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Day5Test_testProcessAll - 2021.12.11 at 01h 19m 28s.xml">
-      <configuration name="Day5Test.testProcessAll" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Day5Test_testProcessAll - 2021.12.11 at 01h 19m 47s.xml">
-      <configuration name="Day5Test.testProcessAll" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Day5Test_testProcessAll - 2021.12.11 at 01h 23m 15s.xml">
       <configuration name="Day5Test.testProcessAll" configurationId="JUnit" />
     </history-entry>
@@ -467,9 +458,15 @@
     <history-entry file="Day5Test_testProcessAll - 2021.12.11 at 01h 40m 00s.xml">
       <configuration name="Day5Test.testProcessAll" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="Day5Test_testProcessAll - 2021.12.11 at 01h 46m 13s.xml">
+      <configuration name="Day5Test.testProcessAll" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Day5Test_testProcessAll - 2021.12.11 at 01h 48m 21s.xml">
+      <configuration name="Day5Test.testProcessAll" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69400000" />
+    <option name="totallyTimeSpent" value="69643000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1914" y="-6" width="1933" height="1053" extended-state="6" />
@@ -869,9 +866,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Coordinate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-264">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="538">
+          <caret line="131" selection-start-line="131" selection-end-line="133" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1287#1288#0" expanded="true" />
+            <element signature="e#1363#1364#0" expanded="true" />
+            <element signature="e#1423#1424#0" expanded="true" />
+            <element signature="e#1511#1512#0" expanded="true" />
+            <element signature="e#1611#1612#0" expanded="true" />
+            <element signature="e#1680#1681#0" expanded="true" />
+            <element signature="e#1752#1753#0" expanded="true" />
+            <element signature="e#4165#4166#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/DayFive.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
+        <state relative-caret-position="279">
           <caret line="106" column="19" selection-start-line="106" selection-start-column="19" selection-end-line="106" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -887,37 +909,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Coordinate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-264">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day5/Day5Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
+        <state relative-caret-position="314">
           <caret line="35" column="10" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="132" column="93" selection-start-line="132" selection-start-column="93" selection-end-line="132" selection-end-column="93" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1287#1288#0" expanded="true" />
-            <element signature="e#1363#1364#0" expanded="true" />
-            <element signature="e#1423#1424#0" expanded="true" />
-            <element signature="e#1511#1512#0" expanded="true" />
-            <element signature="e#1611#1612#0" expanded="true" />
-            <element signature="e#1680#1681#0" expanded="true" />
-            <element signature="e#1752#1753#0" expanded="true" />
-            <element signature="e#4165#4166#0" expanded="true" />
           </folding>
         </state>
       </provider>

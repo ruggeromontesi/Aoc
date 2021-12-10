@@ -68,7 +68,8 @@ public class DayFive {
                         continue;
                     }
 
-                    if (line.getCoordinateList().contains(new Coordinate(i, j))) {
+                    //if (line.getCoordinateList().contains(new Coordinate(i, j))) {
+                    if (line.containsThisCoordinate(new Coordinate(i, j))) {
                         counter++;
                     }
                     if(counter != 0) {
