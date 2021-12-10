@@ -19,12 +19,13 @@ public class DayFive {
 
     private static List<String> strings = new ArrayList<>();
     private static List<Line> lineList = new ArrayList<>();
+    private static  int pointsFinal = 0;
+
+    public static int getPointsFinal() {
+        return pointsFinal;
+    }
 
     public static  void  readFile(String filePath) {
-        int a;
-        List<Coordinate> startCoordinateList = new ArrayList<>();
-        List<Coordinate> stopCoordinateList = new ArrayList<>();
-
 
         Scanner scanner;
         try {
@@ -36,6 +37,7 @@ public class DayFive {
                 Coordinate coordinate2 = new Coordinate(coordinates[1].trim());
 
                 lineList.add(new Line(coordinate1,coordinate2 ));
+                ;
             }
         } catch (FileNotFoundException ex ) {
             System.out.println("Exception caught!");
@@ -43,8 +45,15 @@ public class DayFive {
         }
     }
 
+    public static List<Line> getLineList() {
+        return lineList;
+    }
 
-    public static void process( ){
+    public static void setLineList(List<Line> lineList) {
+        DayFive.lineList = lineList;
+    }
+
+    public static void processOnlyHorizontalAndVertical( ){
         int N =1000;
 
         String map[][] = new String[N][N];
@@ -88,8 +97,58 @@ public class DayFive {
             }
         }
         System.out.println("\npoints = " +points);
+        pointsFinal = points;
+
 
     }
+
+    public static void processAll() {
+        System.out.println("processAll()");
+        int N =1000;
+
+        String map[][] = new String[N][N];
+
+        for(int i =0; i<N; i++) {
+            for (int j = 0; j < N; j++) {
+                int counter = 0;
+                for(Line line : lineList) {
+                    //if (line.containsThisCoordinate(new Coordinate(j,i))) {
+                        if (    line.getCoordinateList().contains(new Coordinate(i, j))) {
+                        counter++;
+                    }
+                    if(counter != 0) {
+                        map[i][j] = ""+counter;
+                    } else {
+                        map[i][j] = ".";
+                    }
+                }
+            }
+
+        }
+
+        int points =0;
+        for(int i = 0; i< N ; i++) {
+            System.out.println();
+            for(int j = 0; j< N ; j++) {
+                System.out.print( map[i][j] + " ");
+                if (map[i][j] .equals(".") || map[i][j] .equals("1"))  {
+                    continue;
+                } else {
+                    int aux = Integer.parseInt(map[i][j]);
+                    if (aux > 1) {
+                        points++;
+                    }
+                }
+
+            }
+        }
+        System.out.println("\npoints = " +points);
+        pointsFinal = points;
+
+
+    }
+
+
 
     public static void printLines() {
         strings.stream().forEach(System.out::println);
