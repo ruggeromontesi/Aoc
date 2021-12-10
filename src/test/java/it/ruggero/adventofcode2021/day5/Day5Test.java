@@ -1,13 +1,7 @@
-/*
- * Copyright (c) Dematic GmbH 2021. All rights reserved. Confidential.
- */
 package it.ruggero.adventofcode2021.day5;
 
 import org.junit.jupiter.api.Test;
 
-/**
- * @author montesr
- */
 public class Day5Test {
 
     @Test

@@ -1,6 +1,3 @@
-/*
- * Copyright (c) Dematic GmbH 2021. All rights reserved. Confidential.
- */
 package it.ruggero.adventofcode2021.day5.entity;
 
 import it.ruggero.adventofcode2021.day5.support.Help;
@@ -9,9 +6,6 @@ import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * @author montesr
- */
 public class Line {
     private Coordinate startingPoint;
     private Coordinate endingPoint;

@@ -1,6 +1,3 @@
-/*
- * Copyright (c) Dematic GmbH 2021. All rights reserved. Confidential.
- */
 package it.ruggero.adventofcode2021.day5.support;
 
 public class Help {

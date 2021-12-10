@@ -8,16 +8,12 @@ import it.ruggero.adventofcode2021.day5.entity.Line;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-/**
- * @author montesr
- */
+
 public class DayFive {
     private static final String filePathTest = "C:\\Projects\\Old\\Ruggero\\adventOfCode2021\\src\\main\\resources\\day5\\day5test.txt";
 
@@ -40,24 +36,11 @@ public class DayFive {
                 Coordinate coordinate2 = new Coordinate(coordinates[1].trim());
 
                 lineList.add(new Line(coordinate1,coordinate2 ));
-
-
-
             }
         } catch (FileNotFoundException ex ) {
             System.out.println("Exception caught!");
             System.out.println(ex);
         }
-        /*System.out.println("startCoordinateList ");
-        startCoordinateList.stream().forEach(System.out::println);
-        System.out.println("stopCoordinateList ");
-        stopCoordinateList.stream().forEach(System.out::println);
-        System.out.println("slopes are printed : ");
-        lineList.forEach( l -> System.out.println(l.getSlope()));
-        lineList.forEach( l -> System.out.println("is having only integer coordinates " + l.isHasOnlyIntegerCoordinates()));*/
-
-
-
     }
 
 
@@ -101,7 +84,7 @@ public class DayFive {
                         points++;
                     }
                 }
-                //System.out.print( map[i][j] + " ");
+
             }
         }
         System.out.println("\npoints = " +points);
@@ -112,29 +95,6 @@ public class DayFive {
         strings.stream().forEach(System.out::println);
     }
 }
-
-
-        /*
-        for(Line line : lineList ) {
-                    int counter = 0;
-                    if(!line.isHorizontal() && !line.isVertical()) {
-                        continue;
-                    }
-                    for(int i =0; i<N; i++) {
-                        for (int j = 0; j < N; j++) {
-                            if (line.getCoordinateList().contains(new Coordinate(i, j))) {
-                                counter++;
-                            }
-                            if(counter != 0) {
-                                map[i][j] = ""+counter;
-                            } else {
-                                map[i][j] = ".";
-                            }
-                        }
-                    }
-
-                }
-         */
 
 
 
