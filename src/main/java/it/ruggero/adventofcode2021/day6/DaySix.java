@@ -12,6 +12,17 @@ public class DaySix {
     private static final String filePath =".\\src\\main\\resources\\day6\\testFishes.txt";
     private static List<Integer> timerList = new ArrayList<>();
 
+
+    public static void main (String args[]) {
+
+    }
+
+    public static long getNumberOfFishes() {
+        return numberOfFishes;
+    }
+
+    private static long numberOfFishes = 0;
+
     public static List<Integer> getTimerList() {
         return timerList;
     }
@@ -40,7 +51,7 @@ public class DaySix {
 
     }
 
-    public static void process (int days) {
+    public static void processOld (int days) {
         for(int i =0 ; i <timerList.size(); i++) {
 
         }
@@ -67,4 +78,45 @@ public class DaySix {
         timerList.addAll(newFishes);
 
     }
+
+
+
+
+    public static void sequence(int seed, int numberOfIterations ) {
+        boolean generateNewFish = false;
+        for(int i = 1; i < numberOfIterations+1; i++) {
+
+
+            if(generateNewFish) {
+                numberOfFishes++;
+                sequence(8 , numberOfIterations+1-i);
+            }
+
+
+            if(seed > 0) {
+                seed--;
+                generateNewFish = false;
+
+
+            } else {
+                seed = 6;
+                generateNewFish = true;
+
+
+            }
+
+        }
+
+    }
+
+    public static void process(int numberOfIterations  ){
+        for (int timer : timerList) {
+            numberOfFishes++;
+            sequence(timer, numberOfIterations);
+
+        }
+
+    }
+
+
 }

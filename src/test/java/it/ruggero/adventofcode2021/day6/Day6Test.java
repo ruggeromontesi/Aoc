@@ -32,4 +32,26 @@ public class Day6Test {
 
     }
 
+    @Test
+    public void testProcessFileSample( ) {
+        String filePath = FILE_PATH_TEST;
+        DaySix.readFile(filePath );
+        DaySix.process(257);
+        System.out.println("number of fishes " + DaySix.getNumberOfFishes());
+        //DaySix.readFile(filePath );
+        //DaySix.process(257);
+        //System.out.println("number of fishes " + DaySix.getNumberOfFishes());
+    }
+
+    @Test
+    public void testProcessFileComplete( ) {
+        String filePath = FILE_PATH_ACTUAL;
+        DaySix.readFile(filePath );
+        DaySix.process(257);
+        System.out.println("number of fishes " + DaySix.getNumberOfFishes());
+        //1767323539209
+    }
+
+
+
 }
