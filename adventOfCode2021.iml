@@ -11,6 +11,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
     </content>
+    <content url="file://$MODULE_DIR$/out" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library" scope="TEST">
@@ -48,6 +49,15 @@
           <root url="jar://$USER_HOME$/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar!/" />
           <root url="jar://$USER_HOME$/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar!/" />
           <root url="jar://$USER_HOME$/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/src/main/resources/day7" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
