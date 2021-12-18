@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="744342c0-46f8-4bdf-9e47-35602649a472" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/day7/positions.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/day7/positionsTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adventOfCode2021.iml" beforeDir="false" afterPath="$PROJECT_DIR$/adventOfCode2021.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day6/other/Lanternfish.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day6/other/Lanternfish.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day7/DaySeven.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day7/DaySeven.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,8 +22,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day7/DaySeven.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="89">
-              <caret line="23" column="85" selection-start-line="23" selection-start-column="85" selection-end-line="23" selection-end-column="85" />
+            <state relative-caret-position="238">
+              <caret line="44" column="52" selection-start-line="44" selection-start-column="52" selection-end-line="44" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -38,8 +34,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day7/Other.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="44" />
+            <state relative-caret-position="-357">
               <folding>
                 <element signature="e#583#584#0" expanded="true" />
                 <element signature="e#628#629#0" expanded="true" />
@@ -396,7 +391,7 @@
       <workItem from="1639740363390" duration="2983000" />
       <workItem from="1639812459944" duration="7745000" />
       <workItem from="1639850315442" duration="3678000" />
-      <workItem from="1639854055497" duration="8740000" />
+      <workItem from="1639854055497" duration="9174000" />
     </task>
     <servers />
   </component>
@@ -433,7 +428,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="120175000" />
+    <option name="totallyTimeSpent" value="120609000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1914" y="-6" width="1933" height="1053" extended-state="6" />
@@ -1107,8 +1102,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day7/Other.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="44" />
+        <state relative-caret-position="-357">
           <folding>
             <element signature="e#583#584#0" expanded="true" />
             <element signature="e#628#629#0" expanded="true" />
@@ -1118,8 +1112,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day7/DaySeven.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="23" column="85" selection-start-line="23" selection-start-column="85" selection-end-line="23" selection-end-column="85" />
+        <state relative-caret-position="238">
+          <caret line="44" column="52" selection-start-line="44" selection-start-column="52" selection-end-line="44" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

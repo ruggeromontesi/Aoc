@@ -42,6 +42,7 @@ public class DaySeven {
                 x -> IntStream.of(hCoordinatesArray).map(y -> calculateConsumption(x,y)).sum()
         ).min().orElseThrow();
         System.out.println("minimum fuel power consumption is " + min2);
+        //minimum fuel power consumption is 95167302
 
 /*        IntStream.of(candidatePositionsArray).map(
                 x -> IntStream.of(hCoordinatesArray).map(y -> calculateConsumption(x,y)).sum()
