@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="744342c0-46f8-4bdf-9e47-35602649a472" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/Day8.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/day8/day8.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/day8/testDay8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day8/DisplayMapping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day8/Day8Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day7/CodeToRun.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day7/CodeToRun.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day7/DaySeven.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day7/DaySeven.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day7/Other.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day7/Other.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/Day8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/Day8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day8/Day8.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,10 +24,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day7/DaySeven.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day8/Day8.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="9" column="49" lean-forward="true" selection-start-line="9" selection-start-column="49" selection-end-line="10" selection-end-column="100" />
+            <state relative-caret-position="272">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -38,31 +36,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/Day8.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day8/Day8Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="8" column="85" selection-start-line="8" selection-start-column="85" selection-end-line="8" selection-end-column="85" />
+            <state relative-caret-position="344">
+              <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/day8/day8.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="199" column="80" selection-start-line="199" selection-start-column="80" selection-end-line="199" selection-end-column="80" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/day8/testDay8.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="61" selection-start-line="9" selection-start-column="61" selection-end-line="9" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -125,6 +105,9 @@
         <option value="$PROJECT_DIR$/src/main/resources/day6/day8.txt" />
         <option value="$PROJECT_DIR$/src/main/resources/day8/day8.txt" />
         <option value="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/Day8.java" />
+        <option value="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day8/DisplayMapping.java" />
+        <option value="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day8/Day8Test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day8/Day8.java" />
       </list>
     </option>
   </component>
@@ -194,46 +177,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="adventofcode2021" type="462c0819:PsiDirectoryNode" />
-              <item name="day1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="adventOfCode2021" type="b2602c69:ProjectViewProjectNode" />
-              <item name="adventOfCode2021" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="adventofcode2021" type="462c0819:PsiDirectoryNode" />
-              <item name="day7" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="adventOfCode2021" type="b2602c69:ProjectViewProjectNode" />
-              <item name="adventOfCode2021" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="adventOfCode2021" type="b2602c69:ProjectViewProjectNode" />
-              <item name="adventOfCode2021" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="day6" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="adventOfCode2021" type="b2602c69:ProjectViewProjectNode" />
-              <item name="adventOfCode2021" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="day7" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="adventOfCode2021" type="b2602c69:ProjectViewProjectNode" />
-              <item name="adventOfCode2021" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="day8" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -264,7 +207,7 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="adventofcode2021" type="462c0819:PsiDirectoryNode" />
-              <item name="day6" type="462c0819:PsiDirectoryNode" />
+              <item name="day8" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="adventOfCode2021" type="b2602c69:ProjectViewProjectNode" />
@@ -321,13 +264,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Day8">
+  <component name="RunManager" selected="JUnit.Day8Test.testSecondPart">
     <configuration name="Day8" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.Day8" />
+      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day8.Day8" />
       <module name="adventOfCode2021" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="it.ruggero.adventofcode2021.*" />
+          <option name="PATTERN" value="it.ruggero.adventofcode2021.day8.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -348,62 +291,68 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Lanternfish" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day6.other.Lanternfish" />
+    <configuration name="Day8Test.testConvert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="adventOfCode2021" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="it.ruggero.adventofcode2021.day6.other.*" />
+          <option name="PATTERN" value="it.ruggero.adventofcode2021.day8.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day8" />
+      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day8.Day8Test" />
+      <option name="METHOD_NAME" value="testConvert" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Other" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day7.Other" />
+    <configuration name="Day8Test.testCreateMapping" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="adventOfCode2021" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="it.ruggero.adventofcode2021.day7.*" />
+          <option name="PATTERN" value="it.ruggero.adventofcode2021.day8.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day8" />
+      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day8.Day8Test" />
+      <option name="METHOD_NAME" value="testCreateMapping" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day6Test.testProcessFileComplete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Day8Test.testSecondPart" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="adventOfCode2021" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="it.ruggero.adventofcode2021.day6.*" />
+          <option name="PATTERN" value="it.ruggero.adventofcode2021.day8.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day6" />
-      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day6.Day6Test" />
-      <option name="METHOD_NAME" value="testProcessFileComplete" />
+      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day8" />
+      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day8.Day8Test" />
+      <option name="METHOD_NAME" value="testSecondPart" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Lanternfish" />
       <item itemvalue="Application.DaySeven" />
-      <item itemvalue="Application.Other" />
-      <item itemvalue="JUnit.Day6Test.testProcessFileComplete" />
       <item itemvalue="Application.Day8" />
+      <item itemvalue="JUnit.Day8Test.testConvert" />
+      <item itemvalue="JUnit.Day8Test.testCreateMapping" />
+      <item itemvalue="JUnit.Day8Test.testSecondPart" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Day8Test.testSecondPart" />
+        <item itemvalue="JUnit.Day8Test.testCreateMapping" />
+        <item itemvalue="JUnit.Day8Test.testConvert" />
         <item itemvalue="Application.Day8" />
         <item itemvalue="Application.DaySeven" />
-        <item itemvalue="Application.Other" />
-        <item itemvalue="Application.Lanternfish" />
-        <item itemvalue="JUnit.Day6Test.testProcessFileComplete" />
       </list>
     </recent_temporary>
   </component>
@@ -442,50 +391,52 @@
       <workItem from="1639812459944" duration="7745000" />
       <workItem from="1639850315442" duration="3678000" />
       <workItem from="1639854055497" duration="10572000" />
-      <workItem from="1639871736016" duration="1124000" />
+      <workItem from="1639871736016" duration="2368000" />
+      <workItem from="1639900322037" duration="4486000" />
+      <workItem from="1639939929343" duration="6591000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Day6Test_testProcessFileSample - 2021.12.17 at 00h 47m 51s.xml">
-      <configuration name="Day6Test.testProcessFileSample" configurationId="JUnit" />
+    <history-entry file="Day8Test_testCreateMapping - 2021.12.19 at 22h 23m 58s.xml">
+      <configuration name="Day8Test.testCreateMapping" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Day6Test_testProcessFileSample - 2021.12.17 at 00h 48m 03s.xml">
-      <configuration name="Day6Test.testProcessFileSample" configurationId="JUnit" />
+    <history-entry file="Day8Test_testCreateMapping - 2021.12.19 at 22h 29m 29s.xml">
+      <configuration name="Day8Test.testCreateMapping" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Day6Test_testProcessFileSample - 2021.12.17 at 00h 48m 15s.xml">
-      <configuration name="Day6Test.testProcessFileSample" configurationId="JUnit" />
+    <history-entry file="Day8Test_testCreateMapping - 2021.12.19 at 22h 31m 06s.xml">
+      <configuration name="Day8Test.testCreateMapping" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Day6Test_testProcessFileSample - 2021.12.17 at 00h 48m 29s.xml">
-      <configuration name="Day6Test.testProcessFileSample" configurationId="JUnit" />
+    <history-entry file="Day8Test_testCreateMapping - 2021.12.19 at 22h 31m 52s.xml">
+      <configuration name="Day8Test.testCreateMapping" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Day6Test_testProcessFileSample - 2021.12.17 at 00h 50m 34s.xml">
-      <configuration name="Day6Test.testProcessFileSample" configurationId="JUnit" />
+    <history-entry file="Day8Test_testCreateMapping - 2021.12.19 at 22h 32m 15s.xml">
+      <configuration name="Day8Test.testCreateMapping" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Day6Test_testProcessFileSample - 2021.12.17 at 00h 50m 53s.xml">
-      <configuration name="Day6Test.testProcessFileSample" configurationId="JUnit" />
+    <history-entry file="Day8Test_testCreateMapping - 2021.12.19 at 22h 32m 34s.xml">
+      <configuration name="Day8Test.testCreateMapping" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Day6Test_testProcessFileSample - 2021.12.17 at 00h 51m 26s.xml">
-      <configuration name="Day6Test.testProcessFileSample" configurationId="JUnit" />
+    <history-entry file="Day8Test_testCreateMapping - 2021.12.19 at 22h 34m 03s.xml">
+      <configuration name="Day8Test.testCreateMapping" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Day6Test_testProcessFileSample - 2021.12.17 at 00h 52m 52s.xml">
-      <configuration name="Day6Test.testProcessFileSample" configurationId="JUnit" />
+    <history-entry file="Day8Test_testCreateMapping - 2021.12.19 at 22h 35m 00s.xml">
+      <configuration name="Day8Test.testCreateMapping" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Day6Test_testProcessFileSample - 2021.12.17 at 00h 58m 49s.xml">
-      <configuration name="Day6Test.testProcessFileSample" configurationId="JUnit" />
+    <history-entry file="Day8Test_testCreateMapping - 2021.12.19 at 22h 35m 11s.xml">
+      <configuration name="Day8Test.testCreateMapping" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Day6Test_testProcessFileComplete - 2021.12.17 at 06h 56m 14s.xml">
-      <configuration name="Day6Test.testProcessFileComplete" configurationId="JUnit" />
+    <history-entry file="Day8Test_testCreateMapping - 2021.12.19 at 22h 35m 35s.xml">
+      <configuration name="Day8Test.testCreateMapping" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123131000" />
+    <option name="totallyTimeSpent" value="135452000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1914" y="-6" width="1933" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20426667" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20853333" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -501,7 +452,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Package References" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32936078" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="CheckStyle" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
@@ -808,8 +759,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/puzzleinput/PuzzleInput.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/puzzleinput/PuzzleInputTest.java" />
     <entry file="file://$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day2/Main.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -1163,17 +1112,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/day8/testDay8.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="61" selection-start-line="9" selection-start-column="61" selection-end-line="9" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day7/DaySeven.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="9" column="49" lean-forward="true" selection-start-line="9" selection-start-column="49" selection-end-line="10" selection-end-column="100" />
+          <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="10" selection-end-column="100" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1182,15 +1124,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/day8/day8.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
+        <state relative-caret-position="3383">
           <caret line="199" column="80" selection-start-line="199" selection-start-column="80" selection-end-line="199" selection-end-column="80" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/Day8.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/day8/testDay8.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" column="85" selection-start-line="8" selection-start-column="85" selection-end-line="8" selection-end-column="85" />
+        <state relative-caret-position="153">
+          <caret line="9" column="61" selection-start-line="9" selection-start-column="61" selection-end-line="9" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day8/DisplayMapping.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1589">
+          <caret line="97" column="27" selection-start-line="97" selection-start-column="27" selection-end-line="97" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day8/Day8.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day8/Day8Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
