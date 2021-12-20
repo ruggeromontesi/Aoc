@@ -26,16 +26,12 @@ public class Day8 {
                 line = input.nextLine();
                 sum += createMapping(line);
                 System.out.println(" sum " + sum);
-
-
             }
 
         } catch(FileNotFoundException ex) {
             System.out.println( ex );
         }
         System.out.println(" sum " + sum);
-
-
     }
 
 
@@ -61,8 +57,6 @@ public class Day8 {
         System.out.println(" counter " + counter);
         System.out.println("map " + DisplayMapping.getDigits());
         //DisplayMapping.getDigits().stream().forEach(System.out::println);
-
-
     }
 
 
@@ -92,11 +86,6 @@ public class Day8 {
             }
         }
 
-
-
-        //
-
-        //System.out.println("output = " + output);
         return output;
     }
 
@@ -155,17 +144,6 @@ public class Day8 {
                 continue;
             }
 
-
-
-
-
-
-
-
-
-
-
-
         }
 
 
@@ -208,7 +186,6 @@ public class Day8 {
                 if( !six.contains(character)) {
                     continue outer;
                 }
-
             }
             five = digit;
             map.put(five,5);
@@ -244,10 +221,6 @@ public class Day8 {
             zero = listSixSegments.get(0);
             map.put(zero,0);
         }
-
-
-
-        //System.out.println("map "+ map);
 
         String[] values = inputString.substring(inputString.indexOf('|')+1).trim().split((" "));
 

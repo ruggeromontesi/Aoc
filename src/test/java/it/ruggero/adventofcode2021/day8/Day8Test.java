@@ -24,6 +24,7 @@ public class Day8Test {
     @Test
     public void testCreateMapping( ){
         String testString =  "acedgfb cdfbe gcdfa fbcad dab cefabd cdfgeb eafb cagedb ab | cdfeb fcadb cdfeb cdbaf";
+        testString = "begfcd fabg aecgbdf cefagb edgcba eacbf efgbc bca ab decfa | cbgef befdcg bceaf fagb";
         Day8.createMapping(testString);
 
 
