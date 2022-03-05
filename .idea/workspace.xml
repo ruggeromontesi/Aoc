@@ -2,7 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="744342c0-46f8-4bdf-9e47-35602649a472" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day9/Grid.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day9/Point.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/day9/day9.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/day9/testDay9.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day9/Day9Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/META-INF/adventOfCode2021.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/fishes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day8/Day8.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day8/Day8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/adventOfCode2021/META-INF/adventOfCode2021.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day9/Day9.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day9/Day9.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,11 +29,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day8/Day8.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-374">
-              <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+            <state relative-caret-position="136">
+              <caret line="8" column="6" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="94" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -34,11 +44,102 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day8/Day8Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="26" column="108" selection-start-line="26" selection-start-column="108" selection-end-line="26" selection-end-column="108" />
+            <state relative-caret-position="187">
+              <caret line="13" selection-start-line="13" selection-end-line="21" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day9/Day9.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+              <folding>
+                <element signature="e#207#1557#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day9/Grid.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="486">
+              <caret line="124" column="49" selection-start-line="124" selection-start-column="49" selection-end-line="124" selection-end-column="49" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#265#266#0" expanded="true" />
+                <element signature="e#296#297#0" expanded="true" />
+                <element signature="e#341#342#0" expanded="true" />
+                <element signature="e#381#382#0" expanded="true" />
+                <element signature="e#413#414#0" expanded="true" />
+                <element signature="e#444#445#0" expanded="true" />
+                <element signature="e#489#490#0" expanded="true" />
+                <element signature="e#529#530#0" expanded="true" />
+                <element signature="e#567#568#0" expanded="true" />
+                <element signature="e#596#597#0" expanded="true" />
+                <element signature="e#3012#3013#0" expanded="true" />
+                <element signature="e#3029#3030#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day9/Day9Test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day9/Point.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+              <folding>
+                <element signature="e#268#269#0" expanded="true" />
+                <element signature="e#292#293#0" expanded="true" />
+                <element signature="e#349#350#0" expanded="true" />
+                <element signature="e#373#374#0" expanded="true" />
+                <element signature="e#398#399#0" expanded="true" />
+                <element signature="e#422#423#0" expanded="true" />
+                <element signature="e#455#456#0" expanded="true" />
+                <element signature="e#487#488#0" expanded="true" />
+                <element signature="e#358#359#0" expanded="true" />
+                <element signature="e#400#401#0" expanded="true" />
+                <element signature="e#643#644#0" expanded="true" />
+                <element signature="e#671#672#0" expanded="true" />
+                <element signature="e#710#711#0" expanded="true" />
+                <element signature="e#737#738#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/day9/day9.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="802">
+              <caret line="99" column="100" selection-start-line="99" selection-start-column="100" selection-end-line="99" selection-end-column="100" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/day9/testDay9.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -104,6 +205,12 @@
         <option value="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day8/DisplayMapping.java" />
         <option value="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day8/Day8Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day8/Day8.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/day9/testDay9.txt" />
+        <option value="$PROJECT_DIR$/src/main/resources/day9/day9.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day9/Day9.java" />
+        <option value="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day9/Point.java" />
+        <option value="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day9/Grid.java" />
+        <option value="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day9/Day9Test.java" />
       </list>
     </option>
   </component>
@@ -172,6 +279,21 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="adventofcode2021" type="462c0819:PsiDirectoryNode" />
+              <item name="day8" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="adventOfCode2021" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adventOfCode2021" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="adventOfCode2021" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adventOfCode2021" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="day8" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -260,26 +382,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Day8Test.testCreateMapping">
+  <component name="RunManager" selected="JUnit.Day9Test.testReadFile">
     <configuration name="Day8" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day8.Day8" />
       <module name="adventOfCode2021" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="it.ruggero.adventofcode2021.day8.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DaySeven" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day7.DaySeven" />
-      <module name="adventOfCode2021" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="it.ruggero.adventofcode2021.day7.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -335,20 +444,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Day9Test.testReadFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="adventOfCode2021" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="it.ruggero.adventofcode2021.day9.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day9" />
+      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day9.Day9Test" />
+      <option name="METHOD_NAME" value="testReadFile" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Application.DaySeven" />
       <item itemvalue="Application.Day8" />
       <item itemvalue="JUnit.Day8Test.testConvert" />
       <item itemvalue="JUnit.Day8Test.testCreateMapping" />
       <item itemvalue="JUnit.Day8Test.testSecondPart" />
+      <item itemvalue="JUnit.Day9Test.testReadFile" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Day9Test.testReadFile" />
         <item itemvalue="JUnit.Day8Test.testCreateMapping" />
         <item itemvalue="JUnit.Day8Test.testSecondPart" />
         <item itemvalue="JUnit.Day8Test.testConvert" />
         <item itemvalue="Application.Day8" />
-        <item itemvalue="Application.DaySeven" />
       </list>
     </recent_temporary>
   </component>
@@ -391,48 +516,53 @@
       <workItem from="1639900322037" duration="4486000" />
       <workItem from="1639939929343" duration="8141000" />
       <workItem from="1639983108165" duration="1387000" />
+      <workItem from="1646512784963" duration="6946000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Day8Test_testCreateMapping - 2021.12.19 at 22h 34m 03s.xml">
-      <configuration name="Day8Test.testCreateMapping" configurationId="JUnit" />
+    <history-entry file="Day9Test_testReadFile - 2022.03.05 at 23h 35m 01s.xml">
+      <configuration name="Day9Test.testReadFile" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Day8Test_testCreateMapping - 2021.12.19 at 22h 35m 00s.xml">
-      <configuration name="Day8Test.testCreateMapping" configurationId="JUnit" />
+    <history-entry file="Day9Test_testReadFile - 2022.03.05 at 23h 36m 09s.xml">
+      <configuration name="Day9Test.testReadFile" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Day8Test_testCreateMapping - 2021.12.19 at 22h 35m 11s.xml">
-      <configuration name="Day8Test.testCreateMapping" configurationId="JUnit" />
+    <history-entry file="Day9Test_testReadFile - 2022.03.05 at 23h 43m 27s.xml">
+      <configuration name="Day9Test.testReadFile" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Day8Test_testCreateMapping - 2021.12.19 at 22h 35m 35s.xml">
-      <configuration name="Day8Test.testCreateMapping" configurationId="JUnit" />
+    <history-entry file="Day9Test_testReadFile - 2022.03.05 at 23h 51m 35s.xml">
+      <configuration name="Day9Test.testReadFile" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Day8Test_testSecondPart - 2021.12.19 at 22h 42m 23s.xml">
-      <configuration name="Day8Test.testSecondPart" configurationId="JUnit" />
+    <history-entry file="Day9Test_testReadFile - 2022.03.05 at 23h 52m 13s.xml">
+      <configuration name="Day9Test.testReadFile" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Day8Test_testSecondPart - 2021.12.19 at 22h 43m 58s.xml">
-      <configuration name="Day8Test.testSecondPart" configurationId="JUnit" />
+    <history-entry file="Day9Test_testReadFile - 2022.03.06 at 00h 18m 33s.xml">
+      <configuration name="Day9Test.testReadFile" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Day8Test_testSecondPart - 2021.12.19 at 22h 44m 32s.xml">
-      <configuration name="Day8Test.testSecondPart" configurationId="JUnit" />
+    <history-entry file="Day9Test_testReadFile - 2022.03.06 at 00h 22m 22s.xml">
+      <configuration name="Day9Test.testReadFile" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Day8Test_testSecondPart - 2021.12.19 at 22h 45m 24s.xml">
-      <configuration name="Day8Test.testSecondPart" configurationId="JUnit" />
+    <history-entry file="Day9Test_testReadFile - 2022.03.06 at 00h 23m 47s.xml">
+      <configuration name="Day9Test.testReadFile" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Day8Test_testSecondPart - 2021.12.19 at 22h 45m 45s.xml">
-      <configuration name="Day8Test.testSecondPart" configurationId="JUnit" />
+    <history-entry file="Day9Test_testReadFile - 2022.03.06 at 00h 37m 40s.xml">
+      <configuration name="Day9Test.testReadFile" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Day8Test_testCreateMapping - 2021.12.19 at 22h 52m 39s.xml">
-      <configuration name="Day8Test.testCreateMapping" configurationId="JUnit" />
+    <history-entry file="Day9Test_testReadFile - 2022.03.06 at 00h 38m 10s.xml">
+      <configuration name="Day9Test.testReadFile" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="138389000" />
+    <option name="totallyTimeSpent" value="145335000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1914" y="-6" width="1933" height="1053" extended-state="6" />
+    <frame x="1913" y="-1083" width="2575" height="1415" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21066667" />
+      <window_info id="DB Browser" />
+      <window_info id="Project Explorer" />
+      <window_info id="Job Explorer" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21033797" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -440,22 +570,25 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="simpleUML" order="7" weight="0.3296" />
+      <window_info anchor="bottom" id="DB Execution Console" />
+      <window_info anchor="bottom" id="DB Diagnostics" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.46478873" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.46453625" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.47995666" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Package References" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32936078" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3289166" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="CheckStyle" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32827735" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3281372" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="14" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.3289166" />
       <window_info anchor="bottom" id="Stack trace to UML" order="15" side_tool="true" />
+      <window_info anchor="right" id="Mongo Explorer" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -755,54 +888,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day2/Main.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#2962#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/day2/test.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day2/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day2/MainTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/day3/report.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="999" column="12" selection-start-line="999" selection-start-column="12" selection-end-line="999" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day3/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="9" column="7" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day3/PartTwoTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="433">
@@ -1142,20 +1227,99 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day8/Day8.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/day9/testDay9.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-374">
-          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        <state relative-caret-position="68">
+          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/day9/day9.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="802">
+          <caret line="99" column="100" selection-start-line="99" selection-start-column="100" selection-end-line="99" selection-end-column="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day8/Day8Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="13" selection-start-line="13" selection-end-line="21" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day8/Day8Test.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day8/Day8.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="26" column="108" selection-start-line="26" selection-start-column="108" selection-end-line="26" selection-end-column="108" />
+        <state relative-caret-position="136">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="94" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day9/Point.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+          <folding>
+            <element signature="e#268#269#0" expanded="true" />
+            <element signature="e#292#293#0" expanded="true" />
+            <element signature="e#349#350#0" expanded="true" />
+            <element signature="e#373#374#0" expanded="true" />
+            <element signature="e#398#399#0" expanded="true" />
+            <element signature="e#422#423#0" expanded="true" />
+            <element signature="e#455#456#0" expanded="true" />
+            <element signature="e#487#488#0" expanded="true" />
+            <element signature="e#358#359#0" expanded="true" />
+            <element signature="e#400#401#0" expanded="true" />
+            <element signature="e#643#644#0" expanded="true" />
+            <element signature="e#671#672#0" expanded="true" />
+            <element signature="e#710#711#0" expanded="true" />
+            <element signature="e#737#738#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day9/Day9.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+          <folding>
+            <element signature="e#207#1557#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day9/Grid.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="124" column="49" selection-start-line="124" selection-start-column="49" selection-end-line="124" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#265#266#0" expanded="true" />
+            <element signature="e#296#297#0" expanded="true" />
+            <element signature="e#341#342#0" expanded="true" />
+            <element signature="e#381#382#0" expanded="true" />
+            <element signature="e#413#414#0" expanded="true" />
+            <element signature="e#444#445#0" expanded="true" />
+            <element signature="e#489#490#0" expanded="true" />
+            <element signature="e#529#530#0" expanded="true" />
+            <element signature="e#567#568#0" expanded="true" />
+            <element signature="e#596#597#0" expanded="true" />
+            <element signature="e#3012#3013#0" expanded="true" />
+            <element signature="e#3029#3030#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day9/Day9Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
