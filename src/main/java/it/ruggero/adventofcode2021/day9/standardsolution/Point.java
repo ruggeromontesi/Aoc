@@ -1,4 +1,4 @@
-package it.ruggero.adventofcode2021.day9;
+package it.ruggero.adventofcode2021.day9.standardsolution;
 
 
 public class Point {
@@ -46,6 +46,27 @@ public class Point {
 
     public void setLow(boolean low) {
         isLow = low;
+    }
+
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Point)) return false;
+
+        Point point = (Point) o;
+
+        if (getX() != point.getX()) return false;
+        if (getY() != point.getY()) return false;
+        return getZ() == point.getZ();
+    }
+
+    @Override
+    public int hashCode() {
+        int result = getX();
+        result = 31 * result + getY();
+        result = 31 * result + getZ();
+        return result;
     }
 
     @Override
