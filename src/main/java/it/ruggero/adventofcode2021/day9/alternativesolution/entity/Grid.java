@@ -2,7 +2,8 @@ package it.ruggero.adventofcode2021.day9.alternativesolution.entity;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.Scanner;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class Grid {
 
@@ -14,6 +15,8 @@ public class Grid {
 
     private Point[][] map ;
 
+    private List<Basin> basins = new ArrayList<>();
+
     public int getSumOfRiskLevelsOFAllLowPoints() {
         return sumOfRiskLevelsOFAllLowPoints;
     }
@@ -22,6 +25,9 @@ public class Grid {
         return map;
     }
 
+    public List<Basin> getBasins() {
+        return basins;
+    }
 
     public Grid(String filePath) {
 
@@ -59,7 +65,8 @@ public class Grid {
                     } catch (NumberFormatException ex) {
                         System.out.println("Wrong map!");
                     }
-                    map[j][i] = new Point(height);
+                    //map[j][i] = new Point(height);
+                    map[j][i] = new Point(i,j,height);
                 }
 
                 j++;
@@ -123,6 +130,8 @@ public class Grid {
                     return;
                 }
                 thisPoint.setLow(true);
+                basins.add(new Basin(thisPoint));
+
                 return;
             }
             //NORTH WEST CORNER
@@ -138,6 +147,7 @@ public class Grid {
                     return;
                 }
                 thisPoint.setLow(true);
+                basins.add(new Basin(thisPoint));
                 return;
             }
             //NORTH EAST CORNER
@@ -153,6 +163,7 @@ public class Grid {
                     return;
                 }
                 thisPoint.setLow(true);
+                basins.add(new Basin(thisPoint));
                 return;
             }
 
@@ -180,6 +191,7 @@ public class Grid {
                 }
 
                 thisPoint.setLow(true);
+                basins.add(new Basin(thisPoint));
                 return;
             }
             //SOUTH WEST CORNER
@@ -195,6 +207,7 @@ public class Grid {
                     return;
                 }
                 thisPoint.setLow(true);
+                basins.add(new Basin(thisPoint));
                 return;
             }
             //SOUTH EAST CORNER
@@ -210,6 +223,7 @@ public class Grid {
                     return;
                 }
                 thisPoint.setLow(true);
+                basins.add(new Basin(thisPoint));
                 return;
             }
 
@@ -234,6 +248,7 @@ public class Grid {
                 return;
             }
             thisPoint.setLow(true);
+            basins.add(new Basin(thisPoint));
             return;
         }
 
@@ -256,6 +271,7 @@ public class Grid {
                 return;
             }
             thisPoint.setLow(true);
+            basins.add(new Basin(thisPoint));
             return;
 
         }
@@ -284,9 +300,12 @@ public class Grid {
             }
 
             thisPoint.setLow(true);
+            basins.add(new Basin(thisPoint));
             return;
         }
     }
+
+
 
     private void checkIfPointsAreLow() {
         for( int j = 0; j < map.length; j++){
@@ -348,8 +367,118 @@ public class Grid {
 
     }
 
+    public Set<Point> findNeighboursInBasin(Point point) {
+        Set<Point> neighboursInBasin = new HashSet<>();
+        //CHECK NORTH NEIGHBOUR
+        if (
+                (point.getY() > 0) &&
+                (map[point.getY()-1][point.getX()].getHeight() < 9) &&
+                (point.getHeight()+1 == map[point.getY()-1][point.getX()].getHeight()) )
+        {
+            neighboursInBasin.add(map[point.getY()-1][point.getX()]);
+        }
+        //CHECK EAST NEIGHBOUR
+        if (
+                (point.getX() < gridMaxX -1) &&
+                        //
+                (map[point.getY()][point.getX()+1].getHeight() < 9) &&
+                (point.getHeight()+1 == map[point.getY()][point.getX()+1].getHeight())
+        )
+        {
+            neighboursInBasin.add(map[point.getY()][point.getX()+1]);
+        }
+        //CHECK SOUTH NEIGHBOUR
+        if (
+                (point.getY()< gridMaxY - 1) &&
+                (map[point.getY()+1][point.getX()].getHeight() < 9) &&
+                (point.getHeight()+1 == map[point.getY()+1][point.getX()].getHeight())
+        )
+        {
+            neighboursInBasin.add(map[point.getY()+1][point.getX()]);
+        }
+        //CHECK WEST NEIGHBOUR
+        if (
+                (point.getX() > 0) &&
+                (map[point.getY()][point.getX()-1].getHeight() < 9) &&
+                (point.getHeight() + 1 == map[point.getY()][point.getX()-1].getHeight())
+        )
+        {
+            neighboursInBasin.add(map[point.getY()][point.getX()-1]);
+        }
 
 
+        return neighboursInBasin;
+    }
+
+
+    public void calculateAllBasins() {
+        if( basins.size() != 0) {
+            for(Basin basin : basins) {
+
+                if( basin.basinPoints.size() == 1) {
+                    basin.proceed(basin.basinPoints);
+                }
+            }
+
+        }
+    }
+
+    public int multiplySizesOfThreeLargestBasins() {
+        int output = 1;
+        Collections.sort(basins, (b1,b2) -> b2.getBasinPoints().size() - b1.getBasinPoints().size());
+        basins.stream().forEach( b -> {
+            System.out.println("size----" + b.getBasinPoints().size());
+        });
+
+        output = basins.stream().limit(3).mapToInt(b -> b.getBasinPoints().size()).reduce(1, (s1, s2) -> s1*s2);
+        System.out.println("multiplySizesOfThreeLargestBasins  " + output);
+        return  output;
+    }
+
+    public class Basin {
+        private Point lowPoint;
+
+        private Set<Point> basinPoints = new HashSet<>();
+
+        public Point getLowPoint() {
+            return lowPoint;
+        }
+
+        public Set<Point> getBasinPoints() {
+            return basinPoints;
+        }
+
+        public Basin(Point lowPoint) {
+            this.lowPoint = lowPoint;
+            basinPoints.add(lowPoint);
+        }
+
+
+        public Set<Point> proceed(Set<Point> points) {
+
+            Set<Point> output = new HashSet<>();
+
+            if( points.isEmpty()) {
+                return  output;
+            } else {
+                for(Point point : points) {
+                    output = findNeighboursInBasin(point);
+                    basinPoints.addAll(output);
+                    proceed(output);
+
+                }
+            }
+            return output;
+        }
+
+        @Override
+        public String toString() {
+            return "Basin{" +
+                    "lowPoint=" + lowPoint +
+                    ", basinPoints=" + basinPoints +
+                    '}';
+        }
+    }
 
 
 }

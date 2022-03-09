@@ -194,7 +194,7 @@ public class Grid {
     public int multiplySizeThreeLargestBasins() {
         int output =0;
 
-        Collections.sort(basins, (b1,b2) -> b2.getBasinPoints().size() - b1.getBasinPoints().size() );
+        Collections.sort(basins, (b1,b2) -> b1.getBasinPoints().size() - b2.getBasinPoints().size() );
         output = basins.stream().limit(3).mapToInt(b -> b.getBasinPoints().size()).reduce(1 , (a,b)-> a*b) ;
         //Collections.sort(basins, Comparator.comparingInt());
         System.out.println("multiplySizeThreeLargestBasins " + output);
