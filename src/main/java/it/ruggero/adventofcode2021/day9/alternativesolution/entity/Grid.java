@@ -2,7 +2,6 @@ package it.ruggero.adventofcode2021.day9.alternativesolution.entity;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.security.PublicKey;
 import java.util.*;
 
 public class Grid {
@@ -24,12 +23,24 @@ public class Grid {
         return sumOfRiskLevelsOFAllLowPoints;
     }
 
+    public int getGridMaxX() {
+        return gridMaxX;
+    }
+
+    public int getGridMaxY() {
+        return gridMaxY;
+    }
+
     public Point[][] getMap() {
         return map;
     }
 
     public List<Basin> getBasins() {
         return basins;
+    }
+
+    public Basin getBasinOfHighPoint() {
+        return basinOfHighPoint;
     }
 
     public Grid(String filePath) {
@@ -193,6 +204,27 @@ public class Grid {
 
 
     public Set<Point> findNeighboursInBasin(Point thisPoint) {
+
+        if(thisPoint.getHeight() == 9 ) {
+            Basin basin = thisPoint.getBasin();
+            if(basin == null && !thisPoint.isBasinChecked()) {
+                thisPoint.setBasin(basinOfHighPoint);
+                basinOfHighPoint.getBasinPoints().add(thisPoint);
+                thisPoint.setBasinChecked(true);
+            }
+
+            if(basin != null) {
+                if(!basin.equals(basinOfHighPoint)) {
+                    throw  new RuntimeException("Method it.ruggero.adventofcode2021.day9.alternativesolution" +
+                            ".entity.Grid.findNeighboursInBasin " +
+                            " point " + thisPoint + "  this point should be assigned to " +
+                            basinOfHighPoint +" instead is assigned to basin " + basin);
+                }
+            }
+
+        }
+
+
         Set<Point> neighboursInBasin = new HashSet<>();
         Basin basin = thisPoint.getBasin();
         if(basin == null) {
@@ -224,15 +256,17 @@ public class Grid {
             return  false;
         }
 
+
+
         Set<Point> neighbouringPoints = getAllNeighbours(thisPoint);
         if (!neighbouringPoints.contains(otherPoint)) {
             return false;
         }
 
-        if (
+        if (    true ||
                 thisPoint.getHeight() == otherPoint.getHeight() + 1 ||
-                thisPoint.getHeight() == otherPoint.getHeight() - 1 ||
-                thisPoint.getHeight() == otherPoint.getHeight()
+                thisPoint.getHeight() == otherPoint.getHeight() - 1
+                || thisPoint.getHeight() == otherPoint.getHeight()
         ) {
             return  true;
         }
@@ -287,6 +321,41 @@ public class Grid {
     }
 
 
+    public Point navigateOneStepDown(Point thisPoint) {
+        Set<Point> neighbours = getAllNeighbours(thisPoint);
+        if (thisPoint.getHeight() == 9) {
+            return thisPoint;
+        }
+
+        Point destination = thisPoint;
+        for(Point neighbour : neighbours) {
+            if(neighbour.getHeight() == thisPoint.getHeight() -1 ) {
+                destination = neighbour;
+                break;
+            }
+        }
+
+        return  destination;
+    }
+
+
+    public Point navigateAllTheWayDown(Point startingPoint) {
+        Point thisPoint = startingPoint;
+        Point nextPoint = navigateOneStepDown(startingPoint);
+        do {
+            thisPoint = nextPoint;
+           nextPoint = navigateOneStepDown(thisPoint);
+        } while(!nextPoint.equals(thisPoint));
+        return  nextPoint;
+    }
+
+    public void determineLowPointInAllBasins() {
+        for(Basin basin : basins) {
+            basin.setLowPoint(basin.getBasinPoints().stream().min(Comparator.comparingInt(Point::getHeight)).get());  //basin.getBasinPoints().stream().min(Comparator.comparingInt(Point::getHeight));
+        }
+    }
+
+
 
 
     public class Basin {
@@ -300,6 +369,10 @@ public class Grid {
 
         public Point getLowPoint() {
             return lowPoint;
+        }
+
+        public void setLowPoint(Point lowPoint) {
+            this.lowPoint = lowPoint;
         }
 
         public Set<Point> getBasinPoints() {

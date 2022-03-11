@@ -84,6 +84,26 @@ public class Point implements Comparable<Point> {
     }
 
     @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Point)) return false;
+
+        Point point = (Point) o;
+
+        if (getX() != point.getX()) return false;
+        if (getY() != point.getY()) return false;
+        return getHeight() == point.getHeight();
+    }
+
+    @Override
+    public int hashCode() {
+        int result = getX();
+        result = 31 * result + getY();
+        result = 31 * result + getHeight();
+        return result;
+    }
+
+    @Override
     public String toString() {
         return "Point{" +
                 "x=" + x +

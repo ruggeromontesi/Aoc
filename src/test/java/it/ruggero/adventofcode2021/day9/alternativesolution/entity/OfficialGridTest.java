@@ -2,9 +2,12 @@
 package it.ruggero.adventofcode2021.day9.alternativesolution.entity;
 
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import java.util.Collections;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 public class OfficialGridTest {
@@ -75,9 +78,55 @@ public class OfficialGridTest {
 
     @Test
     public  void testMultiply() {
-        Grid testGrid = new Grid(FILE_PATH_TEST);
+        Grid testGrid = new Grid(FILE_PATH_ACTUAL);
         testGrid.assignBasin();
         testGrid.multiplySizeOfThreeBiggestBasins();
+
+
+    }
+
+    @Test
+    public void consistencyTest() {
+        Grid testGrid = new Grid(FILE_PATH_ACTUAL);
+        testGrid.assignBasin();
+
+        List<Grid.Basin> basins = testGrid.getBasins();
+        Collections.sort(basins,(b1, b2) -> b2.getBasinPoints().size() - b1.getBasinPoints().size());
+        basins.stream().limit(3).forEach( b -> System.out.println(b.getBasinPoints().size()));
+        int output = basins.stream().limit(3).mapToInt( b -> b.getBasinPoints().size()).reduce(1, (a,b) ->a*b);
+        output =basins.stream().mapToInt(b -> b.getBasinPoints().size()).reduce(0, (a,b) -> a+b);
+        System.out.println(output + testGrid.getBasinOfHighPoint().getBasinPoints().size());
+        System.out.println(testGrid.getGridMaxX()*testGrid.getGridMaxY());
+        Assertions.assertEquals(testGrid.getGridMaxX()*testGrid.getGridMaxY(), testGrid.getGridMaxX()*testGrid.getGridMaxY());
+
+    }
+
+
+    @Test
+    public  void  testNavigateOneStep() {
+        Grid testGrid = new Grid(FILE_PATH_TEST);
+        Point point = testGrid.getMap()[1][0];
+        Point destination = testGrid.navigateOneStepDown(point);
+        System.out.println("destination " + destination);
+
+    }
+
+    @Test
+    public  void testNavigateAllTheWayDown() {
+
+        Grid testGrid = new Grid(FILE_PATH_ACTUAL);
+        Point point = testGrid.getMap()[6][6];
+        Point destination = testGrid.navigateAllTheWayDown(point);
+        System.out.println("start " + testGrid.getMap()[0][4]);
+        System.out.println("destination " + destination);
+
+    }
+
+
+    public void testDetermineLowPointInAllBasins() {
+        Grid testGrid = new Grid(FILE_PATH_ACTUAL);
+        testGrid.assignBasin();
+        testGrid.determineLowPointInAllBasins();
 
 
     }
