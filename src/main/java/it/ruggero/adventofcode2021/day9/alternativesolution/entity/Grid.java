@@ -2,10 +2,12 @@ package it.ruggero.adventofcode2021.day9.alternativesolution.entity;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.security.PublicKey;
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class Grid {
+
+    static int counter = 0;
 
     private int gridMaxX = 0;
 
@@ -16,6 +18,7 @@ public class Grid {
     private Point[][] map ;
 
     private List<Basin> basins = new ArrayList<>();
+    Basin basinOfHighPoint = new Basin();
 
     public int getSumOfRiskLevelsOFAllLowPoints() {
         return sumOfRiskLevelsOFAllLowPoints;
@@ -75,8 +78,8 @@ public class Grid {
         } catch (FileNotFoundException ex) {
             System.out.println(ex);
         }
-        checkIfPointsAreLow();
-        calculateSumOfRiskLevelsOFAllLowPoints();
+        //checkIfPointsAreLow();
+        //calculateSumOfRiskLevelsOFAllLowPoints();
 
     }
 
@@ -104,341 +107,196 @@ public class Grid {
         }
     }
 
+    /*OK*/
+    public Point getNeighbour(Point point,Direction direction) {
+        int thisPointX = point.getX();
+        int thisPointY = point.getY();
 
-
-
-    public void isPointLow(int x, int y ) {
-        Point thisPoint  = map[y][x];
-
-        //NORTH BORDER
-        if (y == 0) {
-            //NORTH BORDER NOT CORNER
-            if (x > 0 && x < gridMaxX -1) {
-                //CHECK EAST NEIGHBOUR
-                if (!isLowerThanEastNeighbour(x,y)) {
-                    thisPoint.setLow(false);
-                    return;
-                }
-                //CHECK WEST NEIGHBOUR
-                if (!isLowerThanWestNeighbour(x,y)) {
-                    thisPoint.setLow(false);
-                    return;
-                }
-                //CHECK SOUTH NEIGHBOUR
-                if(!isLowerThanSouthNeighbour(x,y)) {
-                    thisPoint.setLow(false);
-                    return;
-                }
-                thisPoint.setLow(true);
-                basins.add(new Basin(thisPoint));
-
-                return;
-            }
-            //NORTH WEST CORNER
-            if(x == 0) {
-                //CHECK SOUTH NEIGHBOUR
-                if(!isLowerThanSouthNeighbour(x,y)) {
-                    thisPoint.setLow(false);
-                    return;
-                }
-                //CHECK EAST NEIGHBOUR
-                if (!isLowerThanEastNeighbour(x,y)) {
-                    thisPoint.setLow(false);
-                    return;
-                }
-                thisPoint.setLow(true);
-                basins.add(new Basin(thisPoint));
-                return;
-            }
-            //NORTH EAST CORNER
-            if(x == gridMaxX-1) {
-                //CHECK WEST NEIGHBOUR
-                if (!isLowerThanWestNeighbour(x,y)) {
-                    thisPoint.setLow(false);
-                    return;
-                }
-                //CHECK SOUTH NEIGHBOUR
-                if(!isLowerThanSouthNeighbour(x,y)) {
-                    thisPoint.setLow(false);
-                    return;
-                }
-                thisPoint.setLow(true);
-                basins.add(new Basin(thisPoint));
-                return;
-            }
-
-
+        if (
+                thisPointX < 0 ||
+                        thisPointX > gridMaxX ||
+                        thisPointY < 0 ||
+                        thisPointY > gridMaxY
+        ) {
+            throw  new RuntimeException("The point [" + point.getX() + point.getY() +"] is not within the grid");
         }
 
-        //SOUTH BORDER
-        if (y == gridMaxY -1 ) {
-            //SOUTH BORDER NOT CORNER
-            if (x > 0 && x < gridMaxX -1) {
-                //CHECK NORTH NEIGHBOUR
-                if (!isLowerThanNorthNeighbour(x,y)) {
-                    thisPoint.setLow(false);
-                    return;
-                }
-                //CHECK EAST NEIGHBOUR
-                if (!isLowerThanEastNeighbour(x,y)) {
-                    thisPoint.setLow(false);
-                    return;
-                }
-                //CHECK WEST NEIGHBOUR
-                if (!isLowerThanWestNeighbour(x,y)) {
-                    thisPoint.setLow(false);
-                    return;
-                }
-
-                thisPoint.setLow(true);
-                basins.add(new Basin(thisPoint));
-                return;
+        if (direction == Direction.NORTH) {
+            if ( thisPointY > 0) {
+                return map[thisPointY - 1][thisPointX];
+            } else {
+                return null;
             }
-            //SOUTH WEST CORNER
-            if(x == 0) {
-                //CHECK NORTH NEIGHBOUR
-                if (!isLowerThanNorthNeighbour(x,y)) {
-                    thisPoint.setLow(false);
-                    return;
-                }
-                //CHECK EAST NEIGHBOUR
-                if (!isLowerThanEastNeighbour(x,y)) {
-                    thisPoint.setLow(false);
-                    return;
-                }
-                thisPoint.setLow(true);
-                basins.add(new Basin(thisPoint));
-                return;
-            }
-            //SOUTH EAST CORNER
-            if(x == gridMaxX-1) {
-                //CHECK WEST NEIGHBOUR
-                if (!isLowerThanWestNeighbour(x,y)) {
-                    thisPoint.setLow(false);
-                    return;
-                }
-                //CHECK SOUTH NEIGHBOUR
-                if(!isLowerThanSouthNeighbour(x,y)) {
-                    thisPoint.setLow(false);
-                    return;
-                }
-                thisPoint.setLow(true);
-                basins.add(new Basin(thisPoint));
-                return;
-            }
-
-
         }
 
-        //ON WEST BORDER NOT IN CORNERS
-        if (x == 0 && y < gridMaxY - 1 ) {
-            //CHECK NORTH NEIGHBOUR
-            if (!isLowerThanNorthNeighbour(x,y)) {
-                thisPoint.setLow(false);
-                return;
+        if (direction == Direction.EAST) {
+            if ( thisPointX < gridMaxX - 1) {
+                return  map[thisPointY][thisPointX+1];
+            } else {
+                return null;
             }
-            //CHECK EAST NEIGHBOUR
-            if (!isLowerThanEastNeighbour(x,y)) {
-                thisPoint.setLow(false);
-                return;
-            }
-            //CHECK SOUTH NEIGHBOUR
-            if(!isLowerThanSouthNeighbour(x,y)) {
-                thisPoint.setLow(false);
-                return;
-            }
-            thisPoint.setLow(true);
-            basins.add(new Basin(thisPoint));
-            return;
         }
 
-
-        //ON EAST BORDER NOT IN CORNERS
-        if (x == gridMaxX -1  && y < gridMaxY - 1 ) {
-            //CHECK NORTH NEIGHBOUR
-            if (!isLowerThanNorthNeighbour(x,y)) {
-                thisPoint.setLow(false);
-                return;
+        if (direction == Direction.SOUTH) {
+            if ( thisPointY < gridMaxY -1) {
+                return  map[thisPointY+1][thisPointX];
+            } else {
+                return null;
             }
-            //CHECK WEST NEIGHBOUR
-            if (!isLowerThanWestNeighbour(x,y)) {
-                thisPoint.setLow(false);
-                return;
-            }
-            //CHECK SOUTH NEIGHBOUR
-            if(!isLowerThanSouthNeighbour(x,y)) {
-                thisPoint.setLow(false);
-                return;
-            }
-            thisPoint.setLow(true);
-            basins.add(new Basin(thisPoint));
-            return;
-
         }
 
-        //ALL OTHER CASES
-        //CHECK NORTH NEIGHBOUR
-        if( x > 0 && x < gridMaxX -1 && y > 0 && y < gridMaxY - 1) {
-            if (!isLowerThanNorthNeighbour(x,y)) {
-                thisPoint.setLow(false);
-                return;
+        if (direction == Direction.WEST) {
+            if (thisPointX > 0) {
+                return map[thisPointY][thisPointX-1];
+            } else {
+                return null;
             }
-            //CHECK EAST NEIGHBOUR
-            if (!isLowerThanEastNeighbour(x,y)) {
-                thisPoint.setLow(false);
-                return;
-            }
-            //CHECK SOUTH NEIGHBOUR
-            if(!isLowerThanSouthNeighbour(x,y)) {
-                thisPoint.setLow(false);
-                return;
-            }
-            //CHECK WEST NEIGHBOUR
-            if (!isLowerThanWestNeighbour(x,y)) {
-                thisPoint.setLow(false);
-                return;
-            }
-
-            thisPoint.setLow(true);
-            basins.add(new Basin(thisPoint));
-            return;
         }
+        return  null;
     }
 
+    public Set<Point> getAllNeighbours(Point thisPoint) {
+        Set<Point> neighbours = new HashSet<>();
+        for(Direction direction: Direction.values()) {
+            Point neighbour = getNeighbour(thisPoint,direction);
+            if(neighbour != null) {
+                neighbours.add(neighbour);
+            }
+        }
+        return  neighbours;
+    }
 
-
-    private void checkIfPointsAreLow() {
-        for( int j = 0; j < map.length; j++){
+    /*OK*/
+    public void findAllLowPoints(){
+        for(int j = 0; j < map.length; j++) {
             for(int i = 0; i < map[j].length; i++) {
-                isPointLow(i,j);
-            }
-        }
-    }
+                isThisPointLow(map[j][i]);
 
-
-    private boolean isLowerThanNorthNeighbour(int x ,int y) {
-        if (map[y][x].getHeight() >= map[y-1][x].getHeight()) {
-            return false;
-        } else {
-            return  true;
-        }
-    }
-
-    private boolean isLowerThanEastNeighbour(int x ,int y) {
-        if (map[y][x].getHeight() >= map[y][x+1].getHeight()) {
-            return false;
-        } else {
-            return  true;
-        }
-
-    }
-
-    private boolean isLowerThanSouthNeighbour(int x ,int y) {
-        if (map[y][x].getHeight() >= map[y+1][x].getHeight()) {
-            return false;
-        } else {
-            return  true;
-        }
-
-    }
-
-    private boolean isLowerThanWestNeighbour(int x ,int y) {
-        if (map[y][x].getHeight() >= map[y][x-1].getHeight()) {
-            return false;
-        } else {
-            return  true;
-        }
-
-    }
-
-
-    public void calculateSumOfRiskLevelsOFAllLowPoints( ) {
-        int result = 0;
-        for (int j = 0; j < map.length; j++) {
-            for (int i = 0; i < map[j].length; i++) {
-                if ( map[j][i].isLow()) {
-                    result += map[j][i].getRiskLevel();
-                }
             }
         }
 
-        sumOfRiskLevelsOFAllLowPoints = result;
-
-
     }
 
-    public Set<Point> findNeighboursInBasin(Point point) {
+    /*OK*/
+    public boolean isThisPointLow(Point thisPoint) {
+        for (Direction direction : Direction.values()) {
+            Point neighbour = getNeighbour(thisPoint,direction);
+            if (neighbour != null && thisPoint.getHeight() >= neighbour.getHeight()) {
+                thisPoint.setLow(false);
+                return false;
+            }
+        }
+
+        thisPoint.setLow(true);
+        return true;
+    }
+
+
+    public Set<Point> findNeighboursInBasin(Point thisPoint) {
         Set<Point> neighboursInBasin = new HashSet<>();
-        //CHECK NORTH NEIGHBOUR
-        if (
-                (point.getY() > 0) &&
-                (map[point.getY()-1][point.getX()].getHeight() < 9) &&
-                (point.getHeight()+1 == map[point.getY()-1][point.getX()].getHeight()) )
-        {
-            neighboursInBasin.add(map[point.getY()-1][point.getX()]);
-        }
-        //CHECK EAST NEIGHBOUR
-        if (
-                (point.getX() < gridMaxX -1) &&
-                        //
-                (map[point.getY()][point.getX()+1].getHeight() < 9) &&
-                (point.getHeight()+1 == map[point.getY()][point.getX()+1].getHeight())
-        )
-        {
-            neighboursInBasin.add(map[point.getY()][point.getX()+1]);
-        }
-        //CHECK SOUTH NEIGHBOUR
-        if (
-                (point.getY()< gridMaxY - 1) &&
-                (map[point.getY()+1][point.getX()].getHeight() < 9) &&
-                (point.getHeight()+1 == map[point.getY()+1][point.getX()].getHeight())
-        )
-        {
-            neighboursInBasin.add(map[point.getY()+1][point.getX()]);
-        }
-        //CHECK WEST NEIGHBOUR
-        if (
-                (point.getX() > 0) &&
-                (map[point.getY()][point.getX()-1].getHeight() < 9) &&
-                (point.getHeight() + 1 == map[point.getY()][point.getX()-1].getHeight())
-        )
-        {
-            neighboursInBasin.add(map[point.getY()][point.getX()-1]);
+        Basin basin = thisPoint.getBasin();
+        if(basin == null) {
+            throw  new RuntimeException("Point needs to have basin set");
         }
 
+        Set<Point> neighbours = getAllNeighbours(thisPoint);
+        for(Point neighbour : neighbours) {
+            if( areNeighbouringPointsInTheSameBasin(thisPoint,neighbour)) {
+                basin.getBasinPoints().add(neighbour);
+                neighbour.setBasin(basin);
+                if (!neighbour.isBasinChecked()) {
+                    neighboursInBasin.add(neighbour);
+                }
+
+            }
+        }
+
+        thisPoint.setBasinChecked(true);
 
         return neighboursInBasin;
+
+    }
+
+    /* OK*/
+    public boolean areNeighbouringPointsInTheSameBasin(Point thisPoint, Point otherPoint) {
+
+        if (thisPoint.getHeight() == 9 || otherPoint.getHeight() == 9) {
+            return  false;
+        }
+
+        Set<Point> neighbouringPoints = getAllNeighbours(thisPoint);
+        if (!neighbouringPoints.contains(otherPoint)) {
+            return false;
+        }
+
+        if (
+                thisPoint.getHeight() == otherPoint.getHeight() + 1 ||
+                thisPoint.getHeight() == otherPoint.getHeight() - 1 ||
+                thisPoint.getHeight() == otherPoint.getHeight()
+        ) {
+            return  true;
+        }
+
+        return false;
     }
 
 
-    public void calculateAllBasins() {
-        if( basins.size() != 0) {
-            for(Basin basin : basins) {
+    public Set<Point> proceed(Set<Point> points) {
+        Set<Point> output = new HashSet<>();
 
-                if( basin.basinPoints.size() == 1) {
-                    basin.proceed(basin.basinPoints);
+        if( points.isEmpty()) {
+            return  output;
+        } else {
+            for(Point point : points) {
+                output = findNeighboursInBasin(point);
+                proceed(output);
+            }
+        }
+        return output;
+    }
+
+    public void assignBasin() {
+        for(int j = 0; j < map.length; j++) {
+            for (int i = 0; i < map[j].length; i++) {
+                Point point = map[j][i];
+                if(point.getHeight() == 9) {
+                    point.setBasin(basinOfHighPoint);
+                    basinOfHighPoint.getBasinPoints().add(point);
+                    point.setBasinChecked(true);
+                }
+
+                if( !point.isBasinChecked()) {
+                    Basin basin = new Basin();
+                    basins.add(basin);
+                    basin.getBasinPoints().add(point);
+                    point.setBasin(basin);
+                    Set<Point> points = new TreeSet<>();
+                    points.add(point);
+                    proceed(points);
                 }
             }
-
         }
     }
 
-    public int multiplySizesOfThreeLargestBasins() {
-        int output = 1;
-        Collections.sort(basins, (b1,b2) -> b2.getBasinPoints().size() - b1.getBasinPoints().size());
-        basins.stream().forEach( b -> {
-            System.out.println("size----" + b.getBasinPoints().size());
-        });
 
-        output = basins.stream().limit(3).mapToInt(b -> b.getBasinPoints().size()).reduce(1, (s1, s2) -> s1*s2);
-        System.out.println("multiplySizesOfThreeLargestBasins  " + output);
-        return  output;
+    public void multiplySizeOfThreeBiggestBasins(){
+        Collections.sort(basins,(b1,b2) -> b2.getBasinPoints().size() - b1.getBasinPoints().size());
+        basins.stream().limit(3).forEach( b -> System.out.println(b.getBasinPoints().size()));
+        int output = basins.stream().limit(3).mapToInt( b -> b.getBasinPoints().size()).reduce(1, (a,b) ->a*b);
+        System.out.println(output);
     }
 
+
+
+
     public class Basin {
+
+
+        private int id;
+
         private Point lowPoint;
 
-        private Set<Point> basinPoints = new HashSet<>();
+        private Set<Point> basinPoints = new TreeSet<>();
 
         public Point getLowPoint() {
             return lowPoint;
@@ -448,34 +306,45 @@ public class Grid {
             return basinPoints;
         }
 
-        public Basin(Point lowPoint) {
-            this.lowPoint = lowPoint;
-            basinPoints.add(lowPoint);
+        public int getId() {
+            return id;
         }
 
+        public Basin() {
+            id = ++counter;
+        }
 
-        public Set<Point> proceed(Set<Point> points) {
+        @Override
+        public boolean equals(Object o) {
+            if (this == o) return true;
+            if (!(o instanceof Basin)) return false;
 
-            Set<Point> output = new HashSet<>();
+            Basin basin = (Basin) o;
 
-            if( points.isEmpty()) {
-                return  output;
-            } else {
-                for(Point point : points) {
-                    output = findNeighboursInBasin(point);
-                    basinPoints.addAll(output);
-                    proceed(output);
+            if (getId() != basin.getId()) return false;
+            if (getLowPoint() != null ? !getLowPoint().equals(basin.getLowPoint()) : basin.getLowPoint() != null)
+                return false;
+            return getBasinPoints() != null ? getBasinPoints().equals(basin.getBasinPoints()) : basin.getBasinPoints() == null;
+        }
 
-                }
-            }
-            return output;
+        @Override
+        public int hashCode() {
+            int result = getId();
+            result = 31 * result + (getLowPoint() != null ? getLowPoint().hashCode() : 0);
+            result = 31 * result + (getBasinPoints() != null ? getBasinPoints().hashCode() : 0);
+            return result;
         }
 
         @Override
         public String toString() {
+            System.out.println("List of points");
+            basinPoints.forEach( p -> {
+                System.out.println("[" + p.getX()+"][" + p.getY()+"]" );
+            });
             return "Basin{" +
-                    "lowPoint=" + lowPoint +
-                    ", basinPoints=" + basinPoints +
+                    "id=" + id +
+
+
                     '}';
         }
     }

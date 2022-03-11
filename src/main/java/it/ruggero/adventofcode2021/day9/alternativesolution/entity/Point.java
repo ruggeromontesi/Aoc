@@ -1,7 +1,7 @@
 package it.ruggero.adventofcode2021.day9.alternativesolution.entity;
 
 
-public class Point {
+public class Point implements Comparable<Point> {
 
     private final int x;
 
@@ -13,10 +13,9 @@ public class Point {
 
     private boolean isLow = false;
 
-    /*public Point(int z) {
-        this.height = z;
-        setRiskLevel();
-    }*/
+    private boolean basinChecked;
+
+    private Grid.Basin basin;
 
     public Point(int x, int y, int height) {
         this.x = x;
@@ -51,6 +50,37 @@ public class Point {
 
     public void setLow(boolean low) {
         isLow = low;
+    }
+
+    public Grid.Basin getBasin() {
+        return basin;
+    }
+
+    public void setBasin(Grid.Basin basin) {
+        if (this.basin == null) {
+            this.basin = basin;
+        } else {
+            if (!this.basin.equals(basin)) {
+                throw  new RuntimeException("The same point was assigned two times with different basins :  old basin " +
+                        this.basin + "   new basin" + basin);
+            }
+        }
+
+    }
+
+    public boolean isBasinChecked() {
+        return basinChecked;
+    }
+
+    public void setBasinChecked(boolean basinChecked) {
+        this.basinChecked = basinChecked;
+    }
+
+    public int compareTo(Point point) {
+        int output = 0;
+        output = (y - point.getY() != 0) ? (y - point.getY()) : (x-point.getX());
+        //output = 100*(x-point.getX())+(y - point.getY());
+        return output;
     }
 
     @Override

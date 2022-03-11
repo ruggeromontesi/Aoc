@@ -4,9 +4,9 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.util.Collection;
-import java.util.List;
 
 public class GridTest {
+    private static final String FILE_PATH_TEST_ZERO = ".\\src\\main\\resources\\day9\\simpleTest.txt";
     private static final String FILE_PATH_TEST = ".\\src\\main\\resources\\day9\\testDay9.txt";
     private static  final String FILE_PATH_ACTUAL = ".\\src\\main\\resources\\day9\\day9.txt";
 
@@ -19,7 +19,7 @@ public class GridTest {
         //testGrid.checkIfPointsAreLow();
         //testGrid.isPointLow(1,0);
         testGrid.printLowPoints();
-        testGrid.calculateSumOfRiskLevelsOFAllLowPoints();
+        //testGrid.calculateSumOfRiskLevelsOFAllLowPoints();
         System.out.println("sum of risk levels " + testGrid.getSumOfRiskLevelsOFAllLowPoints());
         //grid.printGrid();
 
@@ -67,32 +67,7 @@ public class GridTest {
         testGrid.getBasins().forEach( b -> System.out.println(b.getLowPoint()));
         System.out.println("**************************************************");
         //METHOD TESTED ON THE FIRST LOW POINT
-        Point testPoint = testGrid.getBasins().get(0).getLowPoint();
-        Collection<Point> neighboursInBasin =  testGrid.findNeighboursInBasin(testPoint);
-        System.out.println("Printout of neighbours of first low point");
-        neighboursInBasin.forEach(System.out::println);
-        Assertions.assertEquals(neighboursInBasin.size(),1);
-        System.out.println("**************************************************");
 
-        //METHOD TESTED ON THE SECOND LOW POINT
-        testPoint = testGrid.getBasins().get(1).getLowPoint();
-        neighboursInBasin =  testGrid.findNeighboursInBasin(testPoint);
-        System.out.println("Printout of neighbours of second low point");
-        neighboursInBasin.forEach(System.out::println);
-        Assertions.assertEquals(neighboursInBasin.size(),2);
-        System.out.println("**************************************************");
-        //METHOD TESTED ON THE THIRD LOW POINT
-        testPoint = testGrid.getBasins().get(2).getLowPoint();
-        neighboursInBasin =  testGrid.findNeighboursInBasin(testPoint);
-        System.out.println("Printout of neighbours of third low point");
-        neighboursInBasin.forEach(System.out::println);
-        Assertions.assertEquals(neighboursInBasin.size(),2);
-        //METHOD TESTED ON THE FOURTH LOW POINT
-        testPoint = testGrid.getBasins().get(3).getLowPoint();
-        neighboursInBasin =  testGrid.findNeighboursInBasin(testPoint);
-        System.out.println("Printout of neighbours of fourth low point");
-        neighboursInBasin.forEach(System.out::println);
-        Assertions.assertEquals(neighboursInBasin.size(),3);
 
 
     }
@@ -100,7 +75,7 @@ public class GridTest {
     @Test
     public void testCalculateBasins() {
         Grid testGrid = new Grid(FILE_PATH_TEST);
-        testGrid.calculateAllBasins();
+        //testGrid.calculateAllBasins();
         testGrid.getBasins().forEach(
                 b -> {
                     System.out.println("Print of basin with low point " + b.getLowPoint());
@@ -116,17 +91,34 @@ public class GridTest {
     @Test
     public void testMultiplySizesOfThreeLargestBasinsTestFile() {
         Grid testGrid = new Grid(FILE_PATH_TEST);
-        testGrid.calculateAllBasins();
-        testGrid.multiplySizesOfThreeLargestBasins();
+       // testGrid.calculateAllBasins();
+       // testGrid.multiplySizesOfThreeLargestBasins();
     }
 
     @Test
     public void testMultiplySizesOfThreeLargestBasinsActualFile() {
         Grid testGrid = new Grid(FILE_PATH_ACTUAL);
-        testGrid.calculateAllBasins();
-        testGrid.multiplySizesOfThreeLargestBasins();
+        //testGrid.calculateAllBasins();
+        //testGrid.multiplySizesOfThreeLargestBasins();
     }
 
+
+    @Test
+    public void testNewFindBasins(){
+        //Grid testGrid = new Grid(FILE_PATH_TEST_ZERO);
+        Grid testGrid = new Grid(FILE_PATH_TEST);
+        //testGrid.calculateAllBasins();
+        testGrid.getBasins().forEach(
+                b -> {
+                    System.out.println("Print of basin with id " + b.getId());
+                    b.getBasinPoints().forEach(
+                            p -> {
+                                System.out.println("[x: " + p.getX() + "]   [y: " + p.getY() + "]");
+                            }
+                    );
+                }
+        );
+    }
 
 
 }
