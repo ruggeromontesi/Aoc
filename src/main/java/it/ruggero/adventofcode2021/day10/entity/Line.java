@@ -4,12 +4,18 @@ import java.util.*;
 
 public class Line {
 
-    private static Map<Character,Integer> illegalCharacterTable = new HashMap<>();
+    private static Map<Character,Integer> illegalCharactersTable = new HashMap<>();
+    private static Map<Character,Integer> missingCharactersTable = new HashMap<>();
     static {
-        illegalCharacterTable.put(')',3);
-        illegalCharacterTable.put(']',57);
-        illegalCharacterTable.put('}',1197);
-        illegalCharacterTable.put('>',25137);
+        illegalCharactersTable.put(')',3);
+        illegalCharactersTable.put(']',57);
+        illegalCharactersTable.put('}',1197);
+        illegalCharactersTable.put('>',25137);
+
+        missingCharactersTable.put(')',1);
+        missingCharactersTable.put(']',2);
+        missingCharactersTable.put('}',3);
+        missingCharactersTable.put('>',4);
     }
 
     private final static String openingTokens = "([{<";
@@ -24,7 +30,11 @@ public class Line {
 
     private boolean isIncomplete;
 
-    private int sintaxErrorScore;
+    private int syntaxErrorScore;
+
+    private String autocompletion = "";
+
+    private long missingCharacterScore = 0;
 
      public String getLine() {
         return line;
@@ -76,7 +86,15 @@ public class Line {
     }
 
     public int getSintaxErrorScore() {
-        return sintaxErrorScore;
+        return syntaxErrorScore;
+    }
+
+    public String getAutocompletion() {
+        return autocompletion;
+    }
+
+    public long getMissingCharacterScore() {
+        return missingCharacterScore;
     }
 
     public void parse() {
@@ -96,8 +114,8 @@ public class Line {
                     if ( indexOfTheNewToken == indexOfTheTokenOnStack) {
                         stack.pop();
                     } else {
-                        System.out.println("Expected " + closingTokens.charAt(indexOfTheTokenOnStack) +", but found " + currentToken +" instead.");
-                        sintaxErrorScore = illegalCharacterTable.get(currentToken);
+                        //System.out.println("Expected " + closingTokens.charAt(indexOfTheTokenOnStack) +", but found " + currentToken +" instead.");
+                        syntaxErrorScore = illegalCharactersTable.get(currentToken);
                         isCorrupted = true;
                         return;
 
@@ -108,7 +126,24 @@ public class Line {
 
         if( stack.size() != 0 ) {
             isIncomplete = true;
+            while (stack.peek() != null) {
+                char ch = stack.pop();
+                int index = openingTokens.indexOf(ch);
+                autocompletion += closingTokens.charAt(index);
+
+            }
         }
+
+    }
+
+    public void calculateMissingCharacterScore() {
+         long score = 0;
+
+         for(int i =0; i< autocompletion.length(); i++) {
+            score = 5*score + missingCharactersTable.get(autocompletion.charAt(i));
+         }
+
+         missingCharacterScore =  score;
 
     }
 }

@@ -2,7 +2,6 @@
 package it.ruggero.adventofcode2021.day10;
 
 
-import it.ruggero.adventofcode2021.day10.entity.Line;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -29,6 +28,20 @@ public class Day10Test {
         System.out.println("TotalSyntaxErrorScore " + navigationSubsystem.getTotalSyntaxErrorScore());
 
     }
+
+
+    @Test
+    public  void testCalculateMiddleScore() {
+        NavigationSubsystem navigationSubsystem = new NavigationSubsystem(FILE_PATH_TEST);
+        navigationSubsystem = new NavigationSubsystem(FILE_PATH_ACTUAL);
+        navigationSubsystem.parseAllLines();
+        navigationSubsystem.calculateAllMissingCharacterScore();
+        Assertions.assertEquals(3354640192L,navigationSubsystem.calculateAllMissingCharacterScore());
+
+    }
+
+
+
 
 
 }

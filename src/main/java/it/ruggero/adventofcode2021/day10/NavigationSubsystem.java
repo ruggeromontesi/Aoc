@@ -4,9 +4,8 @@ import it.ruggero.adventofcode2021.day10.entity.Line;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class NavigationSubsystem {
 
@@ -40,6 +39,21 @@ public class NavigationSubsystem {
 
     public  void calculateTotalSyntaxErrorScore() {
         totalSyntaxErrorScore = lines.stream().mapToInt(l -> l.getSintaxErrorScore()).reduce(0, (a,b) -> a+b);
+
+    }
+
+    public long calculateAllMissingCharacterScore() {
+        lines.forEach( l -> l.calculateMissingCharacterScore());
+        List<Line> incompleteLines = lines.stream().filter( l -> l.isIncomplete()).collect(Collectors.toList());
+        incompleteLines.stream().forEach(l -> l.calculateMissingCharacterScore());
+        Collections.sort(incompleteLines, Comparator.comparingLong( l-> l.getMissingCharacterScore()));
+        incompleteLines.forEach( line -> System.out.println(line.getMissingCharacterScore()));
+        int index = incompleteLines.size()/2;
+        System.out.println("total  " + incompleteLines.size());
+        System.out.println("index middle  " + index);
+        System.out.println("score " + incompleteLines.get(index).getMissingCharacterScore());
+        return incompleteLines.get(index).getMissingCharacterScore();
+
 
     }
 }

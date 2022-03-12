@@ -52,4 +52,40 @@ public class LineTest {
 
         );
     }
+
+
+    @Test
+    public void testCalculateMissingCharacterScore() {
+        Line line = new Line("[({(<(())[]>[[{[]{<()<>>");
+        line.parse();
+        Assertions.assertEquals("}}]])})]", line.getAutocompletion());
+        line.calculateMissingCharacterScore();
+        //System.out.println("MissingCharachterScore " + line.getMissingCharacterScore());
+        Assertions.assertEquals(288957,line.getMissingCharacterScore() );
+        /*****************/
+        line = new Line("[(()[<>])]({[<{<<[]>>(");
+        line.parse();
+        Assertions.assertEquals(")}>]})", line.getAutocompletion());
+        line.calculateMissingCharacterScore();
+        Assertions.assertEquals(5566,line.getMissingCharacterScore() );
+        /*****************/
+        line = new Line("(((({<>}<{<{<>}{[]{[]{}");
+        line.parse();
+        Assertions.assertEquals("}}>}>))))", line.getAutocompletion());
+        line.calculateMissingCharacterScore();
+        Assertions.assertEquals(1480781,line.getMissingCharacterScore() );
+        /*****************/
+        line = new Line("{<[[]]>}<{[{[{[]{()[[[]");
+        line.parse();
+        Assertions.assertEquals("]]}}]}]}>", line.getAutocompletion());
+        line.calculateMissingCharacterScore();
+        Assertions.assertEquals(995444,line.getMissingCharacterScore() );
+        /*****************/
+        line = new Line("<{([{{}}[<[[[<>{}]]]>[]]");
+        line.parse();
+        Assertions.assertEquals("])}>", line.getAutocompletion());
+        line.calculateMissingCharacterScore();
+        Assertions.assertEquals(294,line.getMissingCharacterScore() );
+
+    }
 }
