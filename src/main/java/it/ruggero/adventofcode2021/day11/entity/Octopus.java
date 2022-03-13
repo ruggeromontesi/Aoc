@@ -13,7 +13,11 @@ public class Octopus implements Comparable<Octopus>{
 
     private Map<Integer,Boolean> flashesOccurred = new HashMap<>();
 
+    private int totalOfNumberFlashes = 0;
+
     private boolean tobeFlashedInThisStep;
+
+
 
     public Octopus( int row, int column, int energyLevel ) {
         this.energyLevel = energyLevel;
@@ -40,6 +44,10 @@ public class Octopus implements Comparable<Octopus>{
         energyLevel++;
     }
 
+    public void resetenergyLevel() {
+        energyLevel = 0;
+    }
+
 
 
     public int getRow() {
@@ -52,6 +60,20 @@ public class Octopus implements Comparable<Octopus>{
 
     public Map<Integer, Boolean> getFlashesOccurred() {
         return flashesOccurred;
+    }
+
+    public int getTotalOfNumberFlashes() {
+        return totalOfNumberFlashes;
+    }
+
+    public void calculateTotalOfNumberFlashes() {
+        flashesOccurred.forEach(
+                (i,b) -> {
+                    if (b) {
+                        totalOfNumberFlashes++;
+                    }
+                }
+        );
     }
 
     @Override

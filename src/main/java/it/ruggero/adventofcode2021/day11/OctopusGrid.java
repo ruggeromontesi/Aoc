@@ -18,6 +18,8 @@ public class OctopusGrid {
 
     private int numberOfColumns = 0 ;
 
+    private int totalOfNumberFlashes = 0;
+
     public OctopusGrid(String filePath) {
         String line;
 
@@ -69,6 +71,10 @@ public class OctopusGrid {
         return map;
     }
 
+    public int getTotalOfNumberFlashes() {
+        return totalOfNumberFlashes;
+    }
+
     public void printGrid() {
         for(int  row = 0; row < map.length; row++) {
             System.out.println("");
@@ -89,12 +95,10 @@ public class OctopusGrid {
 
     }
 
-    public void subStepTwo() {
-        for(int  row = 0; row < map.length; row++) {
-            for(int column = 0; column < map[row].length; column++) {
-                map[row][column].increaseEnergyLevelByOne();
-            }
-        }
+    public void subStepTwo( int stepNumber) {
+        flashAllOctopuses(stepNumber);
+
+
 
     }
 
@@ -143,7 +147,7 @@ public class OctopusGrid {
 
         if(direction == Direction.NORTHWEST) {
             if(row  > 0 && column >0) {
-                return map[row][column];
+                return map[row-1][column-1];
             }
         }
 
@@ -185,16 +189,92 @@ public class OctopusGrid {
         return neighbouringOctopuses;
     }
 
-    public void flashSingleOctopus(Octopus octopus){
-        if(octopus.getEnergyLevel() < 9) {
-            return;
+    public boolean flashSingleOctopus(Octopus octopus, int stepNumber){
+        if(octopus.getEnergyLevel() < 10) {
+            return false;
+        }
+
+        if(octopus.getFlashesOccurred().get(stepNumber) != null && octopus.getFlashesOccurred().get(stepNumber)) {
+            return false;
         }
         Set<Octopus> neighbouringOctopuses = getAllNeighbours(octopus);
         for(Octopus  neighbouringOctopus : neighbouringOctopuses) {
             neighbouringOctopus.increaseEnergyLevelByOne();
         }
-
+        octopus.getFlashesOccurred().put(stepNumber,true);
         octopus.setTobeFlashedInThisStep(false);
+        return true;
 
     }
+
+
+
+
+    public  int flashAllOctopuses(int stepNumber) {
+
+        int numberOfFlashesOccurred = 0;
+        for(int  row = 0; row < map.length; row++) {
+            for(int column = 0; column < map[row].length; column++) {
+                if(flashSingleOctopus(map[row][column],stepNumber) ) {
+                    numberOfFlashesOccurred++;
+                }
+
+            }
+        }
+        return  numberOfFlashesOccurred;
+
+    }
+
+
+    public void resetEnergyofOctopusesWhichFlashedIntThisStep(int stepNumber){
+        octopusAccept(octopus -> {
+            if (octopus.getFlashesOccurred().get(stepNumber)) {
+                octopus.resetenergyLevel();
+            }
+        });
+    }
+
+
+    public void step(int stepNumber) {
+        subStepOne();
+        octopusAccept(octopus -> {
+            octopus.getFlashesOccurred().put(stepNumber,false);
+        });
+        flashAllOctopuses(stepNumber);
+
+        int flashes = flashAllOctopuses(stepNumber);
+
+        while(flashes != 0) {
+            flashes = flashAllOctopuses(stepNumber);
+        }
+        resetEnergyofOctopusesWhichFlashedIntThisStep(stepNumber);
+    }
+
+
+    public void doMultipleSteps(int numberOfSteps) {
+        for (int i = 0; i < numberOfSteps; i++) {
+            step(i);
+        }
+
+    }
+
+
+    public void calculateTotalNumberOfSteps() {
+        int total = 0;
+        for(int  row = 0; row < map.length; row++) {
+            for(int column = 0; column < map[row].length; column++) {
+                map[row][column].calculateTotalOfNumberFlashes();
+                total += map[row][column].getTotalOfNumberFlashes();
+
+            }
+        }
+
+        totalOfNumberFlashes = total;
+
+
+    }
+
+
+
+
 }
