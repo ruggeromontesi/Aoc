@@ -1,6 +1,7 @@
 package it.ruggero.adventofcode2021.day11;
 
 import it.ruggero.adventofcode2021.day11.entity.Octopus;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.sql.SQLOutput;
@@ -213,10 +214,29 @@ public class TestOctopusGrid {
     public void calculateNumberOfFlashesOccurred() {
         OctopusGrid octopusGrid = new OctopusGrid(FILE_PATH_EFFECTIVE);
         octopusGrid.doMultipleSteps(100);
+        octopusGrid.printGrid();
         octopusGrid.calculateTotalNumberOfSteps();
         System.out.println("total number of flashes  " + octopusGrid.getTotalOfNumberFlashes());
+        Assertions.assertEquals(1642, octopusGrid.getTotalOfNumberFlashes());
 
     }
+
+    @Test
+    public void partTwo() {
+        OctopusGrid octopusGrid = new OctopusGrid(FILE_PATH_EFFECTIVE);
+        octopusGrid.doMultipleSteps(1000);
+        int i =0;
+        do{
+            octopusGrid.doMultipleSteps(i++);
+        } while (octopusGrid.getTimeOfSimultaneousFlashing() == -1);
+        Assertions.assertEquals(320, octopusGrid.getTimeOfSimultaneousFlashing());
+
+    }
+
+
+
+
+
 
 
 

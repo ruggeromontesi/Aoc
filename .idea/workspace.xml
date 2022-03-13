@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="744342c0-46f8-4bdf-9e47-35602649a472" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day11/OctopusGrid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day11/OctopusGrid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day11/entity/Octopus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day11/entity/Octopus.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day11/TestOctopusGrid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day11/TestOctopusGrid.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -43,8 +41,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day11/OctopusGrid.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="265" column="65" selection-start-line="265" selection-start-column="65" selection-end-line="265" selection-end-column="65" />
+            <state relative-caret-position="204">
+              <caret line="268" column="48" selection-start-line="268" selection-start-column="48" selection-end-line="268" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#OctopusGrid#0;class#OctopusGrid#0" />
@@ -52,6 +50,8 @@
                 <element signature="e#2082#2083#0" expanded="true" />
                 <element signature="method#printGrid#0;class#OctopusGrid#0" />
                 <element signature="method#subStepOne#0;class#OctopusGrid#0" />
+                <element signature="e#2843#2844#0" expanded="true" />
+                <element signature="e#2892#2893#0" expanded="true" />
                 <element signature="method#getNeighbour#0;class#OctopusGrid#0" />
               </folding>
             </state>
@@ -61,11 +61,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day11/TestOctopusGrid.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="214" column="8" selection-start-line="214" selection-start-column="8" selection-end-line="214" selection-end-column="8" />
+            <state relative-caret-position="357">
+              <caret line="231" selection-start-line="231" selection-end-line="231" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/day11/day11Effective.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="10" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -87,7 +96,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/support/Help.java" />
         <option value="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day5/entity/LineTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day5/Day5Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java" />
@@ -136,6 +144,7 @@
         <option value="$PROJECT_DIR$/src/main/resources/day11/testDay11.txt" />
         <option value="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day11/Direction.java" />
         <option value="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day11/entity/Octopus.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/day11/day11Effective.txt" />
         <option value="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day11/OctopusGrid.java" />
         <option value="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day11/TestOctopusGrid.java" />
       </list>
@@ -333,17 +342,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Projects\Old\Ruggero\adventOfCode2021\src\main\resources\day8" />
-      <recent name="C:\Projects\Old\Ruggero\adventOfCode2021\src\main\resources\day4" />
-      <recent name="C:\Projects\Old\Ruggero\adventOfCode2021\src\main\java\it\ruggero\adventofcode2021\puzzleinput" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="it.ruggero.adventofcode2021.day11" />
       <recent name="it.ruggero.adventofcode2021.day4.entity" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="it.ruggero.adventofcode2021.day9.alternativesolution.entity" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Projects\Old\Ruggero\adventOfCode2021\src\main\resources\day11" />
@@ -351,6 +352,14 @@
       <recent name="C:\Projects\Old\Ruggero\adventOfCode2021\out\production\adventOfCode2021" />
       <recent name="C:\Projects\Old\Ruggero\adventOfCode2021\src\main\java\it\ruggero\adventofcode2021\day6\other" />
       <recent name="C:\Projects\adventOfCode2021\src\main\resources\day1" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="it.ruggero.adventofcode2021.day9.alternativesolution.entity" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Projects\Old\Ruggero\adventOfCode2021\src\main\resources\day8" />
+      <recent name="C:\Projects\Old\Ruggero\adventOfCode2021\src\main\resources\day4" />
+      <recent name="C:\Projects\Old\Ruggero\adventOfCode2021\src\main\java\it\ruggero\adventofcode2021\puzzleinput" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -365,7 +374,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestOctopusGrid.calculateNumberOfFlashesOccurred">
+  <component name="RunManager" selected="JUnit.TestOctopusGrid.partTwo">
     <configuration name="TestOctopusGrid.calculateNumberOfFlashesOccurred" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="adventOfCode2021" />
       <extension name="coverage">
@@ -377,6 +386,22 @@
       <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day11" />
       <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day11.TestOctopusGrid" />
       <option name="METHOD_NAME" value="calculateNumberOfFlashesOccurred" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestOctopusGrid.partTwo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="adventOfCode2021" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="it.ruggero.adventofcode2021.day11.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day11" />
+      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day11.TestOctopusGrid" />
+      <option name="METHOD_NAME" value="partTwo" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -414,22 +439,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestOctopusGrid.testWholeStep" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="adventOfCode2021" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="it.ruggero.adventofcode2021.day11.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day11" />
-      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day11.TestOctopusGrid" />
-      <option name="METHOD_NAME" value="testWholeStep" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TestOctopusGrid.testWholeStepTwo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="adventOfCode2021" />
       <extension name="coverage">
@@ -448,18 +457,18 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.TestOctopusGrid.testSubsteps" />
-      <item itemvalue="JUnit.TestOctopusGrid.testWholeStep" />
       <item itemvalue="JUnit.TestOctopusGrid.testWholeStepTwo" />
       <item itemvalue="JUnit.TestOctopusGrid.testSubstepstTwo" />
       <item itemvalue="JUnit.TestOctopusGrid.calculateNumberOfFlashesOccurred" />
+      <item itemvalue="JUnit.TestOctopusGrid.partTwo" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestOctopusGrid.partTwo" />
         <item itemvalue="JUnit.TestOctopusGrid.calculateNumberOfFlashesOccurred" />
         <item itemvalue="JUnit.TestOctopusGrid.testWholeStepTwo" />
         <item itemvalue="JUnit.TestOctopusGrid.testSubstepstTwo" />
         <item itemvalue="JUnit.TestOctopusGrid.testSubsteps" />
-        <item itemvalue="JUnit.TestOctopusGrid.testWholeStep" />
       </list>
     </recent_temporary>
   </component>
@@ -516,44 +525,44 @@
       <workItem from="1647067343381" duration="10748000" />
       <workItem from="1647114112097" duration="3522000" />
       <workItem from="1647154599267" duration="7379000" />
-      <workItem from="1647196488162" duration="10475000" />
+      <workItem from="1647196488162" duration="11670000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestOctopusGrid_testWholeStepTwo - 2022.03.14 at 00h 06m 19s.xml">
-      <configuration name="TestOctopusGrid.testWholeStepTwo" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestOctopusGrid_testWholeStepTwo - 2022.03.14 at 00h 07m 34s.xml">
-      <configuration name="TestOctopusGrid.testWholeStepTwo" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestOctopusGrid_testWholeStepTwo - 2022.03.14 at 00h 07m 52s.xml">
-      <configuration name="TestOctopusGrid.testWholeStepTwo" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestOctopusGrid_testWholeStepTwo - 2022.03.14 at 00h 08m 20s.xml">
-      <configuration name="TestOctopusGrid.testWholeStepTwo" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestOctopusGrid_testWholeStepTwo - 2022.03.14 at 00h 09m 02s.xml">
-      <configuration name="TestOctopusGrid.testWholeStepTwo" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestOctopusGrid_testWholeStepTwo - 2022.03.14 at 00h 09m 50s.xml">
-      <configuration name="TestOctopusGrid.testWholeStepTwo" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestOctopusGrid_calculateNumberOfFlashesOccurred - 2022.03.14 at 00h 26m 33s.xml">
+    <history-entry file="TestOctopusGrid_calculateNumberOfFlashesOccurred - 2022.03.14 at 00h 46m 41s.xml">
       <configuration name="TestOctopusGrid.calculateNumberOfFlashesOccurred" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestOctopusGrid_calculateNumberOfFlashesOccurred - 2022.03.14 at 00h 30m 24s.xml">
+    <history-entry file="TestOctopusGrid_calculateNumberOfFlashesOccurred - 2022.03.14 at 00h 47m 30s.xml">
       <configuration name="TestOctopusGrid.calculateNumberOfFlashesOccurred" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestOctopusGrid_calculateNumberOfFlashesOccurred - 2022.03.14 at 00h 30m 49s.xml">
+    <history-entry file="TestOctopusGrid_calculateNumberOfFlashesOccurred - 2022.03.14 at 00h 48m 44s.xml">
       <configuration name="TestOctopusGrid.calculateNumberOfFlashesOccurred" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestOctopusGrid_calculateNumberOfFlashesOccurred - 2022.03.14 at 00h 31m 37s.xml">
+    <history-entry file="TestOctopusGrid_calculateNumberOfFlashesOccurred - 2022.03.14 at 00h 48m 53s.xml">
       <configuration name="TestOctopusGrid.calculateNumberOfFlashesOccurred" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestOctopusGrid_calculateNumberOfFlashesOccurred - 2022.03.14 at 00h 49m 30s.xml">
+      <configuration name="TestOctopusGrid.calculateNumberOfFlashesOccurred" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestOctopusGrid_calculateNumberOfFlashesOccurred - 2022.03.14 at 00h 49m 45s.xml">
+      <configuration name="TestOctopusGrid.calculateNumberOfFlashesOccurred" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestOctopusGrid_calculateNumberOfFlashesOccurred - 2022.03.14 at 00h 51m 31s.xml">
+      <configuration name="TestOctopusGrid.calculateNumberOfFlashesOccurred" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestOctopusGrid_calculateNumberOfFlashesOccurred - 2022.03.14 at 00h 52m 05s.xml">
+      <configuration name="TestOctopusGrid.calculateNumberOfFlashesOccurred" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestOctopusGrid_partTwo - 2022.03.14 at 00h 52m 13s.xml">
+      <configuration name="TestOctopusGrid.partTwo" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestOctopusGrid_partTwo - 2022.03.14 at 00h 54m 50s.xml">
+      <configuration name="TestOctopusGrid.partTwo" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="277721000" />
+    <option name="totallyTimeSpent" value="278916000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1913" y="-1083" width="2575" height="1415" extended-state="6" />
@@ -955,13 +964,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day11/OctopusGrid.java</url>
-          <line>192</line>
+          <line>198</line>
           <properties />
           <option name="timeStamp" value="223" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day11/OctopusGrid.java</url>
-          <line>180</line>
+          <line>186</line>
           <properties />
           <option name="timeStamp" value="224" />
         </line-breakpoint>
@@ -1043,13 +1052,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/day6/testFishes.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="9" selection-start-column="9" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day6/support/Help.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1453,10 +1455,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/day11/day11Effective.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="10" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day11/OctopusGrid.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="265" column="65" selection-start-line="265" selection-start-column="65" selection-end-line="265" selection-end-column="65" />
+        <state relative-caret-position="204">
+          <caret line="268" column="48" selection-start-line="268" selection-start-column="48" selection-end-line="268" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#OctopusGrid#0;class#OctopusGrid#0" />
@@ -1464,6 +1473,8 @@
             <element signature="e#2082#2083#0" expanded="true" />
             <element signature="method#printGrid#0;class#OctopusGrid#0" />
             <element signature="method#subStepOne#0;class#OctopusGrid#0" />
+            <element signature="e#2843#2844#0" expanded="true" />
+            <element signature="e#2892#2893#0" expanded="true" />
             <element signature="method#getNeighbour#0;class#OctopusGrid#0" />
           </folding>
         </state>
@@ -1471,8 +1482,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day11/TestOctopusGrid.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="214" column="8" selection-start-line="214" selection-start-column="8" selection-end-line="214" selection-end-column="8" />
+        <state relative-caret-position="357">
+          <caret line="231" selection-start-line="231" selection-end-line="231" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -20,6 +20,8 @@ public class OctopusGrid {
 
     private int totalOfNumberFlashes = 0;
 
+    private int timeOfSimultaneousFlashing = -1;
+
     public OctopusGrid(String filePath) {
         String line;
 
@@ -95,7 +97,11 @@ public class OctopusGrid {
 
     }
 
-    public void subStepTwo( int stepNumber) {
+    public int getTimeOfSimultaneousFlashing() {
+        return timeOfSimultaneousFlashing;
+    }
+
+    public void subStepTwo(int stepNumber) {
         flashAllOctopuses(stepNumber);
 
 
@@ -248,12 +254,24 @@ public class OctopusGrid {
             flashes = flashAllOctopuses(stepNumber);
         }
         resetEnergyofOctopusesWhichFlashedIntThisStep(stepNumber);
+
+
+
+
+
     }
 
 
     public void doMultipleSteps(int numberOfSteps) {
         for (int i = 0; i < numberOfSteps; i++) {
             step(i);
+            if (checkIfAllOctopusesAreFlashing()) {
+                timeOfSimultaneousFlashing = i+1;
+                System.out.println("timeOfSimultaneousFlashing  " + timeOfSimultaneousFlashing);
+                break;
+            }
+
+
         }
 
     }
@@ -270,6 +288,25 @@ public class OctopusGrid {
         }
 
         totalOfNumberFlashes = total;
+
+
+    }
+
+
+    public boolean checkIfAllOctopusesAreFlashing() {
+        boolean output = false;
+
+        for(int  row = 0; row < map.length; row++) {
+            for(int column = 0; column < map[row].length; column++) {
+                if ( map[row][column].getEnergyLevel() != 0) {
+                    return false;
+                }
+
+
+            }
+        }
+
+        return true;
 
 
     }
