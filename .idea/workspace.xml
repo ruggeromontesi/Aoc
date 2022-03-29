@@ -2,11 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="744342c0-46f8-4bdf-9e47-35602649a472" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day11/OctopusGrid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day11/OctopusGrid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day11/TestOctopusGrid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day11/TestOctopusGrid.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day12/CaveMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day12/entity/Cave.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/day12/test0Day12.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/day12/test1Day12.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/day12/test2Day12.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/day12/testSimpleDay12.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day12/CaveMapTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day12/CaveTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,75 +25,12 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day11/entity/Octopus.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#632#633#0" expanded="true" />
-                <element signature="e#676#677#0" expanded="true" />
-                <element signature="e#1018#1019#0" expanded="true" />
-                <element signature="e#1046#1047#0" expanded="true" />
-                <element signature="e#1351#1352#0" expanded="true" />
-                <element signature="e#1394#1395#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day11/OctopusGrid.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="268" column="48" selection-start-line="268" selection-start-column="48" selection-end-line="268" selection-end-column="48" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#OctopusGrid#0;class#OctopusGrid#0" />
-                <element signature="e#2039#2040#0" expanded="true" />
-                <element signature="e#2082#2083#0" expanded="true" />
-                <element signature="method#printGrid#0;class#OctopusGrid#0" />
-                <element signature="method#subStepOne#0;class#OctopusGrid#0" />
-                <element signature="e#2843#2844#0" expanded="true" />
-                <element signature="e#2892#2893#0" expanded="true" />
-                <element signature="method#getNeighbour#0;class#OctopusGrid#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day11/TestOctopusGrid.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="231" selection-start-line="231" selection-end-line="231" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/day11/day11Effective.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="10" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package-info" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -150,6 +94,9 @@
       </list>
     </option>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -174,7 +121,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -321,6 +267,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="ProjectViewState">
@@ -335,144 +282,146 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/day11" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/day12" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.64827585" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="it.ruggero.adventofcode2021.day11" />
-      <recent name="it.ruggero.adventofcode2021.day4.entity" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Projects\Old\Ruggero\adventOfCode2021\src\main\resources\day12" />
       <recent name="C:\Projects\Old\Ruggero\adventOfCode2021\src\main\resources\day11" />
       <recent name="C:\Projects\Old\Ruggero\adventOfCode2021\src\main\resources\day9" />
       <recent name="C:\Projects\Old\Ruggero\adventOfCode2021\out\production\adventOfCode2021" />
       <recent name="C:\Projects\Old\Ruggero\adventOfCode2021\src\main\java\it\ruggero\adventofcode2021\day6\other" />
-      <recent name="C:\Projects\adventOfCode2021\src\main\resources\day1" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="it.ruggero.adventofcode2021.day9.alternativesolution.entity" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Projects\Old\Ruggero\adventOfCode2021\src\main\resources\day8" />
       <recent name="C:\Projects\Old\Ruggero\adventOfCode2021\src\main\resources\day4" />
       <recent name="C:\Projects\Old\Ruggero\adventOfCode2021\src\main\java\it\ruggero\adventofcode2021\puzzleinput" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="it.ruggero.adventofcode2021.day12" />
+      <recent name="it.ruggero.adventofcode2021.day11" />
+      <recent name="it.ruggero.adventofcode2021.day4.entity" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="it.ruggero.adventofcode2021.day9.alternativesolution.entity" />
+    </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="JUnit.TestOctopusGrid.partTwo">
-    <configuration name="TestOctopusGrid.calculateNumberOfFlashesOccurred" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CaveMapTest.testActual">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CaveMapTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="adventOfCode2021" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="it.ruggero.adventofcode2021.day11.*" />
+          <option name="PATTERN" value="it.ruggero.adventofcode2021.day12.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day11" />
-      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day11.TestOctopusGrid" />
-      <option name="METHOD_NAME" value="calculateNumberOfFlashesOccurred" />
+      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day12" />
+      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day12.CaveMapTest" />
+      <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestOctopusGrid.partTwo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CaveMapTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="adventOfCode2021" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="it.ruggero.adventofcode2021.day11.*" />
+          <option name="PATTERN" value="it.ruggero.adventofcode2021.day12.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day11" />
-      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day11.TestOctopusGrid" />
-      <option name="METHOD_NAME" value="partTwo" />
+      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day12" />
+      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day12.CaveMapTest" />
+      <option name="METHOD_NAME" value="test2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestOctopusGrid.testSubsteps" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CaveMapTest.testActual" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="adventOfCode2021" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="it.ruggero.adventofcode2021.day11.*" />
+          <option name="PATTERN" value="it.ruggero.adventofcode2021.day12.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day11" />
-      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day11.TestOctopusGrid" />
-      <option name="METHOD_NAME" value="testSubsteps" />
+      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day12" />
+      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day12.CaveMapTest" />
+      <option name="METHOD_NAME" value="testActual" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestOctopusGrid.testSubstepstTwo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CaveMapTest.testCreateCaveMap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="adventOfCode2021" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="it.ruggero.adventofcode2021.day11.*" />
+          <option name="PATTERN" value="it.ruggero.adventofcode2021.day12.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day11" />
-      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day11.TestOctopusGrid" />
-      <option name="METHOD_NAME" value="testSubstepstTwo" />
+      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day12" />
+      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day12.CaveMapTest" />
+      <option name="METHOD_NAME" value="testCreateCaveMap" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestOctopusGrid.testWholeStepTwo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CaveTest.testIsBig" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="adventOfCode2021" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="it.ruggero.adventofcode2021.day11.*" />
+          <option name="PATTERN" value="it.ruggero.adventofcode2021.day12.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day11" />
-      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day11.TestOctopusGrid" />
-      <option name="METHOD_NAME" value="testWholeStepTwo" />
+      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day12" />
+      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day12.CaveTest" />
+      <option name="METHOD_NAME" value="testIsBig" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.TestOctopusGrid.testSubsteps" />
-      <item itemvalue="JUnit.TestOctopusGrid.testWholeStepTwo" />
-      <item itemvalue="JUnit.TestOctopusGrid.testSubstepstTwo" />
-      <item itemvalue="JUnit.TestOctopusGrid.calculateNumberOfFlashesOccurred" />
-      <item itemvalue="JUnit.TestOctopusGrid.partTwo" />
+      <item itemvalue="JUnit.CaveMapTest.testCreateCaveMap" />
+      <item itemvalue="JUnit.CaveTest.testIsBig" />
+      <item itemvalue="JUnit.CaveMapTest.test1" />
+      <item itemvalue="JUnit.CaveMapTest.test2" />
+      <item itemvalue="JUnit.CaveMapTest.testActual" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestOctopusGrid.partTwo" />
-        <item itemvalue="JUnit.TestOctopusGrid.calculateNumberOfFlashesOccurred" />
-        <item itemvalue="JUnit.TestOctopusGrid.testWholeStepTwo" />
-        <item itemvalue="JUnit.TestOctopusGrid.testSubstepstTwo" />
-        <item itemvalue="JUnit.TestOctopusGrid.testSubsteps" />
+        <item itemvalue="JUnit.CaveMapTest.testActual" />
+        <item itemvalue="JUnit.CaveMapTest.test2" />
+        <item itemvalue="JUnit.CaveMapTest.test1" />
+        <item itemvalue="JUnit.CaveMapTest.testCreateCaveMap" />
+        <item itemvalue="JUnit.CaveTest.testIsBig" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -525,32 +474,14 @@
       <workItem from="1647067343381" duration="10748000" />
       <workItem from="1647114112097" duration="3522000" />
       <workItem from="1647154599267" duration="7379000" />
-      <workItem from="1647196488162" duration="11670000" />
+      <workItem from="1647196488162" duration="12464000" />
+      <workItem from="1647237311167" duration="599000" />
+      <workItem from="1648529551140" duration="31000" />
+      <workItem from="1648529613962" duration="16480000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestOctopusGrid_calculateNumberOfFlashesOccurred - 2022.03.14 at 00h 46m 41s.xml">
-      <configuration name="TestOctopusGrid.calculateNumberOfFlashesOccurred" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestOctopusGrid_calculateNumberOfFlashesOccurred - 2022.03.14 at 00h 47m 30s.xml">
-      <configuration name="TestOctopusGrid.calculateNumberOfFlashesOccurred" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestOctopusGrid_calculateNumberOfFlashesOccurred - 2022.03.14 at 00h 48m 44s.xml">
-      <configuration name="TestOctopusGrid.calculateNumberOfFlashesOccurred" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestOctopusGrid_calculateNumberOfFlashesOccurred - 2022.03.14 at 00h 48m 53s.xml">
-      <configuration name="TestOctopusGrid.calculateNumberOfFlashesOccurred" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestOctopusGrid_calculateNumberOfFlashesOccurred - 2022.03.14 at 00h 49m 30s.xml">
-      <configuration name="TestOctopusGrid.calculateNumberOfFlashesOccurred" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestOctopusGrid_calculateNumberOfFlashesOccurred - 2022.03.14 at 00h 49m 45s.xml">
-      <configuration name="TestOctopusGrid.calculateNumberOfFlashesOccurred" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestOctopusGrid_calculateNumberOfFlashesOccurred - 2022.03.14 at 00h 51m 31s.xml">
-      <configuration name="TestOctopusGrid.calculateNumberOfFlashesOccurred" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestOctopusGrid_calculateNumberOfFlashesOccurred - 2022.03.14 at 00h 52m 05s.xml">
       <configuration name="TestOctopusGrid.calculateNumberOfFlashesOccurred" configurationId="JUnit" />
     </history-entry>
@@ -560,13 +491,33 @@
     <history-entry file="TestOctopusGrid_partTwo - 2022.03.14 at 00h 54m 50s.xml">
       <configuration name="TestOctopusGrid.partTwo" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TestOctopusGrid_partTwo - 2022.03.14 at 00h 55m 33s.xml">
+      <configuration name="TestOctopusGrid.partTwo" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestOctopusGrid_partTwo - 2022.03.14 at 00h 56m 05s.xml">
+      <configuration name="TestOctopusGrid.partTwo" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestOctopusGrid_partTwo - 2022.03.14 at 00h 56m 24s.xml">
+      <configuration name="TestOctopusGrid.partTwo" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestOctopusGrid_partTwo - 2022.03.14 at 00h 57m 14s.xml">
+      <configuration name="TestOctopusGrid.partTwo" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestOctopusGrid_partTwo - 2022.03.14 at 00h 57m 27s.xml">
+      <configuration name="TestOctopusGrid.partTwo" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestOctopusGrid_partTwo - 2022.03.14 at 00h 58m 01s.xml">
+      <configuration name="TestOctopusGrid.partTwo" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestOctopusGrid_partTwo - 2022.03.14 at 00h 58m 11s.xml">
+      <configuration name="TestOctopusGrid.partTwo" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="278916000" />
+    <option name="totallyTimeSpent" value="280309000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1913" y="-1083" width="2575" height="1415" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.124453284" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -581,13 +532,13 @@
       <window_info id="Job Explorer" order="10" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289166" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.5120811" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5120811" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3452845" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Package References" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.18082619" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.18082619" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="CheckStyle" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
@@ -653,29 +604,14 @@
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-              <option name="COLUMN_ORDER">
-                <list>
-                  <option value="0" />
-                  <option value="1" />
-                  <option value="2" />
-                  <option value="3" />
-                </list>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -701,284 +637,257 @@
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day4/BingoSession.java</url>
           <line>143</line>
-          <properties />
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day4/BingoSession.java</url>
           <line>146</line>
-          <properties />
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day4/BingoSession.java</url>
           <line>148</line>
-          <properties />
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day4/BingoSession.java</url>
           <line>165</line>
-          <properties />
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day4/BingoSession.java</url>
           <line>141</line>
-          <properties />
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/DayFive.java</url>
           <line>117</line>
-          <properties />
           <option name="timeStamp" value="86" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/DayFive.java</url>
           <line>121</line>
-          <properties />
           <option name="timeStamp" value="89" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/DayFive.java</url>
           <line>123</line>
-          <properties />
           <option name="timeStamp" value="90" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java</url>
           <line>151</line>
-          <properties />
           <option name="timeStamp" value="108" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java</url>
           <line>170</line>
-          <properties />
           <option name="timeStamp" value="109" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java</url>
           <line>167</line>
-          <properties />
           <option name="timeStamp" value="111" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java</url>
           <line>172</line>
-          <properties />
           <option name="timeStamp" value="117" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java</url>
           <line>174</line>
-          <properties />
           <option name="timeStamp" value="119" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java</url>
           <line>148</line>
-          <properties />
           <option name="timeStamp" value="128" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java</url>
           <line>159</line>
-          <properties />
           <option name="timeStamp" value="130" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java</url>
           <line>162</line>
-          <properties />
           <option name="timeStamp" value="131" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java</url>
           <line>165</line>
-          <properties />
           <option name="timeStamp" value="134" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java</url>
           <line>152</line>
-          <properties />
           <option name="timeStamp" value="148" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java</url>
           <line>168</line>
-          <properties />
           <option name="timeStamp" value="156" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/DayFive.java</url>
           <line>39</line>
-          <properties />
           <option name="timeStamp" value="164" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day5/Day5Test.java</url>
           <line>23</line>
-          <properties />
           <option name="timeStamp" value="165" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day5/Day5Test.java</url>
           <line>25</line>
-          <properties />
           <option name="timeStamp" value="166" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day5/Day5Test.java</url>
           <line>26</line>
-          <properties />
           <option name="timeStamp" value="167" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/DayFive.java</url>
           <line>33</line>
-          <properties />
           <option name="timeStamp" value="168" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/DayFive.java</url>
           <line>35</line>
-          <properties />
           <option name="timeStamp" value="169" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/DayFive.java</url>
           <line>36</line>
-          <properties />
           <option name="timeStamp" value="170" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day6/support/Help.java</url>
           <line>29</line>
-          <properties />
           <option name="timeStamp" value="171" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day6/support/Help.java</url>
           <line>43</line>
-          <properties />
           <option name="timeStamp" value="172" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day6/support/Help.java</url>
           <line>47</line>
-          <properties />
           <option name="timeStamp" value="173" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://C:/Java/jdk11/lib/src.zip!/java.base/java/lang/ClassLoader.java</url>
+          <url>jar://$PROJECT_DIR$/../../../../Java/jdk11/lib/src.zip!/java.base/java/lang/ClassLoader.java</url>
           <line>1664</line>
-          <properties />
           <option name="timeStamp" value="182" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://C:/Java/jdk11/lib/src.zip!/java.base/java/lang/ClassLoader.java</url>
+          <url>jar://$PROJECT_DIR$/../../../../Java/jdk11/lib/src.zip!/java.base/java/lang/ClassLoader.java</url>
           <line>1391</line>
-          <properties />
           <option name="timeStamp" value="183" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://C:/Java/jdk11/lib/src.zip!/java.base/java/lang/ClassLoader.java</url>
+          <url>jar://$PROJECT_DIR$/../../../../Java/jdk11/lib/src.zip!/java.base/java/lang/ClassLoader.java</url>
           <line>1392</line>
-          <properties />
           <option name="timeStamp" value="184" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://C:/Java/jdk11/lib/src.zip!/java.base/java/lang/ClassLoader.java</url>
+          <url>jar://$PROJECT_DIR$/../../../../Java/jdk11/lib/src.zip!/java.base/java/lang/ClassLoader.java</url>
           <line>1394</line>
-          <properties />
           <option name="timeStamp" value="185" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://C:/Java/jdk11/lib/src.zip!/java.base/java/lang/ClassLoader.java</url>
+          <url>jar://$PROJECT_DIR$/../../../../Java/jdk11/lib/src.zip!/java.base/java/lang/ClassLoader.java</url>
           <line>1396</line>
-          <properties />
           <option name="timeStamp" value="186" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://C:/Java/jdk11/lib/src.zip!/java.base/java/lang/ClassLoader.java</url>
+          <url>jar://$PROJECT_DIR$/../../../../Java/jdk11/lib/src.zip!/java.base/java/lang/ClassLoader.java</url>
           <line>1399</line>
-          <properties />
           <option name="timeStamp" value="187" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://C:/Java/jdk11/lib/src.zip!/java.base/java/lang/ClassLoader.java</url>
+          <url>jar://$PROJECT_DIR$/../../../../Java/jdk11/lib/src.zip!/java.base/java/lang/ClassLoader.java</url>
           <line>1393</line>
-          <properties />
           <option name="timeStamp" value="188" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day9/alternativesolution/entity/Grid.java</url>
           <line>119</line>
-          <properties />
           <option name="timeStamp" value="208" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day9/alternativesolution/entity/Grid.java</url>
           <line>227</line>
-          <properties />
           <option name="timeStamp" value="210" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day9/alternativesolution/entity/Grid.java</url>
           <line>278</line>
-          <properties />
           <option name="timeStamp" value="211" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day9/alternativesolution/entity/Grid.java</url>
           <line>260</line>
-          <properties />
           <option name="timeStamp" value="212" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day9/alternativesolution/entity/Grid.java</url>
           <line>247</line>
-          <properties />
           <option name="timeStamp" value="214" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day9/alternativesolution/entity/Grid.java</url>
           <line>342</line>
-          <properties />
           <option name="timeStamp" value="215" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day10/entity/Line.java</url>
           <line>126</line>
-          <properties />
           <option name="timeStamp" value="219" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day10/entity/Line.java</url>
           <line>100</line>
-          <properties />
           <option name="timeStamp" value="221" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day11/OctopusGrid.java</url>
           <line>198</line>
-          <properties />
           <option name="timeStamp" value="223" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day11/OctopusGrid.java</url>
           <line>186</line>
-          <properties />
           <option name="timeStamp" value="224" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day11/entity/Octopus.java</url>
           <line>47</line>
-          <properties />
           <option name="timeStamp" value="228" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day12/CaveMap.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="229" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day12/CaveMap.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="230" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day12/CaveMap.java</url>
+          <line>109</line>
+          <option name="timeStamp" value="231" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day12/CaveMap.java</url>
+          <line>110</line>
+          <option name="timeStamp" value="232" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -1093,7 +1002,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Java/jdk11/lib/src.zip!/java.base/java/util/Scanner.java">
+    <entry file="jar://$PROJECT_DIR$/../../../../Java/jdk11/lib/src.zip!/java.base/java/util/Scanner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="841">
           <caret line="2827" column="26" selection-start-line="2827" selection-start-column="26" selection-end-line="2827" selection-end-column="26" />
@@ -1101,21 +1010,21 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/out/production/adventOfCode2021/positionsTest.txt" />
-    <entry file="jar://C:/Java/jdk11/lib/src.zip!/java.base/java/net/URL.java">
+    <entry file="jar://$PROJECT_DIR$/../../../../Java/jdk11/lib/src.zip!/java.base/java/net/URL.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-461">
           <caret line="1137" selection-start-line="1137" selection-end-line="1137" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Java/jdk11/lib/src.zip!/java.base/jdk/internal/loader/BuiltinClassLoader.java">
+    <entry file="jar://$PROJECT_DIR$/../../../../Java/jdk11/lib/src.zip!/java.base/jdk/internal/loader/BuiltinClassLoader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3715">
           <caret line="264" selection-start-line="264" selection-end-line="264" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Java/jdk11/lib/src.zip!/java.base/jdk/internal/loader/BootLoader.java">
+    <entry file="jar://$PROJECT_DIR$/../../../../Java/jdk11/lib/src.zip!/java.base/jdk/internal/loader/BootLoader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="117">
           <caret line="153" selection-start-line="153" selection-end-line="153" />
@@ -1125,7 +1034,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Java/jdk11/lib/src.zip!/java.base/java/lang/ClassLoader.java">
+    <entry file="jar://$PROJECT_DIR$/../../../../Java/jdk11/lib/src.zip!/java.base/java/lang/ClassLoader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-825">
           <caret line="1770" selection-start-line="1770" selection-end-line="1770" />
@@ -1136,7 +1045,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Java/jdk11/lib/src.zip!/java.base/java/util/function/IntUnaryOperator.java">
+    <entry file="jar://$PROJECT_DIR$/../../../../Java/jdk11/lib/src.zip!/java.base/java/util/function/IntUnaryOperator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="89">
           <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
@@ -1441,16 +1350,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day11/entity/Octopus.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
+        <state relative-caret-position="884">
+          <caret line="67" selection-start-line="67" selection-end-line="67" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#632#633#0" expanded="true" />
-            <element signature="e#676#677#0" expanded="true" />
-            <element signature="e#1018#1019#0" expanded="true" />
-            <element signature="e#1046#1047#0" expanded="true" />
-            <element signature="e#1351#1352#0" expanded="true" />
-            <element signature="e#1394#1395#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day11/OctopusGrid.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2533">
+          <caret line="268" column="48" selection-start-line="268" selection-start-column="48" selection-end-line="268" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#OctopusGrid#0;class#OctopusGrid#0" />
+            <element signature="method#printGrid#0;class#OctopusGrid#0" />
+            <element signature="method#subStepOne#0;class#OctopusGrid#0" />
+            <element signature="method#getNeighbour#0;class#OctopusGrid#0" />
           </folding>
         </state>
       </provider>
@@ -1458,32 +1375,14 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/day11/day11Effective.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="10" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day11/OctopusGrid.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="268" column="48" selection-start-line="268" selection-start-column="48" selection-end-line="268" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#OctopusGrid#0;class#OctopusGrid#0" />
-            <element signature="e#2039#2040#0" expanded="true" />
-            <element signature="e#2082#2083#0" expanded="true" />
-            <element signature="method#printGrid#0;class#OctopusGrid#0" />
-            <element signature="method#subStepOne#0;class#OctopusGrid#0" />
-            <element signature="e#2843#2844#0" expanded="true" />
-            <element signature="e#2892#2893#0" expanded="true" />
-            <element signature="method#getNeighbour#0;class#OctopusGrid#0" />
-          </folding>
+          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day11/TestOctopusGrid.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="231" selection-start-line="231" selection-end-line="231" />
+        <state relative-caret-position="895">
+          <caret line="231" column="8" selection-start-line="231" selection-start-column="8" selection-end-line="231" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
