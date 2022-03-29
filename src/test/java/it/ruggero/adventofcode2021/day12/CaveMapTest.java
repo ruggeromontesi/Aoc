@@ -1,6 +1,7 @@
 package it.ruggero.adventofcode2021.day12;
 
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class CaveMapTest {
@@ -26,6 +27,7 @@ public class CaveMapTest {
         caveMap.getPaths().forEach(path -> {
             path.getCaves().forEach(c-> System.out.print(c.getLabel()+","));
         });
+        System.out.println("\n number of paths :" + caveMap.getPaths().size() );
 
     }
 
@@ -37,6 +39,7 @@ public class CaveMapTest {
             System.out.println("");
             path.getCaves().forEach(c-> System.out.print(c.getLabel()+","));
         });
+        System.out.println("number of paths :" + caveMap.getPaths().size() );
 
     }
 
@@ -73,6 +76,14 @@ public class CaveMapTest {
             System.out.println("");
             path.getCaves().forEach(c-> System.out.print(c.getLabel()+","));
         });
+        //PART 1
+
+        Assertions.assertEquals(5576,caveMap.getPaths().size() );
+        //PART 2
+
+        Assertions.assertEquals(152837,caveMap.getPaths().size() );
+
+
         System.out.println("number of paths :" + caveMap.getPaths().size() );
 
     }

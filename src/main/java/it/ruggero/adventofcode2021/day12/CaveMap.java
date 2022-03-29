@@ -88,11 +88,16 @@ public class CaveMap {
 
 
     public class Path {
+        private static final int NUMBER_OF_TIMES_ANY_SMALL_CAVE_HAS_BEEN_VISITED_MORE_THAN_ONCE_PART_1 = 0;
+        private static final int NUMBER_OF_TIMES_ANY_SMALL_CAVE_HAS_BEEN_VISITED_MORE_THAN_ONCE_PART_2 = 1;
+
         private List<Cave> caves = new ArrayList<>();
 
         private boolean complete;
 
         private boolean toBeDeleted;
+
+        private int howManyDoubleVisitToASmallCave = 0;
 
         public Path(){
 
@@ -102,6 +107,7 @@ public class CaveMap {
             this.complete = otherPath.complete;
             this.toBeDeleted = otherPath.toBeDeleted;
             this.caves = new ArrayList<>(otherPath.caves);
+            this.howManyDoubleVisitToASmallCave = otherPath.howManyDoubleVisitToASmallCave;
 
         }
 
@@ -117,9 +123,22 @@ public class CaveMap {
                     return true;
 
                 } else {
-                    complete = false;
-                    toBeDeleted = true;
-                    return false;
+                    if (!cave.getLabel().equals("start")
+                            && !cave.getLabel().equals("end")
+                            && howManyDoubleVisitToASmallCave < NUMBER_OF_TIMES_ANY_SMALL_CAVE_HAS_BEEN_VISITED_MORE_THAN_ONCE_PART_2) {
+                        howManyDoubleVisitToASmallCave++;
+                        caves.add(cave);
+                        if (cave.getLabel().equals("end")) {
+                            complete = false;
+                            toBeDeleted = false;
+                        }
+                        return true;
+                    } else {
+                        complete = false;
+                        toBeDeleted = true;
+                        return false;
+                    }
+
                 }
             } else {
                 caves.add(cave);
