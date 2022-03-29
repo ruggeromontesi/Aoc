@@ -3,12 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="744342c0-46f8-4bdf-9e47-35602649a472" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day12/entity/Cave.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day13/entity/Coordinate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day13/entity/Dot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day13/entity/FoldInstruction.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/day12/Day12.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/day12/test0Day12.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/day12/test1Day12.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/day12/test2Day12.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/day12/testSimpleDay12.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/day13/Day13.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/day13/testDay13.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day12/CaveTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day13/DotMapTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -283,7 +289,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/day12" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/day13" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.64827585" />
@@ -291,11 +297,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Projects\Old\Ruggero\adventOfCode2021\src\main\resources\day13" />
       <recent name="C:\Projects\Old\Ruggero\adventOfCode2021\src\main\resources\day12" />
       <recent name="C:\Projects\Old\Ruggero\adventOfCode2021\src\main\resources\day11" />
       <recent name="C:\Projects\Old\Ruggero\adventOfCode2021\src\main\resources\day9" />
       <recent name="C:\Projects\Old\Ruggero\adventOfCode2021\out\production\adventOfCode2021" />
-      <recent name="C:\Projects\Old\Ruggero\adventOfCode2021\src\main\java\it\ruggero\adventofcode2021\day6\other" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Projects\Old\Ruggero\adventOfCode2021\src\main\resources\day8" />
@@ -311,7 +317,7 @@
       <recent name="it.ruggero.adventofcode2021.day9.alternativesolution.entity" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CaveMapTest.testActual">
+  <component name="RunManager" selected="JUnit.DotMapTest.testAllActualFile">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -325,100 +331,100 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CaveMapTest.test0" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DotMapTest.testAllActualFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="adventOfCode2021" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="it.ruggero.adventofcode2021.day12.*" />
+          <option name="PATTERN" value="it.ruggero.adventofcode2021.day13.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day12" />
-      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day12.CaveMapTest" />
-      <option name="METHOD_NAME" value="test0" />
+      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day13" />
+      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day13.DotMapTest" />
+      <option name="METHOD_NAME" value="testAllActualFile" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CaveMapTest.test00" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DotMapTest.testAllTestFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="adventOfCode2021" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="it.ruggero.adventofcode2021.day12.*" />
+          <option name="PATTERN" value="it.ruggero.adventofcode2021.day13.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day12" />
-      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day12.CaveMapTest" />
-      <option name="METHOD_NAME" value="test00" />
+      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day13" />
+      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day13.DotMapTest" />
+      <option name="METHOD_NAME" value="testAllTestFile" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CaveMapTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DotMapTest.testCreateDotMap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="adventOfCode2021" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="it.ruggero.adventofcode2021.day12.*" />
+          <option name="PATTERN" value="it.ruggero.adventofcode2021.day13.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day12" />
-      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day12.CaveMapTest" />
-      <option name="METHOD_NAME" value="test1" />
+      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day13" />
+      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day13.DotMapTest" />
+      <option name="METHOD_NAME" value="testCreateDotMap" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CaveMapTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DotMapTest.testFold" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="adventOfCode2021" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="it.ruggero.adventofcode2021.day12.*" />
+          <option name="PATTERN" value="it.ruggero.adventofcode2021.day13.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day12" />
-      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day12.CaveMapTest" />
-      <option name="METHOD_NAME" value="test2" />
+      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day13" />
+      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day13.DotMapTest" />
+      <option name="METHOD_NAME" value="testFold" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CaveMapTest.testActual" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DotMapTest.testFoldActualFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="adventOfCode2021" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="it.ruggero.adventofcode2021.day12.*" />
+          <option name="PATTERN" value="it.ruggero.adventofcode2021.day13.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day12" />
-      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day12.CaveMapTest" />
-      <option name="METHOD_NAME" value="testActual" />
+      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day13" />
+      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day13.DotMapTest" />
+      <option name="METHOD_NAME" value="testFoldActualFile" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.CaveMapTest.test1" />
-      <item itemvalue="JUnit.CaveMapTest.test2" />
-      <item itemvalue="JUnit.CaveMapTest.testActual" />
-      <item itemvalue="JUnit.CaveMapTest.test00" />
-      <item itemvalue="JUnit.CaveMapTest.test0" />
+      <item itemvalue="JUnit.DotMapTest.testCreateDotMap" />
+      <item itemvalue="JUnit.DotMapTest.testFold" />
+      <item itemvalue="JUnit.DotMapTest.testFoldActualFile" />
+      <item itemvalue="JUnit.DotMapTest.testAllTestFile" />
+      <item itemvalue="JUnit.DotMapTest.testAllActualFile" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CaveMapTest.testActual" />
-        <item itemvalue="JUnit.CaveMapTest.test2" />
-        <item itemvalue="JUnit.CaveMapTest.test1" />
-        <item itemvalue="JUnit.CaveMapTest.test0" />
-        <item itemvalue="JUnit.CaveMapTest.test00" />
+        <item itemvalue="JUnit.DotMapTest.testAllActualFile" />
+        <item itemvalue="JUnit.DotMapTest.testAllTestFile" />
+        <item itemvalue="JUnit.DotMapTest.testFoldActualFile" />
+        <item itemvalue="JUnit.DotMapTest.testFold" />
+        <item itemvalue="JUnit.DotMapTest.testCreateDotMap" />
       </list>
     </recent_temporary>
   </component>
@@ -478,7 +484,7 @@
       <workItem from="1647196488162" duration="12464000" />
       <workItem from="1647237311167" duration="599000" />
       <workItem from="1648529551140" duration="31000" />
-      <workItem from="1648529613962" duration="18529000" />
+      <workItem from="1648529613962" duration="34702000" />
     </task>
     <servers />
   </component>
@@ -890,6 +896,25 @@
           <line>116</line>
           <option name="timeStamp" value="232" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day13/DotMap.java</url>
+          <line>122</line>
+          <option name="timeStamp" value="239" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day13/DotMap.java</url>
+          <line>121</line>
+          <option name="timeStamp" value="241" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day13/DotMap.java</url>
+          <line>116</line>
+          <option name="timeStamp" value="243" />
+        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="240" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
