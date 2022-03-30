@@ -77,6 +77,17 @@ public class DotMap {
             }
         }
 
+
+        if (maxY == 893) {
+            for (int column = 0; column < maxX + 1; column++) {
+                Coordinate coordinate = new Coordinate(column, maxY + 1);
+                Dot dot = new Dot(coordinate,".");
+                map.put(coordinate,dot );
+
+            }
+        }
+        maxY++;
+
     }
 
     public Map<Coordinate, Dot> getMap() {
@@ -107,18 +118,23 @@ public class DotMap {
             }
         }
 
+        System.out.println("\nrows : " + (maxY + 1) + " columns " + (maxX + 1));
+
     }
 
     public DotMap processFoldInstruction(FoldInstruction foldInstruction) {
+        //validateFoldingInstruction(foldInstruction);
         DotMap outputDotMap = new DotMap();
         if(foldInstruction.getDirection() == FoldInstruction.Direction.x) {
             outputDotMap.maxX = this.maxX;
-            outputDotMap.maxY = (int) this.maxY/2 - 1;
+            outputDotMap.maxY = this.maxY/2 -1;
+
             for (int row = 0; row < outputDotMap.maxY + 1; row ++) {
                 for (int column = 0; column < outputDotMap.maxX+1; column++) {
                     Coordinate coordinate = new Coordinate(column,row);
                     Coordinate coordinateUp = new Coordinate(column,row);
                     Coordinate coordinateLow = new Coordinate(column,this.maxY - row);
+                    //Coordinate coordinateLow = new Coordinate(column,2 * foldInstruction.getValue() - row);
                     String symbol ="";
                     if(map.get(coordinateUp).getSymbol().equals("#") || map.get(coordinateLow).getSymbol().equals("#")) {
                         symbol = "#";
@@ -160,6 +176,32 @@ public class DotMap {
 
         return outputDotMap;
     }
+
+    public void validateFoldingInstruction(FoldInstruction foldInstruction){
+        if (foldInstruction.getDirection() == FoldInstruction.Direction.x) {
+            for (int column = 0; column < maxX + 1; column ++) {
+                if (map.get(new Coordinate(column,foldInstruction.getValue())).getSymbol().equals("#") ) {
+                    throw new RuntimeException("dots on folding line!");
+                } else {
+                    map.get(new Coordinate(column,foldInstruction.getValue())).setSymbol("-");
+                }
+
+            }
+        }
+
+        if (foldInstruction.getDirection() == FoldInstruction.Direction.y) {
+            for (int row = 0; row < maxY + 1; row++) {
+                if (map.get(new Coordinate(foldInstruction.getValue(),row)).getSymbol().equals("#")) {
+                    throw new RuntimeException("dots on folding line!");
+                } else {
+                    map.get(new Coordinate(foldInstruction.getValue(),row)).setSymbol("|");
+                }
+            }
+        }
+
+    }
+
+
 
 
     public void processAllFoldInstructions() {

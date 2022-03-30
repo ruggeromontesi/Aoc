@@ -24,48 +24,30 @@ public class DotMapTest {
     public void testFold() {
         DotMap dotMap = new DotMap(FILE_PATH_TEST);
         dotMap.printMap();
-        FoldInstruction foldInstruction = dotMap.getFoldInstructions().get(0);
-        System.out.println("\ndummy");
-        DotMap newDotMap = dotMap.processFoldInstruction(foldInstruction);
-        newDotMap.printMap();
-        System.out.println("\nprocessed map has " + newDotMap.countDots() + " dots");
-        DotMap newDotMap2 = newDotMap.processFoldInstruction(dotMap.getFoldInstructions().get(1));
-        newDotMap2.printMap();
-        System.out.println("\nprocessed map has " + newDotMap2.countDots() + " dots");
-
+        FoldInstruction foldInstruction = new FoldInstruction(FoldInstruction.Direction.x, 7);
+        dotMap.validateFoldingInstruction(foldInstruction);
+        System.out.println("\n\n\n");
+        dotMap.printMap();
+        System.out.println("\n\n\n");
+        DotMap dotMap1 = dotMap.processFoldInstruction(foldInstruction);
+        dotMap1.printMap();
+        foldInstruction = new FoldInstruction(FoldInstruction.Direction.y, 5);
+        dotMap1.validateFoldingInstruction(foldInstruction);
+        System.out.println("\n\n\n");
+        dotMap1.printMap();
+        System.out.println("\n\n\n");
+        dotMap1.processFoldInstruction(foldInstruction).printMap();
 
     }
 
     @Test
-    public void testFoldActualFile(){
+    public void testActual() {
         DotMap dotMap = new DotMap(FILE_PATH_ACTUAL);
-        FoldInstruction foldInstruction = dotMap.getFoldInstructions().get(0);
-        System.out.println("\ndummy");
-        DotMap newDotMap = dotMap.processFoldInstruction(foldInstruction);
-        System.out.println("\nprocessed map has " + newDotMap.countDots() + " dots");
-
-    }
-
-
-    @Test
-    public void testAllTestFile(){
-        DotMap dotMap = new DotMap(FILE_PATH_TEST);
         dotMap.processAllFoldInstructions();
-        dotMap.getNextMaps().get(dotMap.getNextMaps().size()-1).printMap();
-
-
-    }
-
-    @Test
-    public void testAllActualFile(){
-        DotMap dotMap = new DotMap(FILE_PATH_TEST);
-        dotMap.processAllFoldInstructions();
-        //dotMap.getNextMaps().get(dotMap.getNextMaps().size()-1).printMap();
-        dotMap.getNextMaps().stream().skip(0L).forEach(dotMap1 -> {
-            System.out.println("\n*******************************************");
-            dotMap1.printMap();
-        });
-
+        int lastIndex = dotMap.getNextMaps().size()-1;
+        dotMap.getNextMaps().get(lastIndex).printMap();
 
     }
+
+
 }
