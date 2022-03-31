@@ -46,6 +46,7 @@ public class DotMapTest {
         dotMap.processAllFoldInstructions();
         int lastIndex = dotMap.getNextMaps().size()-1;
         dotMap.getNextMaps().get(lastIndex).printMap();
+        //CJHAZHKU
 
     }
 

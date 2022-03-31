@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="744342c0-46f8-4bdf-9e47-35602649a472" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day14/entity/InputData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/day14/Day14.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/day14/testDay14.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day14/entity/InputDataTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day13/DotMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day13/DotMap.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/adventOfCode2021/it/ruggero/adventofcode2021/day13/DotMapTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/adventOfCode2021/it/ruggero/adventofcode2021/day13/DotMapTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day13/DotMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day13/DotMap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day13/DotMapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day13/DotMapTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -304,14 +306,16 @@
       <recent name="it.ruggero.adventofcode2021.day9.alternativesolution.entity" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DotMapTest.testActual">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.InputDataTest.testGetDifference">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -332,84 +336,84 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DotMapTest.testAllActualFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="InputDataTest.testApplyRule" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="adventOfCode2021" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="it.ruggero.adventofcode2021.day13.*" />
+          <option name="PATTERN" value="it.ruggero.adventofcode2021.day14.entity.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day13" />
-      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day13.DotMapTest" />
-      <option name="METHOD_NAME" value="testAllActualFile" />
+      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day14.entity" />
+      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day14.entity.InputDataTest" />
+      <option name="METHOD_NAME" value="testApplyRule" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DotMapTest.testAllTestFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="InputDataTest.testGetDifference" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="adventOfCode2021" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="it.ruggero.adventofcode2021.day13.*" />
+          <option name="PATTERN" value="it.ruggero.adventofcode2021.day14.entity.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day13" />
-      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day13.DotMapTest" />
-      <option name="METHOD_NAME" value="testAllTestFile" />
+      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day14.entity" />
+      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day14.entity.InputDataTest" />
+      <option name="METHOD_NAME" value="testGetDifference" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DotMapTest.testFold" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="InputDataTest.testInputDataCreation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="adventOfCode2021" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="it.ruggero.adventofcode2021.day13.*" />
+          <option name="PATTERN" value="it.ruggero.adventofcode2021.day14.entity.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day13" />
-      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day13.DotMapTest" />
-      <option name="METHOD_NAME" value="testFold" />
+      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day14.entity" />
+      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day14.entity.InputDataTest" />
+      <option name="METHOD_NAME" value="testInputDataCreation" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DotMapTest.testFoldActualFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="InputDataTest.testStringToList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="adventOfCode2021" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="it.ruggero.adventofcode2021.day13.*" />
+          <option name="PATTERN" value="it.ruggero.adventofcode2021.day14.entity.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day13" />
-      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day13.DotMapTest" />
-      <option name="METHOD_NAME" value="testFoldActualFile" />
+      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day14.entity" />
+      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day14.entity.InputDataTest" />
+      <option name="METHOD_NAME" value="testStringToList" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.DotMapTest.testFold" />
-      <item itemvalue="JUnit.DotMapTest.testFoldActualFile" />
-      <item itemvalue="JUnit.DotMapTest.testAllTestFile" />
-      <item itemvalue="JUnit.DotMapTest.testAllActualFile" />
       <item itemvalue="JUnit.DotMapTest.testActual" />
+      <item itemvalue="JUnit.InputDataTest.testInputDataCreation" />
+      <item itemvalue="JUnit.InputDataTest.testApplyRule" />
+      <item itemvalue="JUnit.InputDataTest.testStringToList" />
+      <item itemvalue="JUnit.InputDataTest.testGetDifference" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.InputDataTest.testGetDifference" />
+        <item itemvalue="JUnit.InputDataTest.testStringToList" />
+        <item itemvalue="JUnit.InputDataTest.testApplyRule" />
+        <item itemvalue="JUnit.InputDataTest.testInputDataCreation" />
         <item itemvalue="JUnit.DotMapTest.testActual" />
-        <item itemvalue="JUnit.DotMapTest.testFold" />
-        <item itemvalue="JUnit.DotMapTest.testAllActualFile" />
-        <item itemvalue="JUnit.DotMapTest.testAllTestFile" />
-        <item itemvalue="JUnit.DotMapTest.testFoldActualFile" />
       </list>
     </recent_temporary>
   </component>
@@ -470,7 +474,10 @@
       <workItem from="1647237311167" duration="599000" />
       <workItem from="1648529551140" duration="31000" />
       <workItem from="1648529613962" duration="36062000" />
-      <workItem from="1648623799535" duration="5438000" />
+      <workItem from="1648623799535" duration="6230000" />
+      <workItem from="1648697664711" duration="5000" />
+      <workItem from="1648721239507" duration="4057000" />
+      <workItem from="1648742742930" duration="3178000" />
     </task>
     <servers />
   </component>
@@ -906,6 +913,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day13/DotMap.java</url>
           <line>81</line>
           <option name="timeStamp" value="245" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day14/entity/InputData.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="246" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.NullPointerException" package="java.lang" />
