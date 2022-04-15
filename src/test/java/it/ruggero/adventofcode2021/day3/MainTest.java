@@ -22,13 +22,13 @@ public class MainTest {
     public void testGammaRate() {
         Main.preliminaryScan();
         Main.readFile();
-        //Assertions.assertEquals(22,Main.gammaRate() );
-        //Assertions.assertEquals(9,Main.epsilonRate() );
+        //Assertions.assertEquals(22,it.ruggero.adventofcode2021.day1.basesolution.Main.gammaRate() );
+        //Assertions.assertEquals(9,it.ruggero.adventofcode2021.day1.basesolution.Main.epsilonRate() );
         System.out.println("gamma rate  is " + Main.gammaRate());
         System.out.println("epsilon rate  is " + Main.epsilonRate());
         System.out.println("result = " + Main.gammaRate()*Main.epsilonRate());
         Assertions.assertEquals(1540244,Main.gammaRate()*Main.epsilonRate() );
-        //Main.processFile();
+        //it.ruggero.adventofcode2021.day1.basesolution.Main.processFile();
 
     }
 

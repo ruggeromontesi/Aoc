@@ -2,6 +2,10 @@ package it.ruggero.adventofcode2021.day14.entity;
 
 import org.junit.jupiter.api.Test;
 
+import java.util.function.Function;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
+
 public class InputDataTest {
     private static final String FILE_PATH_TEST = ".\\src\\main\\resources\\day14\\testDay14.txt";
     private static final String FILE_PATH_ACTUAL = ".\\src\\main\\resources\\day14\\Day14.txt";
@@ -36,7 +40,9 @@ public class InputDataTest {
     @Test
     public void testGetDifference() {
         InputData inputData = new InputData(FILE_PATH_ACTUAL);
-        inputData.getDifference(inputData.applyRuleNTimes(40));
+        //inputData.applyRuleNTimes(10)
+
+        //inputData.getDifference(inputData.applyRuleNTimes(19));
 
 
 

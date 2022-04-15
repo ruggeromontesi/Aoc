@@ -1,7 +1,4 @@
-/*
- * Copyright (c) Dematic GmbH 2021. All rights reserved. Confidential.
- */
-package it.ruggero.adventofcode2021.day1;
+package it.ruggero.adventofcode2021.day1.basesolution;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -9,9 +6,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-/**
- * @author montesr
- */
 public class PuzzleInput {
    private final static int[] depths = new int[2000];
    static {

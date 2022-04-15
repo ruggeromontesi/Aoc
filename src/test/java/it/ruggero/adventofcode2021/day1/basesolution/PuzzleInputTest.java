@@ -1,8 +1,9 @@
 /*
  * Copyright (c) Dematic GmbH 2021. All rights reserved. Confidential.
  */
-package it.ruggero.adventofcode2021.day1;
+package it.ruggero.adventofcode2021.day1.basesolution;
 
+import it.ruggero.adventofcode2021.day1.basesolution.PuzzleInput;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;

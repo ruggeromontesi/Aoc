@@ -19,7 +19,7 @@ public class MainTest {
 
     @Test
     public void testProcessFileWithAim( ) {
-        //System.out.println(" result is " + Main.processFileWithAim());
+        //System.out.println(" result is " + it.ruggero.adventofcode2021.day1.basesolution.Main.processFileWithAim());
         Assertions.assertEquals(2015547716, Main.processFileWithAim());
     }
 }

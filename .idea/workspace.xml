@@ -2,13 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="744342c0-46f8-4bdf-9e47-35602649a472" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day14/entity/InputData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/day14/Day14.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/day14/testDay14.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day14/entity/InputDataTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day14/entity/InputDataPart2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day14/entity/Polymerization.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day15/Chiton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day15/Coordinate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day15/Direction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day15/Path.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/day15/testDay15.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day14/entity/InputDataPart2Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day15/ChitonTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/adventOfCode2021/it/ruggero/adventofcode2021/day13/DotMapTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/adventOfCode2021/it/ruggero/adventofcode2021/day13/DotMapTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day13/DotMapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day13/DotMapTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day1/PuzzleInput.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day14/entity/InputData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day14/entity/InputData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/adventOfCode2021/it/ruggero/adventofcode2021/day1/PuzzleInputTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/adventOfCode2021/it/ruggero/adventofcode2021/day14/entity/InputDataTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/adventOfCode2021/it/ruggero/adventofcode2021/day14/entity/InputDataTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day1/basesolution/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day1/PuzzleInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day1/basesolution/PuzzleInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day14/entity/InputData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day14/entity/InputData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day1/PuzzleInputTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day1/basesolution/PuzzleInputTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day14/entity/InputDataTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day14/entity/InputDataTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day2/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day2/MainTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day3/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day3/MainTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -278,7 +293,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/day13" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day1" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.64827585" />
@@ -293,20 +308,23 @@
       <recent name="C:\Projects\Old\Ruggero\adventOfCode2021\out\production\adventOfCode2021" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Projects\Old\Ruggero\adventOfCode2021\src\test\java\it\ruggero\adventofcode2021\day1" />
       <recent name="C:\Projects\Old\Ruggero\adventOfCode2021\src\main\resources\day8" />
       <recent name="C:\Projects\Old\Ruggero\adventOfCode2021\src\main\resources\day4" />
       <recent name="C:\Projects\Old\Ruggero\adventOfCode2021\src\main\java\it\ruggero\adventofcode2021\puzzleinput" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="it.ruggero.adventofcode2021.day1.basesolution" />
       <recent name="it.ruggero.adventofcode2021.day12" />
       <recent name="it.ruggero.adventofcode2021.day11" />
       <recent name="it.ruggero.adventofcode2021.day4.entity" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="it.ruggero.adventofcode2021.day14.entity" />
       <recent name="it.ruggero.adventofcode2021.day9.alternativesolution.entity" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.InputDataTest.testGetDifference">
+  <component name="RunManager" selected="JUnit.SolutionTest.testReadFile">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -320,23 +338,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DotMapTest.testActual" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ChitonTest.testChitonConstructor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="adventOfCode2021" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="it.ruggero.adventofcode2021.day13.*" />
+          <option name="PATTERN" value="it.ruggero.adventofcode2021.day15.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day13" />
-      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day13.DotMapTest" />
-      <option name="METHOD_NAME" value="testActual" />
+      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day15" />
+      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day15.ChitonTest" />
+      <option name="METHOD_NAME" value="testChitonConstructor" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InputDataTest.testApplyRule" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ChitonTest.testGetNeighbour" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="adventOfCode2021" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="it.ruggero.adventofcode2021.day15.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day15" />
+      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day15.ChitonTest" />
+      <option name="METHOD_NAME" value="testGetNeighbour" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InputDataPart2Test.testCount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="adventOfCode2021" />
       <extension name="coverage">
         <pattern>
@@ -345,14 +379,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day14.entity" />
-      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day14.entity.InputDataTest" />
-      <option name="METHOD_NAME" value="testApplyRule" />
+      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day14.entity.InputDataPart2Test" />
+      <option name="METHOD_NAME" value="testCount" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InputDataTest.testGetDifference" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="InputDataPart2Test.testMethod" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="adventOfCode2021" />
       <extension name="coverage">
         <pattern>
@@ -361,59 +395,43 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day14.entity" />
-      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day14.entity.InputDataTest" />
-      <option name="METHOD_NAME" value="testGetDifference" />
+      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day14.entity.InputDataPart2Test" />
+      <option name="METHOD_NAME" value="testMethod" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InputDataTest.testInputDataCreation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SolutionTest.testReadFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="adventOfCode2021" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="it.ruggero.adventofcode2021.day14.entity.*" />
+          <option name="PATTERN" value="it.ruggero.adventofcode2021.day1.streamsolution.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day14.entity" />
-      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day14.entity.InputDataTest" />
-      <option name="METHOD_NAME" value="testInputDataCreation" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="InputDataTest.testStringToList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="adventOfCode2021" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="it.ruggero.adventofcode2021.day14.entity.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day14.entity" />
-      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day14.entity.InputDataTest" />
-      <option name="METHOD_NAME" value="testStringToList" />
+      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day1.streamsolution" />
+      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day1.streamsolution.SolutionTest" />
+      <option name="METHOD_NAME" value="testReadFile" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.DotMapTest.testActual" />
-      <item itemvalue="JUnit.InputDataTest.testInputDataCreation" />
-      <item itemvalue="JUnit.InputDataTest.testApplyRule" />
-      <item itemvalue="JUnit.InputDataTest.testStringToList" />
-      <item itemvalue="JUnit.InputDataTest.testGetDifference" />
+      <item itemvalue="JUnit.InputDataPart2Test.testCount" />
+      <item itemvalue="JUnit.InputDataPart2Test.testMethod" />
+      <item itemvalue="JUnit.ChitonTest.testChitonConstructor" />
+      <item itemvalue="JUnit.ChitonTest.testGetNeighbour" />
+      <item itemvalue="JUnit.SolutionTest.testReadFile" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.InputDataTest.testGetDifference" />
-        <item itemvalue="JUnit.InputDataTest.testStringToList" />
-        <item itemvalue="JUnit.InputDataTest.testApplyRule" />
-        <item itemvalue="JUnit.InputDataTest.testInputDataCreation" />
-        <item itemvalue="JUnit.DotMapTest.testActual" />
+        <item itemvalue="JUnit.SolutionTest.testReadFile" />
+        <item itemvalue="JUnit.ChitonTest.testGetNeighbour" />
+        <item itemvalue="JUnit.ChitonTest.testChitonConstructor" />
+        <item itemvalue="JUnit.InputDataPart2Test.testMethod" />
+        <item itemvalue="JUnit.InputDataPart2Test.testCount" />
       </list>
     </recent_temporary>
   </component>
@@ -477,7 +495,14 @@
       <workItem from="1648623799535" duration="6230000" />
       <workItem from="1648697664711" duration="5000" />
       <workItem from="1648721239507" duration="4057000" />
-      <workItem from="1648742742930" duration="3178000" />
+      <workItem from="1648742742930" duration="9644000" />
+      <workItem from="1648801894748" duration="600000" />
+      <workItem from="1648895634462" duration="8912000" />
+      <workItem from="1648927163611" duration="1733000" />
+      <workItem from="1648994500655" duration="9746000" />
+      <workItem from="1649048635612" duration="14000" />
+      <workItem from="1650024949850" duration="39000" />
+      <workItem from="1650025002879" duration="3482000" />
     </task>
     <servers />
   </component>
@@ -918,6 +943,26 @@
           <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day14/entity/InputData.java</url>
           <line>48</line>
           <option name="timeStamp" value="246" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day14/entity/InputDataPart2.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="248" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day15/Position.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="249" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day15/Chiton.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="250" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day15/ChitonTest.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="251" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.NullPointerException" package="java.lang" />
