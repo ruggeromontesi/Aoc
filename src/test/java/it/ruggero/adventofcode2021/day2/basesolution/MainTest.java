@@ -1,5 +1,6 @@
-package it.ruggero.adventofcode2021.day2;
+package it.ruggero.adventofcode2021.day2.basesolution;
 
+import it.ruggero.adventofcode2021.day2.basesolution.Main;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
