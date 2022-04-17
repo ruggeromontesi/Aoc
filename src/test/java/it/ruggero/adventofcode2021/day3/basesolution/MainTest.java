@@ -1,5 +1,6 @@
-package it.ruggero.adventofcode2021.day3;
+package it.ruggero.adventofcode2021.day3.basesolution;
 
+import it.ruggero.adventofcode2021.day3.basesolution.Main;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -7,7 +8,7 @@ public class MainTest {
 
     @Test
     public void testPreliminaryScan( ){
-        Assertions.assertEquals(12,Main.preliminaryScan() );
+        Assertions.assertEquals(12, Main.preliminaryScan() );
 
 
     }

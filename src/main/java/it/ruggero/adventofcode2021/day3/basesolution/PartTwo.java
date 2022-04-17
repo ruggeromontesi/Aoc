@@ -1,7 +1,7 @@
 /*
  * Copyright (c) Dematic GmbH 2021. All rights reserved. Confidential.
  */
-package it.ruggero.adventofcode2021.day3;
+package it.ruggero.adventofcode2021.day3.basesolution;
 
 import java.io.File;
 import java.io.FileNotFoundException;
