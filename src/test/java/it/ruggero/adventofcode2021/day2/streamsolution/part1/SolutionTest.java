@@ -1,4 +1,4 @@
-package it.ruggero.adventofcode2021.day2.streamsolution;
+package it.ruggero.adventofcode2021.day2.streamsolution.part1;
 import it.ruggero.adventofcode2021.day2.streamsolution.part1.Solution;
 import org.junit.jupiter.api.Test;
 
