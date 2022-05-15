@@ -5,8 +5,6 @@ import org.junit.jupiter.api.Test;
 
 public class BingoSessionTest {
 
-    String filePath = ".\\src\\main\\resources\\day4\\testBingo.txt";
-
     private static final String FILE_PATH_TEST = ".\\src\\main\\resources\\day4\\testBingo.txt";
     private static final String FILE_PATH_ACTUAL = ".\\src\\main\\resources\\day4\\bingo.txt";
 

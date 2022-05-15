@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="744342c0-46f8-4bdf-9e47-35602649a472" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day4/streamsolution/entity/BingoSession.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day4/streamsolution/entity/BingoSession.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day4/streamsolution/entity/BingoSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day4/streamsolution/entity/BingoSession.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day4/streamsolution/entity/BingoSessionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day4/streamsolution/entity/BingoSessionTest.java" afterDir="false" />
     </list>
@@ -491,7 +489,7 @@
       <workItem from="1650181804618" duration="4983000" />
       <workItem from="1650220875483" duration="6797000" />
       <workItem from="1652551221184" duration="8471000" />
-      <workItem from="1652586315921" duration="5921000" />
+      <workItem from="1652586315921" duration="6435000" />
     </task>
     <servers />
   </component>

@@ -33,7 +33,8 @@ public class BingoSession {
 
                 if (line.length() > 1 && line.contains(" ")) {
                     String[] rowBoardNumbersAsString = line.split(" ");
-                    createRow(rowBoardNumbersAsString,board,numberOfConsecutiveLines++);
+                    //createRow(rowBoardNumbersAsString,board,numberOfConsecutiveLines++);
+                    createRowWithStream(rowBoardNumbersAsString,board,numberOfConsecutiveLines++);
                 } else if(line.length() == 0) {
                     numberOfConsecutiveLines = 0;
                     board = new Board();
@@ -79,4 +80,23 @@ public class BingoSession {
     }
 
 
+    private void createRowWithStream(String[] integersAsString, Board board, int rowIndex) {
+        Map<Coordinate, BingoNumber> map = board.getTable();
+
+        IntStream.range(0,integersAsString.length).forEach(colIndex -> {
+            String integerAsString = integersAsString[colIndex];
+            Scanner scanner = new Scanner(integerAsString.trim());
+            if (scanner.hasNextInt()) {
+                BingoNumber bingoNumber = new BingoNumber(scanner.nextInt());
+                Coordinate coordinate = new Coordinate(rowIndex, map.size());
+                map.put(coordinate, bingoNumber);
+            }
+
+        });
+
+        if ( rowIndex == NUMBER_OF_ROWS_IN_THE_BOARD - 1) {
+            boards.add(board);
+            board = new Board();
+        }
+    }
 }
