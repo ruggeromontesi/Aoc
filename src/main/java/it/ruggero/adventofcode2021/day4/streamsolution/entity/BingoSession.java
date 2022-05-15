@@ -54,6 +54,9 @@ public class BingoSession {
         return drawnNumbers;
     }
 
+    public List<Board> getBoards() {
+        return boards;
+    }
 
     private void createRow(String[] integersAsString, Board board, int rowIndex) {
         Map<Coordinate, BingoNumber> map = board.getTable();
