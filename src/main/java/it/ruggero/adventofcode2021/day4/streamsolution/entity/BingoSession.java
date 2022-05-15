@@ -2,14 +2,14 @@ package it.ruggero.adventofcode2021.day4.streamsolution.entity;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 public class BingoSession {
+
+    private final int NUMBER_OF_ROWS_IN_THE_BOARD = 5;
+
     private List<Board> boards = new ArrayList<>();
     private List<Integer> drawnNumbers = new ArrayList<>();
 
@@ -32,30 +32,9 @@ public class BingoSession {
                 }
 
                 if (line.length() > 1 && line.contains(" ")) {
-
                     String[] rowBoardNumbersAsString = line.split(" ");
-                    int finalNumberOfConsecutiveLines = numberOfConsecutiveLines;
-
-
-                    Board finalBoard = board;
-                    IntStream.range(0,rowBoardNumbersAsString.length)
-                            .forEach(i -> {
-                                try {
-                                    int value = Integer.parseInt(rowBoardNumbersAsString[i]);
-                                    finalBoard.getTable().put(new Coordinate(i +5 * finalNumberOfConsecutiveLines), new BingoNumber(value));
-                                } catch (NumberFormatException ignored) {
-
-                                }
-
-
-                            });
-
-                    numberOfConsecutiveLines++ ;
-
-
-
+                    createRow(rowBoardNumbersAsString,board,numberOfConsecutiveLines++);
                 } else if(line.length() == 0) {
-                    boards.add(board);
                     numberOfConsecutiveLines = 0;
                     board = new Board();
                 }
@@ -74,4 +53,27 @@ public class BingoSession {
     public List<Integer> getDrawnNumbers() {
         return drawnNumbers;
     }
+
+
+    private void createRow(String[] integersAsString, Board board, int rowIndex) {
+        Map<Coordinate, BingoNumber> map = board.getTable();
+        int tableColIndex = 0;
+        for (int colIndex = 0; colIndex < integersAsString.length; colIndex++ ) {
+            String integerAsString = integersAsString[colIndex];
+            Scanner scanner = new Scanner(integerAsString.trim());
+            if (scanner.hasNextInt()) {
+                BingoNumber bingoNumber = new BingoNumber(scanner.nextInt());
+                Coordinate coordinate = new Coordinate(rowIndex,tableColIndex);
+                map.put(coordinate, bingoNumber);
+                tableColIndex++;
+            }
+        }
+
+        if ( rowIndex == NUMBER_OF_ROWS_IN_THE_BOARD - 1) {
+            boards.add(board);
+            board = new Board();
+        }
+    }
+
+
 }

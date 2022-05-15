@@ -2,26 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="744342c0-46f8-4bdf-9e47-35602649a472" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/qaplug_profiles.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day4/streamsolution/entity/BingoNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day4/streamsolution/entity/Board.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day4/streamsolution/entity/Coordinate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day4/streamsolution/entity/BingoSessionTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day4/streamsolution/service/BingoServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day3/streamsolution/Solution$1Temp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day3/streamsolution/Solution$1Temp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day3/streamsolution/Solution$Counter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day3/streamsolution/Solution$Counter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day3/streamsolution/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day3/streamsolution/Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day4/BingoSession.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day4/entity/Board.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/adventOfCode2021/it/ruggero/adventofcode2021/day3/streamsolution/SolutionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/adventOfCode2021/it/ruggero/adventofcode2021/day3/streamsolution/SolutionTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/adventOfCode2021/it/ruggero/adventofcode2021/day4/BingoSessionTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/adventOfCode2021/it/ruggero/adventofcode2021/day4/entity/BoardTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day4/BingoSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day4/basesolution/BingoSession.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day4/entity/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day4/basesolution/entity/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day4/BingoSessionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day4/basesolution/BingoSessionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day4/entity/BoardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day4/basesolution/entity/BoardTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day4/streamsolution/entity/BingoSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day4/streamsolution/entity/BingoSession.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -326,6 +308,19 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.BingoSessionTest.testCreateBingoSession">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BingoSessionTest.testCreateBingoSession" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="adventOfCode2021" />
       <extension name="coverage">
@@ -494,7 +489,7 @@
       <workItem from="1650181804618" duration="4983000" />
       <workItem from="1650220875483" duration="6797000" />
       <workItem from="1652551221184" duration="8471000" />
-      <workItem from="1652586315921" duration="597000" />
+      <workItem from="1652586315921" duration="3796000" />
     </task>
     <servers />
   </component>
@@ -965,6 +960,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day4/streamsolution/entity/BingoSession.java</url>
           <line>20</line>
           <option name="timeStamp" value="253" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day4/streamsolution/entity/BingoSession.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="254" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.NullPointerException" package="java.lang" />
