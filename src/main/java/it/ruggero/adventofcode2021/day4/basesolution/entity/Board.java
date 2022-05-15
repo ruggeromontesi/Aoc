@@ -1,4 +1,4 @@
-package it.ruggero.adventofcode2021.day4.entity;
+package it.ruggero.adventofcode2021.day4.basesolution.entity;
 
 public class Board {
     private int numbers[][] = new int[5][5];

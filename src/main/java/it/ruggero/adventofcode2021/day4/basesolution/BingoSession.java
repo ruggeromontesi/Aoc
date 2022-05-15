@@ -1,9 +1,6 @@
-/*
- * Copyright (c) Dematic GmbH 2021. All rights reserved. Confidential.
- */
-package it.ruggero.adventofcode2021.day4;
+package it.ruggero.adventofcode2021.day4.basesolution;
 
-import it.ruggero.adventofcode2021.day4.entity.Board;
+import it.ruggero.adventofcode2021.day4.basesolution.entity.Board;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -11,9 +8,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-/**
- * @author montesr
- */
 public class BingoSession {
     private static  String filePath = ".\\src\\main\\resources\\day4\\testBingo.txt";
     private static List<String> strings = new ArrayList<>();

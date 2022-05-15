@@ -1,15 +1,10 @@
-/*
- * Copyright (c) Dematic GmbH 2021. All rights reserved. Confidential.
- */
-package it.ruggero.adventofcode2021.day4;
+package it.ruggero.adventofcode2021.day4.basesolution;
 
-import it.ruggero.adventofcode2021.day4.entity.Board;
+import it.ruggero.adventofcode2021.day4.basesolution.BingoSession;
+import it.ruggero.adventofcode2021.day4.basesolution.entity.Board;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-/**
- * @author montesr
- */
 public class BingoSessionTest {
 
     //@Test
