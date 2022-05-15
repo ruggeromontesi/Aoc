@@ -11,9 +11,9 @@ public class BingoSessionTest {
     @Test
     public void testCreateBingoSession() {
         BingoSession bingoSession = new BingoSession(FILE_PATH_TEST);
-        Assertions.assertEquals(3,bingoSession.getBoards().size());
+        Assertions.assertEquals(3,bingoSession.getBoardsAtInitialState().size());
         bingoSession = new BingoSession(FILE_PATH_ACTUAL);
-        Assertions.assertEquals(100,bingoSession.getBoards().size());
+        Assertions.assertEquals(100,bingoSession.getBoardsAtInitialState().size());
 
 
     }
