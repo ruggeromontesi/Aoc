@@ -86,9 +86,10 @@ public class BingoSession {
         IntStream.range(0,integersAsString.length).forEach(colIndex -> {
             Scanner scanner = new Scanner(integersAsString[colIndex].trim());
             if (scanner.hasNextInt()) {
+                int tableColIndex = map.size() == 0 ? 0 : map.size() % 5;
 
-                map.put(new Coordinate(rowIndex, runningIndex), new BingoNumber(scanner.nextInt()));
-                //runningIndex++;
+                map.put(new Coordinate(rowIndex, tableColIndex), new BingoNumber(scanner.nextInt()));
+
             }
         });
 

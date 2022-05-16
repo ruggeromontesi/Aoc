@@ -4,11 +4,7 @@
     <list default="true" id="744342c0-46f8-4bdf-9e47-35602649a472" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day4/streamsolution/entity/BingoSession.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day4/streamsolution/entity/BingoSession.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day4/streamsolution/service/BingoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day4/streamsolution/service/BingoService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/adventOfCode2021/it/ruggero/adventofcode2021/day4/streamsolution/service/BingoServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/adventOfCode2021/it/ruggero/adventofcode2021/day4/streamsolution/service/BingoServiceTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day4/streamsolution/entity/BingoSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day4/streamsolution/entity/BingoSession.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day4/streamsolution/service/BingoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day4/streamsolution/service/BingoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day4/streamsolution/service/BingoServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day4/streamsolution/service/BingoServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -312,7 +308,18 @@
       <recent name="it.ruggero.adventofcode2021.day9.alternativesolution.entity" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BingoSessionTest.testCreateBingoSession">
+  <component name="RunManager" selected="JUnit.BingoServiceTest.testVerticallyCheckIfThisBoardHasWon">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BingoServiceTest.testCheckThisRow" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="adventOfCode2021" />
       <extension name="coverage">
@@ -402,9 +409,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BingoServiceTest.testVerticallyCheckIfThisBoardHasWon" />
         <item itemvalue="JUnit.BingoSessionTest.testCreateBingoSession" />
         <item itemvalue="JUnit.BingoServiceTest.testHorizontallyCheckIfThisBoardHasWon" />
-        <item itemvalue="JUnit.BingoServiceTest.testVerticallyCheckIfThisBoardHasWon" />
         <item itemvalue="JUnit.BingoServiceTest.testCheckThisRow" />
         <item itemvalue="JUnit.SolutionTest.testBinarytoInt" />
       </list>
@@ -482,7 +489,7 @@
       <workItem from="1650220875483" duration="6797000" />
       <workItem from="1652551221184" duration="8471000" />
       <workItem from="1652586315921" duration="18569000" />
-      <workItem from="1652674763152" duration="656000" />
+      <workItem from="1652674763152" duration="5406000" />
     </task>
     <servers />
   </component>
