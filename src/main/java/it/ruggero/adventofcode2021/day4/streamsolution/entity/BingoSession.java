@@ -82,10 +82,13 @@ public class BingoSession {
 
     private void createRowWithStream(String[] integersAsString, Board board, int rowIndex) {
         Map<Coordinate, BingoNumber> map = board.getTable();
+         int runningIndex = 0;
         IntStream.range(0,integersAsString.length).forEach(colIndex -> {
             Scanner scanner = new Scanner(integersAsString[colIndex].trim());
             if (scanner.hasNextInt()) {
-                map.put(new Coordinate(rowIndex, map.size()), new BingoNumber(scanner.nextInt()));
+
+                map.put(new Coordinate(rowIndex, runningIndex), new BingoNumber(scanner.nextInt()));
+                //runningIndex++;
             }
         });
 

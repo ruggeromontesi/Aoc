@@ -38,10 +38,17 @@ public class BingoService {
 
     }
 
-    public void horizontallyCheckIfThisBoardHasWon(Board board) {
+    public boolean horizontallyCheckIfThisBoardHasWon(Board board) {
+        return IntStream.range(0,bingoSession.NUMBER_OF_ROWS_IN_THE_BOARD).anyMatch(rowIndex  ->  checkThisRow(rowIndex,board));
 
 
     }
+
+   public boolean verticallyCheckIfThisBoardHasWon(Board board) {
+        IntStream.range(0, bingoSession.NUMBER_OF_COLUMNS_IN_THE_BOARD).anyMatch(colIndex -> checkThisColumn(colIndex,board));
+        return false;
+   }
+
 
 
     public boolean checkThisRow(int rowIndex, Board board) {
