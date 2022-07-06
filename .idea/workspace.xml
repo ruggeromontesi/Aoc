@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="744342c0-46f8-4bdf-9e47-35602649a472" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day4/streamsolution/entity/BingoSession.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day4/streamsolution/entity/BingoSession.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day4/streamsolution/entity/BingoSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day4/streamsolution/entity/BingoSession.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/DayFive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/basesolution/DayFive.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Coordinate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/basesolution/entity/Coordinate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/basesolution/entity/Line.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/support/Help.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/basesolution/support/Help.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day5/Day5Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day5/basesolution/Day5Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day5/entity/LineTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day5/streamsolution/entity/LineTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day5/streamsolution/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day5/streamsolution/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day5/support/HelpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day5/basesolution/support/HelpTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -276,7 +281,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/day5" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.64827585" />
@@ -284,11 +289,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\rugge\Desktop\tmp\10\adventOfCode2021\src\main\resources\day5" />
       <recent name="C:\Projects\Old\Ruggero\adventOfCode2021\src\main\resources\day13" />
       <recent name="C:\Projects\Old\Ruggero\adventOfCode2021\src\main\resources\day12" />
       <recent name="C:\Projects\Old\Ruggero\adventOfCode2021\src\main\resources\day11" />
       <recent name="C:\Projects\Old\Ruggero\adventOfCode2021\src\main\resources\day9" />
-      <recent name="C:\Projects\Old\Ruggero\adventOfCode2021\out\production\adventOfCode2021" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Projects\Old\Ruggero\adventOfCode2021\src\test\java\it\ruggero\adventofcode2021\day1" />
@@ -297,18 +302,19 @@
       <recent name="C:\Projects\Old\Ruggero\adventOfCode2021\src\main\java\it\ruggero\adventofcode2021\puzzleinput" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="it.ruggero.adventofcode2021.day5.streamsolution" />
+      <recent name="it.ruggero.adventofcode2021.day5.basesolution" />
+      <recent name="it.ruggero.adventofcode2021.day4.basesolution" />
       <recent name="it.ruggero.adventofcode2021.day4.streamsolution.service" />
       <recent name="it.ruggero.adventofcode2021.day4.basesolution.entity" />
-      <recent name="it.ruggero.adventofcode2021.day4.basesolution" />
-      <recent name="it.ruggero.adventofcode2021.day3.basesolution" />
-      <recent name="it.ruggero.adventofcode2021.day2.streamsolution.part1" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="it.ruggero.adventofcode2021.day5.streamsolution.entity" />
       <recent name="it.ruggero.adventofcode2021.day14.entity" />
       <recent name="it.ruggero.adventofcode2021.day9.alternativesolution.entity" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BingoServiceTest.testVerticallyCheckIfThisBoardHasWon">
+  <component name="RunManager" selected="JUnit.AppTest.testAll">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -316,6 +322,22 @@
         </value>
       </option>
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppTest.testAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="adventOfCode2021" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="it.ruggero.adventofcode2021.day5.streamsolution.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day5.streamsolution" />
+      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day5.streamsolution.AppTest" />
+      <option name="METHOD_NAME" value="testAll" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -384,36 +406,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SolutionTest.testBinarytoInt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="adventOfCode2021" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="it.ruggero.adventofcode2021.day3.streamsolution.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day3.streamsolution" />
-      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day3.streamsolution.SolutionTest" />
-      <option name="METHOD_NAME" value="testBinarytoInt" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="JUnit.SolutionTest.testBinarytoInt" />
       <item itemvalue="JUnit.BingoSessionTest.testCreateBingoSession" />
       <item itemvalue="JUnit.BingoServiceTest.testCheckThisRow" />
       <item itemvalue="JUnit.BingoServiceTest.testHorizontallyCheckIfThisBoardHasWon" />
       <item itemvalue="JUnit.BingoServiceTest.testVerticallyCheckIfThisBoardHasWon" />
+      <item itemvalue="JUnit.AppTest.testAll" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AppTest.testAll" />
         <item itemvalue="JUnit.BingoServiceTest.testVerticallyCheckIfThisBoardHasWon" />
         <item itemvalue="JUnit.BingoSessionTest.testCreateBingoSession" />
         <item itemvalue="JUnit.BingoServiceTest.testHorizontallyCheckIfThisBoardHasWon" />
         <item itemvalue="JUnit.BingoServiceTest.testCheckThisRow" />
-        <item itemvalue="JUnit.SolutionTest.testBinarytoInt" />
       </list>
     </recent_temporary>
   </component>
@@ -642,6 +648,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -672,107 +679,107 @@
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/DayFive.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/basesolution/DayFive.java</url>
           <line>117</line>
           <option name="timeStamp" value="86" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/DayFive.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/basesolution/DayFive.java</url>
           <line>121</line>
           <option name="timeStamp" value="89" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/DayFive.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/basesolution/DayFive.java</url>
           <line>123</line>
           <option name="timeStamp" value="90" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/basesolution/entity/Line.java</url>
           <line>151</line>
           <option name="timeStamp" value="108" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/basesolution/entity/Line.java</url>
           <line>170</line>
           <option name="timeStamp" value="109" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/basesolution/entity/Line.java</url>
           <line>167</line>
           <option name="timeStamp" value="111" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/basesolution/entity/Line.java</url>
           <line>172</line>
           <option name="timeStamp" value="117" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/basesolution/entity/Line.java</url>
           <line>174</line>
           <option name="timeStamp" value="119" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/basesolution/entity/Line.java</url>
           <line>148</line>
           <option name="timeStamp" value="128" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/basesolution/entity/Line.java</url>
           <line>159</line>
           <option name="timeStamp" value="130" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/basesolution/entity/Line.java</url>
           <line>162</line>
           <option name="timeStamp" value="131" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/basesolution/entity/Line.java</url>
           <line>165</line>
           <option name="timeStamp" value="134" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/basesolution/entity/Line.java</url>
           <line>152</line>
           <option name="timeStamp" value="148" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/basesolution/entity/Line.java</url>
           <line>168</line>
           <option name="timeStamp" value="156" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/DayFive.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/basesolution/DayFive.java</url>
           <line>39</line>
           <option name="timeStamp" value="164" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day5/Day5Test.java</url>
-          <line>23</line>
+          <url>file://$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day5/basesolution/Day5Test.java</url>
+          <line>24</line>
           <option name="timeStamp" value="165" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day5/Day5Test.java</url>
-          <line>25</line>
+          <url>file://$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day5/basesolution/Day5Test.java</url>
+          <line>26</line>
           <option name="timeStamp" value="166" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day5/Day5Test.java</url>
-          <line>26</line>
+          <url>file://$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day5/basesolution/Day5Test.java</url>
+          <line>27</line>
           <option name="timeStamp" value="167" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/DayFive.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/basesolution/DayFive.java</url>
           <line>33</line>
           <option name="timeStamp" value="168" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/DayFive.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/basesolution/DayFive.java</url>
           <line>35</line>
           <option name="timeStamp" value="169" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/DayFive.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/basesolution/DayFive.java</url>
           <line>36</line>
           <option name="timeStamp" value="170" />
         </line-breakpoint>
@@ -792,37 +799,37 @@
           <option name="timeStamp" value="173" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$PROJECT_DIR$/../../../../Java/jdk11/lib/src.zip!/java.base/java/lang/ClassLoader.java</url>
+          <url>jar://$USER_HOME$/Java/jdk11/lib/src.zip!/java.base/java/lang/ClassLoader.java</url>
           <line>1664</line>
           <option name="timeStamp" value="182" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$PROJECT_DIR$/../../../../Java/jdk11/lib/src.zip!/java.base/java/lang/ClassLoader.java</url>
+          <url>jar://$USER_HOME$/Java/jdk11/lib/src.zip!/java.base/java/lang/ClassLoader.java</url>
           <line>1391</line>
           <option name="timeStamp" value="183" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$PROJECT_DIR$/../../../../Java/jdk11/lib/src.zip!/java.base/java/lang/ClassLoader.java</url>
+          <url>jar://$USER_HOME$/Java/jdk11/lib/src.zip!/java.base/java/lang/ClassLoader.java</url>
           <line>1392</line>
           <option name="timeStamp" value="184" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$PROJECT_DIR$/../../../../Java/jdk11/lib/src.zip!/java.base/java/lang/ClassLoader.java</url>
+          <url>jar://$USER_HOME$/Java/jdk11/lib/src.zip!/java.base/java/lang/ClassLoader.java</url>
           <line>1394</line>
           <option name="timeStamp" value="185" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$PROJECT_DIR$/../../../../Java/jdk11/lib/src.zip!/java.base/java/lang/ClassLoader.java</url>
+          <url>jar://$USER_HOME$/Java/jdk11/lib/src.zip!/java.base/java/lang/ClassLoader.java</url>
           <line>1396</line>
           <option name="timeStamp" value="186" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$PROJECT_DIR$/../../../../Java/jdk11/lib/src.zip!/java.base/java/lang/ClassLoader.java</url>
+          <url>jar://$USER_HOME$/Java/jdk11/lib/src.zip!/java.base/java/lang/ClassLoader.java</url>
           <line>1399</line>
           <option name="timeStamp" value="187" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$PROJECT_DIR$/../../../../Java/jdk11/lib/src.zip!/java.base/java/lang/ClassLoader.java</url>
+          <url>jar://$USER_HOME$/Java/jdk11/lib/src.zip!/java.base/java/lang/ClassLoader.java</url>
           <line>1393</line>
           <option name="timeStamp" value="188" />
         </line-breakpoint>
@@ -1111,7 +1118,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../../Java/jdk11/lib/src.zip!/java.base/java/util/Scanner.java">
+    <entry file="jar://$USER_HOME$/Java/jdk11/lib/src.zip!/java.base/java/util/Scanner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="841">
           <caret line="2827" column="26" selection-start-line="2827" selection-start-column="26" selection-end-line="2827" selection-end-column="26" />
@@ -1119,21 +1126,21 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/out/production/adventOfCode2021/positionsTest.txt" />
-    <entry file="jar://$PROJECT_DIR$/../../../../Java/jdk11/lib/src.zip!/java.base/java/net/URL.java">
+    <entry file="jar://$USER_HOME$/Java/jdk11/lib/src.zip!/java.base/java/net/URL.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-461">
           <caret line="1137" selection-start-line="1137" selection-end-line="1137" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../../Java/jdk11/lib/src.zip!/java.base/jdk/internal/loader/BuiltinClassLoader.java">
+    <entry file="jar://$USER_HOME$/Java/jdk11/lib/src.zip!/java.base/jdk/internal/loader/BuiltinClassLoader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3715">
           <caret line="264" selection-start-line="264" selection-end-line="264" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../../Java/jdk11/lib/src.zip!/java.base/jdk/internal/loader/BootLoader.java">
+    <entry file="jar://$USER_HOME$/Java/jdk11/lib/src.zip!/java.base/jdk/internal/loader/BootLoader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="117">
           <caret line="153" selection-start-line="153" selection-end-line="153" />
@@ -1143,7 +1150,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../../Java/jdk11/lib/src.zip!/java.base/java/lang/ClassLoader.java">
+    <entry file="jar://$USER_HOME$/Java/jdk11/lib/src.zip!/java.base/java/lang/ClassLoader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-825">
           <caret line="1770" selection-start-line="1770" selection-end-line="1770" />
@@ -1154,7 +1161,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../../Java/jdk11/lib/src.zip!/java.base/java/util/function/IntUnaryOperator.java">
+    <entry file="jar://$USER_HOME$/Java/jdk11/lib/src.zip!/java.base/java/util/function/IntUnaryOperator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="89">
           <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
@@ -1291,7 +1298,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar!/org/junit/platform/commons/util/ReflectionUtils.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar!/org/junit/platform/commons/util/ReflectionUtils.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="145">
           <caret line="369" selection-start-line="369" selection-end-line="369" />
