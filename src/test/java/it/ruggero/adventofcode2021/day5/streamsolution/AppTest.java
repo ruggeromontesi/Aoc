@@ -23,5 +23,15 @@ public class AppTest
             }
 
         }
+
+        System.out.println("The number of points where at least two lines overlap is " + hydrotermalVentureMap.getNumberOfPointsWhereAtLeastTwoLinesOverlap());
+    }
+
+    @Test
+    public void testBigCase() {
+        HydrotermalVentureMap hydrotermalVentureMap = new HydrotermalVentureMap(FILE_PATH_ACTUAL);
+        hydrotermalVentureMap.createMapWitNumberOfOverlappingLines();
+        System.out.println("The number of points where at least two lines overlap is " + hydrotermalVentureMap.getNumberOfPointsWhereAtLeastTwoLinesOverlap());
+
     }
 }

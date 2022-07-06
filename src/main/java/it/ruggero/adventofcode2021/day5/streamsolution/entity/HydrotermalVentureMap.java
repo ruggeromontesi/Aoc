@@ -7,10 +7,13 @@ import java.util.List;
 import java.util.Scanner;
 
 public class HydrotermalVentureMap {
-    private int totalNumberOfRows;
-    private int totalNumberOfColumns;
-    private int[][] mapWithNumberOfOverlappingLines;
+
     private final List<Line> lines = new ArrayList<>();
+    private final int[][] mapWithNumberOfOverlappingLines;
+    private final int totalNumberOfRows;
+    private final int totalNumberOfColumns;
+    private int numberOfPointsWhereAtLeastTwoLinesOverlap = 0;
+
 
     public HydrotermalVentureMap(String filepath) {
         Scanner scanner;
@@ -41,6 +44,10 @@ public class HydrotermalVentureMap {
 
     }
 
+    public List<Line> getLines() {
+        return lines;
+    }
+
     public int getTotalNumberOfRows() {
         return totalNumberOfRows;
     }
@@ -49,8 +56,8 @@ public class HydrotermalVentureMap {
         return totalNumberOfColumns;
     }
 
-    public List<Line> getLines() {
-        return lines;
+    public int getNumberOfPointsWhereAtLeastTwoLinesOverlap() {
+        return numberOfPointsWhereAtLeastTwoLinesOverlap;
     }
 
     public int[][] getMapWithNumberOfOverlappingLines() {
@@ -61,9 +68,12 @@ public class HydrotermalVentureMap {
         for(int rowIndex = 0; rowIndex < totalNumberOfRows; rowIndex++) {
             for(int columnIndex = 0; columnIndex < totalNumberOfColumns; columnIndex++) {
                 Coordinate coordinate = new Coordinate(columnIndex,rowIndex);
-                mapWithNumberOfOverlappingLines[rowIndex][columnIndex] = (int) lines.stream()
+                int count = mapWithNumberOfOverlappingLines[rowIndex][columnIndex] = (int) lines.stream()
                         .filter(line -> line.containsCoordinate(coordinate))
                         .count();
+                if (count > 1) {
+                    numberOfPointsWhereAtLeastTwoLinesOverlap++ ;
+                }
             }
         }
     }
