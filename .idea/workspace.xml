@@ -2,16 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="744342c0-46f8-4bdf-9e47-35602649a472" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/streamsolution/entity/concurrent/CalculateNumberOfOverlappingLinesAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/DayFive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/basesolution/DayFive.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Coordinate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/basesolution/entity/Coordinate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/entity/Line.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/basesolution/entity/Line.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adventOfCode2021.iml" beforeDir="false" afterPath="$PROJECT_DIR$/adventOfCode2021.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day5/streamsolution/entity/HydrotermalVentureMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day5/streamsolution/entity/HydrotermalVentureMap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/adventOfCode2021/it/ruggero/adventofcode2021/day1/basesolution/PuzzleInputTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/adventOfCode2021/it/ruggero/adventofcode2021/day1/basesolution/PuzzleInputTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/adventOfCode2021/it/ruggero/adventofcode2021/day5/streamsolution/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/adventOfCode2021/it/ruggero/adventofcode2021/day5/streamsolution/AppTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/streamsolution/entity/HydrotermalVentureMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/streamsolution/entity/HydrotermalVentureMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/support/Help.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/basesolution/support/Help.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day5/Day5Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day5/basesolution/Day5Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day5/entity/LineTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day5/streamsolution/entity/LineTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day5/support/HelpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day5/basesolution/support/HelpTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day1/basesolution/PuzzleInputTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day1/basesolution/PuzzleInputTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day5/streamsolution/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day5/streamsolution/AppTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -273,22 +274,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="Downloaded.Files.Path.Enabled" value="false" />
-    <property name="Repository.Attach.Annotations" value="false" />
-    <property name="Repository.Attach.JavaDocs" value="false" />
-    <property name="Repository.Attach.Sources" value="false" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/day5" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.64827585" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ruggero.montesi_uniq/Desktop/tmp/06/adventOfCode2021&quot;
+  }
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\rugge\Desktop\tmp\10\adventOfCode2021\src\main\resources\day5" />
@@ -316,7 +313,7 @@
       <recent name="it.ruggero.adventofcode2021.day9.alternativesolution.entity" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AppTest.testBigCase">
+  <component name="RunManager" selected="JUnit.Day5PerformanceTest.performanceTestBigCase">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -360,68 +357,68 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BingoServiceTest.testHorizontallyCheckIfThisBoardHasWon" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AppTest.testBigCase2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="adventOfCode2021" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="it.ruggero.adventofcode2021.day4.streamsolution.service.*" />
+          <option name="PATTERN" value="it.ruggero.adventofcode2021.day5.streamsolution.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day4.streamsolution.service" />
-      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day4.streamsolution.service.BingoServiceTest" />
-      <option name="METHOD_NAME" value="testHorizontallyCheckIfThisBoardHasWon" />
+      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day5.streamsolution" />
+      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day5.streamsolution.AppTest" />
+      <option name="METHOD_NAME" value="testBigCase2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BingoServiceTest.testVerticallyCheckIfThisBoardHasWon" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Day5PerformanceTest.performanceTestBigCase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="adventOfCode2021" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="it.ruggero.adventofcode2021.day4.streamsolution.service.*" />
+          <option name="PATTERN" value="it.ruggero.adventofcode2021.day5.streamsolution.PerformanceTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day4.streamsolution.service" />
-      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day4.streamsolution.service.BingoServiceTest" />
-      <option name="METHOD_NAME" value="testVerticallyCheckIfThisBoardHasWon" />
+      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day5.streamsolution.PerformanceTest" />
+      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day5.streamsolution.PerformanceTest.Day5PerformanceTest" />
+      <option name="METHOD_NAME" value="performanceTestBigCase" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BingoSessionTest.testCreateBingoSession" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Day5PerformanceTest.testBigCase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="adventOfCode2021" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="it.ruggero.adventofcode2021.day4.streamsolution.entity.*" />
+          <option name="PATTERN" value="it.ruggero.adventofcode2021.day5.streamsolution.PerformanceTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day4.streamsolution.entity" />
-      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day4.streamsolution.entity.BingoSessionTest" />
-      <option name="METHOD_NAME" value="testCreateBingoSession" />
+      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day5.streamsolution.PerformanceTest" />
+      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day5.streamsolution.PerformanceTest.Day5PerformanceTest" />
+      <option name="METHOD_NAME" value="testBigCase" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.BingoSessionTest.testCreateBingoSession" />
-      <item itemvalue="JUnit.BingoServiceTest.testHorizontallyCheckIfThisBoardHasWon" />
-      <item itemvalue="JUnit.BingoServiceTest.testVerticallyCheckIfThisBoardHasWon" />
+      <item itemvalue="JUnit.Day5PerformanceTest.performanceTestBigCase" />
+      <item itemvalue="JUnit.AppTest.testBigCase2" />
+      <item itemvalue="JUnit.Day5PerformanceTest.testBigCase" />
       <item itemvalue="JUnit.AppTest.testAll" />
       <item itemvalue="JUnit.AppTest.testBigCase" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Day5PerformanceTest.performanceTestBigCase" />
         <item itemvalue="JUnit.AppTest.testBigCase" />
+        <item itemvalue="JUnit.Day5PerformanceTest.testBigCase" />
+        <item itemvalue="JUnit.AppTest.testBigCase2" />
         <item itemvalue="JUnit.AppTest.testAll" />
-        <item itemvalue="JUnit.BingoServiceTest.testVerticallyCheckIfThisBoardHasWon" />
-        <item itemvalue="JUnit.BingoSessionTest.testCreateBingoSession" />
-        <item itemvalue="JUnit.BingoServiceTest.testHorizontallyCheckIfThisBoardHasWon" />
       </list>
     </recent_temporary>
   </component>
@@ -498,6 +495,10 @@
       <workItem from="1652551221184" duration="8471000" />
       <workItem from="1652586315921" duration="18569000" />
       <workItem from="1652674763152" duration="5406000" />
+      <workItem from="1657196884649" duration="1686000" />
+      <workItem from="1657199085256" duration="366000" />
+      <workItem from="1657199540106" duration="1208000" />
+      <workItem from="1657203266555" duration="299000" />
     </task>
     <servers />
   </component>
@@ -650,7 +651,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

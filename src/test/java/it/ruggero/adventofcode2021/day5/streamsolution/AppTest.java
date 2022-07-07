@@ -1,7 +1,9 @@
 package it.ruggero.adventofcode2021.day5.streamsolution;
 
 import it.ruggero.adventofcode2021.day5.streamsolution.entity.HydrotermalVentureMap;
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Test;
+
 
 /**
  * Unit test for simple App.
@@ -30,8 +32,23 @@ public class AppTest
     @Test
     public void testBigCase() {
         HydrotermalVentureMap hydrotermalVentureMap = new HydrotermalVentureMap(FILE_PATH_ACTUAL);
+        Long start = System.currentTimeMillis();
         hydrotermalVentureMap.createMapWitNumberOfOverlappingLines();
+        Long stop = System.currentTimeMillis();
+        Assert.assertEquals(21466,hydrotermalVentureMap.getNumberOfPointsWhereAtLeastTwoLinesOverlap());
         System.out.println("The number of points where at least two lines overlap is " + hydrotermalVentureMap.getNumberOfPointsWhereAtLeastTwoLinesOverlap());
+        System.out.println("Execution time in ms without concurrency "+ (stop - start));
+
+
+    }
+
+
+    @Test
+    public void testBigCase2() {
+        HydrotermalVentureMap hydrotermalVentureMap = new HydrotermalVentureMap(FILE_PATH_ACTUAL);
+        hydrotermalVentureMap.createMapWitNumberOfOverlappingLinesE();
+        System.out.println("The number of points where at least two lines overlap is " + hydrotermalVentureMap.getNumberOfPointsWhereAtLeastTwoLinesOverlap());
+        Assert.assertEquals(21466,hydrotermalVentureMap.getNumberOfPointsWhereAtLeastTwoLinesOverlap());
 
     }
 }

@@ -5,14 +5,15 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import java.util.concurrent.RecursiveAction;
 
-public class HydrotermalVentureMap {
+public class HydrotermalVentureMap  {
 
-    private final List<Line> lines = new ArrayList<>();
-    private final int[][] mapWithNumberOfOverlappingLines;
-    private final int totalNumberOfRows;
-    private final int totalNumberOfColumns;
-    private int numberOfPointsWhereAtLeastTwoLinesOverlap = 0;
+    protected final List<Line> lines = new ArrayList<>();
+    protected final int[][] mapWithNumberOfOverlappingLines;
+    protected final int totalNumberOfRows;
+    protected final int totalNumberOfColumns;
+    protected int numberOfPointsWhereAtLeastTwoLinesOverlap = 0;
 
 
     public HydrotermalVentureMap(String filepath) {
@@ -75,6 +76,26 @@ public class HydrotermalVentureMap {
                     numberOfPointsWhereAtLeastTwoLinesOverlap++ ;
                 }
             }
+        }
+    }
+
+    public void createMapWitNumberOfOverlappingLinesAtIndex(int index) {
+        int columnIndex = (index < totalNumberOfColumns) ? index : index%totalNumberOfColumns ;
+        int rowIndex = index/totalNumberOfColumns;
+        Coordinate coordinate = new Coordinate(columnIndex,rowIndex);
+
+        int count = mapWithNumberOfOverlappingLines[rowIndex][columnIndex] = (int) lines.stream()
+                .filter(line -> line.containsCoordinate(coordinate))
+                .count();
+        if (count > 1) {
+            numberOfPointsWhereAtLeastTwoLinesOverlap++ ;
+        }
+    }
+
+    public  void createMapWitNumberOfOverlappingLinesE() {
+        for (int j = 0; j < (totalNumberOfColumns*totalNumberOfRows) - 1; j++) {
+            createMapWitNumberOfOverlappingLinesAtIndex(j);
+
         }
     }
 
