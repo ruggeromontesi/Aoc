@@ -4,9 +4,10 @@
 package it.ruggero.adventofcode2021.day1.basesolution;
 
 import it.ruggero.adventofcode2021.day1.basesolution.PuzzleInput;
-import org.junit.Test;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
 
 /**
  * @author montesr

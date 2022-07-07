@@ -1,8 +1,8 @@
 package it.ruggero.adventofcode2021.day5.streamsolution;
 
 import it.ruggero.adventofcode2021.day5.streamsolution.entity.HydrotermalVentureMap;
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 
 /**
@@ -35,7 +35,7 @@ public class AppTest
         Long start = System.currentTimeMillis();
         hydrotermalVentureMap.createMapWitNumberOfOverlappingLines();
         Long stop = System.currentTimeMillis();
-        Assert.assertEquals(21466,hydrotermalVentureMap.getNumberOfPointsWhereAtLeastTwoLinesOverlap());
+        Assertions.assertEquals(21466,hydrotermalVentureMap.getNumberOfPointsWhereAtLeastTwoLinesOverlap());
         System.out.println("The number of points where at least two lines overlap is " + hydrotermalVentureMap.getNumberOfPointsWhereAtLeastTwoLinesOverlap());
         System.out.println("Execution time in ms without concurrency "+ (stop - start));
 
@@ -48,7 +48,7 @@ public class AppTest
         HydrotermalVentureMap hydrotermalVentureMap = new HydrotermalVentureMap(FILE_PATH_ACTUAL);
         hydrotermalVentureMap.createMapWitNumberOfOverlappingLinesE();
         System.out.println("The number of points where at least two lines overlap is " + hydrotermalVentureMap.getNumberOfPointsWhereAtLeastTwoLinesOverlap());
-        Assert.assertEquals(21466,hydrotermalVentureMap.getNumberOfPointsWhereAtLeastTwoLinesOverlap());
+        Assertions.assertEquals(21466,hydrotermalVentureMap.getNumberOfPointsWhereAtLeastTwoLinesOverlap());
 
     }
 }

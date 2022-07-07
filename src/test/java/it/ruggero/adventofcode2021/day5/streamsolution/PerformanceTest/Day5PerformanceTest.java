@@ -2,8 +2,8 @@ package it.ruggero.adventofcode2021.day5.streamsolution.PerformanceTest;
 
 import it.ruggero.adventofcode2021.day5.streamsolution.entity.HydrotermalVentureMap;
 import it.ruggero.adventofcode2021.day5.streamsolution.entity.concurrent.CalculateNumberOfOverlappingLinesAction;
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.ForkJoinTask;
@@ -34,7 +34,8 @@ public class Day5PerformanceTest {
         start = System.currentTimeMillis();
         hydrotermalVentureMap.createMapWitNumberOfOverlappingLines();
         stop = System.currentTimeMillis();
-        Assert.assertEquals(21466,hydrotermalVentureMap.getNumberOfPointsWhereAtLeastTwoLinesOverlap());
+
+        Assertions.assertEquals(21466,hydrotermalVentureMap.getNumberOfPointsWhereAtLeastTwoLinesOverlap());
         System.out.println("Execution time in ms without concurrency "+ (stop - start));
 
 

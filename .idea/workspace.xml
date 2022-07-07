@@ -1,18 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="744342c0-46f8-4bdf-9e47-35602649a472" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/streamsolution/entity/concurrent/CalculateNumberOfOverlappingLinesAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_7_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_7_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/9/d9935fa641933a3b36c38ab5e8f1c13295c32096" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/9/d9935fa641933a3b36c38ab5e8f1c13295c32096" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/adventOfCode2021.iml" beforeDir="false" afterPath="$PROJECT_DIR$/adventOfCode2021.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day5/streamsolution/entity/HydrotermalVentureMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day5/streamsolution/entity/HydrotermalVentureMap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day1/basesolution/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day1/basesolution/PuzzleInput.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day1/streamsolution/Solution$Window.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day1/streamsolution/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day10/NavigationSubsystem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day10/entity/Line.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day11/Direction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day11/OctopusGrid.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day11/entity/Octopus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day12/CaveMap$Path.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day12/CaveMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day12/entity/Cave.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day13/DotMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day13/entity/Coordinate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day13/entity/Dot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day13/entity/FoldInstruction$Direction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day13/entity/FoldInstruction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day14/entity/InputData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day14/entity/InputDataPart2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day14/entity/Polymerization.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day15/Chiton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day15/Coordinate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day15/Direction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day15/Path.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day15/Position.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day2/basesolution/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day2/streamsolution/part1/Solution$Coordinate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day2/streamsolution/part1/Solution$Direction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day2/streamsolution/part1/Solution$Instruction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day2/streamsolution/part1/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day2/streamsolution/part2/Solution$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day2/streamsolution/part2/Solution$Direction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day2/streamsolution/part2/Solution$Instruction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day2/streamsolution/part2/Solution$Status.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day2/streamsolution/part2/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day3/basesolution/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day3/basesolution/PartTwo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day3/streamsolution/Solution$1Temp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day3/streamsolution/Solution$Counter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day3/streamsolution/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day4/basesolution/BingoSession.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day4/basesolution/entity/Board.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day4/streamsolution/entity/BingoNumber.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day4/streamsolution/entity/BingoSession.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day4/streamsolution/entity/Board.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day4/streamsolution/entity/Coordinate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day4/streamsolution/service/BingoService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day5/basesolution/DayFive.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day5/basesolution/entity/Coordinate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day5/basesolution/entity/Line.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day5/basesolution/support/Help.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day5/streamsolution/entity/Coordinate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day5/streamsolution/entity/HydrotermalVentureMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day5/streamsolution/entity/Line.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day5/streamsolution/entity/concurrent/CalculateNumberOfOverlappingLinesAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day6/DaySix.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day6/other/Lanternfish.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day6/other/fishes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day6/support/Help.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day7/CodeToRun.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day7/DaySeven.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day7/Other.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day8/Day8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day8/DisplayMapping.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day9/alternativesolution/entity/Direction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day9/alternativesolution/entity/Grid$Basin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day9/alternativesolution/entity/Grid.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day9/alternativesolution/entity/Point.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day9/standardsolution/Day9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day9/standardsolution/Grid$Basin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day9/standardsolution/Grid.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/adventOfCode2021/it/ruggero/adventofcode2021/day9/standardsolution/Point.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/adventOfCode2021/it/ruggero/adventofcode2021/day1/basesolution/PuzzleInputTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/adventOfCode2021/it/ruggero/adventofcode2021/day1/basesolution/PuzzleInputTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/adventOfCode2021/it/ruggero/adventofcode2021/day5/streamsolution/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/adventOfCode2021/it/ruggero/adventofcode2021/day5/streamsolution/AppTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/streamsolution/entity/HydrotermalVentureMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/streamsolution/entity/HydrotermalVentureMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/adventOfCode2021/it/ruggero/adventofcode2021/day5/streamsolution/PerformanceTest/Day5PerformanceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/adventOfCode2021/it/ruggero/adventofcode2021/day5/streamsolution/PerformanceTest/Day5PerformanceTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day1/basesolution/PuzzleInputTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day1/basesolution/PuzzleInputTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day5/streamsolution/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day5/streamsolution/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day5/streamsolution/PerformanceTest/Day5PerformanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day5/streamsolution/PerformanceTest/Day5PerformanceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,6 +183,8 @@
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
+        <option name="downloadDocsAutomatically" value="true" />
+        <option name="downloadSourcesAutomatically" value="true" />
         <option name="jdkForImporter" value="11" />
         <option name="vmOptionsForImporter" value="-Xmx768m" />
       </MavenImportingSettings>
@@ -274,18 +359,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ruggero.montesi_uniq/Desktop/tmp/06/adventOfCode2021&quot;
-  }
-}</component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\rugge\Desktop\tmp\10\adventOfCode2021\src\main\resources\day5" />
@@ -651,6 +732,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
