@@ -7,7 +7,7 @@ public class ChitonTest {
     private static final String FILE_PATH_TEST = ".\\src\\main\\resources\\day15\\testDay15.txt";
 
     @Test
-    public void testChitonConstructor(){
+    public void shouldReadFile(){
 
         Chiton chiton = new Chiton(FILE_PATH_TEST);
         System.out.println(chiton.getMap());
