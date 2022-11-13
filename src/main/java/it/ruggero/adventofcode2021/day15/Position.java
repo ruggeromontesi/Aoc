@@ -8,9 +8,9 @@ public class Position implements Comparable<Position>{
 
     private final int riskLevel;
 
-    public Position(Coordinate coordinate, int riskLevel) {
+    public Position(Coordinate coordinate, int iskLevel) {
         this.coordinate = coordinate;
-        this.riskLevel = riskLevel;
+        this.riskLevel = iskLevel;
     }
 
     public Coordinate getCoordinate() {

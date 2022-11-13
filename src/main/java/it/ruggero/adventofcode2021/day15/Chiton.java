@@ -7,9 +7,7 @@ import java.util.stream.IntStream;
 
 public class Chiton {
 
-    private final Map<Coordinate,Position> map = new TreeMap<>();
-
-    private final Map<Coordinate, Integer> riskMap = new TreeMap<>();
+    final private Map<Coordinate,Position> map = new TreeMap<>();
 
     private  int nColumns;
 
@@ -25,10 +23,8 @@ public class Chiton {
                 int finalRow = row;
                 IntStream.range(0,line.length()).forEach(i -> {
                     Coordinate coordinate = new Coordinate(i,finalRow);
-                    int riskLevel = Integer.parseInt(line.substring(i, i + 1));
-                    Position position = new Position(coordinate, riskLevel);
+                    Position position = new Position(coordinate, Integer.valueOf(line.substring(i,i+1)));
                     map.put(coordinate,position);
-                    riskMap.put(coordinate, riskLevel);
                 });
 
                 row++;
