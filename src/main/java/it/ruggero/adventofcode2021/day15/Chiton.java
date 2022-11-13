@@ -7,7 +7,9 @@ import java.util.stream.IntStream;
 
 public class Chiton {
 
-    final private Map<Coordinate,Position> map = new TreeMap<>();
+    private final Map<Coordinate,Position> map = new TreeMap<>();
+
+    private final Map<Coordinate,Position> riskMap = new TreeMap<>();
 
     private  int nColumns;
 
