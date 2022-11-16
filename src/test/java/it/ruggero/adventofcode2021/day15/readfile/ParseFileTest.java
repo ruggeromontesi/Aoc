@@ -1,6 +1,6 @@
 package it.ruggero.adventofcode2021.day15.readfile;
 
-import it.ruggero.adventofcode2021.day15.Chiton;
+import it.ruggero.adventofcode2021.day15.validate.ValidateInput;
 import org.junit.jupiter.api.Test;
 
 public class ParseFileTest {
@@ -9,11 +9,27 @@ public class ParseFileTest {
     private static final String FILE_PATH = ".\\src\\main\\resources\\day15\\Day15.txt";
 
     @Test
-    public void shouldAcquireTestFile(){
-
-        Chiton chiton = new Chiton(FILE_PATH_TEST);
-        System.out.println(chiton.getMap());
-        chiton.print();
-
+    void shouldAcquireTestFile(){
+        new ParseFile(FILE_PATH_TEST);
     }
+    @Test
+    void shouldAcquireMainFile(){
+        new ParseFile(FILE_PATH);
+    }
+
+    @Test
+    void shouldValidateTestFile(){
+        var lines = new ParseFile(FILE_PATH_TEST);
+        ValidateInput.validate(lines.getLines());
+    }
+
+
+    @Test
+    void shouldValidateMainFile(){
+        var lines = new ParseFile(FILE_PATH);
+        ValidateInput.validate(lines.getLines());
+    }
+
+
+
 }

@@ -1,4 +1,4 @@
-package it.ruggero.adventofcode2021.day15;
+package it.ruggero.adventofcode2021.day15.old;
 
 import java.io.File;
 import java.io.FileNotFoundException;

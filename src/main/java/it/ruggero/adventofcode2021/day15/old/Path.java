@@ -1,4 +1,4 @@
-package it.ruggero.adventofcode2021.day15;
+package it.ruggero.adventofcode2021.day15.old;
 
 import java.util.ArrayList;
 import java.util.List;

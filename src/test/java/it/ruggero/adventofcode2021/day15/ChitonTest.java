@@ -1,5 +1,6 @@
 package it.ruggero.adventofcode2021.day15;
 
+import it.ruggero.adventofcode2021.day15.old.*;
 import org.junit.jupiter.api.Test;
 
 public class ChitonTest {
