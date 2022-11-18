@@ -9,7 +9,9 @@ import java.util.*;
 
 @Getter
 public class ChitonContext {
+    @Getter
     private static int WIDTH;
+    @Getter
     private static int HEIGHT;
 
     @Getter
@@ -139,7 +141,14 @@ public class ChitonContext {
                 } else {
                     return Optional.empty();
                 }
-            };
+            }
+
+            @Override
+            public Direction opposite() {
+                return SOUTH;
+            }
+
+            ;
         },
         EAST {
             @Override
@@ -150,15 +159,25 @@ public class ChitonContext {
                     return Optional.empty();
                 }
             }
+
+            @Override
+            public Direction opposite() {
+                return SOUTH;
+            }
         },
         SOUTH {
             @Override
             public Optional<Coordinate> findNeighbour(Coordinate thisCoordinate) {
-                if (thisCoordinate.getCol() < HEIGHT - 1) {
+                if (thisCoordinate.getRow() < HEIGHT - 1) {
                     return Optional.of(new Coordinate(thisCoordinate.getRow() + 1, thisCoordinate.getCol()));
                 } else {
                     return Optional.empty();
                 }
+            }
+
+            @Override
+            public Direction opposite() {
+                return NORTH;
             }
         },
         WEST {
@@ -170,9 +189,16 @@ public class ChitonContext {
                     return Optional.empty();
                 }
             }
+
+            @Override
+            public Direction opposite() {
+                return EAST;
+            }
         };
 
         public abstract Optional<Coordinate> findNeighbour(Coordinate startCoordinate);
+
+        public abstract  Direction opposite();
     }
 }
 
