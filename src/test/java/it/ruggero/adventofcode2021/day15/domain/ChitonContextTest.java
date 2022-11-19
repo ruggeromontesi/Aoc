@@ -1,6 +1,5 @@
 package it.ruggero.adventofcode2021.day15.domain;
 
-import it.ruggero.adventofcode2021.day15.readfile.ParseFile;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
@@ -20,12 +19,12 @@ class ChitonContextTest {
 
     @Test
     void shouldCreateChitonContextTestFile() {
-        Assertions.assertFalse(() -> getRiskMap().isEmpty());
+        Assertions.assertFalse(() -> getCavernMap().isEmpty());
     }
 
     @Test
     void shouldCreateChitonContextMainFile() {
-        Assertions.assertFalse(() -> getRiskMap().isEmpty());
+        Assertions.assertFalse(() -> getCavernMap().isEmpty());
     }
 
     @Test
