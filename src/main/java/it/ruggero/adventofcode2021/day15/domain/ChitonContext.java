@@ -4,8 +4,10 @@ import it.ruggero.adventofcode2021.day15.readfile.ParseFile;
 import lombok.Data;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
+import lombok.Setter;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 @Getter
 public class ChitonContext {
@@ -13,6 +15,13 @@ public class ChitonContext {
     private static int WIDTH;
     @Getter
     private static int HEIGHT;
+
+
+    private static List<Coordinate> coordinates = new ArrayList<>();
+
+
+    @Setter
+    private static Direction directionOfThePreviousStep = null;
 
     @Getter
     private static final Map<Coordinate, Integer> cavernMap = new TreeMap<>();
@@ -131,31 +140,105 @@ public class ChitonContext {
 
     }
 
-    public static Direction findDirectionsWithLowestRisk(Coordinate currentCoordinate) {
-        int minRisk = 0;
+//    public static Map<Direction, Integer> findDirectionsWithLowestRisk(Coordinate currentCoordinate) {
+//        final int[] minRisk = {10};
+//
+//        Map<Direction, Integer> directionRiskMap = new HashMap<>();
+//        Arrays.asList(Direction.values()).forEach(direction -> {
+//            direction.findNeighbour(currentCoordinate).ifPresent(coordinate -> {
+//                var riskAtThisCoordinate = cavernMap.get(coordinate);
+//                if (riskAtThisCoordinate != null && riskAtThisCoordinate <= minRisk[0]) {
+//                    directionRiskMap.put(direction, riskAtThisCoordinate);
+//                    if(riskAtThisCoordinate < minRisk[0]) {
+//                        minRisk[0] = riskAtThisCoordinate;
+//                    }
+//                }
+//            });
+//        });
+//
+//        directionRiskMap.entrySet().removeIf(e -> e.getValue() > minRisk[0]);
+//        return directionRiskMap;
+//    }
 
-        Map<Direction,Integer> directionRiskMap = new HashMap<>();
-        Arrays.asList(Direction.values()).forEach(direction -> {
-            int risk = 0;
-            direction.findNeighbour(currentCoordinate).ifPresent(coordinate -> {
-                var riskAtThisCoordinate = cavernMap.get(coordinate);
-                if (riskAtThisCoordinate != null && riskAtThisCoordinate <= minRisk ) {
-                    directionRiskMap.put(direction, riskAtThisCoordinate);
-                }
-            });
 
+    public static Map<Direction, Integer> findDirectionsWithLowestRisk(Coordinate currentCoordinate) {
+        return findDirectionsWithLowestRiskExcludeDirection(currentCoordinate, directionOfThePreviousStep == null ? null : directionOfThePreviousStep.opposite());
+    }
 
-        });
+    public static Map<Direction, Integer> findDirectionsWithLowestRiskExcludeDirection(Coordinate currentCoordinate, Direction directionToBeExcluded) {
+        final int[] minRisk = {10};
 
-        if (directionRiskMap.size() > 1) {
-            return null;
-        } else if (directionRiskMap.size() > 0) {
-            return directionRiskMap.keySet().stream().findAny().orElseThrow();
+        Map<Direction, Integer> directionRiskMap = new HashMap<>();
+        Arrays.stream(Direction.values()).filter(direction ->
+                        (!direction.equals(directionToBeExcluded))
+            ).filter(direction -> direction == Direction.SOUTH || direction == Direction.EAST)
+                .forEach(direction -> {
+                    direction.findNeighbour(currentCoordinate).ifPresent(coordinate -> {
+                        var riskAtThisCoordinate = cavernMap.get(coordinate);
+                        if (riskAtThisCoordinate != null && riskAtThisCoordinate <= minRisk[0]) {
+                            directionRiskMap.put(direction, riskAtThisCoordinate);
+                            if (riskAtThisCoordinate < minRisk[0]) {
+                                minRisk[0] = riskAtThisCoordinate;
+                            }
+                        }
+                    });
+                });
 
+        directionRiskMap.entrySet().removeIf(e -> e.getValue() > minRisk[0]);
+        return directionRiskMap;
+    }
+
+    public static Direction findDirectionWithLowestRisk(Coordinate currentCoordinate) {
+        Map<Direction, Integer> directionsWithLowestRiskAtFirstStep = findDirectionsWithLowestRisk(currentCoordinate);
+        if (directionsWithLowestRiskAtFirstStep.size() == 1) {
+            return  directionsWithLowestRiskAtFirstStep.keySet().stream().findFirst().orElseThrow();
         }
 
-        return null;
+        Map<Direction,Map<Direction, Integer>> directionRiskMapSecondStep = new HashMap<>();
 
+        directionsWithLowestRiskAtFirstStep.keySet().forEach(direction -> {
+            var startingPointOfSecondStep = direction.findNeighbour(currentCoordinate).orElseThrow();
+            var directionsWithLowestRisk = findDirectionsWithLowestRiskExcludeDirection(startingPointOfSecondStep, direction.opposite());
+            directionsWithLowestRisk.entrySet().removeIf(e -> e.getKey().equals(direction.opposite()));
+            directionRiskMapSecondStep.put(direction,directionsWithLowestRisk);
+        });
+
+        var directionRiskMapAtSecondStep = directionRiskMapSecondStep
+                .entrySet().stream().collect(
+                        Collectors.toMap(Map.Entry::getKey, e -> e.getValue().values().stream().mapToInt(Integer::intValue).sum()));
+
+        int min = directionRiskMapAtSecondStep.values().stream().mapToInt(Integer::intValue).min().orElse(-1);
+
+        directionRiskMapAtSecondStep.entrySet().removeIf(e -> e.getValue() > min);
+
+
+        return  directionRiskMapAtSecondStep.keySet().stream().findFirst().orElse(Direction.EAST);
+    }
+
+    public static int go() {
+        boolean stop = false;
+        int count = 0;
+
+        int totalRisk= 0;
+
+        var currentCoordinate = new Coordinate(0,0);
+
+
+        while(!stop && count < 2*(HEIGHT + WIDTH)) {
+            Direction direction = findDirectionWithLowestRisk(currentCoordinate);
+            var nextCoordinate = direction.findNeighbour(currentCoordinate).orElse(currentCoordinate);
+            if(!nextCoordinate.equals(currentCoordinate)) {
+                totalRisk += cavernMap.get(nextCoordinate);
+                currentCoordinate = nextCoordinate;
+                directionOfThePreviousStep = direction;
+                count++;
+                coordinates.add(currentCoordinate);
+            } else {
+                stop = true;
+            }
+        }
+
+        return  totalRisk;
     }
 
 
@@ -189,7 +272,7 @@ public class ChitonContext {
 
             @Override
             public Direction opposite() {
-                return SOUTH;
+                return WEST;
             }
         },
         SOUTH {
@@ -225,7 +308,7 @@ public class ChitonContext {
 
         public abstract Optional<Coordinate> findNeighbour(Coordinate startCoordinate);
 
-        public abstract  Direction opposite();
+        public abstract Direction opposite();
     }
 }
 

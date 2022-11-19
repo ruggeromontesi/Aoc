@@ -4,8 +4,8 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-import static it.ruggero.adventofcode2021.day15.domain.ChitonContext.buildFromFile;
-import static it.ruggero.adventofcode2021.day15.domain.ChitonContext.findDirectionsWithLowestRisk;
+import static it.ruggero.adventofcode2021.day15.domain.ChitonContext.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class NavigationTest {
 
@@ -17,8 +17,29 @@ public class NavigationTest {
     }
 
     @Test
+    void shouldReturnDirectionsWithLowestRisk() {
+        ChitonContext.Coordinate c = new ChitonContext.Coordinate(0,0);
+        assertEquals(2, findDirectionsWithLowestRisk(c).size() );
+    }
+
+    @Test
+    void shouldReturnMApCleanedOfSpuriousValues() {
+        ChitonContext.Coordinate c = new ChitonContext.Coordinate(4,7);
+        assertEquals(2, findDirectionsWithLowestRisk(c).size() );
+    }
+
+
+    @Test
     void shouldReturnDirectionWithLowestRisk() {
         ChitonContext.Coordinate c = new ChitonContext.Coordinate(0,0);
-        Assertions.assertNull(findDirectionsWithLowestRisk(c));
+        assertEquals(Direction.SOUTH, findDirectionWithLowestRisk(c) );
+        c = new ChitonContext.Coordinate(4,7);
+        assertEquals(Direction.EAST, findDirectionWithLowestRisk(c) );
+    }
+
+   @Test
+    void shouldGo() {
+        var a = go();
+        Assertions.assertTrue(a > 0);
     }
 }

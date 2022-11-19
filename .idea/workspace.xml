@@ -4,14 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="744342c0-46f8-4bdf-9e47-35602649a472" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_24.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day15/domain/NavigationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Default_Changelist.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Default_Changelist.xml" afterDir="false" />
+    <list default="true" id="744342c0-46f8-4bdf-9e47-35602649a472" name="Default Changelist" comment="developing method to choose direction with smaller risk">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adventOfCode2021.iml" beforeDir="false" afterPath="$PROJECT_DIR$/adventOfCode2021.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day15/domain/ChitonContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day15/domain/ChitonContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day15/domain/ChitonContextTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day15/domain/ChitonContextTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day15/domain/NavigationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day15/domain/NavigationTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -310,7 +309,7 @@
       <recent name="it.ruggero.adventofcode2021.day9.alternativesolution.entity" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.NavigationTest.shouldReturnDirectionWithLowestRisk">
+  <component name="RunManager" selected="JUnit.NavigationTest.shouldGo">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -338,49 +337,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BoardTest.testBingoSessionTestCase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="NavigationTest.shouldGo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="adventOfCode2021" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="it.ruggero.adventofcode2021.day4.newsolution.*" />
+          <option name="PATTERN" value="it.ruggero.adventofcode2021.day15.domain.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day4.newsolution" />
-      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day4.newsolution.BoardTest" />
-      <option name="METHOD_NAME" value="testBingoSessionTestCase" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BoardTest.testCreateBingoSessionMultipleBoards" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="adventOfCode2021" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="it.ruggero.adventofcode2021.day4.newsolution.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day4.newsolution" />
-      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day4.newsolution.BoardTest" />
-      <option name="METHOD_NAME" value="testCreateBingoSessionMultipleBoards" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BoardTest.testCreateBingoSessionSingleBoard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="adventOfCode2021" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="it.ruggero.adventofcode2021.day4.newsolution.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day4.newsolution" />
-      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day4.newsolution.BoardTest" />
-      <option name="METHOD_NAME" value="testCreateBingoSessionSingleBoard" />
+      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day15.domain" />
+      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day15.domain.NavigationTest" />
+      <option name="METHOD_NAME" value="shouldGo" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -402,20 +369,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="NavigationTest.shouldReturnDirectionsWithLowestRisk" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="adventOfCode2021" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="it.ruggero.adventofcode2021.day15.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day15.domain" />
+      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day15.domain.NavigationTest" />
+      <option name="METHOD_NAME" value="shouldReturnDirectionsWithLowestRisk" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NavigationTest.shouldReturnMApCleanedOfSpuriousValues" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="adventOfCode2021" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="it.ruggero.adventofcode2021.day15.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day15.domain" />
+      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day15.domain.NavigationTest" />
+      <option name="METHOD_NAME" value="shouldReturnMApCleanedOfSpuriousValues" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
+      <item itemvalue="JUnit.NavigationTest.shouldGo" />
       <item itemvalue="JUnit.NavigationTest.shouldReturnDirectionWithLowestRisk" />
-      <item itemvalue="JUnit.BoardTest.testCreateBingoSessionSingleBoard" />
-      <item itemvalue="JUnit.BoardTest.testCreateBingoSessionMultipleBoards" />
+      <item itemvalue="JUnit.NavigationTest.shouldReturnDirectionsWithLowestRisk" />
+      <item itemvalue="JUnit.NavigationTest.shouldReturnMApCleanedOfSpuriousValues" />
       <item itemvalue="JUnit.BoardTest.testBingoSessionCompleteCase" />
-      <item itemvalue="JUnit.BoardTest.testBingoSessionTestCase" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.NavigationTest.shouldGo" />
         <item itemvalue="JUnit.NavigationTest.shouldReturnDirectionWithLowestRisk" />
+        <item itemvalue="JUnit.NavigationTest.shouldReturnDirectionsWithLowestRisk" />
+        <item itemvalue="JUnit.NavigationTest.shouldReturnMApCleanedOfSpuriousValues" />
         <item itemvalue="JUnit.BoardTest.testBingoSessionCompleteCase" />
-        <item itemvalue="JUnit.BoardTest.testBingoSessionTestCase" />
-        <item itemvalue="JUnit.BoardTest.testCreateBingoSessionMultipleBoards" />
-        <item itemvalue="JUnit.BoardTest.testCreateBingoSessionSingleBoard" />
       </list>
     </recent_temporary>
   </component>
@@ -497,6 +496,14 @@
       <workItem from="1657199540106" duration="1208000" />
       <workItem from="1657203266555" duration="299000" />
     </task>
+    <task id="LOCAL-00001" summary="developing method to choose direction with smaller risk">
+      <created>1668880993022</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1668880993022</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -650,7 +657,8 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="developing method to choose direction with smaller risk" />
+    <option name="LAST_COMMIT_MESSAGE" value="developing method to choose direction with smaller risk" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1002,8 +1010,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day15/domain/ChitonContext.java</url>
-          <line>149</line>
-          <option name="timeStamp" value="293" />
+          <line>218</line>
+          <option name="timeStamp" value="314" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day15/domain/ChitonContext.java</url>
+          <line>240</line>
+          <option name="timeStamp" value="316" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.NullPointerException" package="java.lang" />
@@ -1011,13 +1024,6 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="JUnit">
-        <watch expression="i%table.length" language="JAVA" />
-        <watch expression="i / table.length" language="JAVA" />
-        <watch expression="bingoSession.retrieveBingoNumberObject(Integer.parseInt(numbersAsStrings.get(i)))" language="JAVA" />
-      </configuration>
-    </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
