@@ -1,5 +1,6 @@
 package it.ruggero.adventofcode2021.day15.readfile;
 
+import it.ruggero.adventofcode2021.day15.old.readfile.ParseFile;
 import it.ruggero.adventofcode2021.day15.validate.ValidateInput;
 import org.junit.jupiter.api.Test;
 

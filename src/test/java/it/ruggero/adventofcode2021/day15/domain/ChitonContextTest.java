@@ -1,11 +1,12 @@
 package it.ruggero.adventofcode2021.day15.domain;
 
+import it.ruggero.adventofcode2021.day15.old.domain.ChitonContext;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-import static it.ruggero.adventofcode2021.day15.domain.ChitonContext.*;
-import static it.ruggero.adventofcode2021.day15.domain.ChitonContext.Direction.*;
+import static it.ruggero.adventofcode2021.day15.old.domain.ChitonContext.*;
+import static it.ruggero.adventofcode2021.day15.old.domain.ChitonContext.Direction.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 class ChitonContextTest {
