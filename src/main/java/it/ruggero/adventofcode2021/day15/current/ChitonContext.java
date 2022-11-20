@@ -1,6 +1,5 @@
 package it.ruggero.adventofcode2021.day15.current;
 
-import it.ruggero.adventofcode2021.day15.old.Coordinate;
 import it.ruggero.adventofcode2021.day15.old.readfile.ParseFile;
 import lombok.*;
 
@@ -22,9 +21,9 @@ public class ChitonContext {
     @Getter
     private static Node[][] nodeMap;
 
-    private static final Set<Direction> directionsToSearch = Set.of(Direction.EAST,Direction.SOUTH);
+    private static final Set<Direction> directionsToSearch = Set.of(Direction.values());
 
-    private static final Set<Node> unvisitedNodes = new TreeSet<>(Comparator.comparingInt(Node::getRiskLevel));
+    private static final Set<Node> unvisitedNodes = new TreeSet<>(Comparator.comparingInt(Node::getRiskLevel).thenComparing(Node::getCoordinate));
 
 
     public static void buildFromFile(String filePath) {
@@ -50,21 +49,25 @@ public class ChitonContext {
             }
         }
 
+
+
     }
 
     final static Consumer<Node> processSingleNode = node -> {
         var neighbours = findNeighbours(node.getCoordinate());
         var riskLevelOfThisNode = node.getRiskLevel();
         Map<Coordinate,Integer> riskLevelOfNeighbours = evaluateRiskLevelOfNeighbours(neighbours, riskLevelOfThisNode);
-        updateRiskLevelOfNeighbourIfLower(riskLevelOfNeighbours,node.getCoordinate());
+        updateRiskLevelOfNeighboursIfLower(riskLevelOfNeighbours,node.getCoordinate());
+        node.setVisited(true);
+        unvisitedNodes.removeIf(Node::isVisited);
 
     };
 
-    private static void updateRiskLevelOfNeighbourIfLower(Map<Coordinate, Integer> riskLevelOfNeighbours, Coordinate coordinateOfCurrentNode) {
+    private static void updateRiskLevelOfNeighboursIfLower(Map<Coordinate, Integer> riskLevelOfNeighbours, Coordinate coordinateOfCurrentNode) {
         riskLevelOfNeighbours.forEach((neighbourCoordinate, value) -> {
-            if (nodeMap[neighbourCoordinate.getRow()][neighbourCoordinate.getRow()].getRiskLevel() > value) {
-                nodeMap[neighbourCoordinate.getRow()][neighbourCoordinate.getRow()].setRiskLevel(value);
-                nodeMap[neighbourCoordinate.getRow()][neighbourCoordinate.getRow()].setCoordinateOfPreviousNode(coordinateOfCurrentNode);
+            if (nodeMap[neighbourCoordinate.getRow()][neighbourCoordinate.getCol()].getRiskLevel() > value) {
+                nodeMap[neighbourCoordinate.getRow()][neighbourCoordinate.getCol()].setRiskLevel(value);
+                nodeMap[neighbourCoordinate.getRow()][neighbourCoordinate.getCol()].setCoordinateOfPreviousNode(coordinateOfCurrentNode);
             }
         });
 
@@ -89,13 +92,15 @@ public class ChitonContext {
 
     public static int mainRun() {
         preliminary();
-        Set<Node> unvisitedNodesWithMinimumRiskLevel;
+        Set<Node> unvisitedNodesWithMinimumRiskLevel = findUnvisitedNodesWithMinimumRiskLevel();;
         do {
-            unvisitedNodesWithMinimumRiskLevel = findUnvisitedNodesWithMinimumRiskLevel();
             unvisitedNodesWithMinimumRiskLevel.forEach(processSingleNode);
+            unvisitedNodesWithMinimumRiskLevel = findUnvisitedNodesWithMinimumRiskLevel();
+
         }
         while(!unvisitedNodesWithMinimumRiskLevel.isEmpty());
-        return nodeMap[HEIGHT - 1][WIDTH - 1].getRiskLevel();
+        var returnValue  = nodeMap[HEIGHT - 1][WIDTH - 1].getRiskLevel();
+        return returnValue;
     }
 
     private static void preliminary() {

@@ -14,22 +14,25 @@ public class ChitonContextTest {
     private static final String FILE_PATH_TEST = ".\\src\\main\\resources\\day15\\testDay15.txt";
     private static final String FILE_PATH = ".\\src\\main\\resources\\day15\\Day15.txt";
 
-    @BeforeAll
-    static void build() {
-        buildFromFile(FILE_PATH_TEST);
-    }
+
 
     @Test
     void shouldDo() {
+        buildFromFile(FILE_PATH_TEST);
         ChitonContext.Coordinate c = new ChitonContext.Coordinate(2, 3);
         var a = getCavernMap();
         Assertions.assertTrue(a.length > 2);
     }
 
     @Test
-    void shouldMainRunReturnSomething() {
-        ChitonContext.Coordinate c = new ChitonContext.Coordinate(2, 3);
-        var a = getCavernMap();
-        Assertions.assertEquals(Integer.MAX_VALUE, mainRun());
+    void shouldMainRunCalculateOverTestFile() {
+        buildFromFile(FILE_PATH_TEST);
+        Assertions.assertEquals(40, mainRun());
+    }
+
+    @Test
+    void shouldMainRunCalculateOverMainFile() {
+        buildFromFile(FILE_PATH);
+        Assertions.assertEquals(739, mainRun());
     }
 }
