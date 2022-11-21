@@ -1,8 +1,12 @@
 package it.ruggero.adventofcode2021.day15.part1;
 
 import it.ruggero.adventofcode2021.day15.common.readfile.ParseFile;
+import it.ruggero.adventofcode2021.day15.part2.MatrixMapping;
 import lombok.*;
 
+import java.time.Duration;
+import java.time.Instant;
+import java.time.LocalTime;
 import java.util.*;
 import java.util.function.Consumer;
 import java.util.function.Function;
@@ -19,6 +23,11 @@ public class ChitonContext {
     private static int[][] cavernMap;
     @Getter
     private static Node[][] nodeMap;
+
+    @Getter
+    private static int[][] extendedCavernMap;
+    @Getter
+    private static Node[][] extendedNodeMap;
     private static final Set<Direction> directionsToSearch = Set.of(Direction.values());
 
     private static final Set<Node> unvisitedNodes = new TreeSet<>(Comparator.comparingInt(Node::getRiskLevel).thenComparing(Node::getCoordinate));
@@ -43,6 +52,29 @@ public class ChitonContext {
                 unvisitedNodes.add(node);
             }
         }
+    }
+
+
+    public static void buildFromFileExtended(String filePath) {
+        buildFromFile(filePath);
+        extendedCavernMap = MatrixMapping.extendMatrix(cavernMap);
+        extendedNodeMap = new Node[5*HEIGHT][5*WIDTH];
+        unvisitedNodes.clear();
+        for (int rowNumber = 0; rowNumber < 5*HEIGHT; rowNumber++) {
+            for (int colNumber = 0; colNumber < 5*WIDTH; colNumber++) {
+                var node = Node.builder()
+                        .riskLevel(Integer.MAX_VALUE)
+                        .coordinate(new Coordinate(rowNumber, colNumber))
+                        .visited(false)
+                        .build();
+                extendedNodeMap[rowNumber][colNumber] = node;
+                unvisitedNodes.add(node);
+            }
+        }
+        nodeMap = extendedNodeMap;
+        cavernMap = extendedCavernMap;
+        HEIGHT =  5*HEIGHT;
+        WIDTH = 5*WIDTH;
     }
 
     final static Consumer<Node> processSingleNode = node -> {
@@ -78,13 +110,44 @@ public class ChitonContext {
 
     public static int mainRun() {
         preliminary();
-        Set<Node> unvisitedNodesWithMinimumRiskLevel = findUnvisitedNodesWithMinimumRiskLevel();;
+        Set<Node> unvisitedNodesWithMinimumRiskLevel = findUnvisitedNodesWithMinimumRiskLevel();
+        int i = 0;
         do {
             unvisitedNodesWithMinimumRiskLevel.forEach(processSingleNode);
             unvisitedNodesWithMinimumRiskLevel = findUnvisitedNodesWithMinimumRiskLevel();
+            if(i%100 == 0 ) {
+                System.out.println("step no " + i + " timestamp " + LocalTime.now()+ "  progress " + calculateProgress() + "% ");
+
+            }
+            i++;
         }
         while(!unvisitedNodesWithMinimumRiskLevel.isEmpty());
-        return nodeMap[HEIGHT - 1][WIDTH - 1].getRiskLevel();
+        return nodeMap[nodeMap.length - 1][nodeMap[0].length - 1].getRiskLevel();
+    }
+
+    private static double calculateProgress() {
+        double progress ;
+
+         progress = 100* (double)((HEIGHT*WIDTH) - unvisitedNodes.size())/(HEIGHT*WIDTH);
+
+         progress = progress - 10 * progress % 10;
+
+
+        return progress;
+    }
+
+    public static int mainRunExtended(String filePath) {
+        Instant now = Instant.now();
+
+
+        int out;
+        buildFromFileExtended(filePath);
+        out = mainRun();
+        Instant later = Instant.now();
+        Duration duration  = Duration.between(now,later);
+        System.out.println("duration " + duration.toSeconds());
+
+        return out;
     }
 
     private static void preliminary() {
@@ -160,10 +223,6 @@ public class ChitonContext {
                 }
             }
 
-            @Override
-            public Direction opposite() {
-                return SOUTH;
-            }
 
         },
         EAST {
@@ -176,10 +235,6 @@ public class ChitonContext {
                 }
             }
 
-            @Override
-            public Direction opposite() {
-                return WEST;
-            }
         },
         SOUTH {
             @Override
@@ -191,10 +246,6 @@ public class ChitonContext {
                 }
             }
 
-            @Override
-            public Direction opposite() {
-                return NORTH;
-            }
         },
         WEST {
             @Override
@@ -206,15 +257,11 @@ public class ChitonContext {
                 }
             }
 
-            @Override
-            public Direction opposite() {
-                return EAST;
-            }
         };
 
         public abstract Optional<Coordinate> findNeighbour(ChitonContext.Coordinate startCoordinate);
 
-        public abstract Direction opposite();
+
     }
 
 }

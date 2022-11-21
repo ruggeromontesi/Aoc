@@ -1,13 +1,12 @@
 package it.ruggero.adventofcode2021.day15.part1;
 
 
-import it.ruggero.adventofcode2021.day15.part1.ChitonContext;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import static it.ruggero.adventofcode2021.day15.part1.ChitonContext.*;
 
-;
+
 
 public class ChitonContextTest {
 
@@ -19,7 +18,6 @@ public class ChitonContextTest {
     @Test
     void shouldDo() {
         buildFromFile(FILE_PATH_TEST);
-        ChitonContext.Coordinate c = new ChitonContext.Coordinate(2, 3);
         var a = getCavernMap();
         Assertions.assertTrue(a.length > 2);
     }
@@ -34,5 +32,16 @@ public class ChitonContextTest {
     void shouldMainRunCalculateOverMainFile() {
         buildFromFile(FILE_PATH);
         Assertions.assertEquals(739, mainRun());
+    }
+
+
+    @Test
+    void shouldMainRunExtendedOverTestFile() {
+        Assertions.assertEquals(315,mainRunExtended(FILE_PATH_TEST));
+    }
+
+    @Test
+    void shouldMainRunExtendedOverMainFile() {
+        Assertions.assertEquals(3040,mainRunExtended(FILE_PATH));
     }
 }
