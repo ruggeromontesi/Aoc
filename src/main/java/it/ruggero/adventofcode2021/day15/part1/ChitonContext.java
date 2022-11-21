@@ -58,10 +58,10 @@ public class ChitonContext {
     public static void buildFromFileExtended(String filePath) {
         buildFromFile(filePath);
         extendedCavernMap = MatrixMapping.extendMatrix(cavernMap);
-        extendedNodeMap = new Node[5*HEIGHT][5*WIDTH];
+        extendedNodeMap = new Node[5 * HEIGHT][5 * WIDTH];
         unvisitedNodes.clear();
-        for (int rowNumber = 0; rowNumber < 5*HEIGHT; rowNumber++) {
-            for (int colNumber = 0; colNumber < 5*WIDTH; colNumber++) {
+        for (int rowNumber = 0; rowNumber < 5 * HEIGHT; rowNumber++) {
+            for (int colNumber = 0; colNumber < 5 * WIDTH; colNumber++) {
                 var node = Node.builder()
                         .riskLevel(Integer.MAX_VALUE)
                         .coordinate(new Coordinate(rowNumber, colNumber))
@@ -73,15 +73,15 @@ public class ChitonContext {
         }
         nodeMap = extendedNodeMap;
         cavernMap = extendedCavernMap;
-        HEIGHT =  5*HEIGHT;
-        WIDTH = 5*WIDTH;
+        HEIGHT = 5 * HEIGHT;
+        WIDTH = 5 * WIDTH;
     }
 
     final static Consumer<Node> processSingleNode = node -> {
         var neighbours = findNeighbours(node.getCoordinate());
         var riskLevelOfThisNode = node.getRiskLevel();
-        Map<Coordinate,Integer> riskLevelOfNeighbours = evaluateRiskLevelOfNeighbours(neighbours, riskLevelOfThisNode);
-        updateRiskLevelOfNeighboursIfLower(riskLevelOfNeighbours,node.getCoordinate());
+        Map<Coordinate, Integer> riskLevelOfNeighbours = evaluateRiskLevelOfNeighbours(neighbours, riskLevelOfThisNode);
+        updateRiskLevelOfNeighboursIfLower(riskLevelOfNeighbours, node.getCoordinate());
         node.setVisited(true);
         unvisitedNodes.removeIf(Node::isVisited);
 
@@ -96,8 +96,8 @@ public class ChitonContext {
         });
     }
 
-    private static Map<Coordinate, Integer> evaluateRiskLevelOfNeighbours(List<Coordinate> neighbours,int riskLevelOfThisNode) {
-        return  neighbours.stream().collect(Collectors.toMap(
+    private static Map<Coordinate, Integer> evaluateRiskLevelOfNeighbours(List<Coordinate> neighbours, int riskLevelOfThisNode) {
+        return neighbours.stream().collect(Collectors.toMap(
                 Function.identity(),
                 n -> riskLevelOfThisNode + cavernMap[n.getRow()][n.getCol()]
         ));
@@ -115,22 +115,22 @@ public class ChitonContext {
         do {
             unvisitedNodesWithMinimumRiskLevel.forEach(processSingleNode);
             unvisitedNodesWithMinimumRiskLevel = findUnvisitedNodesWithMinimumRiskLevel();
-            if(i%100 == 0 ) {
-                System.out.println("step no " + i + " timestamp " + LocalTime.now()+ "  progress " + calculateProgress() + "% ");
+            if (i % 100 == 0) {
+                System.out.println("step no " + i + " timestamp " + LocalTime.now() + "  progress " + calculateProgress() + "% ");
 
             }
             i++;
         }
-        while(!unvisitedNodesWithMinimumRiskLevel.isEmpty());
+        while (!unvisitedNodesWithMinimumRiskLevel.isEmpty());
         return nodeMap[nodeMap.length - 1][nodeMap[0].length - 1].getRiskLevel();
     }
 
     private static double calculateProgress() {
-        double progress ;
+        double progress;
 
-         progress = 100* (double)((HEIGHT*WIDTH) - unvisitedNodes.size())/(HEIGHT*WIDTH);
+        progress = 100 * (double) ((HEIGHT * WIDTH) - unvisitedNodes.size()) / (HEIGHT * WIDTH);
 
-         progress = progress - 10 * progress % 10;
+        progress = progress - 10 * progress % 10;
 
 
         return progress;
@@ -144,7 +144,7 @@ public class ChitonContext {
         buildFromFileExtended(filePath);
         out = mainRun();
         Instant later = Instant.now();
-        Duration duration  = Duration.between(now,later);
+        Duration duration = Duration.between(now, later);
         System.out.println("duration " + duration.toSeconds());
 
         return out;
@@ -157,12 +157,12 @@ public class ChitonContext {
     private static Set<Node> findUnvisitedNodesWithMinimumRiskLevel() {
         final Set<Node> unvisitedNodesWithMinimumRiskLevel = new HashSet<>();
         unvisitedNodes.stream().min(Comparator.comparingInt(Node::getRiskLevel)).ifPresent(node -> {
-                    var unvisitedNodesWithMinimumRiskLevelSet= unvisitedNodes.stream()
-                            .filter(n2 -> Objects.equals(n2.getRiskLevel(), node.getRiskLevel()))
-                            .collect(Collectors.toSet());
-                    unvisitedNodesWithMinimumRiskLevel.addAll(unvisitedNodesWithMinimumRiskLevelSet);
+            var unvisitedNodesWithMinimumRiskLevelSet = unvisitedNodes.stream()
+                    .filter(n2 -> Objects.equals(n2.getRiskLevel(), node.getRiskLevel()))
+                    .collect(Collectors.toSet());
+            unvisitedNodesWithMinimumRiskLevel.addAll(unvisitedNodesWithMinimumRiskLevelSet);
         });
-        return unvisitedNodesWithMinimumRiskLevel ;
+        return unvisitedNodesWithMinimumRiskLevel;
     }
 
     @Data
