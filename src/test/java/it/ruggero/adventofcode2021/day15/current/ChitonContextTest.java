@@ -2,7 +2,6 @@ package it.ruggero.adventofcode2021.day15.current;
 
 
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import static it.ruggero.adventofcode2021.day15.current.ChitonContext.*;

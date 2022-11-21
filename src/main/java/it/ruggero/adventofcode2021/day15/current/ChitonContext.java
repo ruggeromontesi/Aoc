@@ -21,7 +21,7 @@ public class ChitonContext {
     @Getter
     private static Node[][] nodeMap;
 
-    private static final Set<Direction> directionsToSearch = Set.of(Direction.values());
+    private static final Set<Direction> directionsToSearch = Set.of(Direction.values()); // Set.of(Direction.EAST,Direction.SOUTH);//
 
     private static final Set<Node> unvisitedNodes = new TreeSet<>(Comparator.comparingInt(Node::getRiskLevel).thenComparing(Node::getCoordinate));
 

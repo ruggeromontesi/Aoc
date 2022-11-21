@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="744342c0-46f8-4bdf-9e47-35602649a472" name="Default Changelist" comment="starting refactoring using Dijkstra algorithm;">
-      <change afterPath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day15/current/ChitonContextTest.java" afterDir="false" />
+    <list default="true" id="744342c0-46f8-4bdf-9e47-35602649a472" name="Default Changelist" comment="Solved first part of day 15">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day15/current/ChitonContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day15/current/ChitonContext.java" afterDir="false" />
     </list>
@@ -305,13 +304,28 @@
       <recent name="it.ruggero.adventofcode2021.day9.alternativesolution.entity" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ChitonContextTest.shouldMainRunReturnSomething">
+  <component name="RunManager" selected="JUnit.ChitonContextTest.shouldMainRunCalculateOverMainFile">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ChitonContextTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="adventOfCode2021" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="it.ruggero.adventofcode2021.day15.current.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day15.current" />
+      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day15.current.ChitonContextTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -333,7 +347,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ChitonContextTest.shouldMainRunReturnSomething" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ChitonContextTest.shouldMainRunCalculateOverMainFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="adventOfCode2021" />
       <extension name="coverage">
         <pattern>
@@ -343,7 +357,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day15.current" />
       <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day15.current.ChitonContextTest" />
-      <option name="METHOD_NAME" value="shouldMainRunReturnSomething" />
+      <option name="METHOD_NAME" value="shouldMainRunCalculateOverMainFile" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ChitonContextTest.shouldMainRunCalculateOverTestFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="adventOfCode2021" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="it.ruggero.adventofcode2021.day15.current.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day15.current" />
+      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day15.current.ChitonContextTest" />
+      <option name="METHOD_NAME" value="shouldMainRunCalculateOverTestFile" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -365,52 +395,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NavigationTest.shouldReturnDirectionForTwoSix" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="adventOfCode2021" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="it.ruggero.adventofcode2021.day15.domain.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day15.domain" />
-      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day15.domain.NavigationTest" />
-      <option name="METHOD_NAME" value="shouldReturnDirectionForTwoSix" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NavigationTest.shouldReturnDirectionWithLowestRisk" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="adventOfCode2021" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="it.ruggero.adventofcode2021.day15.domain.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day15.domain" />
-      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day15.domain.NavigationTest" />
-      <option name="METHOD_NAME" value="shouldReturnDirectionWithLowestRisk" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
+      <item itemvalue="JUnit.ChitonContextTest" />
       <item itemvalue="JUnit.ChitonContextTest.shouldDo" />
-      <item itemvalue="JUnit.ChitonContextTest.shouldMainRunReturnSomething" />
+      <item itemvalue="JUnit.ChitonContextTest.shouldMainRunCalculateOverMainFile" />
+      <item itemvalue="JUnit.ChitonContextTest.shouldMainRunCalculateOverTestFile" />
       <item itemvalue="JUnit.NavigationTest.shouldGo" />
-      <item itemvalue="JUnit.NavigationTest.shouldReturnDirectionForTwoSix" />
-      <item itemvalue="JUnit.NavigationTest.shouldReturnDirectionWithLowestRisk" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ChitonContextTest.shouldMainRunReturnSomething" />
+        <item itemvalue="JUnit.ChitonContextTest.shouldMainRunCalculateOverMainFile" />
+        <item itemvalue="JUnit.ChitonContextTest.shouldMainRunCalculateOverTestFile" />
+        <item itemvalue="JUnit.ChitonContextTest" />
         <item itemvalue="JUnit.ChitonContextTest.shouldDo" />
         <item itemvalue="JUnit.NavigationTest.shouldGo" />
-        <item itemvalue="JUnit.NavigationTest.shouldReturnDirectionForTwoSix" />
-        <item itemvalue="JUnit.NavigationTest.shouldReturnDirectionWithLowestRisk" />
       </list>
     </recent_temporary>
   </component>
@@ -513,7 +511,21 @@
       <option name="project" value="LOCAL" />
       <updated>1668950484167</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="starting refactoring using Dijkstra algorithm;">
+      <created>1668985938809</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1668985938809</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Solved first part of day 15">
+      <created>1668988443074</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1668988443074</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -670,7 +682,8 @@
     <MESSAGE value="developing method to choose direction with smaller risk" />
     <MESSAGE value="not working!" />
     <MESSAGE value="starting refactoring using Dijkstra algorithm;" />
-    <option name="LAST_COMMIT_MESSAGE" value="starting refactoring using Dijkstra algorithm;" />
+    <MESSAGE value="Solved first part of day 15" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solved first part of day 15" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1031,49 +1044,9 @@
           <option name="timeStamp" value="336" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day15/current/ChitonContextTest.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="341" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day15/current/ChitonContext.java</url>
-          <line>76</line>
-          <option name="timeStamp" value="343" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day15/current/ChitonContext.java</url>
-          <line>75</line>
-          <option name="timeStamp" value="344" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day15/current/ChitonContext.java</url>
-          <line>97</line>
-          <option name="timeStamp" value="345" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day15/current/ChitonContext.java</url>
-          <line>90</line>
-          <option name="timeStamp" value="346" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day15/current/ChitonContext.java</url>
-          <line>53</line>
-          <option name="timeStamp" value="347" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day15/current/ChitonContext.java</url>
-          <line>65</line>
-          <option name="timeStamp" value="348" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day15/current/ChitonContext.java</url>
-          <line>79</line>
-          <option name="timeStamp" value="349" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day15/current/ChitonContext.java</url>
-          <line>70</line>
-          <option name="timeStamp" value="350" />
+          <line>102</line>
+          <option name="timeStamp" value="357" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.NullPointerException" package="java.lang" />
