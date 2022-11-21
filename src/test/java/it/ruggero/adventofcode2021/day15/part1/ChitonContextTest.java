@@ -1,10 +1,11 @@
-package it.ruggero.adventofcode2021.day15.current;
+package it.ruggero.adventofcode2021.day15.part1;
 
 
+import it.ruggero.adventofcode2021.day15.part1.ChitonContext;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static it.ruggero.adventofcode2021.day15.current.ChitonContext.*;
+import static it.ruggero.adventofcode2021.day15.part1.ChitonContext.*;
 
 ;
 

@@ -1,4 +1,4 @@
-package it.ruggero.adventofcode2021.day15.validate;
+package it.ruggero.adventofcode2021.day15.common.validate;
 
 import java.util.List;
 import java.util.stream.IntStream;

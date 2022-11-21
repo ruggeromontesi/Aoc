@@ -1,6 +1,6 @@
-package it.ruggero.adventofcode2021.day15.current;
+package it.ruggero.adventofcode2021.day15.part1;
 
-import it.ruggero.adventofcode2021.day15.old.readfile.ParseFile;
+import it.ruggero.adventofcode2021.day15.common.readfile.ParseFile;
 import lombok.*;
 
 import java.util.*;
@@ -17,14 +17,11 @@ public class ChitonContext {
 
     @Getter
     private static int[][] cavernMap;
-
     @Getter
     private static Node[][] nodeMap;
-
-    private static final Set<Direction> directionsToSearch = Set.of(Direction.values()); // Set.of(Direction.EAST,Direction.SOUTH);//
+    private static final Set<Direction> directionsToSearch = Set.of(Direction.values());
 
     private static final Set<Node> unvisitedNodes = new TreeSet<>(Comparator.comparingInt(Node::getRiskLevel).thenComparing(Node::getCoordinate));
-
 
     public static void buildFromFile(String filePath) {
         List<String> lines = (new ParseFile(filePath)).getLines();
@@ -43,14 +40,9 @@ public class ChitonContext {
                         .visited(false)
                         .build();
                 nodeMap[rowNumber][colNumber] = node;
-
-
                 unvisitedNodes.add(node);
             }
         }
-
-
-
     }
 
     final static Consumer<Node> processSingleNode = node -> {
@@ -70,7 +62,6 @@ public class ChitonContext {
                 nodeMap[neighbourCoordinate.getRow()][neighbourCoordinate.getCol()].setCoordinateOfPreviousNode(coordinateOfCurrentNode);
             }
         });
-
     }
 
     private static Map<Coordinate, Integer> evaluateRiskLevelOfNeighbours(List<Coordinate> neighbours,int riskLevelOfThisNode) {
@@ -78,16 +69,11 @@ public class ChitonContext {
                 Function.identity(),
                 n -> riskLevelOfThisNode + cavernMap[n.getRow()][n.getCol()]
         ));
-
     }
 
-
     private static List<Coordinate> findNeighbours(Coordinate coordinate) {
-
-
         return directionsToSearch.stream().map(direction -> direction.findNeighbour(coordinate))
                 .filter(Optional::isPresent).flatMap(Optional::stream).collect(Collectors.toList());
-
     }
 
     public static int mainRun() {
@@ -96,11 +82,9 @@ public class ChitonContext {
         do {
             unvisitedNodesWithMinimumRiskLevel.forEach(processSingleNode);
             unvisitedNodesWithMinimumRiskLevel = findUnvisitedNodesWithMinimumRiskLevel();
-
         }
         while(!unvisitedNodesWithMinimumRiskLevel.isEmpty());
-        var returnValue  = nodeMap[HEIGHT - 1][WIDTH - 1].getRiskLevel();
-        return returnValue;
+        return nodeMap[HEIGHT - 1][WIDTH - 1].getRiskLevel();
     }
 
     private static void preliminary() {
@@ -110,18 +94,16 @@ public class ChitonContext {
     private static Set<Node> findUnvisitedNodesWithMinimumRiskLevel() {
         final Set<Node> unvisitedNodesWithMinimumRiskLevel = new HashSet<>();
         unvisitedNodes.stream().min(Comparator.comparingInt(Node::getRiskLevel)).ifPresent(node -> {
-                    var a= unvisitedNodes.stream().filter(n2 -> Objects.equals(n2.getRiskLevel(), node.getRiskLevel())).collect(Collectors.toSet());
-                    unvisitedNodesWithMinimumRiskLevel.addAll(a);
-        }
-        );
-
+                    var unvisitedNodesWithMinimumRiskLevelSet= unvisitedNodes.stream()
+                            .filter(n2 -> Objects.equals(n2.getRiskLevel(), node.getRiskLevel()))
+                            .collect(Collectors.toSet());
+                    unvisitedNodesWithMinimumRiskLevel.addAll(unvisitedNodesWithMinimumRiskLevelSet);
+        });
         return unvisitedNodesWithMinimumRiskLevel ;
     }
 
-
     @Data
     @RequiredArgsConstructor
-    @With
     @Builder
     public static class Coordinate implements Comparable<Coordinate> {
 
@@ -161,11 +143,10 @@ public class ChitonContext {
     @With
     @Builder
     public static class Node {
-        private Integer riskLevel = Integer.MAX_VALUE;
+        private int riskLevel;
         private Coordinate coordinate;
-        boolean visited = false;
+        boolean visited;
         private Coordinate coordinateOfPreviousNode;
-
     }
 
     public enum Direction {
@@ -184,7 +165,6 @@ public class ChitonContext {
                 return SOUTH;
             }
 
-            ;
         },
         EAST {
             @Override

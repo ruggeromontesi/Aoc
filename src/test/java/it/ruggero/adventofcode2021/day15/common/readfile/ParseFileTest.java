@@ -1,7 +1,7 @@
-package it.ruggero.adventofcode2021.day15.readfile;
+package it.ruggero.adventofcode2021.day15.common.readfile;
 
-import it.ruggero.adventofcode2021.day15.old.readfile.ParseFile;
-import it.ruggero.adventofcode2021.day15.validate.ValidateInput;
+import it.ruggero.adventofcode2021.day15.common.readfile.ParseFile;
+import it.ruggero.adventofcode2021.day15.common.validate.ValidateInput;
 import org.junit.jupiter.api.Test;
 
 public class ParseFileTest {

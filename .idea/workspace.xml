@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="744342c0-46f8-4bdf-9e47-35602649a472" name="Default Changelist" comment="Solved first part of day 15">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day15/current/ChitonContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day15/current/ChitonContext.java" afterDir="false" />
+    <list default="true" id="744342c0-46f8-4bdf-9e47-35602649a472" name="Default Changelist" comment="Day 15 cleanup">
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day15/current/ChitonContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day15/part1/ChitonContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day15/old/domain/ChitonContext.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day15/old/readfile/ParseFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day15/common/readfile/ParseFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day15/validate/ValidateInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day15/common/validate/ValidateInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day15/current/ChitonContextTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day15/current/ChitonContextTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day15/domain/ChitonContextTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day15/domain/NavigationTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day15/readfile/ParseFileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day15/common/readfile/ParseFileTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -320,7 +326,7 @@
       <module name="adventOfCode2021" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="it.ruggero.adventofcode2021.day15.current.*" />
+          <option name="PATTERN" value="it.ruggero.adventofcode2021.day15.part1.readfile.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -335,7 +341,7 @@
       <module name="adventOfCode2021" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="it.ruggero.adventofcode2021.day15.current.*" />
+          <option name="PATTERN" value="it.ruggero.adventofcode2021.day15.part1.readfile.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -351,7 +357,7 @@
       <module name="adventOfCode2021" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="it.ruggero.adventofcode2021.day15.current.*" />
+          <option name="PATTERN" value="it.ruggero.adventofcode2021.day15.part1.readfile.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -367,7 +373,7 @@
       <module name="adventOfCode2021" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="it.ruggero.adventofcode2021.day15.current.*" />
+          <option name="PATTERN" value="it.ruggero.adventofcode2021.day15.part1.readfile.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -525,7 +531,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668988443074</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Day 15 cleanup">
+      <created>1669049569779</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1669049569779</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -683,7 +696,8 @@
     <MESSAGE value="not working!" />
     <MESSAGE value="starting refactoring using Dijkstra algorithm;" />
     <MESSAGE value="Solved first part of day 15" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solved first part of day 15" />
+    <MESSAGE value="Day 15 cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="Day 15 cleanup" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -989,11 +1003,6 @@
           <option name="timeStamp" value="250" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day15/ChitonTest.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="251" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day4/streamsolution/entity/BingoSessionTest.java</url>
           <line>13</line>
           <option name="timeStamp" value="255" />
@@ -1044,8 +1053,8 @@
           <option name="timeStamp" value="336" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day15/current/ChitonContext.java</url>
-          <line>102</line>
+          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day15/part1/ChitonContext.java</url>
+          <line>92</line>
           <option name="timeStamp" value="357" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
