@@ -23,6 +23,12 @@ public class ChitonContextTest {
     }
 
     @Test
+    void newBuildFromFileTest() {
+        buildFromFileNewSimple(FILE_PATH_TEST);
+        Assertions.assertEquals(40, mainRun());
+    }
+
+    @Test
     void shouldMainRunCalculateOverTestFile() {
         buildFromFile(FILE_PATH_TEST);
         Assertions.assertEquals(40, mainRun());

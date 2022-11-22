@@ -1,6 +1,6 @@
 package it.ruggero.adventofcode2021.day15.part1;
 
-import it.ruggero.adventofcode2021.day15.common.readfile.ParseFile;
+import it.ruggero.adventofcode2021.day15.common.readfile.ParseFileUtility;
 import it.ruggero.adventofcode2021.day15.part2.MatrixMapping;
 import lombok.*;
 
@@ -12,6 +12,8 @@ import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
+import static it.ruggero.adventofcode2021.day15.common.readfile.ParseFileUtility.parseFileAsIntArray;
+
 public class ChitonContext {
 
     @Getter
@@ -21,6 +23,9 @@ public class ChitonContext {
 
     @Getter
     private static int[][] cavernMap;
+
+    @Getter
+    private static int[][] cavernMapFromFile;
     @Getter
     private static Node[][] nodeMap;
 
@@ -33,16 +38,21 @@ public class ChitonContext {
     private static final Set<Node> unvisitedNodes = new TreeSet<>(Comparator.comparingInt(Node::getRiskLevel).thenComparing(Node::getCoordinate));
 
     public static void buildFromFile(String filePath) {
-        List<String> lines = (new ParseFile(filePath)).getLines();
+        List<String> lines = (new ParseFileUtility(filePath)).getLines();
 
         WIDTH = lines.get(0).length();
         HEIGHT = lines.size();
         cavernMap = new int[HEIGHT][WIDTH];
         nodeMap = new Node[HEIGHT][WIDTH];
 
-        for (int rowNumber = 0; rowNumber < HEIGHT; rowNumber++) {
-            for (int colNumber = 0; colNumber < WIDTH; colNumber++) {
-                cavernMap[rowNumber][colNumber] = Integer.parseInt(lines.get(rowNumber).substring(colNumber, colNumber + 1));
+        createNodeMap(cavernMap);
+    }
+
+    private static void createNodeMap(int[][] actualCavernMap) {
+        nodeMap = new Node[actualCavernMap.length][];
+        for (int rowNumber = 0; rowNumber < actualCavernMap.length; rowNumber++) {
+            nodeMap[rowNumber] = new Node[actualCavernMap[rowNumber].length];
+            for (int colNumber = 0; colNumber < actualCavernMap[rowNumber].length; colNumber++) {
                 var node = Node.builder()
                         .riskLevel(Integer.MAX_VALUE)
                         .coordinate(new Coordinate(rowNumber, colNumber))
@@ -52,6 +62,19 @@ public class ChitonContext {
                 unvisitedNodes.add(node);
             }
         }
+    }
+
+    public static void buildFromFileNewSimple(String filePath) {
+        cavernMapFromFile   = parseFileAsIntArray(filePath);
+        cavernMap = cavernMapFromFile;
+        HEIGHT = cavernMapFromFile.length;
+        WIDTH = cavernMapFromFile[0].length;
+        createNodeMap(cavernMapFromFile);
+    }
+    public static void buildFromFileNewExtended(String filePath) {
+        cavernMapFromFile   = parseFileAsIntArray(filePath);
+        cavernMap = cavernMapFromFile;
+        createNodeMap(MatrixMapping.extendMatrix(cavernMapFromFile));
     }
 
 
@@ -138,8 +161,6 @@ public class ChitonContext {
 
     public static int mainRunExtended(String filePath) {
         Instant now = Instant.now();
-
-
         int out;
         buildFromFileExtended(filePath);
         out = mainRun();
@@ -222,8 +243,6 @@ public class ChitonContext {
                     return Optional.empty();
                 }
             }
-
-
         },
         EAST {
             @Override
@@ -245,7 +264,6 @@ public class ChitonContext {
                     return Optional.empty();
                 }
             }
-
         },
         WEST {
             @Override
@@ -256,12 +274,9 @@ public class ChitonContext {
                     return Optional.empty();
                 }
             }
-
         };
 
         public abstract Optional<Coordinate> findNeighbour(ChitonContext.Coordinate startCoordinate);
-
-
     }
 
 }

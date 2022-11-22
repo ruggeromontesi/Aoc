@@ -1,6 +1,5 @@
 package it.ruggero.adventofcode2021.day15.common.readfile;
 
-import it.ruggero.adventofcode2021.day15.common.readfile.ParseFile;
 import it.ruggero.adventofcode2021.day15.common.validate.ValidateInput;
 import org.junit.jupiter.api.Test;
 
@@ -11,23 +10,23 @@ public class ParseFileTest {
 
     @Test
     void shouldAcquireTestFile(){
-        new ParseFile(FILE_PATH_TEST);
+        new ParseFileUtility(FILE_PATH_TEST);
     }
     @Test
     void shouldAcquireMainFile(){
-        new ParseFile(FILE_PATH);
+        new ParseFileUtility(FILE_PATH);
     }
 
     @Test
     void shouldValidateTestFile(){
-        var lines = new ParseFile(FILE_PATH_TEST);
+        var lines = new ParseFileUtility(FILE_PATH_TEST);
         ValidateInput.validate(lines.getLines());
     }
 
 
     @Test
     void shouldValidateMainFile(){
-        var lines = new ParseFile(FILE_PATH);
+        var lines = new ParseFileUtility(FILE_PATH);
         ValidateInput.validate(lines.getLines());
     }
 
