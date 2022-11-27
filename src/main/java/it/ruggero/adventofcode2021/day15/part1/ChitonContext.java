@@ -25,11 +25,12 @@ public class ChitonContext {
 
    private static final Comparator<Node> comparator = Comparator.comparingInt(Node::getRiskLevel).thenComparing(Node::getCoordinate).thenComparing(Node::isVisited);
 
-    private static final Set<Node> unvisitedNodes = new TreeSet<>(comparator ) ;//new HashSet<>(); //= ;
+    private static final Set<Node> unvisitedNodes = new TreeSet<>(comparator ) ;
 
 
 
     public static void buildFromFilePartOne(String filePath) {
+        unvisitedNodes.clear();
         cavernMap   = parseFileAsIntArray(filePath);
         createNodeMap(cavernMap);
     }
@@ -62,42 +63,8 @@ public class ChitonContext {
         var riskLevelOfThisNode = node.getRiskLevel();
         Map<Coordinate, Integer> riskLevelOfNeighbours = evaluateRiskLevelOfNeighbours(neighbours, riskLevelOfThisNode);
         updateRiskLevelOfNeighboursIfLower(riskLevelOfNeighbours, node.getCoordinate());
-        var target = unvisitedNodes.stream().filter(n -> n.getRiskLevel() == node.getRiskLevel())
-                .filter(n -> n.getCoordinate().getRow() == node.getCoordinate().getRow() &&
-                        n.getCoordinate().getCol() == node.getCoordinate().getCol())
-                .filter(n -> n.isVisited() == node.isVisited())
-                .filter(n -> n.getCoordinateOfPreviousNode().equals(node.getCoordinateOfPreviousNode()))
-                .findFirst().orElseThrow();
-
-        int nodeHash = node.hashCode();
-
-        int targetHash = target.hashCode();
-        if(nodeHash == targetHash) {
-            System.out.println("hash code is the same");
-        }
-
-        int comparison = comparator.compare(node, target);
-
-        if( comparator.compare(node, target) + comparator.compare(target, node) == 0 ) {
-            System.out.println("comparator ok");
-        } else {
-            System.out.println("comparator not ok");
-        }
-
-        var result = unvisitedNodes.remove(target);
-
-        if(!result) {
-            System.out.println("!!!!!!!!!!!!!!!!");
-        }
-
-
-        if(node == target) {
-            System.out.println("reference is the same");
-        }
-
-
         node.setVisited(true);
-        //unvisitedNodes.removeIf(Node::isVisited);
+        unvisitedNodes.removeIf(Node::isVisited);
 
     };
 
