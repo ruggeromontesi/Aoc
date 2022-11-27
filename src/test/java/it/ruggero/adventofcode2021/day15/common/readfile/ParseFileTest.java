@@ -3,9 +3,8 @@ package it.ruggero.adventofcode2021.day15.common.readfile;
 import it.ruggero.adventofcode2021.day15.common.validate.ValidateInput;
 import org.junit.jupiter.api.Test;
 
-import static it.ruggero.adventofcode2021.day15.common.readfile.ParseFileUtility.getLines;
 import static it.ruggero.adventofcode2021.day15.common.readfile.ParseFileUtility.*;
-
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class ParseFileTest {
 
@@ -16,26 +15,26 @@ public class ParseFileTest {
     void shouldAcquireTestFile(){
         readFile(FILE_PATH_TEST);
         var valuesAsStringArray = getValuesAsStringArray();
-
+        assertThat(valuesAsStringArray).hasDimensions(10,10);
     }
+
     @Test
     void shouldAcquireMainFile(){
         readFile(FILE_PATH);
+        var valuesAsStringArray = getValuesAsStringArray();
+        assertThat(valuesAsStringArray).hasDimensions(100,100);
     }
 
     @Test
     void shouldValidateTestFile(){
-        var lines = new ParseFileUtility(FILE_PATH_TEST);
-        ValidateInput.validate(getLines());
+        readFile(FILE_PATH_TEST);
+        ValidateInput.validate(getValuesAsStringArray());
     }
-
 
     @Test
     void shouldValidateMainFile(){
-        var lines = new ParseFileUtility(FILE_PATH);
-        ValidateInput.validate(getLines());
+        readFile(FILE_PATH);
+        ValidateInput.validate(getValuesAsStringArray());
     }
-
-
 
 }

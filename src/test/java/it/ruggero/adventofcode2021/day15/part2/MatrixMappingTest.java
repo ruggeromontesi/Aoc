@@ -3,8 +3,7 @@ package it.ruggero.adventofcode2021.day15.part2;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static it.ruggero.adventofcode2021.day15.part1.ChitonContext.buildFromFile;
-import static it.ruggero.adventofcode2021.day15.part1.ChitonContext.getCavernMap;
+import static it.ruggero.adventofcode2021.day15.part1.ChitonContext.*;
 
 public class MatrixMappingTest {
 
@@ -15,7 +14,7 @@ public class MatrixMappingTest {
 
     @Test
     void shouldDo() {
-        buildFromFile(FILE_PATH_TEST);
+        buildFromFilePartOne(FILE_PATH_TEST);
         var cavernMap = getCavernMap();
         var out = MatrixMapping.extendMatrix(cavernMap);
         int size = out.length;

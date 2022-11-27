@@ -1,6 +1,5 @@
 package it.ruggero.adventofcode2021.day15.part1;
 
-import it.ruggero.adventofcode2021.day15.common.readfile.ParseFileUtility;
 import it.ruggero.adventofcode2021.day15.part2.MatrixMapping;
 import lombok.*;
 
@@ -12,39 +11,21 @@ import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-import static it.ruggero.adventofcode2021.day15.common.readfile.ParseFileUtility.parseFileAsIntArray;
+import static it.ruggero.adventofcode2021.day15.common.readfile.ParseFileUtility.*;
 
 public class ChitonContext {
-
-    @Getter
-    private static int WIDTH;
-    @Getter
-    private static int HEIGHT;
 
     @Getter
     private static int[][] cavernMap;
 
     @Getter
-    private static int[][] cavernMapFromFile;
-    @Getter
     private static Node[][] nodeMap;
 
-    @Getter
-    private static int[][] extendedCavernMap;
-    @Getter
-    private static Node[][] extendedNodeMap;
     private static final Set<Direction> directionsToSearch = Set.of(Direction.values());
-
     private static final Set<Node> unvisitedNodes = new TreeSet<>(Comparator.comparingInt(Node::getRiskLevel).thenComparing(Node::getCoordinate));
 
-    public static void buildFromFile(String filePath) {
-        List<String> lines = (new ParseFileUtility(filePath)).getLines();
-
-        WIDTH = lines.get(0).length();
-        HEIGHT = lines.size();
-        cavernMap = new int[HEIGHT][WIDTH];
-        nodeMap = new Node[HEIGHT][WIDTH];
-
+    public static void buildFromFilePartOne(String filePath) {
+        cavernMap   = parseFileAsIntArray(filePath);
         createNodeMap(cavernMap);
     }
 
@@ -64,40 +45,10 @@ public class ChitonContext {
         }
     }
 
-    public static void buildFromFileNewSimple(String filePath) {
-        cavernMapFromFile   = parseFileAsIntArray(filePath);
-        cavernMap = cavernMapFromFile;
-        HEIGHT = cavernMapFromFile.length;
-        WIDTH = cavernMapFromFile[0].length;
-        createNodeMap(cavernMapFromFile);
-    }
-    public static void buildFromFileNewExtended(String filePath) {
-        cavernMapFromFile   = parseFileAsIntArray(filePath);
-        cavernMap = cavernMapFromFile;
-        createNodeMap(MatrixMapping.extendMatrix(cavernMapFromFile));
-    }
 
-
-    public static void buildFromFileExtended(String filePath) {
-        buildFromFile(filePath);
-        extendedCavernMap = MatrixMapping.extendMatrix(cavernMap);
-        extendedNodeMap = new Node[5 * HEIGHT][5 * WIDTH];
-        unvisitedNodes.clear();
-        for (int rowNumber = 0; rowNumber < 5 * HEIGHT; rowNumber++) {
-            for (int colNumber = 0; colNumber < 5 * WIDTH; colNumber++) {
-                var node = Node.builder()
-                        .riskLevel(Integer.MAX_VALUE)
-                        .coordinate(new Coordinate(rowNumber, colNumber))
-                        .visited(false)
-                        .build();
-                extendedNodeMap[rowNumber][colNumber] = node;
-                unvisitedNodes.add(node);
-            }
-        }
-        nodeMap = extendedNodeMap;
-        cavernMap = extendedCavernMap;
-        HEIGHT = 5 * HEIGHT;
-        WIDTH = 5 * WIDTH;
+    public static void buildFromFilePartTwo(String filePath) {
+        cavernMap   = MatrixMapping.extendMatrix(parseFileAsIntArray(filePath)) ;
+        createNodeMap(cavernMap);
     }
 
     final static Consumer<Node> processSingleNode = node -> {
@@ -131,8 +82,14 @@ public class ChitonContext {
                 .filter(Optional::isPresent).flatMap(Optional::stream).collect(Collectors.toList());
     }
 
-    public static int mainRun() {
+    public static int runPartOne(String filePath) {
+
+        buildFromFilePartOne(filePath);
         preliminary();
+        return calculateMinimumRiskPath();
+    }
+
+    private static int calculateMinimumRiskPath() {
         Set<Node> unvisitedNodesWithMinimumRiskLevel = findUnvisitedNodesWithMinimumRiskLevel();
         int i = 0;
         do {
@@ -148,27 +105,23 @@ public class ChitonContext {
         return nodeMap[nodeMap.length - 1][nodeMap[0].length - 1].getRiskLevel();
     }
 
-    private static double calculateProgress() {
-        double progress;
 
-        progress = 100 * (double) ((HEIGHT * WIDTH) - unvisitedNodes.size()) / (HEIGHT * WIDTH);
-
-        progress = progress - 10 * progress % 10;
-
-
-        return progress;
-    }
-
-    public static int mainRunExtended(String filePath) {
+    public static int runPartTwo(String filePath) {
         Instant now = Instant.now();
         int out;
-        buildFromFileExtended(filePath);
-        out = mainRun();
+        buildFromFilePartTwo(filePath);
+        preliminary();
+        out = calculateMinimumRiskPath();
         Instant later = Instant.now();
-        Duration duration = Duration.between(now, later);
-        System.out.println("duration " + duration.toSeconds());
-
+        System.out.println("duration " + Duration.between(now, later).toSeconds());
         return out;
+    }
+
+    private static double calculateProgress() {
+        double progress;
+        progress = 100 * (double) ((cavernMap.length * cavernMap[0].length) - unvisitedNodes.size()) / (cavernMap.length * cavernMap[0].length);
+        progress = progress - 10 * progress % 10;
+        return progress;
     }
 
     private static void preliminary() {
@@ -247,7 +200,7 @@ public class ChitonContext {
         EAST {
             @Override
             public Optional<Coordinate> findNeighbour(Coordinate thisCoordinate) {
-                if (thisCoordinate.getCol() < WIDTH - 1) {
+                if (thisCoordinate.getCol() < cavernMap[thisCoordinate.getRow()].length - 1) {
                     return Optional.of(new Coordinate(thisCoordinate.getRow(), thisCoordinate.getCol() + 1));
                 } else {
                     return Optional.empty();
@@ -258,7 +211,7 @@ public class ChitonContext {
         SOUTH {
             @Override
             public Optional<Coordinate> findNeighbour(Coordinate thisCoordinate) {
-                if (thisCoordinate.getRow() < HEIGHT - 1) {
+                if (thisCoordinate.getRow() < cavernMap.length - 1) {
                     return Optional.of(new Coordinate(thisCoordinate.getRow() + 1, thisCoordinate.getCol()));
                 } else {
                     return Optional.empty();
