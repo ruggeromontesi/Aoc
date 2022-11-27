@@ -1,5 +1,7 @@
 package it.ruggero.adventofcode2021.day15.common.readfile;
 
+import lombok.Getter;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.*;
@@ -10,6 +12,7 @@ public class ParseFileUtility {
 
     private final static List<String> lines = new ArrayList<>();
 
+    @Getter
     private  static String[][] valuesAsStringArray;
 
     private  static int[][] valuesAsIntArray;
@@ -75,13 +78,5 @@ public class ParseFileUtility {
         String FILE_PATH_TEST = ".\\src\\main\\resources\\day15\\testDay15.txt";
         readFile(FILE_PATH_TEST);
     }
-
-
-
-
-
-
-
-
 
 }
