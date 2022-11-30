@@ -4,54 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="744342c0-46f8-4bdf-9e47-35602649a472" name="Default Changelist" comment="day 16 first commit">
-      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Default_Changelist.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Default_Changelist.xml" afterDir="false" />
+    <list default="true" id="744342c0-46f8-4bdf-9e47-35602649a472" name="Default Changelist" comment="day 16 + preparing stricture for 2022">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_11_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_failureaccess_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_31_1_jre.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_listenablefuture_9999_0_empty_to_avoid_conflict_with_guava.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_qual_3_12_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day16/common/Packet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/adventOfCode2021/day16/testDay16.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day16/PacketTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/adventOfCode2021.iml" beforeDir="false" afterPath="$PROJECT_DIR$/adventOfCode2021.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/day1/depths.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/adventOfCode2021/day1/depths.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/day10/corruptedLines.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/adventOfCode2021/day10/corruptedLines.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/day10/day10.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/adventOfCode2021/day10/day10.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/day10/testDay10.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/adventOfCode2021/day10/testDay10.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/day11/day11.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/adventOfCode2021/day11/day11.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/day11/day11Effective.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/adventOfCode2021/day11/day11Effective.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/day11/testDay11.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/adventOfCode2021/day11/testDay11.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/day12/Day12.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/adventOfCode2021/day12/Day12.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/day12/test0Day12.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/adventOfCode2021/day12/test0Day12.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/day12/test1Day12.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/adventOfCode2021/day12/test1Day12.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/day12/test2Day12.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/adventOfCode2021/day12/test2Day12.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/day12/testSimpleDay12.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/adventOfCode2021/day12/testSimpleDay12.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/day13/Day13.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/adventOfCode2021/day13/Day13.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/day13/testDay13.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/adventOfCode2021/day13/testDay13.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/day14/Day14.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/adventOfCode2021/day14/Day14.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/day14/testDay14.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/adventOfCode2021/day14/testDay14.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/day15/Day15.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/adventOfCode2021/day15/Day15.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/day15/testDay15.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/adventOfCode2021/day15/testDay15.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/day15/testDay15TreeSet.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/adventOfCode2021/day15/testDay15TreeSet.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/day16/Day16.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/adventOfCode2021/day16/Day16.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/day2/directions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/adventOfCode2021/day2/directions.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/day2/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/adventOfCode2021/day2/test.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/day3/report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/adventOfCode2021/day3/report.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/day3/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/adventOfCode2021/day3/test.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/day4/bingo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/adventOfCode2021/day4/bingo.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/day4/singleboard.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/adventOfCode2021/day4/singleboard.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/day4/testBingo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/adventOfCode2021/day4/testBingo.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/day5/HydrotermalVentureMapInput.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/adventOfCode2021/day5/HydrotermalVentureMapInput.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/day5/HydrotermalVentureMapInputSampleCase.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/adventOfCode2021/day5/HydrotermalVentureMapInputSampleCase.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/day5/day5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/adventOfCode2021/day5/day5.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/day5/day5test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/adventOfCode2021/day5/day5test.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/day6/fishes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/adventOfCode2021/day6/fishes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/day6/testFishes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/adventOfCode2021/day6/testFishes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/day7/positions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/adventOfCode2021/day7/positions.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/day7/positionsTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/adventOfCode2021/day7/positionsTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/day8/day8.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/adventOfCode2021/day8/day8.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/day8/testDay8.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/adventOfCode2021/day8/testDay8.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/day9/day9.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/adventOfCode2021/day9/day9.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/day9/day9Test1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/adventOfCode2021/day9/day9Test1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/day9/simpleTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/adventOfCode2021/day9/simpleTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/day9/testDay9.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/adventOfCode2021/day9/testDay9.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day16/common/HexadecimalToBinary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day16/common/HexadecimalToBinary.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day16/HexadecimalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day16/HexadecimalTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -326,7 +293,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Projects/ruggero/adventOfCode2021/src/main/resources/adventOfCode2021",
+    "last_opened_file_path": "C:/Projects/ruggero/adventOfCode2021/src/main/resources/adventOfCode2021/day16",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.6229885",
@@ -335,11 +302,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Projects\ruggero\adventOfCode2021\src\main\resources\adventOfCode2021\day16" />
       <recent name="C:\Projects\adventOfCode2021\src\main\resources\day15" />
       <recent name="C:\Users\rugge\Desktop\tmp\10\adventOfCode2021\src\main\resources\day5" />
       <recent name="C:\Projects\Old\Ruggero\adventOfCode2021\src\main\resources\day13" />
       <recent name="C:\Projects\Old\Ruggero\adventOfCode2021\src\main\resources\day12" />
-      <recent name="C:\Projects\Old\Ruggero\adventOfCode2021\src\main\resources\day11" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Projects\ruggero\adventOfCode2021\src\main\resources\adventOfCode2021\day7" />
@@ -362,60 +329,13 @@
       <recent name="it.ruggero.adventofcode2021.day9.alternativesolution.entity" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.HexadecimalTest">
+  <component name="RunManager" selected="JUnit.PacketTest.shouldBuildPacket">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ChitonContextPartOneTest.issueWithTreeSet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="adventOfCode2021" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="it.ruggero.adventofcode2021.day15.part1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day15.part1" />
-      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day15.part1.ChitonContextPartOneTest" />
-      <option name="METHOD_NAME" value="issueWithTreeSet" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ChitonContextPartOneTest.shouldCalculateMinimumRiskPathWithTestFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="adventOfCode2021" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="it.ruggero.adventofcode2021.day15.part1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day15.part1" />
-      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day15.part1.ChitonContextPartOneTest" />
-      <option name="METHOD_NAME" value="shouldCalculateMinimumRiskPathWithTestFile" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HexadecimalTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="adventOfCode2021" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="it.ruggero.adventofcode2021.day16.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day16" />
-      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day16.HexadecimalTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -437,7 +357,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HexadecimalTest.shouldThrowException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HexadecimalTest.shouldConvertBinaryToInt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="adventOfCode2021" />
       <extension name="coverage">
         <pattern>
@@ -447,26 +367,73 @@
       </extension>
       <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day16" />
       <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day16.HexadecimalTest" />
-      <option name="METHOD_NAME" value="shouldThrowException" />
+      <option name="METHOD_NAME" value="shouldConvertBinaryToInt" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HexadecimalTest.shouldConvertWholeString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="adventOfCode2021" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="it.ruggero.adventofcode2021.day16.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day16" />
+      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day16.HexadecimalTest" />
+      <option name="METHOD_NAME" value="shouldConvertWholeString" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PacketTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="adventOfCode2021" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="it.ruggero.adventofcode2021.day16.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day16" />
+      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day16.PacketTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PacketTest.shouldBuildPacket" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="adventOfCode2021" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="it.ruggero.adventofcode2021.day16.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day16" />
+      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day16.PacketTest" />
+      <option name="METHOD_NAME" value="shouldBuildPacket" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.HexadecimalTest" />
       <item itemvalue="JUnit.HexadecimalTest.shouldConvert" />
-      <item itemvalue="JUnit.HexadecimalTest.shouldThrowException" />
-      <item itemvalue="JUnit.ChitonContextPartOneTest.issueWithTreeSet" />
-      <item itemvalue="JUnit.ChitonContextPartOneTest.shouldCalculateMinimumRiskPathWithTestFile" />
+      <item itemvalue="JUnit.HexadecimalTest.shouldConvertBinaryToInt" />
+      <item itemvalue="JUnit.HexadecimalTest.shouldConvertWholeString" />
+      <item itemvalue="JUnit.PacketTest" />
+      <item itemvalue="JUnit.PacketTest.shouldBuildPacket" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.HexadecimalTest" />
+        <item itemvalue="JUnit.PacketTest.shouldBuildPacket" />
+        <item itemvalue="JUnit.PacketTest" />
+        <item itemvalue="JUnit.HexadecimalTest.shouldConvertBinaryToInt" />
+        <item itemvalue="JUnit.HexadecimalTest.shouldConvertWholeString" />
         <item itemvalue="JUnit.HexadecimalTest.shouldConvert" />
-        <item itemvalue="JUnit.HexadecimalTest.shouldThrowException" />
-        <item itemvalue="JUnit.ChitonContextPartOneTest.issueWithTreeSet" />
-        <item itemvalue="JUnit.ChitonContextPartOneTest.shouldCalculateMinimumRiskPathWithTestFile" />
       </list>
     </recent_temporary>
   </component>
@@ -547,7 +514,7 @@
       <workItem from="1657199085256" duration="366000" />
       <workItem from="1657199540106" duration="1208000" />
       <workItem from="1657203266555" duration="299000" />
-      <workItem from="1669818633987" duration="3233000" />
+      <workItem from="1669818633987" duration="11310000" />
     </task>
     <task id="LOCAL-00001" summary="developing method to choose direction with smaller risk">
       <created>1668880993022</created>
@@ -640,7 +607,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669821338817</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="day 16 + preparing stricture for 2022">
+      <created>1669822048184</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1669822048184</updated>
+    </task>
+    <task id="LOCAL-00015" summary="day 16 + preparing stricture for 2022">
+      <created>1669822131651</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1669822131651</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -804,7 +785,8 @@
     <MESSAGE value="started refactoring, trying to remove duplicate code. Added dependency for assertj.core" />
     <MESSAGE value="started refactoring, cleaned main class ChitonContext" />
     <MESSAGE value="day 16 first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="day 16 first commit" />
+    <MESSAGE value="day 16 + preparing stricture for 2022" />
+    <option name="LAST_COMMIT_MESSAGE" value="day 16 + preparing stricture for 2022" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1216,8 +1198,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day16/HexadecimalTest.java</url>
-          <line>28</line>
+          <line>31</line>
           <option name="timeStamp" value="399" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day16/PacketTest.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="403" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day16/common/Packet.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="404" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

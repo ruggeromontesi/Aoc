@@ -1,10 +1,12 @@
 package it.ruggero.adventofcode2021.day16.common;
 
+import static java.lang.Math.pow;
+
 public class HexadecimalToBinary {
 
-    public static String convert(char input) {
+    public static String convertChar(char inputChar) {
 
-        switch (input) {
+        switch (inputChar) {
             case '0':
                 return "0000";
             case '1':
@@ -40,5 +42,27 @@ public class HexadecimalToBinary {
 
         }
         throw new RuntimeException("wrong input");
+    }
+
+    public static String hexToBin(String inputString) {
+        StringBuilder output = new StringBuilder();
+        for(char c : inputString.toCharArray()) {
+            output.append(convertChar(c));
+        }
+        return output.toString();
+    }
+
+    public static int binaryToInt(String inputString) {
+        int intValue= 0;
+        for(int i = 0; i < inputString.length(); i++) {
+            char c =  inputString.charAt(i);
+            if (c == '1') {
+                intValue += pow(2, inputString.length() - 1 - i);
+            } else if (c != '0') {
+                throw  new RuntimeException("the input contains values different from 0 and 1!");
+            }
+        }
+
+        return intValue;
     }
 }
