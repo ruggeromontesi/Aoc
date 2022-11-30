@@ -17,6 +17,7 @@ public class HexadecimalTest {
         assertThat(convert('2')).isEqualTo("0010");
         assertThat(convert('3')).isEqualTo("0011");
         assertThat(convert('4')).isEqualTo("0100");
+        assertThat(convert('E')).isEqualTo("1110");
         assertThat(convert('F')).isEqualTo("1111");
     }
 
