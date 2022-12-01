@@ -4,8 +4,8 @@
     <file url="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/streamsolution/entity/Coordinate.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/streamsolution/entity/HydrotermalVentureMap.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day5/streamsolution/entity/Line.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/adventOfCode2021/day5/HydrotermalVentureMapInput.txt" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/adventOfCode2021/day5/HydrotermalVentureMapInputSampleCase.txt" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/adventofcode2021/day5/HydrotermalVentureMapInput.txt" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/adventofcode2021/day5/HydrotermalVentureMapInputSampleCase.txt" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day5/streamsolution/AppTest.java" charset="UTF-8" />
     <file url="PROJECT" charset="ISO-8859-1" />
   </component>
