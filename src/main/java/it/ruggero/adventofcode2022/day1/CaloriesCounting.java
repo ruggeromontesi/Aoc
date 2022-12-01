@@ -39,4 +39,16 @@ public class CaloriesCounting {
         );
     }
 
+    public static int  calculateMaximumCaloriesCarriedByElf() {
+        return getCaloriesCount().values().stream().max(Comparator.naturalOrder()).orElse(-1);
+    }
+
+    public static int findTheTopThreeElves () {
+        Set<Integer> maxTreeValues = getCaloriesCount().values().stream().sorted((i1,i2) -> i2 -i1).limit(3).collect(Collectors.toSet());
+
+        var a =maxTreeValues.stream().mapToInt(i -> i).sum();
+
+        return a;
+    }
+
 }
