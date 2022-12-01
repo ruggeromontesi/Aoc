@@ -17,6 +17,8 @@ public class PacketTest {
         assertEquals(version, 6);
         assertEquals(packet.getTypeId(), 4);
         assertThat(packet.getBitGroupList()).hasSize(3);
+        assertThat(packet.getLiteralValue()).isEqualTo(2021);
+
 
 
     }

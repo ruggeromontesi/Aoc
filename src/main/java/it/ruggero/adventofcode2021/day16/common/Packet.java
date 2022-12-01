@@ -5,8 +5,7 @@ import lombok.Data;
 import java.util.ArrayList;
 import java.util.List;
 
-import static it.ruggero.adventofcode2021.day16.common.HexadecimalToBinary.binaryToInt;
-import static it.ruggero.adventofcode2021.day16.common.HexadecimalToBinary.hexToBin;
+import static it.ruggero.adventofcode2021.day16.common.HexadecimalToBinary.*;
 
 @Data
 public class Packet {
@@ -14,6 +13,11 @@ public class Packet {
     private String packet_h;
 
     private String packet_bin;
+
+
+    private int literalValue;
+
+    private String hexValue;
 
     private short version;
     private short typeId;
@@ -42,9 +46,16 @@ public class Packet {
                 paddingZeroes = payload.toString();
             }
         }
+
+      hexValue  = bitGroupList.stream().map(BitGroup::toHexValue).collect(StringBuilder::new, StringBuilder::append, StringBuilder::append).toString();
+
+        literalValue = hexToInt(hexValue);
+
+
     }
 
-    static class BitGroup {
+    @Data
+    public static class BitGroup {
         private char prefix;
         private char[] payload = new char[4];
 
@@ -53,5 +64,25 @@ public class Packet {
             payload = bitGropuBinaryStringValue.substring(1).toCharArray();
 
         }
+
+        private String toBinaryValue() {
+            StringBuilder out = new StringBuilder();
+            for(char c : payload) {
+                out.append(c);
+            }
+            return out.toString();
+        }
+
+
+        public int toIntValue() {
+            return HexadecimalToBinary.binaryToInt( toBinaryValue());
+        }
+
+        public char toHexValue() {
+            return binToHex(toBinaryValue());
+        }
+
+
+
     }
 }
