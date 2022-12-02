@@ -9,9 +9,11 @@ import java.util.List;
 import java.util.Scanner;
 
 public class ParseFileUtility {
-
     @Getter
-    private  static List<String> lines = new ArrayList<>();
+    private static List<String> lines = new ArrayList<>();
+
+    private ParseFileUtility() {
+    }
 
     public static void readFile(final String filePath) {
         try (Scanner input = new Scanner(new File(filePath))) {
@@ -23,5 +25,4 @@ public class ParseFileUtility {
             System.out.println("File not found!");
         }
     }
-
 }

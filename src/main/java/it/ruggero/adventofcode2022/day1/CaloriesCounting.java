@@ -5,6 +5,9 @@ import lombok.Getter;
 import java.util.*;
 import java.util.stream.Collectors;
 
+import static it.ruggero.adventofcode2022.day1.common.ParseFileUtility.getLines;
+import static it.ruggero.adventofcode2022.day1.common.ParseFileUtility.readFile;
+
 public class CaloriesCounting {
 
     @Getter
@@ -15,7 +18,13 @@ public class CaloriesCounting {
 
     private static int elfId = 0;
 
-    public static void createMapElfCalories(List<String> lines) {
+    public static void initialize(String filepath) {
+        readFile(filepath);
+        createMapElfCalories(getLines());
+        countCaloriesByElf();
+    }
+
+    private static void createMapElfCalories(List<String> lines) {
 
         List<Integer> caloriesList = new ArrayList<>();
         for(String line : lines) {
@@ -30,7 +39,7 @@ public class CaloriesCounting {
         calories.put(elfId,caloriesList);
     }
 
-    public static void countCalories() {
+    private static void countCaloriesByElf() {
         caloriesCount = calories.entrySet().stream().collect(
                 Collectors.toMap(
                         Map.Entry::getKey,
@@ -39,16 +48,19 @@ public class CaloriesCounting {
         );
     }
 
-    public static int  calculateMaximumCaloriesCarriedByElf() {
+    public static int getTheAmountOfCaloriesFromTheElfCarryingTheMost(String filepath) {
+        initialize(filepath);
         return getCaloriesCount().values().stream().max(Comparator.naturalOrder()).orElse(-1);
     }
 
-    public static int findTheTopThreeElves () {
-        Set<Integer> maxTreeValues = getCaloriesCount().values().stream().sorted((i1,i2) -> i2 -i1).limit(3).collect(Collectors.toSet());
+    public static int getTheAmountOfCaloriesFromTheTopThreeElvesCarryingTheMost(String filepath) {
+        initialize(filepath);
+        Set<Integer> maxTreeValues = getCaloriesCount().values().stream().sorted((i1,i2) -> i2 -i1).limit(3)
+                .collect(Collectors.toSet());
 
-        var a =maxTreeValues.stream().mapToInt(i -> i).sum();
 
-        return a;
+
+        return maxTreeValues.stream().mapToInt(i -> i).sum();
     }
 
 }
