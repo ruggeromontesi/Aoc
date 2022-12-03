@@ -1,14 +1,17 @@
 package it.ruggero.adventofcode2022.day1;
 
+import it.ruggero.adventofcode2022.day1.common.ParseFileUtility;
 import lombok.Getter;
 
 import java.util.*;
 import java.util.stream.Collectors;
 
-import static it.ruggero.adventofcode2022.day1.common.ParseFileUtility.getLines;
 import static it.ruggero.adventofcode2022.day1.common.ParseFileUtility.readFile;
 
 public class CaloriesCounting {
+
+    private CaloriesCounting() {
+    }
 
     @Getter
     private static Map<Integer,List<Integer>> calories = new HashMap<>();
@@ -20,7 +23,8 @@ public class CaloriesCounting {
 
     public static void initialize(String filepath) {
         readFile(filepath);
-        createMapElfCalories(getLines());
+        var a = ParseFileUtility.getLines();
+        createMapElfCalories(a);
         countCaloriesByElf();
     }
 
