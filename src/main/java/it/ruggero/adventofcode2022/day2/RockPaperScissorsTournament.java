@@ -1,7 +1,9 @@
 package it.ruggero.adventofcode2022.day2;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
+import java.util.function.ToIntFunction;
 
 import static it.ruggero.adventofcode2022.day2.common.ParseFileUtility.getLines;
 import static it.ruggero.adventofcode2022.day2.common.ParseFileUtility.readFile;
@@ -13,7 +15,9 @@ public class RockPaperScissorsTournament {
 
     private static final String FILE_PATH = ".\\src\\main\\resources\\adventofcode2022\\day2\\Day2.txt";
 
-    public static int playSingleRoundFollowingStrategy(char opponentChoice, char yourChoice) {
+    private static final ToIntFunction<char[]> partOne = (char[] choices) ->{
+        char opponentChoice  = choices[0];
+        char yourChoice  = choices[1];
         Map<Character, RockPaperScissor> opponentChoiceEncryption = Map.of(
                 'A', RockPaperScissor.ROCK,
                 'B', RockPaperScissor.PAPER,
@@ -30,24 +34,52 @@ public class RockPaperScissorsTournament {
         assert (opponents != null) && (yours != null);
         RoundScoreCalculator calculator = new RoundScoreCalculator();
         return calculator.applyAsInt(opponents, yours);
-    }
+    };
 
-    public static int playSingleRoundFollowingStrategy(char[] choices) {
-        return playSingleRoundFollowingStrategy(choices[0], choices[1]);
-    }
+    private static final ToIntFunction<char[]> partTwo = (char[] choices) ->{
+        char opponentChoice  = choices[0];
+        char roundResult  = choices[1];
+        Map<Character, RockPaperScissor> opponentChoiceEncryption = Map.of(
+                'A', RockPaperScissor.ROCK,
+                'B', RockPaperScissor.PAPER,
+                'C', RockPaperScissor.SCISSOR);
 
+        Map<Character,Integer> roundResultMap = Map.of(
+                'X', 1,
+                'Y', 0,
+                'Z', -1
+        );
 
-    public static int playTournamentFollowingStrategy(List<String> lines) {
+        RockPaperScissor opponents = opponentChoiceEncryption.get(opponentChoice);
+
+        final RpsComparator comparator = new RpsComparator();
+
+        var result = roundResultMap.get(roundResult);
+        assert (opponents != null) && (result != null);
+
+        RockPaperScissor yours = Arrays.stream(RockPaperScissor.values()).filter(rps -> comparator.compare(opponents, rps) == result).findFirst().orElseThrow();
+
+        RoundScoreCalculator calculator = new RoundScoreCalculator();
+        return calculator.applyAsInt(opponents, yours);
+    };
+
+    public static int playTournament(List<String> lines, ToIntFunction<char[]> strategy) {
         return lines.stream().map(RockPaperScissorsTournament::lineToChars)
-                .mapToInt(RockPaperScissorsTournament::playSingleRoundFollowingStrategy).sum();
+                .mapToInt(strategy).sum();
     }
 
     private static char[] lineToChars(String line) {
         return new char[]{line.charAt(0), line.charAt(2)};
     }
 
-    public static int runTournament() {
+    public static int runTournamentPartOne() {
         readFile(FILE_PATH);
-        return playTournamentFollowingStrategy(getLines());
+        return playTournament(getLines(), partOne);
     }
+
+    public static int runTournamentPartTwo() {
+        readFile(FILE_PATH);
+        return playTournament(getLines(), partTwo);
+    }
+
 }

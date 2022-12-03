@@ -16,6 +16,7 @@ public class ParseFileUtility {
     }
 
     public static void readFile(final String filePath) {
+        lines.clear();
         try (Scanner input = new Scanner(new File(filePath))) {
             while (input.hasNextLine()) {
                 lines.add(input.nextLine());
