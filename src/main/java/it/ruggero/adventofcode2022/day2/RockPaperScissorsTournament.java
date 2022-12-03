@@ -5,8 +5,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.function.ToIntFunction;
 
-import static it.ruggero.adventofcode2022.day2.common.ParseFileUtility.getLines;
-import static it.ruggero.adventofcode2022.day2.common.ParseFileUtility.readFile;
+import static it.ruggero.adventofcode2022.day2.common.ParseFileUtility.*;
 
 public class RockPaperScissorsTournament {
 
