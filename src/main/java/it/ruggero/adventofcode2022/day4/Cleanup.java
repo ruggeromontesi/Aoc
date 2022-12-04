@@ -3,8 +3,10 @@ package it.ruggero.adventofcode2022.day4;
 import lombok.Getter;
 
 import java.util.List;
+import java.util.Set;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 import static it.ruggero.adventofcode2022.util.ParseFileUtility.getLinesFromFile;
 
@@ -19,6 +21,13 @@ public class Cleanup {
     private static final Predicate<PairSectionAssignment> oneRangeFullyContainsTheOther = p ->
             (p.getStartElfOne() > p.getStartElfTwo() - 1 && p.getStopElfOne() < p.getStopElfTwo() + 1) ||
                     (p.getStartElfOne() < p.getStartElfTwo() + 1 && p.getStopElfOne() > p.getStopElfTwo() - 1);
+
+    @Getter
+    private static final Predicate<PairSectionAssignment> areTheTwoRangesOverLapping = p -> {
+        Set<Integer> firstElfRange = IntStream.range(p.getStartElfOne(), p.getStopElfOne() + 1).boxed().collect(Collectors.toSet());
+        Set<Integer> secondElfRange = IntStream.range(p.getStartElfTwo(), p.getStopElfTwo() + 1).boxed().collect(Collectors.toSet());
+        return firstElfRange.stream().anyMatch(secondElfRange::contains);
+    };
 
     public static List<PairSectionAssignment> getAssignmentList(String... filepath) {
         String actualFilepath = (filepath.length == 0) ? FILE_PATH : filepath[0];

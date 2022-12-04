@@ -12,7 +12,7 @@ class CleanupTest {
     private static final String FILE_PATH_TEST = ".\\src\\main\\resources\\adventofcode2022\\day4\\testDay4.txt";
 
     private static final int PART_ONE_SOLUTION = 571;
-
+    private static final int PART_TWO_SOLUTION = 917;
 
     @Test
     void shouldConvertStringToPairSectionAssignment() {
@@ -24,17 +24,27 @@ class CleanupTest {
         assertThat(convertedValue.getStopElfTwo()).isEqualTo(8);
     }
 
-
     @Test
-    void shouldFindOverlappingPairsInTestFile() {
+    void shouldFindFullyContainedPairsInTestFile() {
         var x = getAssignmentList(FILE_PATH_TEST).stream().filter(getOneRangeFullyContainsTheOther()).collect(Collectors.toList());
         assertThat(x).hasSize(2);
     }
 
+    @Test
+    void shouldFindFullyContainedPairsPairs() {
+        var x = getAssignmentList().stream().filter(getOneRangeFullyContainsTheOther()).collect(Collectors.toList());
+        assertThat(x).hasSize(PART_ONE_SOLUTION);
+    }
+
+    @Test
+    void shouldFindOverlappingPairsInTestFile() {
+        var x = getAssignmentList(FILE_PATH_TEST).stream().filter(getAreTheTwoRangesOverLapping()).collect(Collectors.toList());
+        assertThat(x).hasSize(4);
+    }
 
     @Test
     void shouldFindOverlappingPairs() {
-        var x = getAssignmentList().stream().filter(getOneRangeFullyContainsTheOther()).collect(Collectors.toList());
-        assertThat(x).hasSize(PART_ONE_SOLUTION);
+        var x = getAssignmentList().stream().filter(getAreTheTwoRangesOverLapping()).collect(Collectors.toList());
+        assertThat(x).hasSize(PART_TWO_SOLUTION);
     }
 }
