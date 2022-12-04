@@ -57,4 +57,31 @@ class RucksackTest {
         assertThat(result).isEqualTo(PART_ONE_RESULT);
     }
 
+    @Test
+    void shouldSplitIntoGroups() {
+        var result  = splitIntoGroups();
+        assertThat(result).hasSize(100);
+    }
+
+
+
+    @Test
+    void shouldFindCommonItemsInGroups() {
+
+        var x = splitIntoGroups();
+
+        var y = findCommonItemsInGroup(x.get(0));
+        assertThat(findCommonItemsInGroup(x.get(0))).isEqualTo('r');
+
+
+
+    }
+
+
+    @Test
+    void shouldPartTwo() {
+        var result = partTwo();
+        assertThat(result).isEqualTo(PART_ONE_RESULT);
+    }
+
 }
