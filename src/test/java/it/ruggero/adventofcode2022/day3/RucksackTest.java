@@ -6,8 +6,7 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 import static it.ruggero.adventofcode2022.day3.Rucksack.*;
-import static it.ruggero.adventofcode2022.util.ParseFileUtility.getLines;
-import static it.ruggero.adventofcode2022.util.ParseFileUtility.readFile;
+import static it.ruggero.adventofcode2022.util.ParseFileUtility.*;
 import static org.assertj.core.api.Assertions.assertThat;
 
 class RucksackTest {
@@ -15,6 +14,7 @@ class RucksackTest {
     private static final String FILE_PATH_TEST = ".\\src\\main\\resources\\adventofcode2022\\day3\\testDay3.txt";
 
     private final static int PART_ONE_RESULT = 8185;
+    private final static int PART_TWO_RESULT = 2817;
 
     private static final String LINE_1 = "vJrwpWtwJgWrhcsFMMfFFhFp";
 
@@ -32,8 +32,6 @@ class RucksackTest {
 
     }
 
-
-
     @Test
     void shouldCalculatePriorityOfTheItemInBothCompartments() {
         var result = priorityOfItemAppearingInBothCompartments(LINE_1);
@@ -50,7 +48,6 @@ class RucksackTest {
 
     }
 
-
     @Test
     void shouldRunPartOne() {
         var result = partOne();
@@ -59,29 +56,20 @@ class RucksackTest {
 
     @Test
     void shouldSplitIntoGroups() {
-        var result  = splitIntoGroups();
+        var result = splitIntoGroups();
         assertThat(result).hasSize(100);
     }
 
-
-
     @Test
     void shouldFindCommonItemsInGroups() {
-
         var x = splitIntoGroups();
-
         var y = findCommonItemsInGroup(x.get(0));
         assertThat(findCommonItemsInGroup(x.get(0))).isEqualTo('r');
-
-
-
     }
-
 
     @Test
     void shouldPartTwo() {
         var result = partTwo();
-        assertThat(result).isEqualTo(PART_ONE_RESULT);
+        assertThat(result).isEqualTo(PART_TWO_RESULT);
     }
-
 }

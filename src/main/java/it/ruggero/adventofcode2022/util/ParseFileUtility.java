@@ -26,4 +26,10 @@ public class ParseFileUtility {
             System.out.println("File not found!");
         }
     }
+
+
+    public static List<String> getLinesFromFile(final String filePath) {
+        readFile(filePath);
+        return lines;
+    }
 }

@@ -8,14 +8,12 @@ import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-import static it.ruggero.adventofcode2022.util.ParseFileUtility.getLines;
+import static it.ruggero.adventofcode2022.util.ParseFileUtility.*;
 import static it.ruggero.adventofcode2022.util.ParseFileUtility.readFile;
 
 public class Rucksack {
 
     private static final String FILE_PATH = ".\\src\\main\\resources\\adventofcode2022\\day3\\Day3.txt";
-
-    private static final String FILE_PATH_TEST = ".\\src\\main\\resources\\adventofcode2022\\day3\\testDay3.txt";
 
     private Rucksack() {
     }
@@ -55,17 +53,12 @@ public class Rucksack {
         }
     }
 
-
     public static int partOne() {
         readFile(FILE_PATH);
         return getLines().stream().mapToInt(Rucksack::priorityOfItemAppearingInBothCompartments).sum();
     }
 
-
-
-
     public static List<List<String>> splitIntoGroups() {
-
         readFile(FILE_PATH);
         List<List<String>> out = new ArrayList<>();
         int i = 0;
@@ -80,7 +73,6 @@ public class Rucksack {
         }
         return out;
     }
-
 
     public static char findCommonItemsInGroup(List<String>  groups) {
         if(groups.size() != 3) {
@@ -98,7 +90,6 @@ public class Rucksack {
             throw new RuntimeException("!!!!!!!!!!!!!!!!11");
         }
 
-
         return x.stream().findFirst().orElseThrow();
     }
 
@@ -113,14 +104,11 @@ public class Rucksack {
             }
 
         }
-
         return groups.stream().map(Rucksack::findCommonItemsInGroup).collect(Collectors.toList());
-
 
     }
     public static int partTwo() {
         var y = findCommonItemsInGroups(splitIntoGroups());
         return y.stream().mapToInt(Rucksack::itemPriority).sum();
     }
-
 }
