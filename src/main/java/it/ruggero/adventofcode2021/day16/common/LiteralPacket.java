@@ -1,6 +1,5 @@
 package it.ruggero.adventofcode2021.day16.common;
 
-import lombok.Builder;
 import lombok.Data;
 
 import java.util.ArrayList;
@@ -10,7 +9,6 @@ import static it.ruggero.adventofcode2021.day16.common.HexadecimalToBinary.binTo
 import static it.ruggero.adventofcode2021.day16.common.HexadecimalToBinary.hexToInt;
 
 @Data
-@Builder
 public class LiteralPacket extends  Packet {
 
     private int literalValue;

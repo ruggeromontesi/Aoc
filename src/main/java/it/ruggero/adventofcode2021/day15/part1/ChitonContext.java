@@ -2,6 +2,7 @@ package it.ruggero.adventofcode2021.day15.part1;
 
 import it.ruggero.adventofcode2021.day15.part2.MatrixMapping;
 import lombok.*;
+import org.jetbrains.annotations.NotNull;
 
 import java.time.Duration;
 import java.time.Instant;
@@ -25,9 +26,9 @@ public class ChitonContext {
 
    private static final Comparator<Node> comparator = Comparator.comparingInt(Node::getRiskLevel).thenComparing(Node::getCoordinate).thenComparing(Node::isVisited);
 
-    private static final Set<Node> unvisitedNodes = new TreeSet<>(comparator ) ;
+    //private static final Set<Node> unvisitedNodes = new TreeSet<>(comparator ) ;
 
-
+    private static final PriorityQueue<Node> unvisitedNodes = new PriorityQueue<>() ;
 
     public static void buildFromFilePartOne(String filePath) {
         unvisitedNodes.clear();
@@ -41,7 +42,7 @@ public class ChitonContext {
             nodeMap[rowNumber] = new Node[actualCavernMap[rowNumber].length];
             for (int colNumber = 0; colNumber < actualCavernMap[rowNumber].length; colNumber++) {
                 var node = Node.builder()
-                        .riskLevel(Integer.MAX_VALUE)
+                        .riskLevel(10000)
                         .coordinate(new Coordinate(rowNumber, colNumber))
                         .visited(false)
                         .build();
@@ -50,7 +51,6 @@ public class ChitonContext {
             }
         }
     }
-
 
     public static void buildFromFilePartTwo(String filePath) {
         cavernMap   = MatrixMapping.extendMatrix(parseFileAsIntArray(filePath)) ;
@@ -150,6 +150,24 @@ public class ChitonContext {
                     .collect(Collectors.toSet());
             unvisitedNodesWithMinimumRiskLevel.addAll(unvisitedNodesWithMinimumRiskLevelSet);
         });
+
+        final Set<Node> umrl = new HashSet<>();
+        var node = unvisitedNodes.peek();
+        int min = Integer.MAX_VALUE;
+        if(node != null) {
+            min = node.getRiskLevel();
+        }
+
+        while(node != null && node.getRiskLevel() == min) {
+            var x = unvisitedNodes.poll();
+            umrl.add(x);
+            node = unvisitedNodes.peek();
+        }
+
+        if(!unvisitedNodesWithMinimumRiskLevel.equals(umrl)) {
+            System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!1");
+        }
+
         return unvisitedNodesWithMinimumRiskLevel;
     }
 
@@ -195,7 +213,7 @@ public class ChitonContext {
     @Data
     @With
     @Builder
-    public static class Node {
+    public static class Node implements Comparable<Node> {
         private int riskLevel;
         private Coordinate coordinate;
         boolean visited;
@@ -222,6 +240,11 @@ public class ChitonContext {
             result = 31 * result + (visited ? 1 : 0);
             result = 31 * result + (coordinateOfPreviousNode != null ? coordinateOfPreviousNode.hashCode() : 0);
             return result;
+        }
+
+        @Override
+        public int compareTo(@NotNull ChitonContext.Node o) {
+            return this.riskLevel < o.getRiskLevel() ? -1 : this.riskLevel != o.getRiskLevel() ? 1 : 0;
         }
     }
 

@@ -1,12 +1,10 @@
 package it.ruggero.adventofcode2021.day16.common;
 
-import lombok.Builder;
 import lombok.Data;
 
 import static it.ruggero.adventofcode2021.day16.common.HexadecimalToBinary.hexToBin;
 
 @Data
-@Builder
 public class Packet {
 
     protected String inputString_hex;
