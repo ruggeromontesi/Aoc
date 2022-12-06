@@ -4,22 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="744342c0-46f8-4bdf-9e47-35602649a472" name="Default Changelist" comment="day 16 + preparing stricture for 2022">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_11_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_failureaccess_1_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_31_1_jre.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_listenablefuture_9999_0_empty_to_avoid_conflict_with_guava.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_qual_3_12_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day16/common/Packet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/adventOfCode2021/day16/testDay16.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day16/PacketTest.java" afterDir="false" />
+    <list default="true" id="744342c0-46f8-4bdf-9e47-35602649a472" name="Default Changelist" comment="Day 6,  refactored">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_3_23.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_3_23.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_3_23.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day16/playground/PacketDecoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day16/playground/PacketDecoderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Default_Changelist.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Default_Changelist.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adventOfCode2021.iml" beforeDir="false" afterPath="$PROJECT_DIR$/adventOfCode2021.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day16/common/HexadecimalToBinary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day16/common/HexadecimalToBinary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day16/HexadecimalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day16/HexadecimalTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day16/common/LiteralPacket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day16/common/LiteralPacket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day16/common/OperatorPacket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day16/common/OperatorPacket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day16/common/Packet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day16/common/Packet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day16/common/PacketFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day16/common/PacketFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -293,7 +289,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Projects/ruggero/adventOfCode2021/src/main/resources/adventOfCode2021/day16",
+    "last_opened_file_path": "C:/Projects/adventOfCode2021/src/main/resources/adventofcode2022",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.6229885",
@@ -302,11 +298,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Projects\adventOfCode2021\src\main\resources\adventofcode2022" />
       <recent name="C:\Projects\ruggero\adventOfCode2021\src\main\resources\adventOfCode2021\day16" />
       <recent name="C:\Projects\adventOfCode2021\src\main\resources\day15" />
       <recent name="C:\Users\rugge\Desktop\tmp\10\adventOfCode2021\src\main\resources\day5" />
       <recent name="C:\Projects\Old\Ruggero\adventOfCode2021\src\main\resources\day13" />
-      <recent name="C:\Projects\Old\Ruggero\adventOfCode2021\src\main\resources\day12" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Projects\ruggero\adventOfCode2021\src\main\resources\adventOfCode2021\day7" />
@@ -329,7 +325,7 @@
       <recent name="it.ruggero.adventofcode2021.day9.alternativesolution.entity" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PacketTest.shouldBuildPacket">
+  <component name="RunManager" selected="JUnit.PacketDecoderTest.shouldCalculateversionSum2">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -341,99 +337,96 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HexadecimalTest.shouldConvert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PacketDecoder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day16.playground.PacketDecoder" />
       <module name="adventOfCode2021" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="it.ruggero.adventofcode2021.day16.*" />
+          <option name="PATTERN" value="it.ruggero.adventofcode2021.day16.playground.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day16" />
-      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day16.HexadecimalTest" />
-      <option name="METHOD_NAME" value="shouldConvert" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PacketDecoderTest.shouldCalculateversionSum" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="adventOfCode2021" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="it.ruggero.adventofcode2021.day16.playground.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day16.playground" />
+      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day16.playground.PacketDecoderTest" />
+      <option name="METHOD_NAME" value="shouldCalculateversionSum" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HexadecimalTest.shouldConvertBinaryToInt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PacketDecoderTest.shouldCalculateversionSum2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="adventOfCode2021" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="it.ruggero.adventofcode2021.day16.*" />
+          <option name="PATTERN" value="it.ruggero.adventofcode2021.day16.playground.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day16" />
-      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day16.HexadecimalTest" />
-      <option name="METHOD_NAME" value="shouldConvertBinaryToInt" />
+      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day16.playground" />
+      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day16.playground.PacketDecoderTest" />
+      <option name="METHOD_NAME" value="shouldCalculateversionSum2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HexadecimalTest.shouldConvertWholeString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TuningTroubleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="adventOfCode2021" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="it.ruggero.adventofcode2021.day16.*" />
+          <option name="PATTERN" value="it.ruggero.adventofcode2022.day6.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day16" />
-      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day16.HexadecimalTest" />
-      <option name="METHOD_NAME" value="shouldConvertWholeString" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PacketTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="adventOfCode2021" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="it.ruggero.adventofcode2021.day16.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day16" />
-      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day16.PacketTest" />
+      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2022.day6" />
+      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2022.day6.TuningTroubleTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PacketTest.shouldBuildPacket" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TuningTroubleTest.shouldFindStartOfPacketActualFilePartTwo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="adventOfCode2021" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="it.ruggero.adventofcode2021.day16.*" />
+          <option name="PATTERN" value="it.ruggero.adventofcode2022.day6.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2021.day16" />
-      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day16.PacketTest" />
-      <option name="METHOD_NAME" value="shouldBuildPacket" />
+      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2022.day6" />
+      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2022.day6.TuningTroubleTest" />
+      <option name="METHOD_NAME" value="shouldFindStartOfPacketActualFilePartTwo" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.HexadecimalTest.shouldConvert" />
-      <item itemvalue="JUnit.HexadecimalTest.shouldConvertBinaryToInt" />
-      <item itemvalue="JUnit.HexadecimalTest.shouldConvertWholeString" />
-      <item itemvalue="JUnit.PacketTest" />
-      <item itemvalue="JUnit.PacketTest.shouldBuildPacket" />
+      <item itemvalue="Application.PacketDecoder" />
+      <item itemvalue="JUnit.PacketDecoderTest.shouldCalculateversionSum" />
+      <item itemvalue="JUnit.PacketDecoderTest.shouldCalculateversionSum2" />
+      <item itemvalue="JUnit.TuningTroubleTest" />
+      <item itemvalue="JUnit.TuningTroubleTest.shouldFindStartOfPacketActualFilePartTwo" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PacketTest.shouldBuildPacket" />
-        <item itemvalue="JUnit.PacketTest" />
-        <item itemvalue="JUnit.HexadecimalTest.shouldConvertBinaryToInt" />
-        <item itemvalue="JUnit.HexadecimalTest.shouldConvertWholeString" />
-        <item itemvalue="JUnit.HexadecimalTest.shouldConvert" />
+        <item itemvalue="JUnit.PacketDecoderTest.shouldCalculateversionSum2" />
+        <item itemvalue="JUnit.PacketDecoderTest.shouldCalculateversionSum" />
+        <item itemvalue="Application.PacketDecoder" />
+        <item itemvalue="JUnit.TuningTroubleTest" />
+        <item itemvalue="JUnit.TuningTroubleTest.shouldFindStartOfPacketActualFilePartTwo" />
       </list>
     </recent_temporary>
   </component>
@@ -621,7 +614,28 @@
       <option name="project" value="LOCAL" />
       <updated>1669822131651</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Day 5 Part 2">
+      <created>1670257035099</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1670257035099</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Day 6, to be refactored">
+      <created>1670317440755</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1670317440755</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Day 6,  refactored">
+      <created>1670318034930</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1670318034930</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -786,7 +800,11 @@
     <MESSAGE value="started refactoring, cleaned main class ChitonContext" />
     <MESSAGE value="day 16 first commit" />
     <MESSAGE value="day 16 + preparing stricture for 2022" />
-    <option name="LAST_COMMIT_MESSAGE" value="day 16 + preparing stricture for 2022" />
+    <MESSAGE value="Day 5 Part 1" />
+    <MESSAGE value="Day 5 Part 2" />
+    <MESSAGE value="Day 6, to be refactored" />
+    <MESSAGE value="Day 6,  refactored" />
+    <option name="LAST_COMMIT_MESSAGE" value="Day 6,  refactored" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1207,12 +1225,112 @@
           <option name="timeStamp" value="403" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day16/common/Packet.java</url>
-          <line>51</line>
-          <option name="timeStamp" value="404" />
+          <url>file://$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2022/day5/SupplyStacksTest.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="435" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2022/day6/TuningTrouble.java</url>
+          <line>7</line>
+          <option name="timeStamp" value="443" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day16/playground/PacketDecoder.java</url>
+          <line>107</line>
+          <option name="timeStamp" value="457" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day16/common/LiteralPacket.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="458" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day16/common/LiteralPacket.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="460" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day16/playground/PacketDecoder.java</url>
+          <line>135</line>
+          <option name="timeStamp" value="461" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day16/common/OperatorPacket.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="467" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day16/common/LiteralPacket.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="469" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day16/playground/PacketDecoder.java</url>
+          <line>96</line>
+          <option name="timeStamp" value="477" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day16/playground/PacketDecoder.java</url>
+          <line>130</line>
+          <option name="timeStamp" value="493" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day16/playground/PacketDecoderTest.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="498" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day16/playground/PacketDecoderTest.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="499" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day16/playground/PacketDecoder.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="500" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day16/playground/PacketDecoder.java</url>
+          <line>67</line>
+          <option name="timeStamp" value="501" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day16/playground/PacketDecoder.java</url>
+          <line>99</line>
+          <option name="timeStamp" value="502" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day16/common/OperatorPacket.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="503" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day16/common/OperatorPacket.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="504" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day16/common/OperatorPacket.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="506" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day16/common/OperatorPacket.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="507" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day16/common/OperatorPacket.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="508" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <inline-watch fileUrl="file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day16/playground/PacketDecoder.java" line="54">
+        <watch expression="sb" language="JAVA" />
+      </inline-watch>
+    </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">

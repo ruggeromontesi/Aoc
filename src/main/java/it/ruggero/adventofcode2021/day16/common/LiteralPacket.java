@@ -22,11 +22,21 @@ public class LiteralPacket extends  Packet {
 
     public LiteralPacket(String inputString) {
         super(inputString);
-        buildPacketTypeFour();
+        buildPacketTypeFourInternal();
+    }
+
+    public LiteralPacket(String inputString, boolean internal) {
+        super(inputString);
+        if (internal) {
+            buildPacketTypeFourInternal();
+        } else {
+            buildPacketTypeFourExternal();
+        }
+
     }
 
 
-    private void buildPacketTypeFour() {
+    private void buildPacketTypeFourExternal() {
 
         boolean isThisTheLastPacket = false;
 
@@ -60,6 +70,43 @@ public class LiteralPacket extends  Packet {
 
         paddingZeroes = inputString_bin.substring(i);
         remainderString  = inputString_bin.substring(endPacketIndex);
+
+    }
+
+
+    private void buildPacketTypeFourInternal() {
+
+        boolean isThisTheLastPacket = false;
+
+
+        StringBuilder payload = new StringBuilder();
+        int i;
+        int j;
+        for(i = 6,j = 0; i < inputString_bin.length() && j > -1; i++, j++) {
+            char ch = inputString_bin.charAt(i);
+            if(j == 0 && ch == '0') {
+                isThisTheLastPacket = true;
+            }
+            payload.append(ch);
+            if(j == 4 ) {
+                bitGroupList.add(new BitGroup(payload.toString()));
+                if(!isThisTheLastPacket) {
+                    payload = new StringBuilder();
+                    j = -1;
+                } else {
+                    j = -2;
+
+                }
+
+            }
+        }
+
+        hexValue  = bitGroupList.stream().map(BitGroup::toHexValue).collect(StringBuilder::new, StringBuilder::append, StringBuilder::append).toString();
+
+        literalValue = hexToInt(hexValue);
+
+
+        remainderString  = inputString_bin.substring(i);
 
     }
 
