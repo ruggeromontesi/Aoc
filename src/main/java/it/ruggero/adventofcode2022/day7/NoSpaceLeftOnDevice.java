@@ -21,9 +21,9 @@ public class NoSpaceLeftOnDevice {
     private static final List<Directory> allDirectories = new ArrayList<>();
 
     private static void run() {
-        do {
+        while (logLineIndex < logs.size()) {
             processLine();
-        } while (logLineIndex < logs.size());
+        }
         collectDirectories(root);
     }
 
