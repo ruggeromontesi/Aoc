@@ -4,18 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="744342c0-46f8-4bdf-9e47-35602649a472" name="Default Changelist" comment="Day 6,  refactored">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_3_23.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_3_23.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_3_23.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day16/playground/PacketDecoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2021/day16/playground/PacketDecoderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Default_Changelist.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Default_Changelist.xml" afterDir="false" />
+    <list default="true" id="744342c0-46f8-4bdf-9e47-35602649a472" name="Default Changelist" comment="2021-Day 16-Part 1 - draft, not working">
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2022/day8/TreetopTreeHouse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/util/input/FilePathResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/util/input/FileReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/util/input/FileToIntegerMatrix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/util/solution/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/adventofcode2022/day8/Day8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/adventofcode2022/day8/testDay8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/it/ruggero/util/FileReaderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Default_Changelist.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Default_Changelist/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day16/common/LiteralPacket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day16/common/LiteralPacket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day16/common/OperatorPacket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day16/common/OperatorPacket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day16/common/Packet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day16/common/Packet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day16/common/PacketFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day16/common/PacketFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day15/part1/ChitonContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day15/part1/ChitonContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day16/common/PacketFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2022/day3/Rucksack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2022/day3/Rucksack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2022/day4/Cleanup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2022/day4/Cleanup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2022/day5/SupplyStacks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2022/day5/SupplyStacks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2022/day7/NoSpaceLeftOnDevice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2022/day7/NoSpaceLeftOnDevice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2022/util/ParseFileUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/ruggero/util/input/old/ParseFileUtility.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/adventofcode2021/day16/Day16.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/rubbish/day16/Day16.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/adventofcode2021/day16/testDay16.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/rubbish/day16/testDay16.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2022/day3/RucksackTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2022/day3/RucksackTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2022/day6/TuningTroubleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/it/ruggero/adventofcode2022/day6/TuningTroubleTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +48,7 @@
       <list>
         <option value="package-info" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -289,7 +302,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Projects/adventOfCode2021/src/main/resources/adventofcode2022",
+    "last_opened_file_path": "C:/Projects/ruggero/adventOfCode2021",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.6229885",
@@ -298,25 +311,25 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Projects\ruggero\adventOfCode2021\src\main\resources\adventofcode2022" />
       <recent name="C:\Projects\adventOfCode2021\src\main\resources\adventofcode2022" />
       <recent name="C:\Projects\ruggero\adventOfCode2021\src\main\resources\adventOfCode2021\day16" />
       <recent name="C:\Projects\adventOfCode2021\src\main\resources\day15" />
       <recent name="C:\Users\rugge\Desktop\tmp\10\adventOfCode2021\src\main\resources\day5" />
-      <recent name="C:\Projects\Old\Ruggero\adventOfCode2021\src\main\resources\day13" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Projects\ruggero\adventOfCode2021\src\main\resources\rubbish" />
       <recent name="C:\Projects\ruggero\adventOfCode2021\src\main\resources\adventOfCode2021\day7" />
       <recent name="C:\Projects\ruggero\adventOfCode2021\src\main\resources\adventOfCode2021" />
       <recent name="C:\Projects\Old\Ruggero\adventOfCode2021\src\test\java\it\ruggero\adventofcode2021\day1" />
       <recent name="C:\Projects\Old\Ruggero\adventOfCode2021\src\main\resources\day8" />
-      <recent name="C:\Projects\Old\Ruggero\adventOfCode2021\src\main\resources\day4" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="it.ruggero.util.input" />
       <recent name="it.ruggero.adventofcode2021.day15.part1" />
       <recent name="it.ruggero.adventofcode2021.day5.streamsolution" />
       <recent name="it.ruggero.adventofcode2021.day5.basesolution" />
       <recent name="it.ruggero.adventofcode2021.day4.basesolution" />
-      <recent name="it.ruggero.adventofcode2021.day4.streamsolution.service" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="it.ruggero.adventofcode2021.day15.part2" />
@@ -325,7 +338,7 @@
       <recent name="it.ruggero.adventofcode2021.day9.alternativesolution.entity" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PacketDecoderTest.shouldCalculateversionSum2">
+  <component name="RunManager" selected="JUnit.FileReaderTest.shouldExtractIntArray">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -337,15 +350,47 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PacketDecoder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2021.day16.playground.PacketDecoder" />
+    <configuration name="TreetopTreeHouse" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2022.day8.TreetopTreeHouse" />
       <module name="adventOfCode2021" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="it.ruggero.adventofcode2021.day16.playground.*" />
+          <option name="PATTERN" value="it.ruggero.adventofcode2022.day8.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FileReaderTest.shouldExtractIntArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="adventOfCode2021" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="it.ruggero.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="it.ruggero.util" />
+      <option name="MAIN_CLASS_NAME" value="it.ruggero.util.FileReaderTest" />
+      <option name="METHOD_NAME" value="shouldExtractIntArray" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FileReaderTest.shouldReadFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="adventOfCode2021" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="it.ruggero.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="it.ruggero.util" />
+      <option name="MAIN_CLASS_NAME" value="it.ruggero.util.FileReaderTest" />
+      <option name="METHOD_NAME" value="shouldReadFile" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -382,51 +427,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TuningTroubleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="adventOfCode2021" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="it.ruggero.adventofcode2022.day6.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2022.day6" />
-      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2022.day6.TuningTroubleTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TuningTroubleTest.shouldFindStartOfPacketActualFilePartTwo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="adventOfCode2021" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="it.ruggero.adventofcode2022.day6.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="it.ruggero.adventofcode2022.day6" />
-      <option name="MAIN_CLASS_NAME" value="it.ruggero.adventofcode2022.day6.TuningTroubleTest" />
-      <option name="METHOD_NAME" value="shouldFindStartOfPacketActualFilePartTwo" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Application.PacketDecoder" />
+      <item itemvalue="Application.TreetopTreeHouse" />
+      <item itemvalue="JUnit.FileReaderTest.shouldExtractIntArray" />
+      <item itemvalue="JUnit.FileReaderTest.shouldReadFile" />
       <item itemvalue="JUnit.PacketDecoderTest.shouldCalculateversionSum" />
       <item itemvalue="JUnit.PacketDecoderTest.shouldCalculateversionSum2" />
-      <item itemvalue="JUnit.TuningTroubleTest" />
-      <item itemvalue="JUnit.TuningTroubleTest.shouldFindStartOfPacketActualFilePartTwo" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FileReaderTest.shouldExtractIntArray" />
+        <item itemvalue="JUnit.FileReaderTest.shouldReadFile" />
+        <item itemvalue="Application.TreetopTreeHouse" />
         <item itemvalue="JUnit.PacketDecoderTest.shouldCalculateversionSum2" />
         <item itemvalue="JUnit.PacketDecoderTest.shouldCalculateversionSum" />
-        <item itemvalue="Application.PacketDecoder" />
-        <item itemvalue="JUnit.TuningTroubleTest" />
-        <item itemvalue="JUnit.TuningTroubleTest.shouldFindStartOfPacketActualFilePartTwo" />
       </list>
     </recent_temporary>
   </component>
@@ -508,6 +522,8 @@
       <workItem from="1657199540106" duration="1208000" />
       <workItem from="1657203266555" duration="299000" />
       <workItem from="1669818633987" duration="11310000" />
+      <workItem from="1670482847775" duration="29000" />
+      <workItem from="1671819638399" duration="8170000" />
     </task>
     <task id="LOCAL-00001" summary="developing method to choose direction with smaller risk">
       <created>1668880993022</created>
@@ -1166,22 +1182,22 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day15/part1/ChitonContext.java</url>
-          <line>156</line>
+          <line>157</line>
           <option name="timeStamp" value="364" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day15/part1/ChitonContext.java</url>
-          <line>125</line>
+          <line>126</line>
           <option name="timeStamp" value="369" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day15/part1/ChitonContext.java</url>
-          <line>151</line>
+          <line>152</line>
           <option name="timeStamp" value="374" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day15/part1/ChitonContext.java</url>
-          <line>238</line>
+          <line>239</line>
           <option name="timeStamp" value="381" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -1191,12 +1207,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day15/part1/ChitonContext.java</url>
-          <line>209</line>
+          <line>210</line>
           <option name="timeStamp" value="384" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day15/part1/ChitonContext.java</url>
-          <line>86</line>
+          <line>87</line>
           <option name="timeStamp" value="394" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="NONE" type="java-line">
@@ -1211,7 +1227,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day15/part1/ChitonContext.java</url>
-          <line>98</line>
+          <line>99</line>
           <option name="timeStamp" value="398" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -1323,6 +1339,61 @@
           <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2021/day16/common/OperatorPacket.java</url>
           <line>46</line>
           <option name="timeStamp" value="508" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2022/day8/TreetopTreeHouse.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="510" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2022/day8/TreetopTreeHouse.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="511" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2022/day8/TreetopTreeHouse.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="512" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/adventofcode2022/day8/TreetopTreeHouse.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="513" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/util/input/old/ParseFileUtility.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="514" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/util/input/old/ParseFileUtility.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="515" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/util/input/old/ParseFileUtility.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="516" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/util/input/old/ParseFileUtility.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="517" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/it/ruggero/util/input/old/ParseFileUtility.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="518" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/it/ruggero/util/FileReaderTest.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="519" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/it/ruggero/util/FileReaderTest.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="520" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -8,8 +8,8 @@ import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-import static it.ruggero.adventofcode2022.util.ParseFileUtility.*;
-import static it.ruggero.adventofcode2022.util.ParseFileUtility.readFile;
+import static it.ruggero.util.input.old.ParseFileUtility.*;
+import static it.ruggero.util.input.old.ParseFileUtility.readFile;
 
 public class Rucksack {
 

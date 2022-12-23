@@ -6,7 +6,7 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 import static it.ruggero.adventofcode2022.day3.Rucksack.*;
-import static it.ruggero.adventofcode2022.util.ParseFileUtility.*;
+import static it.ruggero.util.input.old.ParseFileUtility.*;
 import static org.assertj.core.api.Assertions.assertThat;
 
 class RucksackTest {

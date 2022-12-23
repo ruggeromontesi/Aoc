@@ -5,7 +5,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import static it.ruggero.adventofcode2022.util.ParseFileUtility.getLinesFromFile;
+import static it.ruggero.util.input.old.ParseFileUtility.getLinesFromFile;
 
 public class NoSpaceLeftOnDevice {
     final static String FILE_PATH = ".\\src\\main\\resources\\adventofcode2022\\day7\\Day7.txt";

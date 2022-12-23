@@ -1,4 +1,4 @@
-package it.ruggero.adventofcode2022.util;
+package it.ruggero.util.input.old;
 
 import lombok.Getter;
 

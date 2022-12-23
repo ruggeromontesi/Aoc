@@ -14,7 +14,7 @@ import java.util.function.UnaryOperator;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-import static it.ruggero.adventofcode2022.util.ParseFileUtility.getLinesFromFile;
+import static it.ruggero.util.input.old.ParseFileUtility.getLinesFromFile;
 
 public class SupplyStacks {
 

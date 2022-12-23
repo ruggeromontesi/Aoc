@@ -1,5 +1,6 @@
 package it.ruggero.adventofcode2021.day15.part1;
 
+
 import it.ruggero.adventofcode2021.day15.part2.MatrixMapping;
 import lombok.*;
 import org.jetbrains.annotations.NotNull;
@@ -14,6 +15,7 @@ import java.util.stream.Collectors;
 
 import static it.ruggero.adventofcode2021.day15.common.readfile.ParseFileUtility.parseFileAsIntArray;
 
+
 public class ChitonContext {
 
     @Getter
@@ -26,7 +28,6 @@ public class ChitonContext {
 
    private static final Comparator<Node> comparator = Comparator.comparingInt(Node::getRiskLevel).thenComparing(Node::getCoordinate).thenComparing(Node::isVisited);
 
-    //private static final Set<Node> unvisitedNodes = new TreeSet<>(comparator ) ;
 
     private static final PriorityQueue<Node> unvisitedNodes = new PriorityQueue<>() ;
 

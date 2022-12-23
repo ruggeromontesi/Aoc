@@ -3,7 +3,7 @@ package it.ruggero.adventofcode2022.day6;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static it.ruggero.adventofcode2022.util.ParseFileUtility.getLinesFromFile;
+import static it.ruggero.util.input.old.ParseFileUtility.getLinesFromFile;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class TuningTroubleTest {
