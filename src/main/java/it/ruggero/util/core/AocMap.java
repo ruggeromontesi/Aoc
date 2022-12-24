@@ -10,10 +10,7 @@ import java.util.Optional;
 import java.util.function.BiFunction;
 
 public class AocMap<T> {
-
-    private T[][] entityMap;
-
-    private final T[][] elements;
+    private final T[][] entityMap;
 
     @Getter
     private final int[][] sourceInputMap;
@@ -23,7 +20,7 @@ public class AocMap<T> {
     public AocMap(int[][] source, Class<T> clazz, BiFunction<Coordinate, Integer, T> mapper) {
         sourceInputMap = source;
         this.mapper = mapper;
-        elements = (T[][]) Array.newInstance(clazz, sourceInputMap.length, sourceInputMap[0].length);
+        entityMap = (T[][]) Array.newInstance(clazz, sourceInputMap.length, sourceInputMap[0].length);
         createEntityMap();
     }
 
@@ -31,7 +28,7 @@ public class AocMap<T> {
         for (int rowIndex = 0; rowIndex < sourceInputMap.length; rowIndex++) {
             for (int colIndex = 0; colIndex < sourceInputMap[rowIndex].length; colIndex++) {
                 Coordinate coordinate = Coordinate.builder().row(rowIndex).col(colIndex).build();
-                elements[rowIndex][colIndex] = mapper.apply(coordinate, sourceInputMap[coordinate.getRow()][coordinate.getCol()]);
+                entityMap[rowIndex][colIndex] = mapper.apply(coordinate, sourceInputMap[coordinate.getRow()][coordinate.getCol()]);
             }
         }
     }
@@ -80,33 +77,26 @@ public class AocMap<T> {
             case NORTH:
                 if (thisCoordinate.getRow() > 0) {
                     return Optional.of(new Coordinate(thisCoordinate.getRow() - 1, thisCoordinate.getCol()));
-                } else {
-                    return Optional.empty();
                 }
+                break;
             case EAST:
                 if (thisCoordinate.getCol() < sourceInputMap[thisCoordinate.getRow()].length - 1) {
                     return Optional.of(new Coordinate(thisCoordinate.getRow(), thisCoordinate.getCol() + 1));
-                } else {
-                    return Optional.empty();
                 }
+                break;
             case SOUTH:
                 if (thisCoordinate.getRow() < sourceInputMap.length - 1) {
                     return Optional.of(new Coordinate(thisCoordinate.getRow() + 1, thisCoordinate.getCol()));
-                } else {
-                    return Optional.empty();
                 }
+                break;
             case WEST:
                 if (thisCoordinate.getCol() > 0) {
                     return Optional.of(new Coordinate(thisCoordinate.getRow(), thisCoordinate.getCol() - 1));
-                } else {
-                    return Optional.empty();
                 }
+                break;
 
         }
         return Optional.empty();
 
-        }
-
-
-
+    }
 }
