@@ -1,8 +1,5 @@
-package it.ruggero.util;
+package it.ruggero.util.input;
 
-import it.ruggero.util.input.FilePathResolver;
-import it.ruggero.util.input.FileToStringList;
-import it.ruggero.util.input.FileToInteger2DArray;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;

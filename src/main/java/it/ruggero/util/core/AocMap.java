@@ -5,15 +5,35 @@ import lombok.Data;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 
+import java.lang.reflect.Array;
 import java.util.Optional;
+import java.util.function.BiFunction;
 
 public class AocMap<T> {
 
-    @Getter
-    private int[][] heightMap;
+    private T[][] entityMap;
 
-    public AocMap(int[][] source) {
-        heightMap = source;
+    private final T[][] elements;
+
+    @Getter
+    private final int[][] sourceInputMap;
+
+    private final BiFunction<Coordinate, Integer, T> mapper;
+
+    public AocMap(int[][] source, Class<T> clazz, BiFunction<Coordinate, Integer, T> mapper) {
+        sourceInputMap = source;
+        this.mapper = mapper;
+        elements = (T[][]) Array.newInstance(clazz, sourceInputMap.length, sourceInputMap[0].length);
+        createEntityMap();
+    }
+
+    private void createEntityMap() {
+        for (int rowIndex = 0; rowIndex < sourceInputMap.length; rowIndex++) {
+            for (int colIndex = 0; colIndex < sourceInputMap[rowIndex].length; colIndex++) {
+                Coordinate coordinate = Coordinate.builder().row(rowIndex).col(colIndex).build();
+                elements[rowIndex][colIndex] = mapper.apply(coordinate, sourceInputMap[coordinate.getRow()][coordinate.getCol()]);
+            }
+        }
     }
 
 
@@ -55,53 +75,38 @@ public class AocMap<T> {
         }
     }
 
-    //refactor all those methods
-    // is not ok to have them in the enum as they can access only static fields
-
-    public enum Direction {
-        NORTH {
-            @Override
-            public Optional<Coordinate> findNeighbour(Coordinate thisCoordinate) {
+    public Optional<Coordinate> findNeighbourOfCoordinateInDirection(Coordinate thisCoordinate, Directions direction) {
+        switch (direction) {
+            case NORTH:
                 if (thisCoordinate.getRow() > 0) {
                     return Optional.of(new Coordinate(thisCoordinate.getRow() - 1, thisCoordinate.getCol()));
                 } else {
                     return Optional.empty();
                 }
-            }
-        },
-        EAST {
-            @Override
-            public Optional<Coordinate> findNeighbour(Coordinate thisCoordinate) {
-                if (thisCoordinate.getCol() < heightMap[thisCoordinate.getRow()].length - 1) {
+            case EAST:
+                if (thisCoordinate.getCol() < sourceInputMap[thisCoordinate.getRow()].length - 1) {
                     return Optional.of(new Coordinate(thisCoordinate.getRow(), thisCoordinate.getCol() + 1));
                 } else {
                     return Optional.empty();
                 }
-            }
-
-        },
-        SOUTH {
-            @Override
-            public Optional<Coordinate> findNeighbour(Coordinate thisCoordinate) {
-                if (thisCoordinate.getRow() < heightMap.length - 1) {
+            case SOUTH:
+                if (thisCoordinate.getRow() < sourceInputMap.length - 1) {
                     return Optional.of(new Coordinate(thisCoordinate.getRow() + 1, thisCoordinate.getCol()));
                 } else {
                     return Optional.empty();
                 }
-            }
-        },
-        WEST {
-            @Override
-            public Optional<Coordinate> findNeighbour(Coordinate thisCoordinate) {
+            case WEST:
                 if (thisCoordinate.getCol() > 0) {
                     return Optional.of(new Coordinate(thisCoordinate.getRow(), thisCoordinate.getCol() - 1));
                 } else {
                     return Optional.empty();
                 }
-            }
-        };
 
-        public abstract Optional<Coordinate> findNeighbour(Coordinate startCoordinate);
-    }
+        }
+        return Optional.empty();
+
+        }
+
+
 
 }
