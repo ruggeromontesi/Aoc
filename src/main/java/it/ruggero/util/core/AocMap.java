@@ -1,15 +1,15 @@
 package it.ruggero.util.core;
 
-import lombok.Builder;
-import lombok.Data;
-import lombok.Getter;
-import lombok.RequiredArgsConstructor;
+import lombok.*;
 
 import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.Optional;
 import java.util.function.BiFunction;
+import java.util.stream.Stream;
 
 public class AocMap<T> {
+    @Getter
     private final T[][] entityMap;
 
     @Getter
@@ -32,11 +32,15 @@ public class AocMap<T> {
             }
         }
     }
+    public Stream<T> stream() {
+        return Arrays.stream(entityMap).flatMap(Arrays::stream);
+    }
 
 
     @Data
     @RequiredArgsConstructor
     @Builder
+    @With
     public static class Coordinate implements Comparable<AocMap.Coordinate> {
         private int row;
         private int col;
@@ -44,6 +48,7 @@ public class AocMap<T> {
         public Coordinate(int row, int col) {
             this.row = row;
             this.col = col;
+
         }
 
         @Override
@@ -73,6 +78,7 @@ public class AocMap<T> {
     }
 
     public Optional<Coordinate> findNeighbourOfCoordinateInDirection(Coordinate thisCoordinate, Directions direction) {
+        validate(thisCoordinate);
         switch (direction) {
             case NORTH:
                 if (thisCoordinate.getRow() > 0) {
@@ -99,4 +105,19 @@ public class AocMap<T> {
         return Optional.empty();
 
     }
+
+    public boolean isOnTheBorder(Coordinate coordinate) {
+        validate(coordinate);
+        return coordinate.getRow() == 0 ||
+                coordinate.getRow() == sourceInputMap.length - 1 ||
+                coordinate.getCol() == 0 ||
+                coordinate.getCol() == sourceInputMap[coordinate.getRow()].length - 1;
+    }
+
+
+    private void validate(Coordinate coordinate) {
+        assert coordinate.row > -1 && coordinate.row < sourceInputMap.length;
+        assert coordinate.col > -1 && coordinate.col < sourceInputMap[coordinate.row].length;
+    }
+
 }
