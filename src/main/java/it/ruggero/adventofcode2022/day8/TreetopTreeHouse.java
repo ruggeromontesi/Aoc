@@ -14,24 +14,18 @@ import java.util.stream.Stream;
 
 public class TreetopTreeHouse implements Solution<Long> {
     private int[][] heightMap;
-    private final FilePathResolver filePathResolver = new FilePathResolver(8,2022);
+    private final FilePathResolver filePathResolver = new FilePathResolver(8, 2022);
 
     private AocMap<Tree> aocMap;
     private Tree[][] treeMap;
     private final BiFunction<AocMap.Coordinate, Integer, Tree> mapper = (AocMap.Coordinate c, Integer h) ->
             Tree.builder().coordinate(c).height(h).build();
 
-    public TreetopTreeHouse() {
-        initialize();
-    }
-
-    private  void initialize() {
-        heightMap = new FileToInteger2DArray(filePathResolver).readSample();
-        createMap();
-
-    }
-
     private boolean isTheTreeVisibleInDirection(Tree t, Directions direction) {
+        return getListOfTreesInDirection(t, direction).stream().allMatch(tree -> tree.getHeight() < t.getHeight());
+    }
+
+    private List<Tree> getListOfTreesInDirection(Tree t, Directions direction) {
         List<Tree> allTreesTillEdgeInDirection = new ArrayList<>();
         Optional<AocMap.Coordinate> nextCoordinate;
         AocMap.Coordinate currentCoordinate = AocMap.Coordinate.builder()
@@ -41,17 +35,33 @@ public class TreetopTreeHouse implements Solution<Long> {
         do {
             nextCoordinate = aocMap.findNeighbourOfCoordinateInDirection(currentCoordinate, direction);
 
-            if(nextCoordinate.isPresent()) {
+            if (nextCoordinate.isPresent()) {
                 allTreesTillEdgeInDirection.add(treeMap[nextCoordinate.get().getRow()][nextCoordinate.get().getCol()]);
                 currentCoordinate = AocMap.Coordinate.builder().row(nextCoordinate.get().getRow()).col(nextCoordinate.get().getCol()).build();
             }
         } while (nextCoordinate.isPresent());
+        return allTreesTillEdgeInDirection;
+    }
 
-        return allTreesTillEdgeInDirection.stream().allMatch(tree -> tree.getHeight() < t.getHeight());
+    private long getViewingDistanceInDirection(Tree t, Directions direction) {
+        int viewingDistance = 0;
+        for (Tree treeInLine : getListOfTreesInDirection(t, direction)) {
+            viewingDistance++;
+            if (treeInLine.getHeight() >= t.getHeight()) {
+                return viewingDistance;
+            }
+        }
+        return viewingDistance;
+    }
+
+    private Long calculateViewingDistanceInAllDirections(Tree t) {
+        return Stream.of(Directions.values())
+                .map(direction -> getViewingDistanceInDirection(t, direction)).reduce(1L, (a, b) -> a * b);
     }
 
     private void calculateIfTreeIsVisible(Tree tree) {
-        var visible = Stream.of(Directions.values()).anyMatch(direction -> isTheTreeVisibleInDirection(tree,direction));
+        var visible = Stream.of(Directions.values())
+                .anyMatch(direction -> isTheTreeVisibleInDirection(tree, direction));
         tree.setIsVisible(visible);
 
     }
@@ -84,11 +94,15 @@ public class TreetopTreeHouse implements Solution<Long> {
 
     @Override
     public Long solvePartTwoSample() {
-        return null;
+        heightMap = new FileToInteger2DArray(filePathResolver).readSample();
+        createMap();
+        return aocMap.stream().mapToLong(this::calculateViewingDistanceInAllDirections).max().orElse(0L);
     }
 
     @Override
     public Long solvePartTwo() {
-        return null;
+        heightMap = new FileToInteger2DArray(filePathResolver).read();
+        createMap();
+        return aocMap.stream().mapToLong(this::calculateViewingDistanceInAllDirections).max().orElse(0L);
     }
 }

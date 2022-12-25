@@ -18,5 +18,17 @@ public class TreetopTreeHouseTest {
         assertThat(result).isEqualTo(1835L);
     }
 
+    @Test
+    void shouldSolveParTwoSample() {
+        var result = new TreetopTreeHouse().solvePartTwoSample();
+        assertThat(result).isEqualTo(8L);
+    }
+
+    @Test
+    void shouldSolveParTwo() {
+        var result = new TreetopTreeHouse().solvePartTwo();
+        assertThat(result).isEqualTo(263670L);
+    }
+
 
 }

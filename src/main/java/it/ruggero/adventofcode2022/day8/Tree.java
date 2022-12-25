@@ -12,7 +12,7 @@ import org.jetbrains.annotations.NotNull;
 public class Tree implements Comparable<Tree> {
     private int height;
     private AocMap.Coordinate coordinate;
-    Boolean IsVisible;
+    private Boolean IsVisible;
 
     @Override
     public int compareTo(@NotNull Tree o) {
