@@ -1,12 +1,12 @@
-package it.ruggero.adventofcode2022.day1;
+package it.ruggero.adventofcode2022.day1.old;
 
-import it.ruggero.adventofcode2022.day1.common.ParseFileUtility;
+import it.ruggero.adventofcode2022.day1.old.common.ParseFileUtility;
 import lombok.Getter;
 
 import java.util.*;
 import java.util.stream.Collectors;
 
-import static it.ruggero.adventofcode2022.day1.common.ParseFileUtility.readFile;
+import static it.ruggero.adventofcode2022.day1.old.common.ParseFileUtility.readFile;
 
 public class CaloriesCounting {
 

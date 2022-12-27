@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.Comparator;
 
-import static it.ruggero.adventofcode2022.day1.CaloriesCounting.*;
+import static it.ruggero.adventofcode2022.day1.old.CaloriesCounting.*;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class CaloriesCountingTest {

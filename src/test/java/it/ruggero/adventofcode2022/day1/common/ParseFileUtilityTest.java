@@ -2,8 +2,8 @@ package it.ruggero.adventofcode2022.day1.common;
 
 import org.junit.jupiter.api.Test;
 
-import static it.ruggero.adventofcode2022.day1.common.ParseFileUtility.getLines;
-import static it.ruggero.adventofcode2022.day1.common.ParseFileUtility.readFile;
+import static it.ruggero.adventofcode2022.day1.old.common.ParseFileUtility.getLines;
+import static it.ruggero.adventofcode2022.day1.old.common.ParseFileUtility.readFile;
 import static org.assertj.core.api.Assertions.assertThat;
 
 class ParseFileUtilityTest {

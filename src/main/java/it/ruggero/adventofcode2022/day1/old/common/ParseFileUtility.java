@@ -1,4 +1,4 @@
-package it.ruggero.adventofcode2022.day1.common;
+package it.ruggero.adventofcode2022.day1.old.common;
 
 import lombok.Getter;
 
