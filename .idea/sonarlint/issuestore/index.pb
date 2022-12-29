@@ -9,8 +9,6 @@ w
 Gsrc/main/java/it/ruggero/adventofcode2021/day16/common/Hexadecimal.java,e\c\ec97fd5e129ceacb6f67a389ef4772ba1119e1eb
 c
 3src/main/resources/adventOfCode2021/day15/Day15.txt,c\5\c5122813044a78b9db0b7be57dc58fe6eeee3a35
-R
-".idea/shelf/Default_Changelist.xml,7\4\749ba626078088fcb9f895928f81c9db5594ccfd
 h
 8src/main/resources/adventOfCode2021/day4/singleboard.txt,6\e\6e453208cd749e4b8867e7f4f0a6f3d4c8f6de24
 n

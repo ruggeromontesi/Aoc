@@ -1,38 +1,82 @@
 package it.ruggero.util.input;
 
-import java.io.File;
-import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
+import java.util.regex.Pattern;
+import java.util.stream.Collectors;
 
 public class FileToStringList {
 
-    private final FilePathResolver filePathResolver;
+    private FilePathResolver filePathResolver;
+    
+    private String filePath;
+    
+    private final String SEPARATOR_NEW_LINE = "\\r\\n";
+
+    private final String SEPARATOR_BLANK_LINE = "\\r\\n\\r\\n";
+    
+    private String separator = SEPARATOR_NEW_LINE;
+    
+    public FileToStringList(String filePath) {
+        this.filePath = filePath;
+    }
 
     public FileToStringList(FilePathResolver filePathResolver) {
         this.filePathResolver = filePathResolver;
     }
 
-    protected List<String> readFile(final String filePath) {
-        List<String> lines = new ArrayList<>();
-        try (Scanner input = new Scanner(new File(filePath))) {
-            while (input.hasNextLine()) {
-                lines.add(input.nextLine());
-            }
+    private List<String> readFile() {
+        Path source = Paths.get(filePath);
+        try {
+            String inputText = new String(Files.readAllBytes(source));
+            Pattern pattern = Pattern.compile(SEPARATOR_BLANK_LINE);
+            return  List.of(pattern.split(inputText));
 
-        } catch (FileNotFoundException ex) {
-            System.out.println("File not found!");
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         }
-        return lines;
+       }
+       
+       public List<String> parseFileAsSingleList() {
+        return readFile();
+       }
+       
+       public List<List<String>> parseAsListOfLists() {
+           Path source = Paths.get(filePath);
+           try {
+               String inputText = new String(Files.readAllBytes(source));
+               Pattern pattern = Pattern.compile(SEPARATOR_BLANK_LINE);
+               var strings = List.of(pattern.split(inputText));
+               var a =  strings.stream().map( s -> List.of(Pattern.compile(SEPARATOR_NEW_LINE).split(s))).collect(Collectors.toList());
+               List<List<String>> output = new ArrayList<>();
+               for(String s : strings) {
+                   var singleList = List.of(Pattern.compile(SEPARATOR_NEW_LINE).split(s));
+                   output.add(singleList);
+               }
+               return output;
+           } catch (IOException e) {
+               throw new RuntimeException(e);
+           }
+        
+       }
+
+    public FileToStringList readSample() {
+        this.filePath = filePathResolver.getSampleInputFilePath();
+        return this;
     }
 
-    public List<String> readSample() {
-        return readFile(filePathResolver.getSampleInputFilePath());
+    public FileToStringList read() {
+        this.filePath = filePathResolver.getInputFilePath();
+        return this;
     }
-
-    public List<String> read() {
-        return readFile(filePathResolver.getInputFilePath());
+    
+    public FileToStringList withBlankLineSeparator() {
+        separator = SEPARATOR_BLANK_LINE;
+        return  this;
     }
 
 

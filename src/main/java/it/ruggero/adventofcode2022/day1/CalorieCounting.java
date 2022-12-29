@@ -22,8 +22,12 @@ public class CalorieCounting {
         Path source = Paths.get(a);
         String poem = new String(Files.readAllBytes(source));
         Pattern para = Pattern.compile("\\s*^\\s*$\\s*", Pattern.MULTILINE);
-        boolean b = Pattern.matches("a*b", "ruggero");
-        boolean c = Pattern.matches("ro$", "ruggero");
+        boolean b = Pattern.matches("^a*b.*$", "abbondanza");
+        boolean c = Pattern.matches("^rug.*$", "ruggero");
+
+        String d = "ruggeroamontesianelamezzoadelacammina";
+        Pattern pattern = Pattern.compile("\\r\\n\\r\\n");
+        var e = pattern.split(poem);
         return null;
 
     }
