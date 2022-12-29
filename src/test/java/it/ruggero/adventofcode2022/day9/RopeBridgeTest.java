@@ -3,13 +3,12 @@ package it.ruggero.adventofcode2022.day9;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class RopeBridgeTest {
+class RopeBridgeTest {
 
     private static List<MotionInstruction> instructionListSample;
 
@@ -111,8 +110,7 @@ public class RopeBridgeTest {
         assertThat(rp.getHead()).isEqualTo(new RopeBridge.Point(2,2));
         assertThat(rp.getTail()).isEqualTo(new RopeBridge.Point(1,2));
 
-        List<RopeBridge.Point> list = new ArrayList<>();
-        list =List.of(
+        var list =List.of(
                 new RopeBridge.Point(0,0),
                 new RopeBridge.Point(1,0),
                 new RopeBridge.Point(2,0),
