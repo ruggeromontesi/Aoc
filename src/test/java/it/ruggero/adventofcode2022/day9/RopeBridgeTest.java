@@ -12,8 +12,6 @@ class RopeBridgeTest {
     void shouldDoAllMovements() {
         var rp = new RopeBridge(Day9ReadFile.readSample(),2);
         rp.moveAllInstructions();
-        assertThat(rp.getHead()).isEqualTo(new Knot(2, 2, "H"));
-        assertThat(rp.getTail()).isEqualTo(new Knot(1, 2, "T"));
 
         var list = List.of(
                 new Knot(0, 0, "T"),
@@ -33,7 +31,7 @@ class RopeBridgeTest {
                 new Knot(2, 4, "T"),
                 new Knot(3, 4, "T")
         );
-        assertThat(rp.getTailPointList()).containsAll(list);
+        assertThat(rp.getTailPointList()).containsAll(list).hasSize(13);
     }
 
     @Test
