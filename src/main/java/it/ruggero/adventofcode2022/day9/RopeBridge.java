@@ -2,6 +2,7 @@ package it.ruggero.adventofcode2022.day9;
 
 import lombok.*;
 
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -11,12 +12,13 @@ import static java.lang.Math.signum;
 
 public class RopeBridge {
 
-    @Getter
-    @Setter
-    private Point head = new Point(0, 0);
+    private Point head = new Point(0, 0, "H", null, null);
+
     @Getter
     @Setter
     private Point tail = new Point(0, 0);
+
+    private List<Point> knots = new ArrayList<>();
 
     @Getter
     private List<MotionInstruction> motionInstructions;
@@ -25,7 +27,20 @@ public class RopeBridge {
         this.motionInstructions = motionInstructions;
     }
 
+    private void initialize(){
+        knots.add(head);
+    }
+
     public RopeBridge() {
+    }
+
+    public Point getHead() {
+        return  head;
+        //return knots.stream().filter(p -> p.getId().equals("H")).findFirst().orElseThrow();
+    }
+
+    public void setHead(Point head) {
+        this.head = head;
     }
 
     @Getter
@@ -53,6 +68,8 @@ public class RopeBridge {
     }
 
     public void moveHead(Direction d) {
+
+        //Point head = getHead();
         switch (d) {
             case U:
                 head = new Point(head.x, head.y + 1);
@@ -96,11 +113,30 @@ public class RopeBridge {
         return abs(head.x - tail.x) + abs(head.y - tail.y) < 2;
     }
 
-    @With
-    @Data
-    @Builder
+ @Getter
+ @Setter
+ @EqualsAndHashCode
     static class Point {
         private int x;
         private int y;
+
+        public Point(int x, int y) {
+            this.x = x;
+            this.y = y;
+        }
+
+     public Point(int x, int y, String id, Point previous, Point next) {
+         this.x = x;
+         this.y = y;
+         this.id = id;
+         this.previous = previous;
+         this.next = next;
+     }
+
+     private String id;
+
+        private Point previous;
+
+        private Point next;
     }
 }
