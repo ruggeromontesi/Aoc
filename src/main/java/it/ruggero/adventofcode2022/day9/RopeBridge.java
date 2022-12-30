@@ -13,27 +13,22 @@ import static java.lang.Math.abs;
 public class RopeBridge {
 
     @Getter
-    private Point head;
+    private Knot head;
 
     @Getter
-    private Point tail;
+    private Knot tail;
 
     @Getter
     @Setter
-    private List<Point> knots = new ArrayList<>();
+    private List<Knot> knots = new ArrayList<>();
 
     @Getter
-    private final Set<Point> tailPointList = new HashSet<>();
+    private final Set<Knot> tailPointList = new HashSet<>();
 
     @Getter
     private List<MotionInstruction> motionInstructions;
 
     private int numberOfKnots = 2;
-
-    public RopeBridge(List<MotionInstruction> motionInstructions) {
-        initialize();
-        this.motionInstructions = motionInstructions;
-    }
 
     public RopeBridge(List<MotionInstruction> motionInstructions, int numberOfKnots) {
         this.motionInstructions = motionInstructions;
@@ -41,57 +36,39 @@ public class RopeBridge {
         initialize();
     }
 
-    public RopeBridge(int numberOfKnots) {
-        this.numberOfKnots = numberOfKnots;
-        initialize();
-    }
-
-    public RopeBridge() {
-        initialize();
-    }
-
-    public void setHead(Point head) {
-        this.head.setX(head.getX());
-        this.head.setY(head.getY());
-        this.head.setId(head.getId());
-    }
-
-    public void setTail(Point tail) {
-        this.tail.setX(tail.getX());
-        this.tail.setY(tail.getY());
-        this.tail.setId(tail.getId());
-    }
-
     private void initialize() {
-        if(numberOfKnots == 2){
-            initializeWithTwoKnots();
-        } else {
-            initializeWithMoreThanTwoKnots();
-        }
+//        if(numberOfKnots == 2){
+//            initializeWithTwoKnots();
+//        } else {
+//            initializeWithMoreThanTwoKnots();
+//        }
+
+        initializeWithMoreThanTwoKnots();
 
     }
 
     private void initializeWithTwoKnots(){
         initializeHead();
         initializeTail();
-        tailPointList.add(new Point(tail.x,tail.y,tail.id));
+        tailPointList.add(new Knot(tail.getX(),tail.getY(),tail.getId()));
     }
 
     private void initializeTail() {
-        tail = new Point(0, 0, "T");
+        tail = new Knot(0, 0, "T");
         knots.add(tail);
     }
 
     private void initializeWithMoreThanTwoKnots(){
         initializeHead();
         for(int knotIndex = 1; knotIndex < numberOfKnots - 1 ; knotIndex++) {
-            knots.add(new Point(0, 0, knotIndex + ""));
+            knots.add(new Knot(0, 0, knotIndex + ""));
         }
         initializeTail();
+        tailPointList.add(new Knot(tail.getX(),tail.getY(),tail.getId()));
     }
 
     private void initializeHead() {
-        head = new Point(0, 0, "H");
+        head = new Knot(0, 0, "H");
         knots.add(head);
     }
 
@@ -103,11 +80,11 @@ public class RopeBridge {
         for (int i = 0; i < m.getSteps(); i++) {
             head.move(m.getDirection());
             knots.stream().filter(k -> !k.getId().equals("H")).forEach(k -> {
-                Point previous = getPrevious(k);
+                Knot previous = getPrevious(k);
                 if (!areTwoKnotsAdjacent(previous, k)) {
                     moveAsTail(k);
                     if(k.getId().equals("T")){
-                        tailPointList.add(new Point(k.x, k.y, k.id));
+                        tailPointList.add(new Knot(k.getX(), k.getY(), k.getId()));
                     }
                 }
              }
@@ -116,28 +93,24 @@ public class RopeBridge {
         }
     }
 
-    public void moveMultipleInstructions(List<MotionInstruction> instructions) {
-        instructions.forEach(this::moveSingleInstruction);
-    }
+    public void moveAsTail(Knot k1) {
+        Knot previous = getPrevious(k1);
 
-    public void moveAsTail(Point k1) {
-        Point previous = getPrevious(k1);
-
-        if (previous.x > k1.x) {
+        if (previous.getX() > k1.getX()) {
             k1.move(R);
         }
-        if (previous.x < k1.x) {
+        if (previous.getX() < k1.getX()) {
             k1.move(L);
         }
-        if (previous.y > k1.y) {
+        if (previous.getY() > k1.getY()) {
             k1.move(U);
         }
-        if (previous.y < k1.y) {
+        if (previous.getY() < k1.getY()) {
             k1.move(D);
         }
     }
 
-    public Point getPrevious(Point p){
+    public Knot getPrevious(Knot p){
         String stringId = p.getId();
 
         if(stringId.equals("H")) {
@@ -160,43 +133,13 @@ public class RopeBridge {
 
     }
 
-    public Point getKnotById(String id) {
+    public Knot getKnotById(String id) {
         return knots.stream().filter(k -> k.getId().equals(id)).findFirst().orElseThrow();
     }
 
-    public boolean areTwoKnotsAdjacent(Point k1, Point k2) {
-        return abs(k1.x - k2.x) + abs(k1.y - k2.y) == 1 ||
-                (abs(k1.x - k2.x) == 1 && abs(k1.y - k2.y) == 1);
+    public boolean areTwoKnotsAdjacent(Knot k1, Knot k2) {
+        return abs(k1.getX() - k2.getX()) + abs(k1.getY() - k2.getY()) == 1 ||
+                (abs(k1.getX() - k2.getX()) == 1 && abs(k1.getY() - k2.getY()) == 1);
     }
 
-    @Data
-    static class Point {
-        private int x;
-        private int y;
-        private String id;
-
-        public Point(int x, int y, String id) {
-            this.x = x;
-            this.y = y;
-            this.id = id;
-        }
-
-        public void move(Direction d) {
-            switch (d) {
-                case U:
-                    y++;
-                    break;
-                case D:
-                    y--;
-                    break;
-                case L:
-                    x--;
-                    break;
-                case R:
-                    x++;
-                    break;
-            }
-        }
-
-    }
 }
