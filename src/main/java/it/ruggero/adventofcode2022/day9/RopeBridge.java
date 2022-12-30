@@ -1,6 +1,6 @@
 package it.ruggero.adventofcode2022.day9;
 
-import lombok.*;
+import lombok.Getter;
 
 import java.util.*;
 
@@ -24,11 +24,11 @@ public class RopeBridge {
 
     private void initialize() {
         knots.add(head);
-        for(int knotIndex = 1; knotIndex < numberOfKnots - 1 ; knotIndex++) {
+        for (int knotIndex = 1; knotIndex < numberOfKnots - 1; knotIndex++) {
             knots.add(new Knot(0, 0, knotIndex + ""));
         }
         knots.add(tail);
-        tailPointList.add(new Knot(tail.getX(),tail.getY(),tail.getId()));
+        tailPointList.add(new Knot(tail.getX(), tail.getY(), tail.getId()));
     }
 
     public void moveAllInstructions() {
@@ -59,12 +59,13 @@ public class RopeBridge {
         if (previous.getY() < k.getY()) { k.move(D);}
     }
 
-    public Knot getPrevious(Knot p){
-        if(p.getId().equals("T")) {
-            return numberOfKnots > 2 ? getKnotById(numberOfKnots - 2 + "") : getKnotById("H") ;
+    public Knot getPrevious(Knot p) {
+        if (p.getId().equals("T")) {
+            return numberOfKnots > 2 ? getKnotById(numberOfKnots - 2 + "") : getKnotById("H");
         }
-        if(p.getId().equals("1")) { return getKnotById("H"); }
-
+        if (p.getId().equals("1")) {
+            return getKnotById("H");
+        }
         return getKnotById(Integer.parseInt(p.getId()) - 1 + "");
     }
 
