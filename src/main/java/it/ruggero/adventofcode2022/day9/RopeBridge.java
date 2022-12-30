@@ -13,10 +13,10 @@ public class RopeBridge {
 
     @Getter
     @Setter
-    private Point head = new Point(0,0);
+    private Point head = new Point(0, 0);
     @Getter
     @Setter
-    private Point tail =new Point(0,0);
+    private Point tail = new Point(0, 0);
 
     @Getter
     private List<MotionInstruction> motionInstructions;
@@ -55,7 +55,7 @@ public class RopeBridge {
     public void moveHead(Direction d) {
         switch (d) {
             case U:
-                head =  new Point(head.x, head.y + 1);
+                head = new Point(head.x, head.y + 1);
                 break;
             case D:
                 head = new Point(head.x, head.y - 1);
@@ -68,14 +68,14 @@ public class RopeBridge {
                 break;
         }
     }
-    
+
     public void moveTail() {
         if (head.x - tail.x == 2 && head.y == tail.y) {
             tail = new Point(tail.x + 1, tail.y);
             return;
         }
         if (head.x - tail.x == -2 && head.y == tail.y) {
-            tail = new Point(tail.x - 1,  tail.y);
+            tail = new Point(tail.x - 1, tail.y);
             return;
         }
         if (head.y - tail.y == 2 && head.x == tail.x) {
@@ -87,13 +87,13 @@ public class RopeBridge {
             return;
         }
 
-        if(abs(head.x - tail.x ) + abs(head.y - tail.y) == 3) {
-            tail = new Point(tail.x + (int)signum(head.x - (float)tail.x),tail.y + (int)signum(head.y - (float)tail.y));
+        if (abs(head.x - tail.x) + abs(head.y - tail.y) == 3) {
+            tail = new Point(tail.x + (int) signum(head.x - (float) tail.x), tail.y + (int) signum(head.y - (float) tail.y));
         }
     }
 
-    private boolean areHeadAndTailAdjacent(){
-        return abs(head.x - tail.x ) + abs(head.y - tail.y) < 2 ;
+    private boolean areHeadAndTailAdjacent() {
+        return abs(head.x - tail.x) + abs(head.y - tail.y) < 2;
     }
 
     @With

@@ -19,7 +19,7 @@ class RopeBridgeTest {
 
     @Test
     void shouldDoSingleMove(){
-        var rp = new RopeBridge(Day9ReadFile.read());
+        var rp = new RopeBridge();
         rp.moveSingleInstruction(instructionListSample.get(0));
         assertThat(rp.getHead()).isEqualTo(new RopeBridge.Point(4,0));
         assertThat(rp.getTail()).isEqualTo(new RopeBridge.Point(3,0));
@@ -27,7 +27,7 @@ class RopeBridgeTest {
 
     @Test
     void shouldDoTwoMovements() {
-        var rp = new RopeBridge(Day9ReadFile.read());
+        var rp = new RopeBridge();
         var instructions = instructionListSample.stream().limit(2).collect(Collectors.toList());
         rp.moveMultipleInstructions(instructions);
         assertThat(rp.getHead()).isEqualTo(new RopeBridge.Point(4,4));
@@ -37,7 +37,7 @@ class RopeBridgeTest {
 
     @Test
     void shouldDoThreeMovements() {
-        var rp = new RopeBridge(Day9ReadFile.read());
+        var rp = new RopeBridge();
         var instructions = instructionListSample.stream().limit(3).collect(Collectors.toList());
         rp.moveMultipleInstructions(instructions);
         assertThat(rp.getHead()).isEqualTo(new RopeBridge.Point(1,4));
@@ -46,7 +46,7 @@ class RopeBridgeTest {
 
     @Test
     void shouldDoOnlyThirdStep() {
-        var rp = new RopeBridge(Day9ReadFile.read());
+        var rp = new RopeBridge();
         rp.setHead(new RopeBridge.Point(4,4));
         rp.setTail(new RopeBridge.Point(4,3));
         var m =instructionListSample.get(2);
@@ -58,7 +58,7 @@ class RopeBridgeTest {
 
     @Test
     void shouldDoOnlyFourthStep(){
-        var rp = new RopeBridge(Day9ReadFile.read());
+        var rp = new RopeBridge();
         rp.setHead(new RopeBridge.Point(1,4));
         rp.setTail(new RopeBridge.Point(2,4));
         var m =instructionListSample.get(3);
@@ -69,7 +69,7 @@ class RopeBridgeTest {
 
     @Test
     void shouldDoOnlyFifthStep() {
-        var rp = new RopeBridge(Day9ReadFile.read());
+        var rp = new RopeBridge();
         rp.setHead(new RopeBridge.Point(1,3));
         rp.setTail(new RopeBridge.Point(2,4));
         var m =instructionListSample.get(4);
@@ -81,7 +81,7 @@ class RopeBridgeTest {
     @Test
     void shouldDoOnlySixthStep() {
         //D 1
-        var rp = new RopeBridge(Day9ReadFile.read());
+        var rp = new RopeBridge();
         rp.setHead(new RopeBridge.Point(5,3));
         rp.setTail(new RopeBridge.Point(4,3));
         var m =instructionListSample.get(5);
@@ -94,7 +94,7 @@ class RopeBridgeTest {
     @Test
     void shouldDoOnlySeventhStep() {
         //L 5
-        var rp = new RopeBridge(Day9ReadFile.read());
+        var rp = new RopeBridge();
         rp.setHead(new RopeBridge.Point(5,2));
         rp.setTail(new RopeBridge.Point(4,3));
         var m =instructionListSample.get(6);
@@ -171,12 +171,5 @@ class RopeBridgeTest {
         assertThat(rp.getTailPointList()).hasSize(5902);
 
     }
-
-
-
-
-
-
-
 
 }
