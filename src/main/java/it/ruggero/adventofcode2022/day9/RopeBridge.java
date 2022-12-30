@@ -47,7 +47,6 @@ public class RopeBridge {
     private final Set<Point> tailPointList = new HashSet<>();
 
     public void moveSingleInstruction(MotionInstruction m) {
-
         for (int i = 0; i < m.getSteps(); i++) {
             moveHead(m.getDirection());
             if (!areHeadAndTailAdjacent()) {
