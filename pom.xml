@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.advent-ofcode.app</groupId>
-    <artifactId>my-app</artifactId>
+    <artifactId>AOC</artifactId>
     <version>1</version>
     <dependencies>
         <dependency>

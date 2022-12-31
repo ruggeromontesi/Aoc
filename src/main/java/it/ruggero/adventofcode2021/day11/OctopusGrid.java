@@ -286,10 +286,7 @@ public class OctopusGrid {
 
             }
         }
-
         totalOfNumberFlashes = total;
-
-
     }
 
 
@@ -310,8 +307,4 @@ public class OctopusGrid {
 
 
     }
-
-
-
-
 }
