@@ -1,22 +1,43 @@
 package it.ruggero.adventofcode2022.Day11;
 
-import lombok.Builder;
-import lombok.Data;
-import lombok.With;
+import lombok.Getter;
 
-import java.util.ArrayDeque;
-import java.util.function.Function;
-import java.util.function.Predicate;
-
-@Builder
-@With
-@Data
 public class Monkey {
-    int id;
-    ArrayDeque<Integer> worryLevels;
-    Function<Integer,Integer> operation;
-    Predicate<Integer> test;
-    int monkeyIfTrue;
-    int monkeyIfFalse;
+
+    @Getter
+    private MonkeyDto monkeyDto;
+
+    @Getter
+    private int inspectedItems = 0;
+
+    public Monkey(MonkeyDto monkeyDto) {
+        this.monkeyDto = monkeyDto;
+    }
+
+    public int getWorryLevel() {
+        var worryLevels = monkeyDto.getWorryLevels();
+        if (!worryLevels.isEmpty()) {
+            inspectedItems++;
+            return worryLevels.poll();
+        }
+        throw new RuntimeException("worryLevels is empty!");
+    }
+
+    public int changeWorryLevel(int worryLevel) {
+        return monkeyDto.getOperation().apply(worryLevel);
+    }
+
+    public int decreaseWorryLevel(int worryLevel) {
+        return (int) worryLevel/3;
+    }
+
+    public int selectMonkey(int worryLevel) {
+        if (monkeyDto.getTest().test(worryLevel)) {
+            return monkeyDto.getMonkeyIfTrue();
+        } else {
+            return monkeyDto.getMonkeyIfFalse();
+        }
+    }
+
 
 }

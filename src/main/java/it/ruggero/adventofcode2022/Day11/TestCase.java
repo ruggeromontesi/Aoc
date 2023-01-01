@@ -3,12 +3,13 @@ package it.ruggero.adventofcode2022.Day11;
 import lombok.Getter;
 
 import java.util.ArrayDeque;
+import java.util.ArrayList;
 import java.util.List;
 
 public class TestCase {
 
     @Getter
-    private List<Monkey> monkeys;
+    private List<MonkeyDto> monkeys = new ArrayList<>();
 
 
     public TestCase() {
@@ -16,7 +17,7 @@ public class TestCase {
     }
 
     private void addMonkeys() {
-        Monkey m0 = Monkey
+        MonkeyDto m0 = MonkeyDto
                 .builder()
                 .id(0)
                 .worryLevels(new ArrayDeque<>(List.of(63, 84, 80, 83, 84, 53, 88, 72)))
@@ -26,7 +27,7 @@ public class TestCase {
                 .monkeyIfFalse(7)
                 .build();
 
-        Monkey m1 = Monkey
+        MonkeyDto m1 = MonkeyDto
                 .builder()
                 .id(1)
                 .worryLevels(new ArrayDeque<>(List.of(67, 56, 92, 88, 84)))
@@ -35,7 +36,7 @@ public class TestCase {
                 .monkeyIfTrue(5)
                 .monkeyIfFalse(3)
                 .build();
-        Monkey m2 = Monkey
+        MonkeyDto m2 = MonkeyDto
                 .builder()
                 .id(2)
                 .worryLevels(new ArrayDeque<>(List.of(52)))
@@ -45,7 +46,7 @@ public class TestCase {
                 .monkeyIfFalse(1)
                 .build();
 
-        Monkey m3 = Monkey
+        MonkeyDto m3 = MonkeyDto
                 .builder()
                 .id(3)
                 .worryLevels(new ArrayDeque<>(List.of(59, 53, 60, 92, 69, 72)))
@@ -55,7 +56,7 @@ public class TestCase {
                 .monkeyIfFalse(6)
                 .build();
 
-        Monkey m4 = Monkey
+        MonkeyDto m4 = MonkeyDto
                 .builder()
                 .id(4)
                 .worryLevels(new ArrayDeque<>(List.of(61, 52, 55, 61)))
@@ -65,7 +66,7 @@ public class TestCase {
                 .monkeyIfFalse(2)
                 .build();
 
-        Monkey m5 = Monkey
+        MonkeyDto m5 = MonkeyDto
                 .builder()
                 .id(5)
                 .worryLevels(new ArrayDeque<>(List.of(79, 53)))
@@ -75,7 +76,7 @@ public class TestCase {
                 .monkeyIfFalse(6)
                 .build();
 
-        Monkey m6 = Monkey
+        MonkeyDto m6 = MonkeyDto
                 .builder()
                 .id(6)
                 .worryLevels(new ArrayDeque<>(List.of(59, 86, 67, 95, 92, 77, 91)))
@@ -85,7 +86,7 @@ public class TestCase {
                 .monkeyIfFalse(0)
                 .build();
 
-        Monkey m7 = Monkey
+        MonkeyDto m7 = MonkeyDto
                 .builder()
                 .id(7)
                 .worryLevels(new ArrayDeque<>(List.of(58, 83, 89)))

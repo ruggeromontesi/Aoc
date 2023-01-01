@@ -28,7 +28,7 @@ class CathodicRayTubeTest {
     void shouldRunPartTwoSample() {
         var b = new CathodeRayTube(Day10ReadFile.readSample());
         b.run();
-        b.printCrt();
+        b.printEnhanced();
 
     }
 
