@@ -9,28 +9,35 @@ import static org.assertj.core.api.Assertions.assertThat;
 class CathodicRayTubeTest {
 
     @Test
-    void shouldDoSomething() {
+    void shouldRunPartOneSample() {
         var a = Day10ReadFile.readSample();
-        System.out.println("ddddddd");
-
         var b  = new CathodeRayTube(Day10ReadFile.readSample());
         b.run();
+        assertThat(b.getSumOfSignalStrength()).isEqualTo(13140);
+    }
 
-//       assertThat(b.getRegister()).isEqualTo(-1);
-//       assertThat(b.getClockCycle()).isEqualTo(5);
-        assertThat(b.getSumOfSignalStrenght()).isEqualTo(13140);
+    @Test
+    void shouldRunPartOne() {
+        var b  = new CathodeRayTube(Day10ReadFile.read());
+        b.run();
+       assertThat(b.getSumOfSignalStrength()).isEqualTo(12540);
 
     }
 
     @Test
-    void shouldRun() {
-
-
-        var b  = new CathodeRayTube(Day10ReadFile.read());
+    void shouldRunPartTwoSample() {
+        var b = new CathodeRayTube(Day10ReadFile.readSample());
         b.run();
+        b.printCrt();
 
-       assertThat(b.getSumOfSignalStrenght()).isEqualTo(12540);
+    }
 
+    @Test
+    void shouldRunPartTwo() {
+        var b = new CathodeRayTube(Day10ReadFile.read());
+        b.run();
+        b.printEnhanced();
+        //FECZEHLE
     }
 
 }
