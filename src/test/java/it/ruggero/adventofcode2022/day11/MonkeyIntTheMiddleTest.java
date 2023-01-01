@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class MonkeyIntTheMiddleTest {
+class MonkeyIntTheMiddleTest {
 
     @Test
     void shouldRunSample() {
@@ -22,7 +22,7 @@ public class MonkeyIntTheMiddleTest {
         var monkeyList = new TestCase().getMonkeys();
         var mim = new MonkeyIntTheMiddle(monkeyList);
         mim.runNRounds(20);
-        assertThat(mim.getMonkeyBusinessLevel()).isEqualTo(10605);
+        assertThat(mim.getMonkeyBusinessLevel()).isEqualTo(117640);
     }
 
 }
